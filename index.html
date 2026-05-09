@@ -139,7 +139,13 @@
                 a: acc,
                 m: mast
               }));
-              return `<a href="./lesson.html?lesson=${lesson.lesson_id}" class="map-dot dot-${cls}" data-tip="${tip}"><span>${lesson.day}</span></a>`;
+              const typeIcon = lesson.lesson_type === 'test' ? '★'
+                             : lesson.lesson_type === 'review' ? '↻'
+                             : String(lesson.day);
+              const typeLabel = lesson.lesson_type === 'test' ? 'test'
+                              : lesson.lesson_type === 'review' ? 'review'
+                              : lesson.lesson_type?.slice(0, 4) || '';
+              return `<a href="./lesson.html?lesson=${lesson.lesson_id}" class="map-dot dot-${cls}" data-tip="${tip}"><span class="dot-day">${typeIcon}</span><span class="dot-type">${typeLabel}</span></a>`;
             }).join('');
             return `<div class="map-week-row"><span class="map-week-lbl">W${week}</span><div class="map-dots">${dots}</div></div>`;
           }).join('');
