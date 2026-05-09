@@ -8,7 +8,17 @@ Static TOEIC learning app calibrated to the latest real score baseline:
   - Week 1 weakness-hunter Mandative Subjunctive lessons
   - Week 3 seven-day Part of Speech Booster
 
-## Run Locally
+## 最簡單的開啟方式（推薦）
+
+直接雙擊 `launcher.pyw`，會出現一個視窗：
+- 按「▶ 啟動伺服器」→ 伺服器啟動
+- 按「🏠 首頁」→ 自動開啟瀏覽器
+- 按「■ 關閉伺服器」→ 關閉
+- 關閉視窗時伺服器自動停止
+
+---
+
+## Run Locally（手動方式）
 
 ```powershell
 python -m http.server 8787 --bind 127.0.0.1
