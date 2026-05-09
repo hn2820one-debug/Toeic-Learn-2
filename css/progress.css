@@ -154,19 +154,6 @@
 .lesson-dot.status-needs-work   { background: #f59e0b; }
 .lesson-dot.status-mastered     { background: #22c55e; }
 
-.dot-tooltip {
-  position: fixed;
-  z-index: 1000;
-  background: #1e293b;
-  color: #f1f5f9;
-  border-radius: 8px;
-  padding: 8px 12px;
-  font-size: 12px;
-  line-height: 1.7;
-  pointer-events: none;
-  max-width: 220px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-}
 
 .dot-legend {
   display: flex;

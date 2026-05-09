@@ -83,6 +83,14 @@
       return streak;
     }
 
+    function moveTip(e, el) {
+      const m = 12;
+      const tx = Math.min(e.clientX + m, window.innerWidth - el.offsetWidth - m);
+      const ty = Math.max(e.clientY - el.offsetHeight - m, m);
+      el.style.left = `${tx}px`;
+      el.style.top = `${ty}px`;
+    }
+
     function renderWeekTabs(index, progress) {
       const weeks = [...new Set(index.lessons.map(l => l.week))].sort((a, b) => a - b);
       const completedIds = getAllCompletedIds(progress);
@@ -118,33 +126,65 @@
         return;
       }
 
-      const doneCount = lessons.filter(l => completedIds.has(l.lesson_id)).length;
-      const rowsHtml = lessons.map(lesson => {
+      const pending = lessons.filter(l => !completedIds.has(l.lesson_id));
+      const done    = lessons.filter(l =>  completedIds.has(l.lesson_id));
+      const nextLesson = pending[0] || null;
+
+      function dotHtml(lesson) {
         const result = findResult(progress, lesson.lesson_id);
-        const done = completedIds.has(lesson.lesson_id);
-        const dotClass = !done ? 'pending' : (result?.mastery >= 7 ? 'mastered' : 'done');
-        const meta = done && result
+        const isDone = completedIds.has(lesson.lesson_id);
+        const isNext = lesson.lesson_id === nextLesson?.lesson_id;
+        const cls = isDone
+          ? (result?.mastery >= 7 ? 'mastered' : 'needs-work')
+          : (isNext ? 'next' : 'pending');
+        const tipMeta = isDone && result
           ? `${lesson.lesson_type} · 正確率 ${(result.accuracy * 100).toFixed(0)}% · 掌握度 ${result.mastery}/10`
-          : `${lesson.lesson_type} · 未開始`;
-        return `
-          <div class="lesson-row">
-            <span class="lesson-row-dot dot-${dotClass}"></span>
-            <div class="lesson-row-info">
-              <div class="lesson-row-title">${htmlEscape(lesson.title)}</div>
-              <div class="lesson-row-meta">${htmlEscape(meta)}</div>
-            </div>
-            <a href="./lesson.html?lesson=${lesson.lesson_id}"
-               class="button ${done ? 'secondary' : 'primary'} small">${done ? '重溫' : '開始'}</a>
-          </div>`;
-      }).join('');
+          : `${lesson.lesson_type} · ${isNext ? '下一堂' : '未開始'}`;
+        const tip = htmlEscape(JSON.stringify({ t: lesson.title, m: tipMeta }));
+        return `<a href="./lesson.html?lesson=${lesson.lesson_id}" class="lesson-nav-dot dot-${cls}" data-tip="${tip}"><span>${lesson.day}</span></a>`;
+      }
+
+      const pendingHtml = pending.length ? `
+        <div class="dot-section">
+          <div class="dot-section-label">待完成 ${pending.length} 節</div>
+          <div class="nav-dot-grid">${pending.map(dotHtml).join('')}</div>
+        </div>` : '';
+
+      const doneHtml = done.length ? `
+        <details class="dot-done-details">
+          <summary>已完成 ${done.length} 節</summary>
+          <div class="nav-dot-grid">${done.map(dotHtml).join('')}</div>
+        </details>` : '';
 
       panelEl.innerHTML = `
         <div class="week-panel-header">
           <strong>Week ${week}</strong>
           ${weekInfo ? `<span>${htmlEscape(weekInfo.title)}</span>` : ''}
-          <span class="week-progress">${doneCount} / ${lessons.length} 完成</span>
+          <span class="week-progress">${done.length} / ${lessons.length} 完成</span>
         </div>
-        <div class="lesson-rows">${rowsHtml}</div>`;
+        ${pendingHtml}
+        ${doneHtml}`;
+
+      let tipEl = document.getElementById('wk-nav-tip');
+      if (!tipEl) {
+        tipEl = document.createElement('div');
+        tipEl.id = 'wk-nav-tip';
+        tipEl.className = 'dot-tooltip';
+        tipEl.hidden = true;
+        document.body.appendChild(tipEl);
+      }
+      panelEl.querySelectorAll('.lesson-nav-dot').forEach(dot => {
+        dot.addEventListener('mouseenter', e => {
+          try {
+            const d = JSON.parse(dot.dataset.tip);
+            tipEl.innerHTML = `<strong>${htmlEscape(d.t)}</strong><br><span style="opacity:0.8">${htmlEscape(d.m)}</span>`;
+            tipEl.hidden = false;
+            moveTip(e, tipEl);
+          } catch (_) {}
+        });
+        dot.addEventListener('mousemove', e => moveTip(e, tipEl));
+        dot.addEventListener('mouseleave', () => { tipEl.hidden = true; });
+      });
     }
 
     async function init() {
