@@ -548,6 +548,108 @@ body {
   font-size: 15px;
 }
 
+/* ===== Full lesson map (index.html) ===== */
+
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 18px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.map-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.map-legend-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.map-module {
+  margin-bottom: 22px;
+}
+
+.map-module:last-child {
+  margin-bottom: 0;
+}
+
+.map-module-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.map-week-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.map-week-row:last-child {
+  margin-bottom: 0;
+}
+
+.map-week-lbl {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-tertiary);
+  width: 26px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.map-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.map-dot {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.15s;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.map-dot:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+  z-index: 5;
+}
+
+.map-dot.dot-next      { background: var(--accent); box-shadow: 0 0 0 4px #d1f5eb; }
+.map-dot.dot-next:hover{ box-shadow: 0 8px 20px rgba(29,158,117,0.4); }
+.map-dot.dot-pending   { background: #cbd5e1; color: #475569; }
+.map-dot.dot-needs-work{ background: #f59e0b; }
+.map-dot.dot-mastered  { background: #22c55e; }
+
+@media (max-width: 480px) {
+  .map-dot { width: 42px; height: 42px; font-size: 13px; }
+}
+
 /* ===== Lesson navigation dots (Week panel) ===== */
 .nav-dot-grid {
   display: flex;

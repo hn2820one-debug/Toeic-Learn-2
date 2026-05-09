@@ -27,8 +27,8 @@
     </section>
 
     <section class="section">
-      <div id="week-tabs" class="week-tabs"></div>
-      <div id="week-panel" class="card week-panel-card"></div>
+      <h2 class="page-subtitle">課程地圖</h2>
+      <div id="lesson-map" class="card"></div>
     </section>
 
     <section class="section">
@@ -91,93 +91,78 @@
       el.style.top = `${ty}px`;
     }
 
-    function renderWeekTabs(index, progress) {
-      const weeks = [...new Set(index.lessons.map(l => l.week))].sort((a, b) => a - b);
+    function renderLessonMap(index, progress) {
       const completedIds = getAllCompletedIds(progress);
-      const nextLesson = [...index.lessons].sort((a, b) => a.sequence - b.sequence)
-        .find(l => !completedIds.has(l.lesson_id));
-      let activeWeek = nextLesson?.week ?? weeks[0];
+      const sorted = [...index.lessons].sort((a, b) => (a.sequence || 0) - (b.sequence || 0));
+      const nextLesson = sorted.find(l => !completedIds.has(l.lesson_id));
 
-      const tabsEl = document.getElementById('week-tabs');
-      tabsEl.innerHTML = weeks.map(w =>
-        `<button type="button" class="week-tab${w === activeWeek ? ' active' : ''}" data-week="${w}">W${w}</button>`
-      ).join('');
+      const moduleInfoMap = {};
+      (index.modules || []).forEach(m => { moduleInfoMap[m.module_id] = m; });
 
-      tabsEl.querySelectorAll('.week-tab').forEach(btn => {
-        btn.addEventListener('click', () => {
-          activeWeek = Number(btn.dataset.week);
-          tabsEl.querySelectorAll('.week-tab').forEach(t =>
-            t.classList.toggle('active', Number(t.dataset.week) === activeWeek));
-          renderWeekPanel(activeWeek, index, progress);
-        });
+      const moduleOrder = [];
+      const byModule = {};
+      index.lessons.forEach(lesson => {
+        if (!byModule[lesson.module_id]) {
+          moduleOrder.push(lesson.module_id);
+          byModule[lesson.module_id] = {};
+        }
+        const w = lesson.week || 1;
+        if (!byModule[lesson.module_id][w]) byModule[lesson.module_id][w] = [];
+        byModule[lesson.module_id][w].push(lesson);
       });
 
-      renderWeekPanel(activeWeek, index, progress);
-    }
-
-    function renderWeekPanel(week, index, progress) {
-      const completedIds = getAllCompletedIds(progress);
-      const lessons = index.lessons.filter(l => l.week === week).sort((a, b) => a.day - b.day);
-      const weekInfo = (index.weekly_plan || []).find(w => w.week === week);
-      const panelEl = document.getElementById('week-panel');
-
-      if (!lessons.length) {
-        panelEl.innerHTML = '<p class="muted-note">本週課程建設中，敬請期待。</p>';
-        return;
-      }
-
-      const pending = lessons.filter(l => !completedIds.has(l.lesson_id));
-      const done    = lessons.filter(l =>  completedIds.has(l.lesson_id));
-      const nextLesson = pending[0] || null;
-
-      function dotHtml(lesson) {
-        const result = findResult(progress, lesson.lesson_id);
-        const isDone = completedIds.has(lesson.lesson_id);
-        const isNext = lesson.lesson_id === nextLesson?.lesson_id;
-        const cls = isDone
-          ? (result?.mastery >= 7 ? 'mastered' : 'needs-work')
-          : (isNext ? 'next' : 'pending');
-        const tipMeta = isDone && result
-          ? `${lesson.lesson_type} · 正確率 ${(result.accuracy * 100).toFixed(0)}% · 掌握度 ${result.mastery}/10`
-          : `${lesson.lesson_type} · ${isNext ? '下一堂' : '未開始'}`;
-        const tip = htmlEscape(JSON.stringify({ t: lesson.title, m: tipMeta }));
-        return `<a href="./lesson.html?lesson=${lesson.lesson_id}" class="lesson-nav-dot dot-${cls}" data-tip="${tip}"><span>${lesson.day}</span></a>`;
-      }
-
-      const pendingHtml = pending.length ? `
-        <div class="dot-section">
-          <div class="dot-section-label">待完成 ${pending.length} 節</div>
-          <div class="nav-dot-grid">${pending.map(dotHtml).join('')}</div>
-        </div>` : '';
-
-      const doneHtml = done.length ? `
-        <details class="dot-done-details">
-          <summary>已完成 ${done.length} 節</summary>
-          <div class="nav-dot-grid">${done.map(dotHtml).join('')}</div>
-        </details>` : '';
-
-      panelEl.innerHTML = `
-        <div class="week-panel-header">
-          <strong>Week ${week}</strong>
-          ${weekInfo ? `<span>${htmlEscape(weekInfo.title)}</span>` : ''}
-          <span class="week-progress">${done.length} / ${lessons.length} 完成</span>
+      const mapEl = document.getElementById('lesson-map');
+      mapEl.innerHTML = `
+        <div class="map-legend">
+          <span class="map-legend-item"><span class="map-legend-dot" style="background:#cbd5e1"></span>未開始</span>
+          <span class="map-legend-item"><span class="map-legend-dot" style="background:var(--accent);box-shadow:0 0 0 2px #d1f5eb"></span>下一堂</span>
+          <span class="map-legend-item"><span class="map-legend-dot" style="background:#f59e0b"></span>需加強</span>
+          <span class="map-legend-item"><span class="map-legend-dot" style="background:#22c55e"></span>已掌握</span>
         </div>
-        ${pendingHtml}
-        ${doneHtml}`;
+        ${moduleOrder.map(moduleId => {
+          const info = moduleInfoMap[moduleId] || { title: moduleId };
+          const weeks = Object.entries(byModule[moduleId]).sort(([a],[b]) => Number(a) - Number(b));
+          const weekRows = weeks.map(([week, lessons]) => {
+            const dots = [...lessons].sort((a, b) => (a.day||0) - (b.day||0)).map(lesson => {
+              const result = findResult(progress, lesson.lesson_id);
+              const isDone = completedIds.has(lesson.lesson_id);
+              const isNext = lesson.lesson_id === nextLesson?.lesson_id;
+              const cls = isDone
+                ? (result?.mastery >= 7 ? 'mastered' : 'needs-work')
+                : (isNext ? 'next' : 'pending');
+              const acc   = isDone && result ? `正確率 ${(result.accuracy*100).toFixed(0)}%` : '';
+              const mast  = isDone && result ? `掌握度 ${result.mastery}/10` : isNext ? '下一堂' : '未開始';
+              const tip   = htmlEscape(JSON.stringify({
+                t: lesson.title,
+                w: `Week ${lesson.week} / Day ${lesson.day}`,
+                k: lesson.lesson_type,
+                a: acc,
+                m: mast
+              }));
+              return `<a href="./lesson.html?lesson=${lesson.lesson_id}" class="map-dot dot-${cls}" data-tip="${tip}"><span>${lesson.day}</span></a>`;
+            }).join('');
+            return `<div class="map-week-row"><span class="map-week-lbl">W${week}</span><div class="map-dots">${dots}</div></div>`;
+          }).join('');
+          return `<div class="map-module"><div class="map-module-title">${htmlEscape(info.title)}</div>${weekRows}</div>`;
+        }).join('')}`;
 
-      let tipEl = document.getElementById('wk-nav-tip');
+      let tipEl = document.getElementById('map-tip');
       if (!tipEl) {
         tipEl = document.createElement('div');
-        tipEl.id = 'wk-nav-tip';
+        tipEl.id = 'map-tip';
         tipEl.className = 'dot-tooltip';
         tipEl.hidden = true;
         document.body.appendChild(tipEl);
       }
-      panelEl.querySelectorAll('.lesson-nav-dot').forEach(dot => {
+      mapEl.querySelectorAll('.map-dot').forEach(dot => {
         dot.addEventListener('mouseenter', e => {
           try {
             const d = JSON.parse(dot.dataset.tip);
-            tipEl.innerHTML = `<strong>${htmlEscape(d.t)}</strong><br><span style="opacity:0.8">${htmlEscape(d.m)}</span>`;
+            let html = `<strong>${htmlEscape(d.t)}</strong>`;
+            html += `<br><span style="opacity:.75">${htmlEscape(d.w)} · ${htmlEscape(d.k)}</span>`;
+            if (d.a) html += `<br>${htmlEscape(d.a)} · ${htmlEscape(d.m)}`;
+            else     html += `<br>${htmlEscape(d.m)}`;
+            tipEl.innerHTML = html;
             tipEl.hidden = false;
             moveTip(e, tipEl);
           } catch (_) {}
@@ -237,7 +222,7 @@
           <div><span>最新弱點</span><strong class="stat-label-sm">${htmlEscape(latestWeakness)}</strong><small>錯題/timeout</small></div>
         </div>`;
 
-      renderWeekTabs(index, progress);
+      renderLessonMap(index, progress);
     }
 
     init();
