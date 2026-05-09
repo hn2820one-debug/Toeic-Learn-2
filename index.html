@@ -138,6 +138,7 @@
                          : isNext ? '下一堂' : '未開始';
               const tip  = htmlEscape(JSON.stringify({
                 t: lesson.title,
+                d: lesson.description || '',
                 w: `Week ${lesson.week} / Day ${lesson.day}`,
                 k: lesson.lesson_type,
                 a: acc,
@@ -172,6 +173,7 @@
           try {
             const d = JSON.parse(dot.dataset.tip);
             let html = `<strong>${htmlEscape(d.t)}</strong>`;
+            if (d.d) html += `<br><span class="tip-desc">${htmlEscape(d.d)}</span>`;
             html += `<br><span style="opacity:.75">${htmlEscape(d.w)} · ${htmlEscape(d.k)}</span>`;
             if (d.a) html += `<br>${htmlEscape(d.a)} · ${htmlEscape(d.m)}`;
             else     html += `<br>${htmlEscape(d.m)}`;

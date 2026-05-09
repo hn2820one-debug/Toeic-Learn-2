@@ -1,4 +1,4 @@
-const CACHE_NAME = "toeic-app-v8";
+const CACHE_NAME = "toeic-app-v9";
 const STATIC_ASSETS = [
   "./",
   "./index.html",
