@@ -199,6 +199,23 @@ for label, path, bg, fg in PAGES:
         command=lambda p=path: open_page(p),
     ).pack(fill="x", padx=20, pady=3)
 
+# hard-refresh helper page
+def open_hard_refresh():
+    if not is_running():
+        log("⚠️  伺服器未啟動，請先按「啟動伺服器」")
+        return
+    url = f"{BASE_URL}/clear-sw.html"
+    webbrowser.open(url)
+    log(f"開啟快取清除頁面，請按頁面上的按鈕後再開啟首頁")
+
+tk.Button(
+    root, text="🔄   清除快取（UI 沒更新時用）", font=F_BTN,
+    bg="#dc2626", fg="white", activebackground="#b91c1c",
+    relief="flat", bd=0, padx=16, pady=10,
+    cursor="hand2", anchor="w",
+    command=open_hard_refresh,
+).pack(fill="x", padx=20, pady=3)
+
 # divider
 tk.Frame(root, height=1, bg="#e5e7eb").pack(fill="x", padx=20, pady=10)
 
