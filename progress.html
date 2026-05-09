@@ -32,7 +32,12 @@
 
     <section class="section">
       <h2 class="page-subtitle">能力儀表板</h2>
-      <div id="component-box" class="component-dashboard"></div>
+      <div id="component-box" class="card"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">掌握度趨勢</h2>
+      <div id="trend-box" class="card"></div>
     </section>
 
     <section class="section">
@@ -353,6 +358,57 @@
       });
     }
 
+    function renderTrendChart(progress) {
+      const box = document.getElementById('trend-box');
+      const sessions = (progress.session_history || []).filter(h => h.mastery != null);
+      if (sessions.length < 2) {
+        box.innerHTML = '<p class="muted-note">完成 2 堂課以上後顯示趨勢圖。</p>';
+        return;
+      }
+      const W = 420, H = 130, PL = 26, PR = 10, PT = 10, PB = 26;
+      const IW = W - PL - PR, IH = H - PT - PB;
+      const n = sessions.length;
+      function px(i) { return PL + (n < 2 ? IW / 2 : (i / (n - 1)) * IW); }
+      function py(v)  { return PT + (1 - v / 10) * IH; }
+
+      const gridLines = [0, 4, 7, 10].map(v => {
+        const y = py(v);
+        const dash = (v === 0 || v === 10) ? '' : 'stroke-dasharray="4 3"';
+        const stroke = v === 7 ? '#86efac' : v === 4 ? '#fde68a' : '#e5e7eb';
+        return `<line x1="${PL}" y1="${y.toFixed(1)}" x2="${W - PR}" y2="${y.toFixed(1)}" stroke="${stroke}" stroke-width="1" ${dash}/>
+          <text x="${PL - 4}" y="${(y + 3.5).toFixed(1)}" text-anchor="end" font-size="9" fill="#9ca3af">${v}</text>`;
+      }).join('');
+
+      const greenY = py(7), topY = py(10);
+      const zone = `<rect x="${PL}" y="${topY.toFixed(1)}" width="${IW}" height="${(greenY - topY).toFixed(1)}" fill="#f0fdf4" opacity="0.5"/>`;
+
+      const pts = sessions.map((s, i) => `${px(i).toFixed(1)},${py(s.mastery).toFixed(1)}`).join(' ');
+      const line = `<polyline points="${pts}" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+
+      const dots = sessions.map((s, i) => {
+        const c = s.mastery >= 7 ? '#22c55e' : s.mastery >= 4 ? '#f59e0b' : '#ef4444';
+        const shortId = s.lesson_id.replace('wh-w1-', 'W1-').replace('wh-w2-', 'W2-').replace('pos-', 'P').replace('w1-', 'W1-').replace('w2-', 'W2-');
+        return `<circle cx="${px(i).toFixed(1)}" cy="${py(s.mastery).toFixed(1)}" r="4.5" fill="${c}" stroke="#fff" stroke-width="1.5"><title>${shortId}: ${s.mastery}</title></circle>`;
+      }).join('');
+
+      const step = Math.max(1, Math.floor(n / 6));
+      const xLabels = sessions.map((s, i) => {
+        if (i % step !== 0 && i !== n - 1) return '';
+        const lbl = s.lesson_id.replace('wh-w1-', 'W1-').replace('wh-w2-', 'W2-').replace('pos-', 'P').replace('w1-', 'W1-').replace('w2-', 'W2-');
+        return `<text x="${px(i).toFixed(1)}" y="${H - 4}" text-anchor="middle" font-size="8.5" fill="#9ca3af">${lbl}</text>`;
+      }).join('');
+
+      box.innerHTML = `
+        <svg viewBox="0 0 ${W} ${H}" style="width:100%;height:auto;display:block">
+          ${gridLines}${zone}${line}${dots}${xLabels}
+        </svg>
+        <div class="trend-legend">
+          <span><span class="trend-dot" style="background:#22c55e"></span>已掌握 ≥7</span>
+          <span><span class="trend-dot" style="background:#f59e0b"></span>加強中 4–7</span>
+          <span><span class="trend-dot" style="background:#ef4444"></span>需複習 &lt;4</span>
+        </div>`;
+    }
+
     function renderHeatmap(progress) {
       const box = document.getElementById('heatmap-box');
 
@@ -419,17 +475,44 @@
       await renderRecentBox(progress);
       renderLessonMap(progress, index);
 
-      const main = progress.modules['weakness-hunter'] || {};
-      const component = main.component_mastery || {};
-      renderHeatmap(progress);
+      // Aggregate component mastery across all modules
+      const allComp = { grammar: [], phrase: [], listening: [], reading: [] };
+      Object.values(progress.modules || {}).forEach(mod => {
+        Object.values(mod.day_results || {}).forEach(r => {
+          if (r.target_component && allComp[r.target_component] !== undefined) {
+            allComp[r.target_component].push(r.mastery || 0);
+          }
+        });
+      });
+      const component = {};
+      Object.keys(allComp).forEach(k => {
+        const arr = allComp[k];
+        component[k] = arr.length ? arr.reduce((s, v) => s + v, 0) / arr.length : 0;
+      });
 
-      document.getElementById('component-box').innerHTML = ['grammar', 'phrase', 'listening', 'reading'].map((key) => `
-        <div class="component-card">
-          <div class="label">${window.AppCore.COMPONENT_LABELS[key]}</div>
-          <div class="value">${component[key] ? `${component[key].toFixed(1)} / 10` : '待建立'}</div>
-          <div class="hint">${index.component_targets[key].baseline} → 目標 ${index.component_targets[key].target}</div>
-        </div>
-      `).join('');
+      renderHeatmap(progress);
+      renderTrendChart(progress);
+
+      document.getElementById('component-box').innerHTML = `<div class="comp-bar-list">` +
+        ['grammar', 'phrase', 'listening', 'reading'].map(key => {
+          const val = component[key] || 0;
+          const pct = Math.min(val / 10 * 100, 100).toFixed(1);
+          const color = val >= 7 ? '#22c55e' : val >= 4 ? '#f59e0b' : val > 0 ? '#ef4444' : '#e2e8f0';
+          const label = window.AppCore.COMPONENT_LABELS[key] || key;
+          const baseline = index.component_targets[key]?.baseline || '';
+          return `
+            <div class="comp-bar-row">
+              <div class="comp-bar-meta">
+                <span class="comp-bar-name">${htmlEscape(label)}</span>
+                <span class="comp-bar-score">${val ? val.toFixed(1) + ' / 10' : '尚無記錄'}</span>
+              </div>
+              <div class="comp-bar-track">
+                <div class="comp-bar-fill" style="width:${pct}%;background:${color}"></div>
+                <div class="comp-bar-ref"></div>
+              </div>
+              <div class="comp-bar-hint">${htmlEscape(baseline)}</div>
+            </div>`;
+        }).join('') + `</div>`;
 
       const moduleRows = Object.entries(progress.modules || {}).map(([moduleId, mod]) => {
         const results = Object.entries(mod.day_results || {});
@@ -447,9 +530,28 @@
       document.getElementById('module-box').innerHTML = moduleRows;
 
       const weak = progress.weaknesses || [];
-      document.getElementById('weak-box').innerHTML = weak.length
-        ? `<ul class="compact-list">${weak.map((w) => `<li>${w.tag} | ${w.status} | ${(w.occurrences || []).length} 次</li>`).join('')}</ul>`
-        : '<p style="margin:0">尚未建立弱點清單。</p>';
+      if (weak.length) {
+        const maxOcc = Math.max(...weak.map(w => (w.occurrences || []).length), 1);
+        document.getElementById('weak-box').innerHTML = weak.map(w => {
+          const cnt = (w.occurrences || []).length;
+          const pct = (cnt / maxOcc * 100).toFixed(0);
+          const isSealed = w.status === 'sealed';
+          const barColor = isSealed ? '#22c55e' : cnt >= 5 ? '#ef4444' : '#f59e0b';
+          const statusLabel = isSealed ? '✅ 已封存' : '⚠️ 監控中';
+          return `
+            <div class="weakness-bar-item">
+              <div class="weakness-bar-header">
+                <span class="weakness-bar-tag">${htmlEscape(w.tag)}</span>
+                <span class="weakness-bar-meta">${cnt} 次 · ${statusLabel}</span>
+              </div>
+              <div class="weakness-track">
+                <div class="weakness-fill" style="width:${pct}%;background:${barColor}"></div>
+              </div>
+            </div>`;
+        }).join('');
+      } else {
+        document.getElementById('weak-box').innerHTML = '<p class="muted-note">尚未建立弱點清單。</p>';
+      }
 
       const history = progress.session_history || [];
       document.getElementById('history-box').innerHTML = history.length

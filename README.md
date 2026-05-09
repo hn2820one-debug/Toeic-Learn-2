@@ -46,6 +46,13 @@ http://127.0.0.1:8787/
 
 **重新開啟後，請在瀏覽器按 `Ctrl + Shift + R` 強制刷新頁面（清除緩存）。**
 
+> **重要提示：** 本應用使用 Service Worker 快取。如果更新後 UI 沒有變化，
+> 只重啟 Server 是不夠的。正確做法：
+> 1. 打開瀏覽器的 DevTools（按 `F12`）
+> 2. 點擊「Application」分頁 → 「Service Workers」
+> 3. 點擊「Unregister」取消註冊
+> 4. 再按 `Ctrl + Shift + R` 強制刷新
+
 ## Validate Lesson Data
 
 ```powershell
