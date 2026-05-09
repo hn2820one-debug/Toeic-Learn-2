@@ -12,7 +12,7 @@
   <main class="app-shell">
     <header class="page-head">
       <h1 id="quiz-title" class="page-title">測驗</h1>
-      <p class="page-subtitle">答題期間不顯示對錯，請先完成全部題目。</p>
+      <p class="page-subtitle">選答案後會鎖定；完成全部題目後才可交卷。</p>
     </header>
 
     <section class="quiz-head">
@@ -21,6 +21,7 @@
         <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
       </div>
       <div id="q-dots" class="q-dots"></div>
+      <p id="q-status" class="q-status">尚未開始</p>
       <div class="timer-row">
         <span>剩餘時間</span>
         <span id="timer-number" class="timer-number">-</span>
@@ -41,10 +42,10 @@
 
     <section class="quiz-actions">
       <div>
-        <button id="prev-btn" class="button secondary" disabled>Prev</button>
-        <button id="next-btn" class="button secondary" disabled>Next</button>
+        <button id="prev-btn" class="button secondary" disabled>上一題</button>
+        <button id="next-btn" class="button secondary" disabled>下一題</button>
       </div>
-      <button id="submit-btn" class="button primary" disabled>Submit</button>
+      <button id="submit-btn" class="button primary" disabled>尚未完成</button>
     </section>
   </main>
 

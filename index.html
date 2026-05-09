@@ -20,12 +20,16 @@
     </section>
 
     <section class="section">
+      <div id="today-card" class="focus-card"></div>
+    </section>
+
+    <section class="section">
       <h2 class="page-subtitle">6 週主線</h2>
       <div id="weekly-plan" class="weekly-plan"></div>
     </section>
 
     <section class="section">
-      <h2 class="page-subtitle">可練課程</h2>
+      <h2 class="page-subtitle">本週可練課程</h2>
       <div id="lesson-list" class="grid-2"></div>
     </section>
 
@@ -40,7 +44,9 @@
     </section>
 
     <section class="section">
-      <button class="button secondary" onclick="location.href='./progress.html'">查看進度總覽</button>
+      <div class="page-actions">
+        <button class="button secondary" onclick="location.href='./progress.html'">進度總覽</button>
+      </div>
     </section>
   </main>
 
@@ -65,6 +71,7 @@
       const target = s.target_split;
       const done = window.AppCore.completedLessonCount(progress);
       const mainModule = index.modules.find((m) => m.module_id === 'weakness-hunter') || index.modules[0];
+      const nextLesson = index.lessons.find((lesson) => !findResult(progress, lesson.lesson_id)) || index.lessons[0];
 
       document.getElementById('student-card').innerHTML = `
         <div class="score-hero">
@@ -81,6 +88,15 @@
         </div>
       `;
 
+      document.getElementById('today-card').innerHTML = `
+        <div>
+          <div class="plan-kicker">Next Session</div>
+          <h2>${nextLesson.title}</h2>
+          <p>Week ${nextLesson.week} / Day ${nextLesson.day} · ${window.AppCore.COMPONENT_LABELS[nextLesson.target_component] || nextLesson.target_component} · 每題 ${nextLesson.time_limit_seconds}s</p>
+        </div>
+        <button class="button primary" onclick="location.href='./lesson.html?lesson=${nextLesson.lesson_id}'">開始今日課</button>
+      `;
+
       document.getElementById('weekly-plan').innerHTML = index.weekly_plan.map((week) => `
         <article class="plan-card">
           <div class="plan-kicker">Week ${week.week} · ${week.session_count} 節</div>
@@ -90,17 +106,22 @@
         </article>
       `).join('');
 
+      const visibleLessons = index.lessons.filter((lesson) => lesson.week <= 3);
       const list = document.getElementById('lesson-list');
-      list.innerHTML = index.lessons.map((lesson) => {
+      list.innerHTML = visibleLessons.map((lesson) => {
         const doneResult = findResult(progress, lesson.lesson_id);
         const component = window.AppCore.COMPONENT_LABELS[lesson.target_component] || lesson.target_component;
+        const status = doneResult ? '已完成' : '未完成';
+        const buttonText = doneResult ? '重溫本節' : '開始';
         return `
           <article class="card lesson-card">
-            <div class="plan-kicker">Week ${lesson.week} / Day ${lesson.day} · ${lesson.lesson_type}</div>
+            <div class="lesson-topline">
+              <span class="plan-kicker">W${lesson.week} / D${lesson.day} · ${lesson.lesson_type}</span>
+              <span class="status-pill ${doneResult ? 'done' : 'todo'}">${status}</span>
+            </div>
             <h3>${lesson.title}</h3>
-            <p>${component} · 每題 ${lesson.time_limit_seconds}s</p>
-            <p>${doneResult ? `已完成，掌握度 ${doneResult.mastery}/10` : '尚未完成'}</p>
-            <button class="button primary" onclick="location.href='./lesson.html?lesson=${lesson.lesson_id}'">開始本節</button>
+            <p>${component} · 每題 ${lesson.time_limit_seconds}s${doneResult ? ` · 掌握度 ${doneResult.mastery}/10` : ''}</p>
+            <button class="button ${doneResult ? 'secondary' : 'primary'}" onclick="location.href='./lesson.html?lesson=${lesson.lesson_id}'">${buttonText}</button>
           </article>
         `;
       }).join('');

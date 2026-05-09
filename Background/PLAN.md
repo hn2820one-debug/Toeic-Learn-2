@@ -23,6 +23,11 @@
   - Repeating a lesson no longer inflates completed lesson count.
   - Weaknesses are created only from wrong or timeout answers.
   - Report and progress pages now show component dashboards.
+- Improved daily-use UX:
+  - Homepage now exposes one primary next-session action.
+  - Lesson page uses simple `回課程 / 開始練習` controls.
+  - Quiz controls use Chinese labels and show locked/remaining-question status.
+  - Report page moves to the next lesson when possible.
 
 ## Review Findings
 - Data quality is now the main bottleneck, not the app shell. The shell can support more lessons, but each new lesson needs controlled tags, answer distribution, and review explanations.
@@ -30,6 +35,7 @@
 - Background evidence strongly supports this priority order: Mandative Subjunctive, multiplier comparison, Gerunds/V-ing, complex SVA, uncountable nouns, then Part 7 speed and phrase coverage.
 - PWA support is acceptable for local/static use. Cache is explicit; every new JSON lesson must be added to `sw.js`.
 - Security risk is low because data is local and trusted, but many render paths use `innerHTML`. Keep lesson HTML controlled or migrate to DOM builders before accepting external content.
+- UX is now simpler for the current static app, but future lesson growth will need filtering/search by week and component to avoid homepage overload.
 
 ## Next Plan
 1. Complete Week 1 weakness-hunter content.
@@ -42,7 +48,8 @@
    - Acceptance: multiplier subtest target is >=90%.
 
 3. Add a validation script.
-   - Create a repo script that validates lesson schema, answer consistency, component tags, weakness tags, and service worker cache coverage.
+   - Status: implemented as `scripts/validate-data.js`.
+   - Keep extending it when new lesson types are added.
    - Acceptance: one command validates every JSON lesson before commit.
 
 4. Add real listening support.
@@ -52,6 +59,10 @@
 5. Reduce `innerHTML` surface.
    - Keep concept-card rich HTML as trusted content.
    - Move question/options/progress/history rendering toward DOM construction or escaping helpers.
+
+6. Add lesson filtering when Week 1 and Week 2 are complete.
+   - Add week tabs and component filters.
+   - Acceptance: user sees only the next useful set by default, while completed lessons remain accessible for review.
 
 ## GitHub Upload Notes
 - Repository target: `https://github.com/hn2820one-debug/Toeic-Learn-2.git`.

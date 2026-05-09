@@ -20,7 +20,7 @@
     </section>
 
     <section class="section">
-      <h2 class="page-subtitle">Component Dashboard</h2>
+      <h2 class="page-subtitle">能力儀表板</h2>
       <div id="component-box" class="component-dashboard"></div>
     </section>
 
@@ -60,10 +60,10 @@
       const s = progress.student;
       document.getElementById('score-box').innerHTML = `
         <div class="score-grid">
-          <div><span>Baseline</span><strong>${s.baseline_score.total}</strong><small>L${s.baseline_score.listening} / R${s.baseline_score.reading}</small></div>
-          <div><span>Target</span><strong>${s.target_score}</strong><small>L${s.target_split.listening} / R${s.target_split.reading}</small></div>
-          <div><span>Current Week</span><strong>${s.current_week}</strong><small>${s.sessions_per_week} 節 / 週</small></div>
-          <div><span>Done</span><strong>${s.total_lessons_done}</strong><small>unique lessons</small></div>
+          <div><span>起點</span><strong>${s.baseline_score.total}</strong><small>L${s.baseline_score.listening} / R${s.baseline_score.reading}</small></div>
+          <div><span>目標</span><strong>${s.target_score}</strong><small>L${s.target_split.listening} / R${s.target_split.reading}</small></div>
+          <div><span>目前週次</span><strong>${s.current_week}</strong><small>${s.sessions_per_week} 節 / 週</small></div>
+          <div><span>已完成</span><strong>${s.total_lessons_done}</strong><small>不重複課程</small></div>
         </div>
       `;
 
@@ -73,7 +73,7 @@
         <div class="component-card">
           <div class="label">${window.AppCore.COMPONENT_LABELS[key]}</div>
           <div class="value">${component[key] ? `${component[key].toFixed(1)} / 10` : '待建立'}</div>
-          <div class="hint">${index.component_targets[key].baseline} → target ${index.component_targets[key].target}</div>
+          <div class="hint">${index.component_targets[key].baseline} → 目標 ${index.component_targets[key].target}</div>
         </div>
       `).join('');
 

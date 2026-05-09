@@ -36,6 +36,27 @@
     renderDots();
   }
 
+  function renderStatus() {
+    const status = document.getElementById("q-status");
+    if (!status) return;
+
+    const i = state.currentIndex;
+    const remaining = questionCount() - finishedCount();
+    if (!state.started) {
+      status.textContent = "按「開始作答」後計時。";
+      return;
+    }
+    if (state.timeouts[i]) {
+      status.textContent = `本題逾時，系統已鎖定。尚餘 ${remaining} 題。`;
+      return;
+    }
+    if (state.answers[i]) {
+      status.textContent = `本題已作答並鎖定。尚餘 ${remaining} 題。`;
+      return;
+    }
+    status.textContent = `選一個答案；尚餘 ${remaining} 題。`;
+  }
+
   function renderTimer() {
     const left = state.remaining[state.currentIndex];
     const tNum = document.getElementById("timer-number");
@@ -81,9 +102,12 @@
     document.getElementById("next-btn").disabled = !state.started || state.currentIndex === questionCount() - 1;
 
     const submit = document.getElementById("submit-btn");
+    const remaining = questionCount() - finishedCount();
     submit.disabled = !allFinished();
+    submit.textContent = allFinished() ? "交卷看報告" : `尚餘 ${remaining} 題`;
     renderTimer();
     renderHead();
+    renderStatus();
   }
 
   function stopTick() {
@@ -159,6 +183,15 @@
 
     stopTick();
     renderQuestion();
+    setTimeout(() => {
+      if (!state || state.currentIndex !== i) return;
+      const next = nextUnfinished();
+      if (next >= 0) {
+        state.currentIndex = next;
+        renderQuestion();
+        maybeStartTimer();
+      }
+    }, 450);
   }
 
   function nav(delta) {
@@ -224,6 +257,7 @@
       focus_tags: state.lesson.focus_tags || [],
       weakness_tags: state.lesson.weakness_tags || [],
       title: state.lesson.title,
+      sequence: state.lesson.sequence,
       limit: state.limit,
       format: formatResult(),
       results,

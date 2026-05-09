@@ -25,7 +25,7 @@
 
 .concept-card {
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 10px;
   background: #fff;
   margin-bottom: 10px;
@@ -47,8 +47,12 @@
   gap: 8px;
 }
 
-.skip-warning {
-  margin: 0;
-  font-size: 13px;
-  color: #85510f;
+@media (max-width: 720px) {
+  .lesson-actions {
+    flex-direction: column-reverse;
+  }
+
+  .lesson-actions .button {
+    width: 100%;
+  }
 }

@@ -19,7 +19,7 @@
     const avg = main.reduce((s, r) => s + r.elapsed, 0) / (main.length || 1);
 
     document.getElementById("metrics").innerHTML = `
-      <div class="metric"><div class="label">Overall</div><div class="value">${ratio(overall)}</div></div>
+      <div class="metric"><div class="label">總正確率</div><div class="value">${ratio(overall)}</div></div>
       <div class="metric"><div class="label">主題題正確率</div><div class="value">${ratio(mainAcc)}</div></div>
       <div class="metric"><div class="label">監控題正確率</div><div class="value">${ratio(monitorAcc)}</div></div>
       <div class="metric"><div class="label">平均作答時間</div><div class="value">${avg.toFixed(1)}s</div></div>
@@ -144,12 +144,14 @@
     }
 
     const index = await window.AppCore.loadIndex();
-    const lesson = { day: payload.day };
+    const currentRow = index.lessons.find((lessonRow) => lessonRow.lesson_id === payload.lesson_id);
+    const nextRow = index.lessons.find((lessonRow) => (lessonRow.sequence || 0) > (currentRow?.sequence || payload.sequence || 0));
+    const lesson = { day: payload.day, week: payload.week, module_id: payload.module_id };
     const progress = window.StorageAPI.loadProgress();
     window.AppCore.renderTopStrip(progress, index, lesson);
 
     document.getElementById("report-title").textContent = `${payload.title} 診斷報告`;
-    document.getElementById("result-line").textContent = payload.format;
+    document.getElementById("result-line").textContent = `Week ${payload.week || "-"} / Day ${payload.day || "-"} · ${payload.lesson_type || "lesson"} · ${payload.format}`;
 
     const metrics = renderMetrics(payload);
     renderComponentDashboard(payload, progress);
@@ -162,9 +164,18 @@
     document.getElementById("mastery-value").textContent = `${mastery} / 10`;
     document.getElementById("next-suggestion").textContent = suggestion;
 
-    document.getElementById("next-btn").addEventListener("click", () => {
-      window.location.href = "./index.html";
-    });
+    const nextBtn = document.getElementById("next-btn");
+    if (nextRow) {
+      nextBtn.textContent = "下一節";
+      nextBtn.addEventListener("click", () => {
+        window.location.href = `./lesson.html?lesson=${nextRow.lesson_id}`;
+      });
+    } else {
+      nextBtn.textContent = "回課程";
+      nextBtn.addEventListener("click", () => {
+        window.location.href = "./index.html";
+      });
+    }
 
     document.getElementById("redo-btn").addEventListener("click", () => {
       window.location.href = `./quiz.html?lesson=${payload.lesson_id}`;

@@ -100,10 +100,11 @@ body {
 
 .button {
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 10px 16px;
   font-weight: 700;
   cursor: pointer;
+  min-height: 40px;
   transition: transform 0.12s ease, opacity 0.12s ease, box-shadow 0.12s ease;
 }
 
@@ -133,6 +134,12 @@ body {
   background: linear-gradient(135deg, #d0852b 0%, #ba7517 100%);
 }
 
+.page-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -141,9 +148,31 @@ body {
 
 .card {
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 8px;
   padding: 12px;
   background: #fff;
+}
+
+.focus-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  border: 1px solid #b8ded0;
+  border-radius: 8px;
+  padding: 14px;
+  background: #f1fbf6;
+}
+
+.focus-card h2 {
+  margin: 4px 0 6px;
+  font-size: 18px;
+}
+
+.focus-card p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
 }
 
 .score-hero {
@@ -194,9 +223,27 @@ body {
 .plan-card,
 .lesson-card {
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 8px;
   padding: 12px;
   background: #fff;
+}
+
+.lesson-card {
+  display: flex;
+  min-height: 178px;
+  flex-direction: column;
+}
+
+.lesson-card .button {
+  margin-top: auto;
+  width: 100%;
+}
+
+.lesson-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
 }
 
 .plan-card h3,
@@ -233,6 +280,26 @@ body {
   color: #285e4f;
   background: #f2faf6;
   font-size: 11px;
+}
+
+.status-pill {
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.status-pill.todo {
+  color: #7a4a07;
+  background: #fff3d8;
+  border: 1px solid #f0d18a;
+}
+
+.status-pill.done {
+  color: #14664d;
+  background: #e5f7ef;
+  border: 1px solid #b9e4d2;
 }
 
 .compact-list {
@@ -331,8 +398,18 @@ body {
   }
 
   .score-hero,
-  .weekly-plan {
+  .weekly-plan,
+  .focus-card {
     grid-template-columns: 1fr;
+  }
+
+  .focus-card {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .focus-card .button {
+    width: 100%;
   }
 
   .score-grid {
