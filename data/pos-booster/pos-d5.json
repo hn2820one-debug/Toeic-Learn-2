@@ -1,0 +1,150 @@
+{
+  "lesson_id": "pos-d5",
+  "module_id": "pos-booster",
+  "week": 3,
+  "day": 5,
+  "sequence": 35,
+  "title": "詞性衍生片語強化",
+  "type": "concept+quiz",
+  "lesson_type": "phrase",
+  "target_component": "phrase",
+  "quiz_type": "standard",
+  "time_limit_seconds": 20,
+  "focus_tags": ["part-of-speech", "collocation", "word-family"],
+  "weakness_tags": ["collocation-noun-verb", "word-family-choice", "mandative-trigger-verb"],
+  "concept": {
+    "debug_rule": "TOEIC 不只考單字詞性，常考整組搭配：make a decision、conduct a survey、submit a report。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "noun",
+        "title": "名詞搭配",
+        "html": "<span class=\"blank-word verb\">make / reach / conduct / submit</span> + <span class=\"blank-word noun\">名詞</span>，整組記憶，不逐字翻譯。"
+      },
+      {
+        "type": "warning",
+        "tone": "warn",
+        "title": "常見錯誤",
+        "html": "不要把中文「做決定」直譯成 do a decision；正式英文用 make a decision。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "pos-d5-q1",
+      "type": "main",
+      "scene": "Office / Management",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "collocation-noun-verb",
+      "stem": "The committee will make a final {BLANK} after reviewing the budget proposal.",
+      "options": [
+        { "label": "A", "text": "decide", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "decision", "pos": "noun", "is_correct": true },
+        { "label": "C", "text": "decisive", "pos": "adj", "is_correct": false },
+        { "label": "D", "text": "decisively", "pos": "adv", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "make a final + ______",
+      "solution_steps": [
+        { "step": 1, "text": "make a final 後面需要名詞。" },
+        { "step": 2, "text": "make a decision 是固定搭配。" }
+      ],
+      "wrong_thought_steps": ["看到 will make 誤以為空格也要動詞。"],
+      "rule_box": { "type": "ok", "text": "make a decision，不用 do a decision 或 make decide。" }
+    },
+    {
+      "q_id": "pos-d5-q2",
+      "type": "main",
+      "scene": "Marketing / Research",
+      "eye_distance": "middle",
+      "target_pos": "noun",
+      "weakness_tag": "collocation-noun-verb",
+      "stem": "The marketing team conducted a customer {BLANK} before launching the campaign.",
+      "options": [
+        { "label": "A", "text": "survey", "pos": "noun", "is_correct": true },
+        { "label": "B", "text": "surveys", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "surveying", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "surveyed", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "conducted a customer + ______",
+      "solution_steps": [
+        { "step": 1, "text": "a customer 後面需要名詞。" },
+        { "step": 2, "text": "conduct a survey 是 TOEIC 高頻搭配。" }
+      ],
+      "wrong_thought_steps": ["看到 conducted 是動作，誤判空格也要動詞。"],
+      "rule_box": { "type": "ok", "text": "conduct a survey = 進行調查。" }
+    },
+    {
+      "q_id": "pos-d5-q3",
+      "type": "main",
+      "scene": "Accounting / Reporting",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "word-family-choice",
+      "stem": "All department heads must submit a monthly {BLANK} by the fifth business day.",
+      "options": [
+        { "label": "A", "text": "report", "pos": "noun", "is_correct": true },
+        { "label": "B", "text": "reported", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "reporting", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "reportedly", "pos": "adv", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "submit a monthly + ______",
+      "solution_steps": [
+        { "step": 1, "text": "a monthly 後方需要名詞。" },
+        { "step": 2, "text": "submit a report 是固定搭配。" }
+      ],
+      "wrong_thought_steps": ["被 reporting 這個常見形態吸引。"],
+      "rule_box": { "type": "ok", "text": "submit a report = 提交報告。" }
+    },
+    {
+      "q_id": "pos-d5-q4",
+      "type": "main",
+      "scene": "Training / HR",
+      "eye_distance": "middle",
+      "target_pos": "noun",
+      "weakness_tag": "collocation-noun-verb",
+      "stem": "New employees receive detailed {BLANK} during their first week at the company.",
+      "options": [
+        { "label": "A", "text": "instruct", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "instructive", "pos": "adj", "is_correct": false },
+        { "label": "C", "text": "instruction", "pos": "noun", "is_correct": true },
+        { "label": "D", "text": "instructively", "pos": "adv", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "receive detailed + ______",
+      "solution_steps": [
+        { "step": 1, "text": "detailed 修飾後方名詞。" },
+        { "step": 2, "text": "instruction 是名詞，符合 receive detailed instruction。" }
+      ],
+      "wrong_thought_steps": ["看到 employees receive，誤以為要動詞補足語。"],
+      "rule_box": { "type": "ok", "text": "形容詞 detailed 後面接名詞。" }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "pos-d5-monitor-1",
+      "type": "monitor",
+      "scene": "[監控] Mandative trigger",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-verb",
+      "stem": "The manager recommended that the team {BLANK} the final report before submission.",
+      "options": [
+        { "label": "A", "text": "reviews", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "reviewed", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "review", "pos": "verb", "is_correct": true },
+        { "label": "D", "text": "reviewing", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "recommended that + S + 原形",
+      "solution_steps": [
+        { "step": 1, "text": "recommended that 是 Week 1 監控弱點。" },
+        { "step": 2, "text": "that 子句動詞用原形 review。" }
+      ],
+      "rule_box": { "type": "warn", "text": "recommend that + S + V 原形。" }
+    }
+  ]
+}

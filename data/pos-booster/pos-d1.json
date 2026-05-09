@@ -1,0 +1,141 @@
+{
+  "lesson_id": "pos-d1",
+  "module_id": "pos-booster",
+  "day": 1,
+  "title": "名詞 vs 動詞辨識",
+  "type": "concept+quiz",
+  "quiz_type": "slow",
+  "time_limit_seconds": 25,
+  "concept": {
+    "debug_rule": "先看位置，再看語意。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "noun",
+        "title": "限定詞規則",
+        "html": "a / an / the / this / our / any / some + <span class=\"blank-word noun\">名詞</span>"
+      },
+      {
+        "type": "warning",
+        "tone": "warn",
+        "title": "常見錯誤",
+        "html": "看到語意通順就選動詞，忽略了 any 這種近距題眼。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "pos-d1-q1",
+      "type": "main",
+      "scene": "Aviation / Contracts",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "det-noun",
+      "stem": "Paragraph 3 states that any {BLANK} of the maintenance window must be communicated in writing.",
+      "options": [
+        { "label": "A", "text": "modify", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "modifies", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "modification", "pos": "noun", "is_correct": true },
+        { "label": "D", "text": "modifying", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "位置信號：any + ______",
+      "solution_steps": [
+        { "step": 1, "text": "先判斷題型：同詞根不同詞性。" },
+        { "step": 2, "text": "any 後面要接名詞。", "highlight_word": "any", "highlight_pos": "noun" },
+        { "step": 3, "text": "-ation 為名詞語尾，選 C。", "highlight_word": "modification", "highlight_pos": "noun" }
+      ],
+      "wrong_thought_steps": [
+        "語意先行，選了 modify。",
+        "忽略了限定詞 any。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "限定詞後面接名詞，-tion/-ation 常見名詞語尾。"
+      }
+    },
+    {
+      "q_id": "pos-d1-q2",
+      "type": "main",
+      "scene": "Retail / Procurement",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "adj-noun",
+      "stem": "The manager requested an immediate {BLANK} to the supplier list.",
+      "options": [
+        { "label": "A", "text": "update", "pos": "noun", "is_correct": true },
+        { "label": "B", "text": "updated", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "updating", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "updatable", "pos": "adj", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "an immediate + ______",
+      "solution_steps": [
+        { "step": 1, "text": "immediate 是形容詞，後面接名詞。", "highlight_word": "immediate", "highlight_pos": "noun" },
+        { "step": 2, "text": "update 在此作名詞最自然。" }
+      ],
+      "wrong_thought_steps": [
+        "把 updated 當成形容詞誤判。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "形容詞 + 名詞 是基本名詞片語。"
+      }
+    },
+    {
+      "q_id": "pos-d1-q3",
+      "type": "main",
+      "scene": "Hospital / Operations",
+      "eye_distance": "middle",
+      "target_pos": "noun",
+      "weakness_tag": "prep-noun",
+      "stem": "The report emphasized the need for better {BLANK} among night-shift teams.",
+      "options": [
+        { "label": "A", "text": "communicate", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "communication", "pos": "noun", "is_correct": true },
+        { "label": "C", "text": "communicative", "pos": "adj", "is_correct": false },
+        { "label": "D", "text": "communicating", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "for + ______",
+      "solution_steps": [
+        { "step": 1, "text": "介系詞 for 後面通常接名詞或動名詞。", "highlight_word": "for", "highlight_pos": "noun" },
+        { "step": 2, "text": "better 修飾名詞，communication 最適合。" }
+      ],
+      "wrong_thought_steps": [
+        "看到 among teams 誤以為要動作，選了動詞。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "for + 名詞片語 常見結構。"
+      }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "pos-d1-monitor-1",
+      "type": "monitor",
+      "weakness_tag": "number-of-sva",
+      "scene": "[監控] SVA — number of",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "stem": "The number of maintenance requests {BLANK} dropped since the new system was installed.",
+      "options": [
+        { "label": "A", "text": "have", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "has", "pos": "verb", "is_correct": true },
+        { "label": "C", "text": "were", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "are", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "The number of + 複數名詞",
+      "solution_steps": [
+        { "step": 1, "text": "主詞核心是 number，單數。" },
+        { "step": 2, "text": "故動詞用 has。", "highlight_word": "number", "highlight_pos": "verb" }
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "The number of + 複數名詞，動詞跟 number。"
+      }
+    }
+  ]
+}

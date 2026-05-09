@@ -1,0 +1,151 @@
+{
+  "lesson_id": "wh-w1-d1",
+  "module_id": "weakness-hunter",
+  "week": 1,
+  "day": 1,
+  "sequence": 1,
+  "title": "Mandative Subjunctive 觸發動詞",
+  "type": "concept+quiz",
+  "lesson_type": "grammar",
+  "target_component": "grammar",
+  "quiz_type": "slow",
+  "time_limit_seconds": 25,
+  "focus_tags": ["mandative-subjunctive", "trigger-verbs"],
+  "weakness_tags": ["mandative-trigger-verb", "base-verb-after-that"],
+  "concept": {
+    "debug_rule": "看到 recommend / suggest / require / demand + that，that 後動詞用原形。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "verb",
+        "title": "核心公式",
+        "html": "recommend / suggest / require / demand + that + S + <span class=\"blank-word verb\">V 原形</span>"
+      },
+      {
+        "type": "warning",
+        "tone": "warn",
+        "title": "Joseph 實測陷阱",
+        "html": "原始文法測試中，這類題常被過去式、三單現或進行式帶走；先鎖觸發詞，不要先看語意。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "wh-w1-d1-q1",
+      "type": "main",
+      "scene": "Compliance / Policy",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-verb",
+      "stem": "The compliance officer recommended that every branch {BLANK} the new reporting procedure by Friday.",
+      "options": [
+        { "label": "A", "text": "adopts", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "adopted", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "adopt", "pos": "verb", "is_correct": true },
+        { "label": "D", "text": "adopting", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "recommended that + S + ?",
+      "solution_steps": [
+        { "step": 1, "text": "先抓觸發詞 recommended。" },
+        { "step": 2, "text": "recommend that 後面用動詞原形，不受 branch 單複數干擾。" },
+        { "step": 3, "text": "adopt 是原形，選 C。" }
+      ],
+      "wrong_thought_steps": [
+        "看到 every branch 就想三單 adopts。",
+        "忽略 recommended that 是命令式虛擬語氣觸發器。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "recommend that + S + V 原形。三單、過去式、進行式都是常見干擾。"
+      }
+    },
+    {
+      "q_id": "wh-w1-d1-q2",
+      "type": "main",
+      "scene": "Human Resources / Training",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "base-verb-after-that",
+      "stem": "The director requested that the training team {BLANK} an updated orientation schedule.",
+      "options": [
+        { "label": "A", "text": "prepares", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "prepare", "pos": "verb", "is_correct": true },
+        { "label": "C", "text": "prepared", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "preparing", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "requested that + the team + ______",
+      "solution_steps": [
+        { "step": 1, "text": "requested that 是觸發結構。" },
+        { "step": 2, "text": "that 子句中的主要動詞用原形。" },
+        { "step": 3, "text": "prepare 是原形，選 B。" }
+      ],
+      "wrong_thought_steps": [
+        "把 requested 當成一般過去式敘述，跟著選 prepared。",
+        "忘記 requested that 屬於要求/命令類動詞。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "request that + S + V 原形。"
+      }
+    },
+    {
+      "q_id": "wh-w1-d1-q3",
+      "type": "main",
+      "scene": "Procurement / Vendor",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-verb",
+      "stem": "The purchasing manager insisted that the supplier {BLANK} proof of insurance before signing the contract.",
+      "options": [
+        { "label": "A", "text": "provides", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "provided", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "providing", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "provide", "pos": "verb", "is_correct": true }
+      ],
+      "answer": "D",
+      "hint": "insisted that + supplier + ______",
+      "solution_steps": [
+        { "step": 1, "text": "insisted that 在正式英文中可觸發原形動詞。" },
+        { "step": 2, "text": "supplier 是單數也不改成 provides。" },
+        { "step": 3, "text": "provide 是原形，選 D。" }
+      ],
+      "wrong_thought_steps": [
+        "看到 supplier 單數就選 provides。",
+        "用語意判斷而不是先抓 that 子句公式。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "insist that 表示要求時，後方動詞用原形。"
+      }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "wh-w1-d1-monitor-1",
+      "type": "monitor",
+      "scene": "[監控] active/passive",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "weakness_tag": "active-passive",
+      "stem": "The supervisor {BLANK} the revised checklist before the morning briefing.",
+      "options": [
+        { "label": "A", "text": "reviewed", "pos": "verb", "is_correct": true },
+        { "label": "B", "text": "was reviewed", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "is reviewed", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "has reviewing", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "主詞 supervisor 後方有受詞 checklist",
+      "solution_steps": [
+        { "step": 1, "text": "supervisor 主動執行 review。" },
+        { "step": 2, "text": "後面直接接受詞 checklist，所以用主動 reviewed。" }
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "有直接受詞時先考慮主動語態。"
+      }
+    }
+  ]
+}

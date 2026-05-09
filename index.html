@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOEIC 570 to 750</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+  <div id="top-strip" class="top-strip">載入中...</div>
+  <main class="app-shell">
+    <header class="page-head">
+      <h1 class="page-title">TOEIC 實測 570（L315/R255）→ 目標 750</h1>
+      <p class="page-subtitle">15 節/週弱點獵殺系統：先修 Reading 255 的文法與語塊斷層，再推聽力篇章化。</p>
+    </header>
+
+    <section class="section">
+      <div class="card" id="student-card"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">6 週主線</h2>
+      <div id="weekly-plan" class="weekly-plan"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">可練課程</h2>
+      <div id="lesson-list" class="grid-2"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">待建課程</h2>
+      <div id="planned-list" class="card"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">弱點監控</h2>
+      <div id="weak-list" class="card"></div>
+    </section>
+
+    <section class="section">
+      <button class="button secondary" onclick="location.href='./progress.html'">查看進度總覽</button>
+    </section>
+  </main>
+
+  <script src="./js/storage.js"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    function findResult(progress, lessonId) {
+      for (const mod of Object.values(progress.modules || {})) {
+        if (mod.day_results && mod.day_results[lessonId]) return mod.day_results[lessonId];
+      }
+      return null;
+    }
+
+    async function init() {
+      window.AppCore.registerSW();
+      const progress = window.StorageAPI.loadProgress();
+      const index = await window.AppCore.loadIndex();
+      window.AppCore.renderTopStrip(progress, index, null);
+
+      const s = progress.student;
+      const baseline = s.baseline_score;
+      const target = s.target_split;
+      const done = window.AppCore.completedLessonCount(progress);
+      const mainModule = index.modules.find((m) => m.module_id === 'weakness-hunter') || index.modules[0];
+
+      document.getElementById('student-card').innerHTML = `
+        <div class="score-hero">
+          <div>
+            <strong>${s.name}</strong>
+            <p>主線：${mainModule.title}</p>
+          </div>
+          <div class="score-grid">
+            <div><span>Baseline</span><strong>${baseline.total}</strong><small>L${baseline.listening} / R${baseline.reading}</small></div>
+            <div><span>Target</span><strong>${s.target_score}</strong><small>L${target.listening} / R${target.reading}</small></div>
+            <div><span>節奏</span><strong>${s.sessions_per_week}</strong><small>節 / 週</small></div>
+            <div><span>完成</span><strong>${done}</strong><small>已建課程</small></div>
+          </div>
+        </div>
+      `;
+
+      document.getElementById('weekly-plan').innerHTML = index.weekly_plan.map((week) => `
+        <article class="plan-card">
+          <div class="plan-kicker">Week ${week.week} · ${week.session_count} 節</div>
+          <h3>${week.title}</h3>
+          <p>${week.milestone}</p>
+          <div class="tag-row">${week.focus_tags.slice(0, 4).map((tag) => `<span>${tag}</span>`).join('')}</div>
+        </article>
+      `).join('');
+
+      const list = document.getElementById('lesson-list');
+      list.innerHTML = index.lessons.map((lesson) => {
+        const doneResult = findResult(progress, lesson.lesson_id);
+        const component = window.AppCore.COMPONENT_LABELS[lesson.target_component] || lesson.target_component;
+        return `
+          <article class="card lesson-card">
+            <div class="plan-kicker">Week ${lesson.week} / Day ${lesson.day} · ${lesson.lesson_type}</div>
+            <h3>${lesson.title}</h3>
+            <p>${component} · 每題 ${lesson.time_limit_seconds}s</p>
+            <p>${doneResult ? `已完成，掌握度 ${doneResult.mastery}/10` : '尚未完成'}</p>
+            <button class="button primary" onclick="location.href='./lesson.html?lesson=${lesson.lesson_id}'">開始本節</button>
+          </article>
+        `;
+      }).join('');
+
+      document.getElementById('planned-list').innerHTML = `
+        <ul class="compact-list">
+          ${index.planned_lessons.map((item) => `<li>Week ${item.week} ${item.range}：${item.summary}</li>`).join('')}
+        </ul>
+      `;
+
+      const weak = progress.weaknesses || [];
+      document.getElementById('weak-list').innerHTML = weak.length
+        ? `<ul class="compact-list">${weak.map((w) => `<li>${w.tag} - ${w.status}（${(w.occurrences || []).length} 次）</li>`).join('')}</ul>`
+        : '<p style="margin:0">目前沒有弱點紀錄。錯題或 timeout 會自動升級到這裡。</p>';
+    }
+
+    init();
+  </script>
+</body>
+</html>

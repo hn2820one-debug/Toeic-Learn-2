@@ -1,0 +1,151 @@
+1.	Topic 完成程度
+目前階段：Word
+目標基準：每個 topic 25 / 30
+辦公室：16 / 25–30
+文書作業：25 / 25–30 (✅ 達標)
+商務會議：15 / 25–30
+業務協調：14 / 25–30
+人才招募：15 / 25–30
+人事與組織：32 / 25–30 (✅ 達標)
+行銷與宣傳：18 / 25–30
+財務會計：25 / 25–30 (✅ 達標)
+企業經營：26 / 25–30 (✅ 達標)
+製造與品管：21 / 25–30
+公告訊息：16 / 25–30
+演講與宴會：20 / 25–30
+貿易與物流：19 / 25–30
+社會經濟：21 / 25–30
+零售購物：24 / 25–30
+銷售服務：15 / 25–30
+餐飲與住宿：24 / 25–30
+旅遊與交通：26 / 25–30 (✅ 達標)
+表演與展覽：17 / 25–30
+金融與投資：17 / 25–30
+房屋與修繕：23 / 25–30
+生活休閒：15 / 25–30
+公益慈善：16 / 25–30
+傳播媒體：20 / 25–30
+科技與研發：24 / 25–30
+醫療與健康：26 / 25–30 (✅ 達標)
+環境保育：22 / 25–30
+溝通表達：22 / 25–30
+日常生活：14 / 25–30
+1.	難度完成程度
+Level A：已測 135 題
+Level B：已測 307 題
+Level C：已測 146 題
+分布判讀
+• Level A：本輪新增 21 題，由於您對直覺的生活詞彙（如 camp, vacation, soap, garbage）掌握度高，Level A 的勝率有稍微回穩。
+• Level B：本輪新增 58 題，持續驗證中階詞彙，非純商務領域的 Level B 依然是重災區。
+• Level C：本輪新增 21 題，幾乎全數落入盲區，抽象概念的詞彙仍難以用字根字首推敲。
+1.	該 100 題完整清單
+2.	sanitary｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+3.	pottery｜Topic: 生活休閒｜Difficulty: B｜Type: Word｜Result: 不會
+4.	anchor｜Topic: 傳播媒體｜Difficulty: B｜Type: Word｜Result: 不會
+5.	benefactor｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會
+6.	detergent｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 不會
+7.	patron｜Topic: 零售購物｜Difficulty: C｜Type: Word｜Result: 不會
+8.	dialect｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 不會
+9.	periodical｜Topic: 傳播媒體｜Difficulty: B｜Type: Word｜Result: 不會
+10.	poster｜Topic: 行銷與宣傳｜Difficulty: A｜Type: Word｜Result: 會
+11.	lectern｜Topic: 演講與宴會｜Difficulty: C｜Type: Word｜Result: 不會
+12.	diagnosis｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+13.	biodegradable｜Topic: 環境保育｜Difficulty: C｜Type: Word｜Result: 不會
+14.	roofing｜Topic: 房屋與修繕｜Difficulty: B｜Type: Word｜Result: 不會
+15.	picnic｜Topic: 生活休閒｜Difficulty: A｜Type: Word｜Result: 不會
+16.	humanitarian｜Topic: 公益慈善｜Difficulty: B｜Type: Word｜Result: 不會
+17.	umbrella｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 會
+18.	query｜Topic: 業務協調｜Difficulty: B｜Type: Word｜Result: 不會
+19.	jargon｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+20.	viewership｜Topic: 傳播媒體｜Difficulty: B｜Type: Word｜Result: 不會
+21.	signage｜Topic: 公告訊息｜Difficulty: B｜Type: Word｜Result: 不會
+22.	ovation｜Topic: 演講與宴會｜Difficulty: C｜Type: Word｜Result: 不會
+23.	medication｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+24.	vegetation｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+25.	wiring｜Topic: 房屋與修繕｜Difficulty: B｜Type: Word｜Result: 會
+26.	chess｜Topic: 生活休閒｜Difficulty: A｜Type: Word｜Result: 會
+27.	grant｜Topic: 公益慈善｜Difficulty: B｜Type: Word｜Result: 不會
+28.	backpack｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 會
+29.	assurance｜Topic: 銷售服務｜Difficulty: B｜Type: Word｜Result: 不會
+30.	vocal｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+31.	tabloid｜Topic: 傳播媒體｜Difficulty: C｜Type: Word｜Result: 不會
+32.	handout｜Topic: 商務會議｜Difficulty: B｜Type: Word｜Result: 不會
+33.	luncheon｜Topic: 演講與宴會｜Difficulty: B｜Type: Word｜Result: 不會
+34.	chronic｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+35.	carbon｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+36.	carpentry｜Topic: 房屋與修繕｜Difficulty: C｜Type: Word｜Result: 不會
+37.	hiking｜Topic: 生活休閒｜Difficulty: A｜Type: Word｜Result: 會
+38.	pledge｜Topic: 公益慈善｜Difficulty: B｜Type: Word｜Result: 不會
+39.	cookware｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 不會
+40.	telemarketing｜Topic: 銷售服務｜Difficulty: B｜Type: Word｜Result: 不會
+41.	verbal｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 不會
+42.	broadband｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+43.	guideline｜Topic: 文書作業｜Difficulty: B｜Type: Word｜Result: 會
+44.	emcee｜Topic: 演講與宴會｜Difficulty: B｜Type: Word｜Result: 不會
+45.	anatomy｜Topic: 醫療與健康｜Difficulty: C｜Type: Word｜Result: 不會
+46.	ozone｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+47.	eviction｜Topic: 房屋與修繕｜Difficulty: C｜Type: Word｜Result: 不會
+48.	billiards｜Topic: 生活休閒｜Difficulty: B｜Type: Word｜Result: 不會
+49.	donor｜Topic: 公益慈善｜Difficulty: B｜Type: Word｜Result: 不會
+50.	mattress｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 不會
+51.	loyalty｜Topic: 銷售服務｜Difficulty: B｜Type: Word｜Result: 不會
+52.	pronunciation｜Topic: 溝通表達｜Difficulty: A｜Type: Word｜Result: 會
+53.	media｜Topic: 傳播媒體｜Difficulty: A｜Type: Word｜Result: 會
+54.	manifesto｜Topic: 公告訊息｜Difficulty: C｜Type: Word｜Result: 不會
+55.	speech｜Topic: 演講與宴會｜Difficulty: A｜Type: Word｜Result: 會
+56.	pulse｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+57.	solar｜Topic: 環境保育｜Difficulty: A｜Type: Word｜Result: 不會
+58.	fixture｜Topic: 房屋與修繕｜Difficulty: B｜Type: Word｜Result: 不會
+59.	pastime｜Topic: 生活休閒｜Difficulty: B｜Type: Word｜Result: 不會
+60.	bazaar｜Topic: 零售購物｜Difficulty: C｜Type: Word｜Result: 不會
+61.	scissors｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 不會
+62.	merchandiser｜Topic: 零售購物｜Difficulty: B｜Type: Word｜Result: 不會
+63.	stutter｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+64.	satellite｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+65.	intranet｜Topic: 辦公室｜Difficulty: B｜Type: Word｜Result: 不會
+66.	gala｜Topic: 演講與宴會｜Difficulty: C｜Type: Word｜Result: 不會
+67.	pediatrician｜Topic: 醫療與健康｜Difficulty: C｜Type: Word｜Result: 不會
+68.	deforestation｜Topic: 環境保育｜Difficulty: C｜Type: Word｜Result: 不會
+69.	masonry｜Topic: 房屋與修繕｜Difficulty: C｜Type: Word｜Result: 不會
+70.	camp｜Topic: 生活休閒｜Difficulty: A｜Type: Word｜Result: 會
+71.	foundation｜Topic: 公益慈善｜Difficulty: B｜Type: Word｜Result: 會
+72.	towel｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 不會
+73.	escalation｜Topic: 業務協調｜Difficulty: C｜Type: Word｜Result: 不會
+74.	metaphor｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+75.	magazine｜Topic: 傳播媒體｜Difficulty: A｜Type: Word｜Result: 會
+76.	advisory｜Topic: 公告訊息｜Difficulty: B｜Type: Word｜Result: 不會
+77.	acoustics｜Topic: 表演與展覽｜Difficulty: C｜Type: Word｜Result: 不會
+78.	tablet｜Topic: 科技與研發｜Difficulty: A｜Type: Word｜Result: 會
+79.	wildlife｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 會
+80.	drill｜Topic: 房屋與修繕｜Difficulty: B｜Type: Word｜Result: 不會
+81.	vacation｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 會
+82.	shelter｜Topic: 公益慈善｜Difficulty: B｜Type: Word｜Result: 不會
+83.	soap｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 會
+84.	inquiry｜Topic: 銷售服務｜Difficulty: B｜Type: Word｜Result: 不會
+85.	debate｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 會
+86.	antenna｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+87.	post｜Topic: 傳播媒體｜Difficulty: A｜Type: Word｜Result: 會
+88.	spotlight｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 會
+89.	remedy｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+90.	toxic｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+91.	ventilation｜Topic: 房屋與修繕｜Difficulty: B｜Type: Word｜Result: 不會
+92.	photography｜Topic: 生活休閒｜Difficulty: B｜Type: Word｜Result: 會
+93.	outreach｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會
+94.	garbage｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 會
+95.	questionnaire｜Topic: 行銷與宣傳｜Difficulty: B｜Type: Word｜Result: 不會
+96.	bilingual｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 不會
+97.	channel｜Topic: 傳播媒體｜Difficulty: A｜Type: Word｜Result: 會
+98.	roster｜Topic: 人才招募｜Difficulty: B｜Type: Word｜Result: 不會
+99.	bouquet｜Topic: 演講與宴會｜Difficulty: B｜Type: Word｜Result: 不會
+100.	fatigue｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+101.	atmosphere｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+102.	階段判讀
+目前最穩的區域
+直覺且具備強烈畫面感的「日常與休閒 A 級字」（如 camp, vacation, soap, garbage, hiking）以及基礎傳播媒體（media, magazine, channel, poster）。
+目前最弱的區域
+醫療健康（如 sanitary, chronic, pediatrician）、房屋與修繕的工程專有名詞（roofing, carpentry, masonry, ventilation）、以及溝通表達中的抽象概念（jargon, dialect, metaphor）。
+是否出現新的高弱區
+有，並且上一輪發現的「形音義混淆（False Friends）」弱點在本輪持續發酵。
+例如：將 grant 聯想為 giant（巨大）；將 telemarketing 誤拆解為 e-commerce（電子商務）；將 drill 聯想為 jail（監獄）；將 shelter 聯想為保護「人」（實為庇護「所」）；將詞性搞混（toxic 誤解為名詞毒藥 poison）。
+與上一個 100 題 checkpoint 相比，有沒有明顯結構變化
+有。隨著核心商務 Topic（文書、人事、財會、企管、旅遊與交通）達到 25 題門檻，本輪大幅增加了「生活休閒」、「公益慈善」、「房屋修繕」、「溝通表達」的題量。測驗結果顯示，一旦脫離核心商務框架，您對邊緣跨領域的 Level B 與 Level C 詞彙幾乎沒有防禦力，弱點分佈變得非常清晰。

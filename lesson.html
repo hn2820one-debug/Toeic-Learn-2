@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/lesson.css">
+</head>
+<body>
+  <div id="top-strip" class="top-strip">載入中...</div>
+  <main class="app-shell">
+    <header class="page-head">
+      <h1 id="lesson-title" class="page-title">教學節次</h1>
+      <p id="lesson-sub" class="page-subtitle"></p>
+    </header>
+
+    <section class="section">
+      <div id="lesson-meta" class="lesson-meta"></div>
+      <div id="debug-rule" class="debug-rule"></div>
+      <div id="concept-list"></div>
+    </section>
+
+    <div class="lesson-actions">
+      <p class="skip-warning">跳過會影響定位反射建立，請慎用。</p>
+      <button id="skip-btn" class="button warning">跳過教學</button>
+      <button id="start-btn" class="button primary">完成教學，開始練習</button>
+    </div>
+  </main>
+
+  <script src="./js/storage.js"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    function toneClass(card) {
+      if (card.tone === 'warn') return 'warn';
+      if (card.tone === 'error') return 'error';
+      if (card.tone === 'neutral') return 'neutral';
+      if (['noun','verb','adj','adv'].includes(card.tone)) return card.tone;
+      return 'noun';
+    }
+
+    async function init() {
+      window.AppCore.registerSW();
+      const lessonId = window.AppCore.query('lesson') || 'wh-w1-d1';
+      const { index, lesson } = await window.AppCore.loadLessonById(lessonId);
+      const progress = window.StorageAPI.loadProgress();
+      window.AppCore.renderTopStrip(progress, index, lesson);
+
+      document.getElementById('lesson-title').textContent = `Week ${lesson.week || 1} / Day ${lesson.day} ${lesson.title}`;
+      document.getElementById('lesson-sub').textContent = `類型：${lesson.lesson_type}，目標：${window.AppCore.COMPONENT_LABELS[lesson.target_component] || lesson.target_component}，每題 ${lesson.time_limit_seconds} 秒`;
+      document.getElementById('lesson-meta').innerHTML = `
+        <span class="badge">Module: ${lesson.module_id}</span>
+        <span class="badge">Type: ${lesson.type || 'concept+quiz'}</span>
+        <span class="badge">Focus: ${(lesson.focus_tags || []).join(', ')}</span>
+      `;
+      document.getElementById('debug-rule').innerHTML = `<strong>Debug Rule：</strong>${lesson.concept.debug_rule}`;
+
+      document.getElementById('concept-list').innerHTML = lesson.concept.cards.map((card) => `
+        <article class="concept-card">
+          <h4>${card.title}</h4>
+          <div class="formula-box ${toneClass(card)}">${card.html}</div>
+        </article>
+      `).join('');
+
+      document.getElementById('start-btn').addEventListener('click', () => {
+        location.href = `./quiz.html?lesson=${lesson.lesson_id}`;
+      });
+
+      document.getElementById('skip-btn').addEventListener('click', () => {
+        const ok = confirm('確定跳過教學嗎？你可能在測驗中失去定位速度。');
+        if (!ok) return;
+        const sure = confirm('再次確認：仍要直接開始作答？');
+        if (!sure) return;
+        location.href = `./quiz.html?lesson=${lesson.lesson_id}`;
+      });
+    }
+
+    init();
+  </script>
+</body>
+</html>

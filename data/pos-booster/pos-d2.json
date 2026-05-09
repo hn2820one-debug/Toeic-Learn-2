@@ -1,0 +1,121 @@
+{
+  "lesson_id": "pos-d2",
+  "module_id": "pos-booster",
+  "day": 2,
+  "title": "形容詞 vs 副詞辨識",
+  "type": "concept+quiz",
+  "quiz_type": "slow",
+  "time_limit_seconds": 25,
+  "concept": {
+    "debug_rule": "先找被修飾對象。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "adj",
+        "title": "形容詞位置",
+        "html": "be 動詞後面常接 <span class=\"blank-word adj\">形容詞</span>"
+      },
+      {
+        "type": "formula",
+        "tone": "adv",
+        "title": "副詞位置",
+        "html": "副詞修飾動詞，例如 run <span class=\"blank-word adv\">quickly</span>"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "pos-d2-q1",
+      "type": "main",
+      "scene": "Hotel / Guest Service",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "linking-verb",
+      "stem": "The front desk staff were very {BLANK} during the peak check-in period.",
+      "options": [
+        { "label": "A", "text": "helpful", "pos": "adj", "is_correct": true },
+        { "label": "B", "text": "helpfully", "pos": "adv", "is_correct": false },
+        { "label": "C", "text": "help", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "helped", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "be 動詞 were 後面接什麼？",
+      "solution_steps": [
+        { "step": 1, "text": "were 是連綴動詞，後面接形容詞補語。", "highlight_word": "were", "highlight_pos": "adj" },
+        { "step": 2, "text": "選 helpful。" }
+      ],
+      "wrong_thought_steps": ["看到 very 誤選副詞 helpfully。"],
+      "rule_box": { "type": "ok", "text": "連綴動詞後接形容詞，不接副詞。" }
+    },
+    {
+      "q_id": "pos-d2-q2",
+      "type": "main",
+      "scene": "Banking / Compliance",
+      "eye_distance": "middle",
+      "target_pos": "adv",
+      "weakness_tag": "adv-verb",
+      "stem": "All files must be submitted {BLANK} to avoid delays in approval.",
+      "options": [
+        { "label": "A", "text": "prompt", "pos": "adj", "is_correct": false },
+        { "label": "B", "text": "promptly", "pos": "adv", "is_correct": true },
+        { "label": "C", "text": "promptness", "pos": "noun", "is_correct": false },
+        { "label": "D", "text": "prompts", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "修飾 submitted 這個動作",
+      "solution_steps": [
+        { "step": 1, "text": "空格修飾 submitted，需副詞。" },
+        { "step": 2, "text": "-ly 結尾 promptly 為副詞。", "highlight_word": "promptly", "highlight_pos": "adv" }
+      ],
+      "wrong_thought_steps": ["把 prompt 當萬用字形。"],
+      "rule_box": { "type": "ok", "text": "修飾動詞通常用副詞。" }
+    },
+    {
+      "q_id": "pos-d2-q3",
+      "type": "main",
+      "scene": "Aviation / Safety",
+      "eye_distance": "far",
+      "target_pos": "adj",
+      "weakness_tag": "adj-after-seem",
+      "stem": "Although the process looked complex at first, it became quite {BLANK} after training.",
+      "options": [
+        { "label": "A", "text": "manageable", "pos": "adj", "is_correct": true },
+        { "label": "B", "text": "manageably", "pos": "adv", "is_correct": false },
+        { "label": "C", "text": "manage", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "management", "pos": "noun", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "became 後面接補語",
+      "solution_steps": [
+        { "step": 1, "text": "became 是連綴動詞。" },
+        { "step": 2, "text": "後面接形容詞 manageable。", "highlight_word": "became", "highlight_pos": "adj" }
+      ],
+      "wrong_thought_steps": ["看到 quite 誤選副詞。"],
+      "rule_box": { "type": "warn", "text": "quite 可修飾形容詞，不代表後面一定是副詞。" }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "pos-d2-monitor-1",
+      "type": "monitor",
+      "weakness_tag": "active-passive",
+      "scene": "[監控] Voice choice",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "stem": "The supervisor {BLANK} the final checklist before departure.",
+      "options": [
+        { "label": "A", "text": "reviewed", "pos": "verb", "is_correct": true },
+        { "label": "B", "text": "was reviewed", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "is reviewing", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "has been reviewing", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "主詞後有受詞 checklist",
+      "solution_steps": [
+        { "step": 1, "text": "主詞 supervisor 主動執行動作。" },
+        { "step": 2, "text": "後方有受詞 checklist，不用被動。" }
+      ],
+      "rule_box": { "type": "warn", "text": "主詞後若直接接受詞，優先考慮主動語態。" }
+    }
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "lesson_id": "pos-d7",
+  "module_id": "pos-booster",
+  "week": 3,
+  "day": 7,
+  "sequence": 37,
+  "title": "PoS Booster 週測",
+  "type": "concept+quiz",
+  "lesson_type": "test",
+  "target_component": "grammar",
+  "quiz_type": "weekly",
+  "time_limit_seconds": 15,
+  "focus_tags": ["part-of-speech", "weekly-test", "mandative-monitor", "multiplier-monitor"],
+  "weakness_tags": ["part-of-speech-test", "false-friends", "mandative-trigger-verb", "multiplier-comparison"],
+  "concept": {
+    "debug_rule": "本週測不看提示策略：位置優先，語尾第二，語意最後。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "neutral",
+        "title": "週測標準",
+        "html": "8 題主測 + 2 題監控；目標整體 ≥ 80%，詞性子項 ≥ 85%，Mandative / 倍數不得連錯。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "pos-d7-q1",
+      "type": "main",
+      "scene": "Contracts / Policy",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "Any {BLANK} to the rental agreement must be approved in writing.",
+      "options": [
+        { "label": "A", "text": "revise", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "revision", "pos": "noun", "is_correct": true },
+        { "label": "C", "text": "revised", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "revising", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "any + ______",
+      "solution_steps": [
+        { "step": 1, "text": "any 後面需要名詞。" },
+        { "step": 2, "text": "revision 是名詞。" }
+      ],
+      "wrong_thought_steps": ["被 revise 動詞語意吸引。"],
+      "rule_box": { "type": "ok", "text": "限定詞後接名詞。" }
+    },
+    {
+      "q_id": "pos-d7-q2",
+      "type": "main",
+      "scene": "Operations / Warehouse",
+      "eye_distance": "middle",
+      "target_pos": "adv",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "The warehouse staff checked the shipment {BLANK} before signing the receipt.",
+      "options": [
+        { "label": "A", "text": "careful", "pos": "adj", "is_correct": false },
+        { "label": "B", "text": "carefulness", "pos": "noun", "is_correct": false },
+        { "label": "C", "text": "carefully", "pos": "adv", "is_correct": true },
+        { "label": "D", "text": "care", "pos": "noun", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "修飾 checked",
+      "solution_steps": [
+        { "step": 1, "text": "空格修飾 checked 動作。" },
+        { "step": 2, "text": "用副詞 carefully。" }
+      ],
+      "wrong_thought_steps": ["看到 shipment 名詞，誤選形容詞。"],
+      "rule_box": { "type": "ok", "text": "動詞修飾語選副詞。" }
+    },
+    {
+      "q_id": "pos-d7-q3",
+      "type": "main",
+      "scene": "HR / Hiring",
+      "eye_distance": "middle",
+      "target_pos": "adj",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "The applicant's experience is highly {BLANK} to the position.",
+      "options": [
+        { "label": "A", "text": "relevance", "pos": "noun", "is_correct": false },
+        { "label": "B", "text": "relevant", "pos": "adj", "is_correct": true },
+        { "label": "C", "text": "relevantly", "pos": "adv", "is_correct": false },
+        { "label": "D", "text": "relate", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "is highly + ______",
+      "solution_steps": [
+        { "step": 1, "text": "be 動詞後接形容詞補語。" },
+        { "step": 2, "text": "highly 修飾形容詞 relevant。" }
+      ],
+      "wrong_thought_steps": ["看到 highly 就自動選 -ly。"],
+      "rule_box": { "type": "warn", "text": "highly 後常接形容詞，不代表答案是副詞。" }
+    },
+    {
+      "q_id": "pos-d7-q4",
+      "type": "main",
+      "scene": "Finance / Budget",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "The finance director will {BLANK} the annual budget at tomorrow's meeting.",
+      "options": [
+        { "label": "A", "text": "presentation", "pos": "noun", "is_correct": false },
+        { "label": "B", "text": "present", "pos": "verb", "is_correct": true },
+        { "label": "C", "text": "presentable", "pos": "adj", "is_correct": false },
+        { "label": "D", "text": "presently", "pos": "adv", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "will + ______",
+      "solution_steps": [
+        { "step": 1, "text": "will 後面接動詞原形。" },
+        { "step": 2, "text": "present 是動詞。" }
+      ],
+      "wrong_thought_steps": ["看到 annual budget，誤選名詞 presentation。"],
+      "rule_box": { "type": "ok", "text": "助動詞後接原形動詞。" }
+    },
+    {
+      "q_id": "pos-d7-q5",
+      "type": "main",
+      "scene": "Quality Control / Production",
+      "eye_distance": "far",
+      "target_pos": "noun",
+      "weakness_tag": "false-friends",
+      "stem": "The inspection found a minor {BLANK} in the packaging design.",
+      "options": [
+        { "label": "A", "text": "defect", "pos": "noun", "is_correct": true },
+        { "label": "B", "text": "defective", "pos": "adj", "is_correct": false },
+        { "label": "C", "text": "defectively", "pos": "adv", "is_correct": false },
+        { "label": "D", "text": "defected", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "a minor + ______",
+      "solution_steps": [
+        { "step": 1, "text": "a minor 後面需要名詞。" },
+        { "step": 2, "text": "defect 是名詞，表示瑕疵。" }
+      ],
+      "wrong_thought_steps": ["看到 minor 修飾詞後仍選形容詞 defective。"],
+      "rule_box": { "type": "ok", "text": "冠詞 + 形容詞 + 名詞。" }
+    },
+    {
+      "q_id": "pos-d7-q6",
+      "type": "main",
+      "scene": "IT / Support",
+      "eye_distance": "middle",
+      "target_pos": "adj",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "The updated software is more {BLANK} with older operating systems.",
+      "options": [
+        { "label": "A", "text": "compatibility", "pos": "noun", "is_correct": false },
+        { "label": "B", "text": "compatibly", "pos": "adv", "is_correct": false },
+        { "label": "C", "text": "compatible", "pos": "adj", "is_correct": true },
+        { "label": "D", "text": "compete", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "is more + ______",
+      "solution_steps": [
+        { "step": 1, "text": "is 後方是補語位置。" },
+        { "step": 2, "text": "more compatible 是形容詞比較級。" }
+      ],
+      "wrong_thought_steps": ["看到 with 後面名詞，忽略 be + adj + with 結構。"],
+      "rule_box": { "type": "ok", "text": "be compatible with = 與...相容。" }
+    },
+    {
+      "q_id": "pos-d7-q7",
+      "type": "main",
+      "scene": "Customer Notice / Policy",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "word-family-choice",
+      "stem": "Customers will receive a {BLANK} when their orders have been shipped.",
+      "options": [
+        { "label": "A", "text": "notify", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "notified", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "notification", "pos": "noun", "is_correct": true },
+        { "label": "D", "text": "notifying", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "receive a + ______",
+      "solution_steps": [
+        { "step": 1, "text": "a 後面需要名詞。" },
+        { "step": 2, "text": "notification 是名詞。" }
+      ],
+      "wrong_thought_steps": ["notify/notice/notification 同根混淆。"],
+      "rule_box": { "type": "ok", "text": "receive a notification = 收到通知。" }
+    },
+    {
+      "q_id": "pos-d7-q8",
+      "type": "main",
+      "scene": "Administration / Scheduling",
+      "eye_distance": "middle",
+      "target_pos": "adv",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "The meeting was moved {BLANK} to allow more time for preparation.",
+      "options": [
+        { "label": "A", "text": "temporary", "pos": "adj", "is_correct": false },
+        { "label": "B", "text": "temporarily", "pos": "adv", "is_correct": true },
+        { "label": "C", "text": "temporariness", "pos": "noun", "is_correct": false },
+        { "label": "D", "text": "temporize", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "修飾 was moved",
+      "solution_steps": [
+        { "step": 1, "text": "空格修飾 moved 這個動作。" },
+        { "step": 2, "text": "temporarily 是副詞。" }
+      ],
+      "wrong_thought_steps": ["看到 meeting 名詞，誤選形容詞 temporary。"],
+      "rule_box": { "type": "ok", "text": "被動動詞也可以由副詞修飾。" }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "pos-d7-monitor-1",
+      "type": "monitor",
+      "scene": "[監控] Mandative",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-verb",
+      "stem": "The auditor suggested that the company {BLANK} its expense policy.",
+      "options": [
+        { "label": "A", "text": "updates", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "updated", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "update", "pos": "verb", "is_correct": true },
+        { "label": "D", "text": "updating", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "suggested that + S + 原形",
+      "solution_steps": [
+        { "step": 1, "text": "suggested that 觸發原形動詞。" },
+        { "step": 2, "text": "update 是原形。" }
+      ],
+      "rule_box": { "type": "warn", "text": "Mandative 監控：不要選三單 updates。" }
+    },
+    {
+      "q_id": "pos-d7-monitor-2",
+      "type": "monitor",
+      "scene": "[監控] Multiplier",
+      "eye_distance": "middle",
+      "target_pos": "adj",
+      "weakness_tag": "multiplier-comparison",
+      "stem": "The new warehouse is three times as {BLANK} as the old facility.",
+      "options": [
+        { "label": "A", "text": "large", "pos": "adj", "is_correct": true },
+        { "label": "B", "text": "largely", "pos": "adv", "is_correct": false },
+        { "label": "C", "text": "largeness", "pos": "noun", "is_correct": false },
+        { "label": "D", "text": "enlarge", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "three times as + adj + as",
+      "solution_steps": [
+        { "step": 1, "text": "as...as 中間放形容詞或副詞原級。" },
+        { "step": 2, "text": "warehouse is large，用形容詞 large。" }
+      ],
+      "rule_box": { "type": "warn", "text": "倍數比較：three times as large as。" }
+    }
+  ]
+}

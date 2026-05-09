@@ -1,0 +1,110 @@
+Checkpoint 報告 (871 ~ 932)
+1. Topic 完成程度  
+目前階段：Word / Phrase / Chunk
+目標基準：每個 topic 25 / 25（全領域正式達標）  
+• 辦公室：31 / 25
+• 文書作業：33 / 25
+• 商務會議：26 / 25
+• 業務協調：27 / 25
+• 人才招募：26 / 25
+• 人事與組織：39 / 25
+• 行銷與宣傳：28 / 25
+• 財務會計：27 / 25
+• 企業經營：33 / 25
+• 製造與品管：28 / 25
+• 公告訊息：29 / 25
+• 演講與宴會：28 / 25
+• 貿易與物流：30 / 25
+• 社會經濟：29 / 25
+• 零售購物：32 / 25
+• 銷售服務：30 / 25
+• 餐飲與住宿：31 / 25
+• 旅遊與交通：40 / 25
+• 表演與展覽：27 / 25
+• 金融與投資：31 / 25
+• 房屋與修繕：32 / 25
+• 生活休閒：26 / 25
+• 公益慈善：28 / 25
+• 傳播媒體：29 / 25
+• 科技與研發：40 / 25
+• 醫療與健康：46 / 25
+• 環境保育：45 / 25
+• 溝通表達：43 / 25
+• 日常生活：27 / 25
+2. 難度完成程度  
+• Level A：已測 188 題  
+• Level B：已測 467 題  
+• Level C：已測 277 題  
+分布判讀  
+• 難度 C 大幅攀升：本次刻意鎖定各領域最艱澀的字彙（如 bequest, fiduciary, coalesce 等），精準擊中高階英文閱讀的防禦盲區。新增的 beneficence 與 laminator 亦屬於此類低頻或具高度專屬性的 C 級單字。
+• 基礎字彙秒殺：Level A 的字彙皆在未列出的掌握清單中，毫無遺漏，地基極度穩固。
+• 直覺誤判陷阱：形音義混淆的現象仍在少數高階單字中發生，例如將 divulge（洩漏）誤認為優待，以及將 fabrication（製造/裝配）直翻為工廠。
+3. 該 62 題完整清單  
+(未列於您回覆中的編號，均視為已熟練掌握的「會」)
+1.	benevolent｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	humanitarian｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	endow｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	destitute｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	bequest｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	stewardship｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	egalitarian｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	orchestrate｜Topic: 業務協調｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	coalesce｜Topic: 業務協調｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	interdepartmental｜Topic: 業務協調｜Difficulty: B｜Type: Word｜Result: 不會  
+1.	dovetail｜Topic: 業務協調｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	synchronize｜Topic: 業務協調｜Difficulty: B｜Type: Word｜Result: 不會  
+1.	goal｜Topic: 企業經營｜Difficulty: A｜Type: Word｜Result: 會  
+1.	hire｜Topic: 人才招募｜Difficulty: A｜Type: Word｜Result: 會  
+1.	staffing｜Topic: 人才招募｜Difficulty: B｜Type: Word｜Result: 會  
+1.	remuneration｜Topic: 人才招募｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	severance｜Topic: 人才招募｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	appraise｜Topic: 人才招募｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	solicit｜Topic: 銷售服務｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	requisition｜Topic: 辦公室｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	bullish｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	derivative｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	arbitrage｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	hedge｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 會  
+1.	fiduciary｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	annuity｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	vend｜Topic: 銷售服務｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	peddle｜Topic: 銷售服務｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	purvey｜Topic: 銷售服務｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	haggle｜Topic: 銷售服務｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	shop｜Topic: 零售購物｜Difficulty: A｜Type: Word｜Result: 會  
+1.	communique｜Topic: 公告訊息｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	decree｜Topic: 公告訊息｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	divulge｜Topic: 公告訊息｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	disseminate｜Topic: 公告訊息｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	manifest｜Topic: 貿易與物流｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	elocution｜Topic: 演講與宴會｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	declaim｜Topic: 演講與宴會｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	host｜Topic: 演講與宴會｜Difficulty: A｜Type: Word｜Result: 會  
+1.	propaganda｜Topic: 行銷與宣傳｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	gimmick｜Topic: 行銷與宣傳｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	tagline｜Topic: 行銷與宣傳｜Difficulty: B｜Type: Word｜Result: 不會  
+1.	secretariat｜Topic: 辦公室｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	clipboard｜Topic: 辦公室｜Difficulty: B｜Type: Word｜Result: 不會  
+1.	pen｜Topic: 辦公室｜Difficulty: A｜Type: Word｜Result: 會  
+1.	ideation｜Topic: 商務會議｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	huddle｜Topic: 商務會議｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	syndication｜Topic: 傳播媒體｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	teleprompter｜Topic: 傳播媒體｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	prefabricate｜Topic: 製造與品管｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	lathe｜Topic: 製造與品管｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	fabrication｜Topic: 製造與品管｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	impoverished｜Topic: 社會經濟｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	consolidate｜Topic: 企業經營｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	job｜Topic: 人才招募｜Difficulty: A｜Type: Word｜Result: 會  
+1.	coin｜Topic: 金融與投資｜Difficulty: A｜Type: Word｜Result: 會  
+1.	sell｜Topic: 銷售服務｜Difficulty: A｜Type: Word｜Result: 會  
+1.	news｜Topic: 傳播媒體｜Difficulty: A｜Type: Word｜Result: 會  
+1.	eat｜Topic: 餐飲與住宿｜Difficulty: A｜Type: Word｜Result: 會  
+1.	logo｜Topic: 行銷與宣傳｜Difficulty: A｜Type: Word｜Result: 會  
+1.	beneficence｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會  
+1.	laminator｜Topic: 辦公室｜Difficulty: C｜Type: Word｜Result: 不會  
+4. 階段判讀  
+• 目前最穩的區域：基礎 A 級詞彙與具有強烈邏輯性的職場高頻字。您對於 hedge (避險) 或 staffing (招聘) 等投資與管理概念能迅速且精準命中核心意涵。
+• 目前最弱的區域：領域專屬的冷僻字彙與抽象法律概念（如公益慈善的 stewardship 與 beneficence、公告訊息的 communique）。此外，進階的辦公與製造設備名詞（如 laminator、fabrication、lathe）也展現出需進一步鞏固的空間。
+• 是否出現新的高弱區：高階字的字根直覺聯想偏誤再次浮現（如 annuity 被誤認為年度 annual，fabrication 被直翻為工廠 factory）。
+• 與上一個 100 題 checkpoint 相比，有沒有明顯結構變化：結構發生了決定性的變化。透過刻意往 C 難度傾斜的補測策略，已經成功填平了所有 Topic 的最低數量標準。全數 29 個領域皆穩定突破 25 題大關，單字地圖各領域的最後拼圖已徹底補齊。

@@ -1,0 +1,473 @@
+《411 題按 Topic 分組總表》
+欄位：正式編號｜原始題號｜phrase｜會不會｜解釋｜Difficulty
+
+【辦公室】（24題）
+11｜11｜draw up｜不會｜起草；擬定｜B
+21｜21｜keep track of｜會｜追蹤；掌握進度｜A
+31｜31｜figure out｜會｜弄清楚；想出｜A
+36｜36｜look into｜不會｜調查；了解｜B
+40｜40｜run out of｜不會｜用完；耗盡｜A
+41｜41｜set up｜不會｜設立；安排｜A
+50｜50｜prior to｜不會｜在…之前｜B
+53｜53｜catch up on｜不會｜補上；補做｜B
+58｜58｜deal with｜會｜處理；應對｜A
+61｜61｜drop by｜不會｜順道拜訪｜A
+72｜72｜look over｜不會｜快速查看；審閱｜A
+77｜77｜pitch in｜不會｜幫忙；出力｜B
+80｜80｜put up with｜不會｜忍受｜C
+83｜83｜run into｜不會｜碰到；遭遇｜A
+110｜110｜pick up｜不會｜接收；拿取；恢復｜A
+111｜111｜give out｜不會｜分發；耗盡｜A
+112｜112｜sort out｜不會｜整理；解決｜A
+140｜141｜focus on｜不會｜專注於｜A
+142｜143｜concentrate on｜不會｜集中於｜A
+154｜157｜work on｜不會｜著手處理；從事｜A
+206｜212｜take up｜不會｜開始從事；占用｜B
+215｜221｜sort through｜不會｜逐一整理｜B
+385｜423｜run by｜不會｜先給…過目；匆匆經過｜B
+386｜424｜stop by｜不會｜順道拜訪｜A
+
+【文書作業】（34題）
+3｜3｜look forward to｜會｜期待｜A
+10｜10｜fill out｜不會｜填寫（表格）｜A
+16｜16｜at your earliest convenience｜不會｜在你方便時盡快｜B
+33｜33｜hand in｜不會｜提交｜A
+46｜46｜as to｜不會｜關於；至於｜C
+67｜67｜go over｜不會｜檢查；覆核｜A
+92｜92｜with regard to｜不會｜關於｜C
+95｜95｜turn in｜不會｜繳交｜A
+106｜106｜key in｜不會｜鍵入｜A
+121｜121｜lay out｜不會｜安排；陳列；說明｜B
+124｜124｜read over｜不會｜再讀一遍；審閱｜A
+128｜128｜refer to｜不會｜提到；參考｜A
+163｜166｜check over｜不會｜仔細檢查｜A
+165｜168｜hand back｜不會｜歸還｜A
+202｜207｜go through｜不會｜檢查；經歷；逐項說明｜B
+203｜209｜leave out｜不會｜漏掉；省略｜B
+207｜213｜write up｜不會｜寫成正式報告｜B
+208｜214｜sign off｜不會｜簽核；批准結案｜B
+210｜216｜send in｜不會｜寄送；提交｜A
+211｜217｜fill in｜會｜填寫；暫代｜A
+212｜218｜print out｜會｜列印出來｜A
+213｜219｜copy down｜會｜抄寫記下｜A
+214｜220｜file away｜不會｜歸檔｜A
+216｜222｜check through｜會｜全面檢查｜B
+217｜223｜look through｜會｜瀏覽；翻閱｜A
+218｜224｜cross out｜不會｜劃掉｜A
+219｜225｜cut out｜不會｜刪除；剪下｜A
+239｜260｜refer back to｜不會｜回頭參照｜B
+308｜334｜submit to｜會｜提交給；屈從於｜B
+330｜357｜keep back｜不會｜保留；隱瞞｜C
+335｜362｜write back｜不會｜回信｜A
+383｜421｜divide into｜不會｜分成｜A
+394｜433｜glance through｜不會｜快速瀏覽｜A
+395｜434｜skim through｜不會｜略讀｜A
+
+【商務會議】（20題）
+4｜4｜on behalf of｜不會｜代表；代替｜C
+15｜15｜rule out｜不會｜排除｜C
+26｜26｜bring up｜不會｜提出（話題）｜B
+34｜34｜hold off on｜不會｜暫緩；延期處理｜C
+35｜35｜jot down｜不會｜草草記下｜B
+45｜45｜wrap up｜不會｜結束；做總結｜B
+79｜79｜put forward｜不會｜提出｜B
+85｜85｜bear in mind｜不會｜記住；牢記｜B
+89｜89｜sum up｜會｜總結｜A
+93｜93｜touch on｜不會｜略提；談到｜B
+123｜123｜run through｜不會｜快速演練；過一遍｜B
+158｜161｜settle on｜不會｜決定採用｜B
+194｜198｜agree on｜會｜就…達成一致｜B
+197｜202｜meet with｜會｜與…會面｜A
+199｜204｜talk over｜不會｜詳細討論｜B
+238｜259｜object to｜不會｜反對｜B
+254｜275｜decide on｜不會｜決定採用｜B
+279｜302｜come before｜不會｜先於；提交審議｜B
+388｜427｜bring forward｜不會｜提前；提出｜B
+396｜435｜walk through｜不會｜逐步說明；演練｜B
+
+【業務協調】（32題）
+27｜27｜call off｜不會｜取消｜B
+39｜39｜put off｜不會｜延後；推遲｜B
+44｜44｜turn down｜不會｜拒絕｜A
+52｜52｜carry out｜不會｜執行｜B
+57｜57｜count on｜會｜依靠；指望｜A
+66｜66｜go ahead｜不會｜開始做；繼續進行｜A
+81｜81｜rely on｜會｜依賴｜A
+94｜94｜track down｜不會｜追查到；找到｜B
+107｜107｜tie up｜不會｜占用；使受阻｜B
+108｜108｜line up｜不會｜安排好；排隊｜A
+118｜118｜back out｜不會｜退出；反悔｜B
+144｜146｜depend on｜不會｜取決於；依靠｜A
+148｜151｜carry on｜不會｜繼續進行｜A
+153｜156｜see to｜不會｜負責處理；照料｜B
+159｜162｜follow up on｜會｜跟進｜B
+175｜178｜coordinate with｜會｜與…協調｜B
+176｜179｜negotiate with｜會｜與…談判｜B
+193｜197｜interfere with｜不會｜妨礙；干擾｜C
+228｜249｜stick to｜不會｜堅持；遵守｜B
+229｜250｜leave to｜不會｜交由…處理｜C
+255｜276｜depend upon｜不會｜取決於；依賴｜B
+256｜277｜rely upon｜不會｜依靠｜B
+264｜285｜interfere in｜不會｜干涉｜C
+265｜287｜stand by｜會｜待命；支持｜B
+309｜335｜turn to｜不會｜轉向；求助於｜B
+310｜336｜stick with｜不會｜持續採用；不離開｜B
+324｜350｜come through｜不會｜兌現承諾；順利度過｜B
+341｜373｜go ahead with｜不會｜著手進行｜B
+343｜375｜catch up with｜不會｜趕上｜B
+347｜379｜fall through｜不會｜落空；失敗｜C
+348｜380｜follow through｜不會｜貫徹到底｜C
+359｜391｜break off｜不會｜中斷；終止｜B
+
+【人才招募】（16題）
+22｜22｜sign up for｜會｜報名；登記參加｜A
+37｜37｜pass up｜不會｜放棄（機會）｜B
+42｜42｜stand out｜不會｜脫穎而出｜B
+74｜74｜narrow down｜不會｜縮小範圍；篩選｜B
+132｜133｜specialize in｜不會｜專精於｜B
+170｜173｜apply for｜會｜申請｜A
+171｜174｜screen for｜不會｜篩選；檢測｜B
+172｜175｜recruit for｜不會｜為…招募｜B
+189｜192｜qualify for｜不會｜有資格取得｜B
+209｜215｜sign on｜不會｜簽約加入｜B
+285｜308｜qualify as｜不會｜算作；符合資格成為｜B
+299｜323｜excel at｜不會｜擅長於｜B
+304｜328｜go after｜不會｜追求；追趕｜B
+405｜444｜brush up on｜不會｜複習；加強｜B
+407｜446｜narrow down to｜不會｜縮小到｜C
+410｜449｜sign up with｜不會｜向…註冊；加入｜B
+
+【人事與組織】（15題）
+2｜2｜in charge of｜會｜負責；主管｜A
+8｜8｜lay off｜會｜裁員｜B
+32｜32｜get along with｜會｜與…相處融洽｜A
+63｜63｜fill in for｜不會｜代班；代替出勤｜B
+68｜68｜hand over｜不會｜交出；移交｜B
+91｜91｜take on｜不會｜承擔；聘用｜B
+102｜102｜clock in｜不會｜打卡上班｜A
+157｜160｜move up｜不會｜晉升；上移｜A
+173｜176｜report to｜會｜向…報告｜A
+174｜177｜answer to｜不會｜對…負責；聽命於｜B
+235｜256｜belong to｜會｜屬於｜A
+240｜261｜adjust to｜不會｜適應；調整到｜B
+241｜262｜adapt to｜會｜適應｜B
+400｜439｜fit in with｜不會｜與…相配；融入｜B
+401｜440｜fall in with｜不會｜同意；偶然加入｜C
+
+【行銷與宣傳】（11題）
+12｜12｜map out｜不會｜規劃；擬定方向｜B
+28｜28｜come up with｜不會｜想出；提出｜A
+43｜43｜take advantage of｜不會｜利用｜B
+100｜100｜in comparison with｜不會｜與…相比｜C
+114｜114｜build up｜不會｜建立；累積｜B
+120｜120｜roll out｜不會｜推出｜B
+130｜130｜appeal to｜不會｜吸引；向…呼籲｜B
+297｜321｜aim at｜不會｜以…為目標｜B
+367｜399｜give away｜不會｜贈送；洩露｜B
+382｜418｜tap into｜不會｜開發利用；接取｜C
+399｜438｜tie in with｜不會｜與…相符；配合｜C
+
+【財務會計】（21題）
+18｜18｜account for｜不會｜占比；解釋原因｜B
+60｜60｜draw on｜不會｜動用；利用｜C
+73｜73｜make up for｜會｜彌補｜B
+84｜84｜set aside｜不會｜撥出；保留｜B
+86｜86｜take into account｜不會｜納入考量｜C
+104｜104｜factor in｜不會｜把…納入考量｜B
+150｜153｜turn over｜不會｜翻轉；移交；周轉｜B
+160｜163｜put aside｜不會｜撥開；保留｜B
+169｜172｜amount to｜不會｜總計達到；等同於｜C
+179｜182｜budget for｜不會｜為…編列預算｜B
+201｜206｜carry over｜不會｜延續到；結轉｜C
+220｜226｜add up｜不會｜加總；說得通｜A
+221｜227｜add to｜不會｜增加｜A
+222｜228｜total up｜不會｜合計｜A
+223｜230｜count toward｜不會｜算入｜B
+224｜231｜break even｜不會｜損益兩平｜B
+226｜233｜write off｜不會｜沖銷；認列報廢｜C
+227｜235｜close out｜不會｜結清；結束處理｜B
+246｜267｜allow for｜不會｜將…考慮在內｜C
+274｜296｜draw from｜不會｜從…取得；得出｜C
+370｜404｜bring down｜不會｜降低；打倒｜B
+
+【企業經營】（36題）
+1｜1｜take over｜不會｜接管；接手｜B
+9｜9｜step down｜不會｜下台；辭職｜B
+29｜29｜cut down on｜不會｜削減；減少｜A
+49｜49｜on the verge of｜不會｜瀕臨；快要｜C
+51｜51｜adhere to｜不會｜遵守；堅持｜C
+55｜55｜close down｜不會｜停業；關閉｜B
+59｜59｜do away with｜不會｜廢除；去除｜C
+75｜75｜opt for｜不會｜選擇｜B
+97｜97｜as a result of｜會｜由於｜A
+105｜105｜scale back｜不會｜縮減｜B
+109｜109｜branch out｜不會｜拓展業務｜B
+119｜119｜step up｜不會｜加強；提升｜B
+131｜131｜engage in｜不會｜從事；參與｜C
+156｜159｜cut back on｜不會｜削減｜B
+161｜164｜break into｜不會｜打入（市場）；闖入｜B
+162｜165｜branch into｜不會｜擴展到｜B
+166｜169｜work toward｜不會｜朝…努力｜B
+167｜170｜bring about｜不會｜導致；帶來｜B
+177｜180｜compete with｜不會｜與…競爭｜A
+200｜205｜bring in｜不會｜引進；帶來收入｜B
+231｜252｜lead to｜不會｜導致｜B
+243｜264｜commit to｜不會｜承諾投入｜C
+257｜278｜act on｜不會｜根據…採取行動｜B
+271｜293｜build on｜會｜建立在…之上｜B
+281｜304｜serve as｜會｜作為；充當｜A
+282｜305｜act as｜會｜充當；擔任｜A
+293｜317｜make for｜不會｜促成；朝…前進｜C
+327｜354｜cut back｜不會｜削減｜B
+338｜368｜phase in｜不會｜逐步導入｜C
+340｜372｜move ahead｜會｜向前推進｜B
+342｜374｜keep ahead of｜不會｜領先於｜B
+346｜378｜stay ahead of｜不會｜保持領先｜B
+357｜389｜turn around｜不會｜扭轉局面；轉身｜B
+389｜428｜move forward with｜不會｜推進；繼續進行｜B
+391｜430｜plan for｜會｜為…做規劃｜A
+397｜436｜pull together｜不會｜整合起來；齊心完成｜B
+
+【製造與品管】（9題）
+5｜5｜comply with｜不會｜遵守；符合｜B
+19｜19｜phase out｜不會｜逐步淘汰｜C
+62｜62｜fall behind｜不會｜落後｜B
+82｜82｜result in｜會｜導致｜B
+96｜96｜turn out｜不會｜結果是；生產出｜B
+127｜127｜consist of｜不會｜由…組成｜A
+133｜134｜substitute for｜不會｜替代｜B
+232｜253｜result from｜會｜起因於｜B
+344｜376｜fall behind in｜不會｜在…方面落後｜B
+
+【公告訊息】（20題）
+7｜7｜subject to｜不會｜受…約束；視…而定｜C
+17｜17｜in light of｜不會｜鑑於；考量到｜C
+23｜23｜abide by｜不會｜遵守｜C
+47｜47｜by means of｜不會｜藉由；透過｜C
+48｜48｜in accordance with｜不會｜依照；按照｜C
+71｜71｜lay down｜不會｜訂定；規定｜C
+78｜78｜in the event of｜不會｜如果發生；萬一｜C
+147｜149｜inform of｜不會｜通知｜B
+151｜154｜set forth｜不會｜陳述；列明｜C
+152｜155｜rule on｜不會｜對…作出裁定｜C
+236｜257｜apply to｜不會｜適用於；申請到｜B
+280｜303｜go before｜不會｜提交審議；先於｜C
+291｜314｜accuse of｜不會｜指控｜C
+292｜315｜suspect of｜會｜懷疑…有｜B
+295｜319｜call for｜不會｜要求；需要｜B
+316｜342｜come under｜不會｜歸入；受到｜C
+317｜343｜fall under｜不會｜屬於；歸入｜C
+318｜344｜place under｜不會｜置於；使受…管制｜C
+319｜345｜put under｜不會｜使處於…之下｜C
+390｜429｜press for｜不會｜力促；敦促｜B
+
+【演講與宴會】（9題）
+149｜152｜hand out｜不會｜分發｜A
+190｜193｜prepare for｜會｜為…做準備｜A
+230｜251｜take part in｜會｜參與｜A
+313｜339｜begin with｜會｜以…開始｜A
+314｜340｜end with｜會｜以…結束｜A
+362｜394｜start off｜不會｜開始；起步｜A
+363｜395｜kick off｜不會｜展開；開場｜B
+377｜411｜sign in｜會｜簽到；登入｜A
+378｜412｜sign out｜不會｜簽退；登出｜A
+
+【貿易與物流】（9題）
+6｜6｜out of stock｜會｜缺貨｜A
+30｜30｜drop off｜不會｜送到；下降｜A
+183｜186｜order from｜會｜向…訂購｜A
+184｜187｜ship to｜會｜運送到｜A
+186｜189｜supply with｜不會｜供應給｜B
+233｜254｜deal in｜不會｜經營；買賣｜B
+234｜255｜trade in｜不會｜以舊換新；從事買賣｜B
+331｜358｜send back｜會｜退回；寄回｜A
+364｜396｜send off｜不會｜寄出；送行｜B
+
+【社會經濟】（7題）
+87｜87｜make a living｜不會｜謀生｜A
+269｜291｜live on｜不會｜靠…維生｜B
+270｜292｜thrive on｜不會｜靠…而茁壯｜C
+284｜307｜rank as｜不會｜列為；位居｜B
+351｜383｜break away from｜不會｜脫離；分裂出去｜C
+369｜401｜break up｜不會｜解散；分手；分裂｜B
+411｜450｜break out of｜不會｜擺脫；逃出｜C
+
+【零售購物】（5題）
+13｜13｜a wide range of｜會｜各式各樣的｜A
+20｜20｜mark down｜不會｜降價｜B
+101｜101｜ring up｜不會｜結帳；收銀登錄｜A
+103｜103｜sell out｜不會｜售罄｜A
+204｜210｜mark up｜不會｜加價｜B
+
+【銷售服務】（10題）
+181｜184｜charge for｜不會｜收費｜A
+182｜185｜pay for｜不會｜支付；付出代價｜A
+185｜188｜provide with｜不會｜提供給｜B
+191｜194｜ask for｜不會｜要求；索取｜A
+196｜201｜call on｜不會｜拜訪；要求｜B
+242｜263｜attend to｜不會｜處理；照料｜B
+251｜272｜complain about｜會｜抱怨｜A
+306｜330｜settle for｜不會｜勉強接受｜B
+315｜341｜part with｜不會｜放棄；交出｜C
+409｜448｜add on｜不會｜附加；加購｜B
+
+【餐飲與住宿】（5題）
+14｜14｜cater to｜不會｜迎合；滿足需求｜B
+54｜54｜check in｜會｜辦理入住；報到｜A
+126｜126｜check out｜不會｜退房；查看｜A
+245｜266｜cater for｜不會｜滿足需求；供應餐食｜B
+366｜398｜take away｜會｜拿走；外帶｜A
+
+【旅遊與交通】（7題）
+278｜301｜cut across｜不會｜跨越；抄近路；違背｜B
+296｜320｜head for｜不會｜前往｜A
+298｜322｜arrive at｜會｜達成；到達｜A
+334｜361｜turn back｜會｜折返｜A
+354｜386｜get around｜不會｜四處走動；規避｜B
+356｜388｜look around｜會｜四處看看｜A
+360｜392｜set off｜不會｜出發；引發｜B
+
+【表演與展覽】（2題）
+337｜366｜spread out｜不會｜展開；分散｜B
+361｜393｜show off｜會｜炫耀；展示｜A
+
+【金融與投資】（6題）
+76｜76｜pay off｜不會｜獲得回報；還清｜B
+178｜181｜invest in｜會｜投資於｜A
+180｜183｜profit from｜會｜從…獲利｜B
+225｜232｜pay back｜不會｜償還｜A
+275｜297｜benefit from｜會｜受益於｜B
+392｜431｜save for｜不會｜為…存錢；保留給｜A
+
+【房屋與修繕】（5題）
+115｜115｜tear down｜不會｜拆除｜B
+365｜397｜put away｜不會｜收起來；存放｜A
+372｜406｜knock down｜不會｜拆除；擊倒｜B
+373｜407｜shut off｜不會｜關閉（電源/水）｜A
+398｜437｜hold together｜會｜維持不散；保持完整｜B
+
+【生活休閒】（0題）
+0 題
+
+【公益慈善】（3題）
+135｜136｜dedicate to｜不會｜奉獻於；致力於｜C
+136｜137｜devote to｜不會｜投入於；致力於｜C
+137｜138｜contribute to｜不會｜有助於；貢獻給｜B
+
+【傳播媒體】（7題）
+250｜271｜hear about｜會｜聽說｜A
+289｜312｜hear of｜會｜聽過｜A
+294｜318｜stand for｜不會｜代表；主張｜B
+336｜363｜come out｜不會｜上市；出版；結果顯現｜B
+379｜415｜tune in｜不會｜收看收聽；關注｜B
+380｜416｜tune out｜不會｜不再注意；轉台｜B
+384｜422｜translate into｜不會｜轉化為；翻譯成｜B
+
+【科技與研發】（17題）
+24｜24｜back up｜不會｜備份｜A
+25｜25｜break down｜不會｜故障；分解說明｜B
+70｜70｜keep up with｜不會｜跟上；持續掌握｜B
+116｜116｜switch off｜不會｜關掉｜A
+117｜117｜plug in｜不會｜插上電源｜A
+155｜158｜shut down｜不會｜關閉；停機｜B
+187｜190｜equip with｜不會｜配備｜B
+192｜195｜search for｜會｜搜尋；尋找｜A
+283｜306｜function as｜會｜起…作用；作為｜B
+323｜349｜break through｜不會｜突破｜B
+345｜377｜keep pace with｜不會｜與…同步；跟上｜B
+374｜408｜power up｜不會｜開機；啟動｜A
+375｜409｜log on｜會｜登入｜A
+376｜410｜log off｜不會｜登出｜A
+381｜417｜plug into｜會｜接入；連接到｜B
+393｜432｜search through｜會｜翻找；全面搜尋｜B
+406｜445｜zero in on｜不會｜集中鎖定｜C
+
+【醫療與健康】（10題）
+65｜65｜get over｜不會｜恢復；克服｜B
+138｜139｜react to｜不會｜對…作出反應｜A
+195｜200｜recover from｜不會｜從…恢復｜B
+252｜273｜worry about｜會｜擔心｜A
+276｜298｜suffer from｜會｜遭受；患有｜A
+302｜326｜look after｜不會｜照顧｜A
+307｜331｜care for｜會｜照顧；喜歡｜A
+321｜347｜pull through｜不會｜恢復；渡過難關｜B
+353｜385｜stay away from｜會｜遠離；避免接觸｜A
+355｜387｜come around｜不會｜改變想法；恢復知覺｜B
+
+【環境保育】（4題）
+146｜148｜dispose of｜不會｜處理掉；處置｜C
+352｜384｜move away from｜會｜遠離；轉離｜B
+368｜400｜throw away｜不會｜丟棄｜A
+371｜405｜cut down｜不會｜削減｜B
+
+【溝通表達】（47題）
+38｜38｜point out｜會｜指出｜A
+64｜64｜get back to｜不會｜回覆；再聯絡｜A
+69｜69｜hold on｜會｜稍等；別掛斷｜A
+88｜88｜on the contrary｜不會｜相反地｜B
+90｜90｜in terms of｜不會｜就…而言｜C
+98｜98｜regardless of｜不會｜不管；不顧｜B
+113｜113｜clear up｜不會｜澄清；清理｜A
+122｜122｜point to｜不會｜顯示；指出｜B
+125｜125｜smooth over｜不會｜緩和；平息｜C
+129｜129｜comment on｜不會｜評論；就…發表意見｜B
+134｜135｜attribute to｜不會｜把…歸因於｜C
+139｜140｜respond to｜不會｜回應｜A
+141｜142｜insist on｜不會｜堅持｜B
+143｜145｜reflect on｜不會｜反思；思考｜C
+145｜147｜approve of｜不會｜贊成｜B
+164｜167｜pass on｜不會｜轉交；傳達｜B
+168｜171｜stem from｜不會｜源自於｜C
+188｜191｜apologize for｜會｜為…道歉｜A
+198｜203｜speak with｜會｜與…交談｜A
+205｜211｜put through｜不會｜接通；使通過｜C
+237｜258｜listen to｜會｜聆聽｜A
+244｜265｜reply to｜會｜回覆｜A
+249｜270｜ask about｜會｜詢問關於｜A
+258｜279｜expand on｜不會｜進一步說明｜B
+259｜280｜elaborate on｜不會｜詳細說明｜C
+260｜281｜dwell on｜不會｜反覆談論｜C
+261｜282｜insist upon｜不會｜堅持要求｜C
+262｜283｜comment upon｜會｜評論｜C
+263｜284｜agree with｜會｜同意；與…一致｜A
+272｜294｜touch upon｜不會｜提及｜C
+273｜295｜focus upon｜不會｜著重於｜C
+286｜309｜regard as｜不會｜視為｜B
+288｜311｜speak of｜不會｜提到｜B
+305｜329｜ask after｜不會｜問候近況｜C
+311｜337｜side with｜不會｜支持某一方｜B
+320｜346｜get through｜不會｜完成；接通；撐過｜B
+322｜348｜see through｜不會｜看穿；堅持完成｜C
+325｜351｜call back｜不會｜回電｜A
+329｜356｜hold back｜不會｜抑制；拖延｜B
+332｜359｜step back｜會｜退一步；暫停介入｜B
+333｜360｜take back｜會｜收回；撤回｜B
+339｜371｜pass along｜不會｜轉達；轉交｜B
+350｜382｜come across as｜不會｜給人…印象｜C
+402｜441｜keep in mind｜會｜記住｜A
+403｜442｜bear with｜不會｜請耐心等候；包涵｜B
+404｜443｜put across｜不會｜表達清楚；使被理解｜C
+408｜447｜boil down to｜不會｜歸結為｜C
+
+【日常生活】（20題）
+56｜56｜come across｜會｜偶然遇到；給人印象｜A
+99｜99｜work out｜不會｜解決；算出｜A
+247｜268｜wait for｜會｜等待｜A
+248｜269｜look for｜會｜尋找｜A
+253｜274｜know about｜會｜知道；了解｜A
+266｜288｜go by｜不會｜過去；依照｜B
+267｜289｜pass by｜不會｜經過｜A
+268｜290｜come by｜不會｜順道來；得到｜B
+277｜299｜learn from｜會｜從…學習｜A
+287｜310｜think of｜不會｜想到；認為｜A
+290｜313｜remind of｜不會｜使想起｜B
+300｜324｜glance at｜不會｜瞥一眼｜A
+301｜325｜stare at｜不會｜盯著看｜A
+303｜327｜take after｜不會｜像（家人）｜B
+312｜338｜keep with｜不會｜跟上；保持一致｜C
+326｜353｜bring back｜不會｜帶回；使想起｜A
+328｜355｜go back｜會｜返回；回到｜A
+349｜381｜run across｜不會｜偶然遇見｜A
+358｜390｜stand around｜不會｜站著閒著｜A
+387｜426｜carry back｜不會｜帶回；使回想起｜B
+

@@ -1,0 +1,37 @@
+### 1. 文化與語境理解概述 (Cultural Literacy Summary)
+
+測試者對外商職場核心商務文化具備中高階理解，但在英語社會的日常生活、自然科學、公民社會與正式書面語境上存在顯著斷層，呈現「商務同心圓」式的語言文化分布。
+
+### 2. 深度數據分析 (Deep Data Analysis)
+
+* **社會與商業文化水平**：
+
+測試者在「跨國企業營運」與「金融資本市場」兩個高文化資本領域展現顯著掌握度。金融層面能正確辨識 *yield*、*equity*、*securities*、*liquidity*、*mortgage*、*dividend*、*portfolio*、*bond*、*hedge*、*default*、*valuation* 等 C 級資本市場術語，反映其對英美系投資銀行與資產管理文化具備實務性接觸；企業治理層面能掌握 *subsidiary*、*acquisition*（部分）、*merger*、*franchise*、*benchmark*、*outsource*、*monopoly*、*compliance*（部分）等併購與治理結構詞彙，符合外商中高階管理職或財金背景人士的詞彙特徵。科技層面對 *algorithm*、*parameter*、*firewall*、*prototype*、*calibration*、*troubleshoot*、*module*（部分）、*deploy*（部分）的掌握，亦顯示其工作場域涉及國際化技術文檔。值得注意的是，這些命中詞彙幾乎全部屬於「全球化通用商務語彙」，即不依賴英美在地文化即可在中文商管教育中習得的概念字。
+
+* **語境精確度與盲點**：
+
+盲點呈現三個結構性層次。第一層為「英美日常生活物質文化」斷層：測試者無法辨識 *briefcase*、*helmet*、*suitcase*、*bicycle*、*napkin*、*scissors*、*oven*、*blanket*、*towel*、*mop*、*bucket*、*sponge*、*detergent* 等 A 級具體名詞，顯示其英語接觸高度偏向書面與商務文本，缺乏英語環境的生活浸潤經驗。第二層為「英語社會公共生活」斷層：對 *pharmacy*、*vaccination*、*allergy*、*clinic*（命中）以外的醫療詞彙、*charity*、*volunteer*（命中）以外的公益詞彙、*tenant*、*landlord*、*plumber*、*janitor* 等市民生活詞彙普遍失分，反映其未在英語系國家經歷過實質的市民生活實務。第三層為「正式書面語與法律典禮語體」斷層：對 *decree*、*edict*、*proclamation*、*mandate*、*directive*、*communique*、*injunction*、*bequest*、*fiduciary*、*ovation*、*podium*、*lectern*、*gala*、*accolade* 等高階書面字普遍未掌握，顯示閱讀範圍未延伸至 *The Economist*、*Financial Times* 社論或法律/公文類文本。
+
+形音義混淆方面呈現可量化的系統性偏誤：*facilitate→facility*、*screening→screenshot*、*demographic→democratic*、*notify→notice*、*fiscal→physical*、*pension→penalty*、*physician→physiotherapist*、*infection→inflation*、*annuity→annual*、*fabrication→factory*、*metric→matrix*。其中 *metric* 被以數理語境覆寫商管語境的誤判，與測試者在金融科技領域的強勢知識形成有趣對照，顯示其詞彙提取機制傾向以「強勢領域語義反向覆寫」處理陌生字。
+
+### 3. TOEIC 分數落點預估 (TOEIC Score Projection)
+
+* **預估分數區間**：**650–745**（中段偏上，難以單次穩定突破 750 門檻）
+
+需說明的限制：本測試為「Word 階段」單字辨識測驗，未涵蓋 TOEIC 必備的聽力理解、閱讀速度、語法結構（Part 5/6）與長篇情境理解能力。以下推估僅基於詞彙廣度與深度面向，假設聽力與閱讀策略表現處於與詞彙能力相對應的中位水平；若聽力或閱讀理解能力顯著高於或低於詞彙水平，實際分數可能上下浮動 50–100 分。
+
+* **支持證據 (Support)**：
+
+支持落入 650 分以上的證據來自對 TOEIC Part 5/7 高頻商務詞彙的穩定掌握：*invoice*、*audit*、*revenue*、*budget*、*expenditure*（誤）/*reimbursement*（命中）、*portfolio*、*acquisition*（誤）/*subsidiary*（命中）、*merger*、*compliance*（誤）/*franchise*（命中）、*warranty*、*itinerary*（誤）/*reservation*（命中）、*shipment*、*warehouse*、*dividend*、*equity*、*bond*、*deposit*、*margin*、*securities*、*liquidity*、*entrepreneur*、*headquarters*。這些屬於 TOEIC 700 分段必須穩定掌握的核心商務詞彙，測試者命中率高於該分段的及格門檻。對 *yield*、*default*（金融義）、*hedge*、*valuation*、*calibration*、*tolerance*（製造義）、*proxy*、*monopoly*、*benchmark* 等 C 級商務字的掌握，提供了向 750 分以上挑戰的部分支撐。
+
+* **天花板限制 (Ceiling Limits)**：
+
+阻礙穩定突破 750 分並進一步邁向 800+ 的天花板來自三類詞彙特徵：
+
+第一，TOEIC Part 7 雙篇閱讀高頻出現的「中階商務實務詞」失分過多，包含 *itinerary*、*vacancy*、*payroll*、*ledger*、*deficit*、*surplus*、*overhead*、*detour*、*shuttle*、*layover*、*lodging*、*occupancy*、*amenity*、*venue*、*concierge*、*notification*、*declaration*、*allowance*（命中）/*pension*（誤）、*resignation*、*retention*、*orientation*、*supplier*（命中）/*vendor*（命中）/*procurement*（誤）。這些詞彙是 700–800 分段考生的必備配備，其失分率使穩定 750+ 難以達成。
+
+第二，TOEIC 公告、通知、行程、住宿、租賃情境（Part 4/7 高頻場景）所需的詞彙存在系統性缺口：*tenant*、*landlord*、*lease*（命中）/*eviction*（誤）、*plumber*、*contractor*（命中）/*janitor*（誤）、*appliance*、*napkin*、*hostel*（命中）/*lodging*（誤）/*suite*（誤）、*detour*、*intersection*、*pedestrian*、*commute*、*fare*、*departure* 失分密集，將直接影響聽力 Part 3/4 與閱讀 Part 7 的情境理解。
+
+第三，800 分以上分段所需的「高階書面與抽象詞」全面未掌握：*disseminate*、*divulge*、*mandate*、*directive*、*proclamation*、*solicit*、*remuneration*、*severance*、*appraise*、*consolidate*、*streamline*（誤）、*synergy*（誤）、*lucrative*（誤）、*feasibility*（誤）、*discrepancy*、*amortization*、*depreciation*、*evasion*、*fluctuation*、*stagnation*、*volatile*。這些詞彙在 TOEIC 850+ 的閱讀理解題（特別是 Part 7 商業文章與內部備忘錄）中為核心辨識對象，測試者在此區塊的薄弱表現為突破 800 分的明確上限。
+
+綜合以上，數據顯示測試者具備穩固的 650 分基礎與挑戰 700–745 區間的條件，但若無法補強日常實務情境詞彙與高階書面詞彙的雙向缺口，難以穩定停留於 750 分以上。

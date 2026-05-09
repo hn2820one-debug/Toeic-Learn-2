@@ -1,0 +1,173 @@
+{
+  "lesson_id": "pos-d6",
+  "module_id": "pos-booster",
+  "week": 3,
+  "day": 6,
+  "sequence": 36,
+  "title": "PoS Booster 錯題整合複習",
+  "type": "concept+quiz",
+  "lesson_type": "review",
+  "target_component": "grammar",
+  "quiz_type": "standard",
+  "time_limit_seconds": 20,
+  "focus_tags": ["part-of-speech", "false-friends", "review"],
+  "weakness_tags": ["word-family-choice", "false-friends", "adv-verb", "linking-verb"],
+  "concept": {
+    "debug_rule": "Review 只做三件事：看位置、排詞性、確認同根字陷阱。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "neutral",
+        "title": "三步複習流程",
+        "html": "1. 空格位置 2. 前後修飾關係 3. 同根詞四格：名詞 / 動詞 / 形容詞 / 副詞。"
+      },
+      {
+        "type": "warning",
+        "tone": "warn",
+        "title": "False Friends",
+        "html": "facilitate ≠ facility；economic ≠ economical；notify ≠ notice；fiscal ≠ physical。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "pos-d6-q1",
+      "type": "main",
+      "scene": "Facilities / Maintenance",
+      "eye_distance": "middle",
+      "target_pos": "noun",
+      "weakness_tag": "false-friends",
+      "stem": "The new storage {BLANK} will be available to all departments next month.",
+      "options": [
+        { "label": "A", "text": "facilitate", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "facility", "pos": "noun", "is_correct": true },
+        { "label": "C", "text": "facilitated", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "facilitating", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "new storage + ______ 作主詞核心",
+      "solution_steps": [
+        { "step": 1, "text": "new storage 修飾後方名詞。" },
+        { "step": 2, "text": "facility 是名詞；facilitate 是動詞。" }
+      ],
+      "wrong_thought_steps": ["看到熟悉的 facilitate 就直接選，沒有看位置。"],
+      "rule_box": { "type": "warn", "text": "facility = 設施；facilitate = 促進。" }
+    },
+    {
+      "q_id": "pos-d6-q2",
+      "type": "main",
+      "scene": "Finance / Planning",
+      "eye_distance": "near",
+      "target_pos": "adv",
+      "weakness_tag": "adv-verb",
+      "stem": "The finance team reviewed the quarterly figures {BLANK} before the presentation.",
+      "options": [
+        { "label": "A", "text": "careful", "pos": "adj", "is_correct": false },
+        { "label": "B", "text": "care", "pos": "noun", "is_correct": false },
+        { "label": "C", "text": "carefully", "pos": "adv", "is_correct": true },
+        { "label": "D", "text": "carefulness", "pos": "noun", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "修飾 reviewed",
+      "solution_steps": [
+        { "step": 1, "text": "空格修飾 reviewed 這個動作。" },
+        { "step": 2, "text": "修飾動詞用副詞 carefully。" }
+      ],
+      "wrong_thought_steps": ["看到 figures 名詞，誤判成形容詞 careful。"],
+      "rule_box": { "type": "ok", "text": "修飾動詞時選副詞。" }
+    },
+    {
+      "q_id": "pos-d6-q3",
+      "type": "main",
+      "scene": "Public Policy / Notice",
+      "eye_distance": "far",
+      "target_pos": "adj",
+      "weakness_tag": "false-friends",
+      "stem": "The city issued an {BLANK} report on small-business hiring trends.",
+      "options": [
+        { "label": "A", "text": "economic", "pos": "adj", "is_correct": true },
+        { "label": "B", "text": "economically", "pos": "adv", "is_correct": false },
+        { "label": "C", "text": "economy", "pos": "noun", "is_correct": false },
+        { "label": "D", "text": "economize", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "修飾 report",
+      "solution_steps": [
+        { "step": 1, "text": "空格後面是名詞 report，需要形容詞。" },
+        { "step": 2, "text": "economic report = 經濟報告。" }
+      ],
+      "wrong_thought_steps": ["把 economy 當成可直接修飾 report 的名詞。"],
+      "rule_box": { "type": "warn", "text": "economic = 經濟的；economical = 節儉的。" }
+    },
+    {
+      "q_id": "pos-d6-q4",
+      "type": "main",
+      "scene": "Customer Service / Notice",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "weakness_tag": "word-family-choice",
+      "stem": "The hotel will {BLANK} guests of any changes to the shuttle schedule.",
+      "options": [
+        { "label": "A", "text": "notification", "pos": "noun", "is_correct": false },
+        { "label": "B", "text": "notice", "pos": "noun", "is_correct": false },
+        { "label": "C", "text": "notify", "pos": "verb", "is_correct": true },
+        { "label": "D", "text": "notifiable", "pos": "adj", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "will + ______",
+      "solution_steps": [
+        { "step": 1, "text": "助動詞 will 後面接動詞原形。" },
+        { "step": 2, "text": "notify guests of changes 是正確搭配。" }
+      ],
+      "wrong_thought_steps": ["notice 可作名詞/動詞，但 notify someone of something 才符合句型。"],
+      "rule_box": { "type": "ok", "text": "notify A of B = 通知 A 關於 B。" }
+    },
+    {
+      "q_id": "pos-d6-q5",
+      "type": "main",
+      "scene": "Operations / Process",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "linking-verb",
+      "stem": "The revised procedure became more {BLANK} after the team removed unnecessary steps.",
+      "options": [
+        { "label": "A", "text": "efficiency", "pos": "noun", "is_correct": false },
+        { "label": "B", "text": "efficient", "pos": "adj", "is_correct": true },
+        { "label": "C", "text": "efficiently", "pos": "adv", "is_correct": false },
+        { "label": "D", "text": "efficiencies", "pos": "noun", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "became more + ______",
+      "solution_steps": [
+        { "step": 1, "text": "became 是連綴動詞，後方接形容詞補語。" },
+        { "step": 2, "text": "more efficient 是正確結構。" }
+      ],
+      "wrong_thought_steps": ["看到 procedure 是名詞，誤選名詞 efficiency。"],
+      "rule_box": { "type": "ok", "text": "become/seem/remain 後面常接形容詞。" }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "pos-d6-monitor-1",
+      "type": "monitor",
+      "scene": "[監控] multiplier",
+      "eye_distance": "middle",
+      "target_pos": "adv",
+      "weakness_tag": "multiplier-comparison",
+      "stem": "The new system processes invoices twice as {BLANK} as the old one.",
+      "options": [
+        { "label": "A", "text": "quick", "pos": "adj", "is_correct": false },
+        { "label": "B", "text": "quickly", "pos": "adv", "is_correct": true },
+        { "label": "C", "text": "quickness", "pos": "noun", "is_correct": false },
+        { "label": "D", "text": "quicken", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "twice as + adv + as",
+      "solution_steps": [
+        { "step": 1, "text": "processes 是動詞，空格修飾動作。" },
+        { "step": 2, "text": "twice as quickly as 是正確倍數比較。" }
+      ],
+      "rule_box": { "type": "warn", "text": "倍數 + as + adj/adv + as。" }
+    }
+  ]
+}

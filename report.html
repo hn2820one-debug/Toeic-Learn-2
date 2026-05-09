@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/report.css">
+</head>
+<body>
+  <div id="top-strip" class="top-strip">載入中...</div>
+  <main class="app-shell">
+    <header class="page-head">
+      <h1 id="report-title" class="page-title">診斷報告</h1>
+      <p id="result-line" class="page-subtitle"></p>
+    </header>
+
+    <section class="section">
+      <div id="metrics" class="metrics"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">Component Dashboard</h2>
+      <div id="component-dashboard" class="component-dashboard"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">Question Map</h2>
+      <div id="question-map" class="question-map"></div>
+    </section>
+
+    <section class="section">
+      <div id="good-box" class="good-box"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">掌握度評分</h2>
+      <p>Mastery: <strong id="mastery-value"></strong></p>
+      <p id="next-suggestion"></p>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">全題彩色詳解</h2>
+      <div id="all-questions"></div>
+    </section>
+
+    <section class="section" style="display:flex;gap:8px;justify-content:flex-end">
+      <button id="redo-btn" class="button secondary">重做本節</button>
+      <button id="next-btn" class="button primary">回課程首頁</button>
+    </section>
+  </main>
+
+  <script src="./js/storage.js"></script>
+  <script src="./js/scorer.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/report.js"></script>
+  <script>
+    window.AppCore.registerSW();
+    window.ReportEngine.initReport();
+  </script>
+</body>
+</html>

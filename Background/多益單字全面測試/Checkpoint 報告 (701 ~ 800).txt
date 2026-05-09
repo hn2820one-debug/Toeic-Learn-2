@@ -1,0 +1,147 @@
+**1. Topic 完成程度**
+目前階段：Word
+目標基準：每個 topic 25 / 30
+ * 辦公室：21 / 25–30
+ * 文書作業：29 / 25–30 (✅ 達標)
+ * 商務會議：19 / 25–30
+ * 業務協調：15 / 25–30
+ * 人才招募：16 / 25–30
+ * 人事與組織：37 / 25–30 (✅ 達標)
+ * 行銷與宣傳：19 / 25–30
+ * 財務會計：26 / 25–30 (✅ 達標)
+ * 企業經營：28 / 25–30 (✅ 達標)
+ * 製造與品管：24 / 25–30
+ * 公告訊息：19 / 25–30
+ * 演講與宴會：20 / 25–30
+ * 貿易與物流：23 / 25–30
+ * 社會經濟：22 / 25–30
+ * 零售購物：29 / 25–30 (✅ 達標)
+ * 銷售服務：18 / 25–30
+ * 餐飲與住宿：30 / 25–30 (✅ 達標)
+ * 旅遊與交通：40 / 25–30 (✅ 達標)
+ * 表演與展覽：26 / 25–30 (✅ 達標)
+ * 金融與投資：20 / 25–30
+ * 房屋與修繕：32 / 25–30 (✅ 達標)
+ * 生活休閒：26 / 25–30 (✅ 達標)
+ * 公益慈善：18 / 25–30
+ * 傳播媒體：26 / 25–30 (✅ 達標)
+ * 科技與研發：40 / 25–30 (✅ 達標)
+ * 醫療與健康：46 / 25–30 (✅ 達標)
+ * 環境保育：45 / 25–30 (✅ 達標)
+ * 溝通表達：42 / 25–30 (✅ 達標)
+ * 日常生活：27 / 25–30 (✅ 達標)
+**2. 難度完成程度**
+ * Level A：已測 172 題
+ * Level B：已測 420 題
+ * Level C：已測 196 題
+分布判讀
+ * **Level B 比例失衡**：Level B 依然佔據總題數一半以上。
+ * **Level A 基礎盲區**：本輪刻意投放生活與自然相關的 Level A 詞彙（如 bucket, mop, blink），失分率異常高，顯示基礎單字的網底極其薄弱。
+ * **Level C 穩定失分**：高難度的醫療、生態與抽象溝通詞彙幾乎全數無法辨識。
+**3. 該 100 題完整清單**
+ 701. apparel｜Topic: 零售購物｜Difficulty: B｜Type: Word｜Result: 不會
+ 702. cosmetics｜Topic: 零售購物｜Difficulty: B｜Type: Word｜Result: 不會
+ 703. ointment｜Topic: 醫療與健康｜Difficulty: C｜Type: Word｜Result: 不會
+ 704. wheelchair｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+ 705. thermometer｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+ 706. cushion｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 會
+ 707. vacuum｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 會
+ 708. patio｜Topic: 房屋與修繕｜Difficulty: C｜Type: Word｜Result: 不會
+ 709. attic｜Topic: 房屋與修繕｜Difficulty: C｜Type: Word｜Result: 不會
+ 710. corridor｜Topic: 房屋與修繕｜Difficulty: B｜Type: Word｜Result: 不會
+ 711. roundabout｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+ 712. pavement｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+ 713. bicycle｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 會
+ 714. helmet｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 不會
+ 715. suitcase｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 不會
+ 716. visa｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+ 717. destination｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+ 718. monument｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+ 719. sculpture｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+ 720. portrait｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+ 721. canvas｜Topic: 表演與展覽｜Difficulty: C｜Type: Word｜Result: 不會
+ 722. symphony｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+ 723. stadium｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+ 724. arena｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+ 725. referee｜Topic: 生活休閒｜Difficulty: B｜Type: Word｜Result: 不會
+ 726. gymnasium｜Topic: 生活休閒｜Difficulty: B｜Type: Word｜Result: 不會
+ 727. dumbbell｜Topic: 生活休閒｜Difficulty: C｜Type: Word｜Result: 不會
+ 728. treadmill｜Topic: 生活休閒｜Difficulty: C｜Type: Word｜Result: 不會
+ 729. yoga｜Topic: 生活休閒｜Difficulty: A｜Type: Word｜Result: 會
+ 730. meditation｜Topic: 生活休閒｜Difficulty: B｜Type: Word｜Result: 不會
+ 731. nutrient｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+ 732. protein｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 會
+ 733. calorie｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+ 734. cholesterol｜Topic: 醫療與健康｜Difficulty: C｜Type: Word｜Result: 不會
+ 735. spice｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 不會
+ 736. ingredient｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 不會
+ 737. stove｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 不會
+ 738. microwave｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 會
+ 739. refrigerator｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 會
+ 740. faucet｜Topic: 房屋與修繕｜Difficulty: C｜Type: Word｜Result: 不會
+ 741. bucket｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 不會
+ 742. sponge｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 不會
+ 743. mop｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 不會
+ 744. bleach｜Topic: 日常生活｜Difficulty: C｜Type: Word｜Result: 不會
+ 745. breeze｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 746. hurricane｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 747. earthquake｜Topic: 環境保育｜Difficulty: A｜Type: Word｜Result: 不會
+ 748. volcano｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 749. glacier｜Topic: 環境保育｜Difficulty: C｜Type: Word｜Result: 不會
+ 750. ocean｜Topic: 環境保育｜Difficulty: A｜Type: Word｜Result: 會
+ 751. coral｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 752. mammal｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 753. reptile｜Topic: 環境保育｜Difficulty: C｜Type: Word｜Result: 不會
+ 754. insect｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 會
+ 755. pest｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 756. fertilizer｜Topic: 環境保育｜Difficulty: C｜Type: Word｜Result: 不會
+ 757. harvest｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 758. agriculture｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 759. irrigation｜Topic: 環境保育｜Difficulty: C｜Type: Word｜Result: 不會
+ 760. drought｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 761. famine｜Topic: 環境保育｜Difficulty: C｜Type: Word｜Result: 不會
+ 762. obesity｜Topic: 醫療與健康｜Difficulty: C｜Type: Word｜Result: 不會
+ 763. diabetes｜Topic: 醫療與健康｜Difficulty: C｜Type: Word｜Result: 不會
+ 764. asthma｜Topic: 醫療與健康｜Difficulty: C｜Type: Word｜Result: 不會
+ 765. symptom｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+ 766. immunity｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+ 767. antibody｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+ 768. virus｜Topic: 醫療與健康｜Difficulty: A｜Type: Word｜Result: 不會
+ 769. bacteria｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+ 770. parasite｜Topic: 醫療與健康｜Difficulty: C｜Type: Word｜Result: 不會
+ 771. predator｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 772. prey｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 773. camouflage｜Topic: 環境保育｜Difficulty: C｜Type: Word｜Result: 不會
+ 774. extinction｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+ 775. fossil｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+ 776. archaeology｜Topic: 科技與研發｜Difficulty: C｜Type: Word｜Result: 不會
+ 777. mythology｜Topic: 傳播媒體｜Difficulty: C｜Type: Word｜Result: 不會
+ 778. alien｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+ 779. spaceship｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+ 780. galaxy｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+ 781. planet｜Topic: 科技與研發｜Difficulty: A｜Type: Word｜Result: 不會
+ 782. comet｜Topic: 科技與研發｜Difficulty: C｜Type: Word｜Result: 不會
+ 783. gravity｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+ 784. oxygen｜Topic: 科技與研發｜Difficulty: A｜Type: Word｜Result: 會
+ 785. leather｜Topic: 製造與品管｜Difficulty: B｜Type: Word｜Result: 不會
+ 786. cotton｜Topic: 製造與品管｜Difficulty: B｜Type: Word｜Result: 不會
+ 787. whisper｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 會
+ 788. scream｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 不會
+ 789. frown｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+ 790. nod｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 不會
+ 791. blink｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 不會
+ 792. cheer｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 不會
+ 793. tease｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+ 794. apologize｜Topic: 溝通表達｜Difficulty: A｜Type: Word｜Result: 會
+ 795. forgive｜Topic: 溝通表達｜Difficulty: A｜Type: Word｜Result: 會
+ 796. gossip｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 會
+ 797. brag｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+ 798. flatter｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+ 799. insult｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 會
+ 800. ridicule｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+**4. 階段判讀**
+ * **目前最穩的區域**：具體且高度國際化的理科與生活常識名詞（如 protein, oxygen, ocean, insect, microwave）。
+ * **目前最弱的區域**：醫療與健康（幾乎全數失守，包含疾病與醫學名詞）、環境生態（動植物分類與自然現象）、生活居家（家用五金、清潔用品）、溝通表達（人類臉部表情與微小動作詞）。
+ * **是否出現新的高弱區**：是。自然科學與人體反應成為明確的弱點區塊。面對非職場的「生活化實物」與「人際動作」，防禦力極低。
+ * **與上一個 100 題 checkpoint 相比，有沒有明顯結構變化**：有。本輪大量投放非商務詞彙，導致整體答錯率飆升。同時確認了「False Friends（跨域偏誤）」現象：當遇到不熟悉的字，極易被字形相似或自身強勢領域的聯想誤導（例如將 helmet 聯想為板手、breeze 聯想為暴風、tease 聯想為牙齒）。
+如果您準備好了，我們可以隨時繼續進行 801 ~ 820 的測驗作答。

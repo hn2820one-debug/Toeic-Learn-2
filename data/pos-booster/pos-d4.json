@@ -1,0 +1,115 @@
+{
+  "lesson_id": "pos-d4",
+  "module_id": "pos-booster",
+  "day": 4,
+  "title": "混合判斷強化",
+  "type": "concept+quiz",
+  "quiz_type": "standard",
+  "time_limit_seconds": 20,
+  "concept": {
+    "debug_rule": "定位題眼後，三秒內先排除兩個錯誤詞性。",
+    "cards": [
+      {
+        "type": "comparison",
+        "tone": "neutral",
+        "title": "快排流程",
+        "html": "1. 看前後 2 個字 2. 判定詞性 3. 再看語意"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "pos-d4-q1",
+      "type": "main",
+      "scene": "Banking / Audit",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "det-noun",
+      "stem": "The team prepared a full {BLANK} before the annual audit.",
+      "options": [
+        { "label": "A", "text": "document", "pos": "noun", "is_correct": true },
+        { "label": "B", "text": "documentary", "pos": "adj", "is_correct": false },
+        { "label": "C", "text": "documented", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "documenting", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "a full + ______",
+      "solution_steps": [
+        { "step": 1, "text": "full 修飾名詞。" },
+        { "step": 2, "text": "選名詞 document。" }
+      ],
+      "wrong_thought_steps": ["選了 documentary 以為是名詞。"],
+      "rule_box": { "type": "ok", "text": "冠詞片語核心為名詞。" }
+    },
+    {
+      "q_id": "pos-d4-q2",
+      "type": "main",
+      "scene": "Hotel / Revenue",
+      "eye_distance": "middle",
+      "target_pos": "adv",
+      "weakness_tag": "adv-verb",
+      "stem": "The assistant responded {BLANK} to the guest's urgent request.",
+      "options": [
+        { "label": "A", "text": "rapid", "pos": "adj", "is_correct": false },
+        { "label": "B", "text": "rapidity", "pos": "noun", "is_correct": false },
+        { "label": "C", "text": "rapidly", "pos": "adv", "is_correct": true },
+        { "label": "D", "text": "rapidness", "pos": "noun", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "修飾 responded",
+      "solution_steps": [
+        { "step": 1, "text": "修飾動詞 responded。" },
+        { "step": 2, "text": "選 rapidly。" }
+      ],
+      "wrong_thought_steps": ["看到 urgent 以為整句在考形容詞。"],
+      "rule_box": { "type": "ok", "text": "動詞修飾語選副詞。" }
+    },
+    {
+      "q_id": "pos-d4-q3",
+      "type": "main",
+      "scene": "Aviation / Training",
+      "eye_distance": "far",
+      "target_pos": "adj",
+      "weakness_tag": "linking-verb",
+      "stem": "After two workshops, the procedure seemed much more {BLANK} to new hires.",
+      "options": [
+        { "label": "A", "text": "clarity", "pos": "noun", "is_correct": false },
+        { "label": "B", "text": "clear", "pos": "adj", "is_correct": true },
+        { "label": "C", "text": "clearly", "pos": "adv", "is_correct": false },
+        { "label": "D", "text": "clarify", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "seemed 後面接補語",
+      "solution_steps": [
+        { "step": 1, "text": "連綴動詞 seemed 後面接形容詞。" },
+        { "step": 2, "text": "選 clear。" }
+      ],
+      "wrong_thought_steps": ["選 clearly，忽略連綴動詞規則。"],
+      "rule_box": { "type": "warn", "text": "seem/appear/become 後多為形容詞。" }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "pos-d4-monitor-1",
+      "type": "monitor",
+      "weakness_tag": "active-passive",
+      "scene": "[監控] Voice choice",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "stem": "The clerk {BLANK} the invoice before filing it.",
+      "options": [
+        { "label": "A", "text": "checked", "pos": "verb", "is_correct": true },
+        { "label": "B", "text": "was checked", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "is checked", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "has checking", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "主詞 clerk 主動執行",
+      "solution_steps": [
+        { "step": 1, "text": "有受詞 invoice，主動句。" },
+        { "step": 2, "text": "故選 checked。" }
+      ],
+      "rule_box": { "type": "warn", "text": "先看是否有直接受詞，再決定主被動。" }
+    }
+  ]
+}

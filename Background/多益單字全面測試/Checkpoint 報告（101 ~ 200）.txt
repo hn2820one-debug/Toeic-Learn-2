@@ -1,0 +1,194 @@
+Checkpoint 報告（101 ~ 200）
+
+補充註記：
+	•	101–200 原始出題共 100 題
+	•	其中 11 題不納入正式樣本（重複或 Phrase）
+	•	本 checkpoint 有效正式樣本 = 89
+	•	截至 200 題，累積正式樣本 = 188
+
+1. Topic 完成程度
+
+目前階段：Word
+目標基準：每個 topic 25 / 30
+Phrase：未開始
+Chunk：未開始
+	•	辦公室：6 / 25–30
+	•	文書作業：10 / 25–30
+	•	商務會議：8 / 25–30
+	•	業務協調：5 / 25–30
+	•	人才招募：7 / 25–30
+	•	人事與組織：7 / 25–30
+	•	行銷與宣傳：6 / 25–30
+	•	財務會計：10 / 25–30
+	•	企業經營：12 / 25–30
+	•	製造與品管：6 / 25–30
+	•	公告訊息：6 / 25–30
+	•	演講與宴會：8 / 25–30
+	•	貿易與物流：8 / 25–30
+	•	社會經濟：10 / 25–30
+	•	零售購物：10 / 25–30
+	•	銷售服務：6 / 25–30
+	•	餐飲與住宿：8 / 25–30
+	•	旅遊與交通：10 / 25–30
+	•	表演與展覽：8 / 25–30
+	•	金融與投資：11 / 25–30
+	•	房屋與修繕：4 / 25–30
+	•	生活休閒：1 / 25–30
+	•	公益慈善：2 / 25–30
+	•	傳播媒體：3 / 25–30
+	•	科技與研發：4 / 25–30
+	•	醫療與健康：3 / 25–30
+	•	環境保育：3 / 25–30
+	•	溝通表達：2 / 25–30
+	•	日常生活：4 / 25–30
+
+2. 難度完成程度
+	•	Level A：已測 53 題
+	•	Level B：已測 98 題
+	•	Level C：已測 37 題
+
+分布判讀：
+	•	Level B 仍然明顯偏多
+	•	Level C 仍然不足
+	•	第二個 100 題雖然有補到一些 C，但整體仍未平衡
+
+3. 該 100 題完整清單
+	101.	leisure｜Topic: 生活休閒｜Difficulty: A｜Type: Word｜Result: 不會
+	102.	donation｜Topic: 公益慈善｜Difficulty: A｜Type: Word｜Result: 會
+	103.	recycle｜Topic: 環境保育｜Difficulty: A｜Type: Word｜Result: 會
+	104.	grocery｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 不會
+	105.	outlet｜Topic: 零售購物｜Difficulty: B｜Type: Word｜Result: 不會
+	106.	seminar｜Topic: 商務會議｜Difficulty: B｜Type: Word｜Result: 不會
+	107.	dispatch｜Topic: 貿易與物流｜Difficulty: B｜Type: Word｜Result: 不會
+	108.	diagnose｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 會
+	109.	patent｜Topic: 科技與研發｜Difficulty: C｜Type: Word｜Result: 會
+	110.	headline｜Topic: 傳播媒體｜Difficulty: A｜Type: Word｜Result: 會
+	111.	persuade｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 不會
+	112.	invoicee｜Topic: 財務會計｜Difficulty: C｜Type: Word｜Result: 不納入正式樣本
+	113.	appliance store｜Topic: 房屋與修繕｜Difficulty: B｜Type: Phrase｜Result: 不納入正式樣本
+	114.	landfill｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+	115.	volunteer｜Topic: 公益慈善｜Difficulty: A｜Type: Word｜Result: 會
+	116.	suburb｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 不會
+	117.	console｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+	118.	dosage｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+	119.	syllabus｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 不會
+	120.	municipality｜Topic: 社會經濟｜Difficulty: C｜Type: Word｜Result: 不會
+	121.	cabinet｜Topic: 辦公室｜Difficulty: A｜Type: Word｜Result: 不會
+	122.	typist｜Topic: 文書作業｜Difficulty: B｜Type: Word｜Result: 不會
+	123.	convene｜Topic: 商務會議｜Difficulty: C｜Type: Word｜Result: 不會
+	124.	liaison｜Topic: 業務協調｜Difficulty: C｜Type: Word｜Result: 不會
+	125.	probation｜Topic: 人事與組織｜Difficulty: B｜Type: Word｜Result: 不會
+	126.	tenure｜Topic: 人事與組織｜Difficulty: C｜Type: Word｜Result: 不會
+	127.	slogan｜Topic: 行銷與宣傳｜Difficulty: A｜Type: Word｜Result: 不會
+	128.	deficit｜Topic: 財務會計｜Difficulty: B｜Type: Word｜Result: 不會
+	129.	franchise｜Topic: 企業經營｜Difficulty: B｜Type: Word｜Result: 會
+	130.	malfunction｜Topic: 製造與品管｜Difficulty: B｜Type: Word｜Result: 不會
+	131.	circular｜Topic: 公告訊息｜Difficulty: B｜Type: Word｜Result: 不會
+	132.	oration｜Topic: 演講與宴會｜Difficulty: C｜Type: Word｜Result: 不會
+	133.	brokerage｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 不會
+	134.	census｜Topic: 社會經濟｜Difficulty: B｜Type: Word｜Result: 不會
+	135.	aisle｜Topic: 零售購物｜Difficulty: A｜Type: Word｜Result: 不會
+	136.	incentive｜Topic: 企業經營｜Difficulty: B｜Type: Word｜Result: 不會
+	137.	lodging｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 不會
+	138.	intersection｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 不會
+	139.	curator｜Topic: 表演與展覽｜Difficulty: C｜Type: Word｜Result: 不會
+	140.	mortgage｜Topic: 金融與投資｜Difficulty: B｜Type: Word｜Result: 會
+	141.	pantry｜Topic: 辦公室｜Difficulty: A｜Type: Word｜Result: 不會
+	142.	transcript｜Topic: 文書作業｜Difficulty: B｜Type: Word｜Result: 不會
+	143.	adjourn｜Topic: 商務會議｜Difficulty: C｜Type: Word｜Result: 不會
+	144.	mediator｜Topic: 業務協調｜Difficulty: C｜Type: Word｜Result: 不會
+	145.	applicant pool｜Topic: 人才招募｜Difficulty: B｜Type: Phrase｜Result: 不納入正式樣本
+	146.	credential｜Topic: 人才招募｜Difficulty: B｜Type: Word｜Result: 不會
+	147.	trademark｜Topic: 行銷與宣傳｜Difficulty: B｜Type: Word｜Result: 會
+	148.	liquidity｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 會
+	149.	benchmark｜Topic: 企業經營｜Difficulty: B｜Type: Word｜Result: 會
+	150.	contamination｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+	151.	leaflet｜Topic: 公告訊息｜Difficulty: A｜Type: Word｜Result: 不會
+	152.	tribute｜Topic: 演講與宴會｜Difficulty: B｜Type: Word｜Result: 不會
+	153.	consignment｜Topic: 貿易與物流｜Difficulty: C｜Type: Word｜Result: 不會
+	154.	subsidy｜Topic: 社會經濟｜Difficulty: B｜Type: Word｜Result: 不會
+	155.	bargain｜Topic: 零售購物｜Difficulty: A｜Type: Word｜Result: 會
+	156.	deductible｜Topic: 銷售服務｜Difficulty: C｜Type: Word｜Result: 不會
+	157.	occupancy｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 不會
+	158.	transfer｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 會
+	159.	orchestra｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+	160.	securities｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 會
+	161.	cubicle｜Topic: 辦公室｜Difficulty: B｜Type: Word｜Result: 不會
+	162.	duplicate｜Topic: 文書作業｜Difficulty: A｜Type: Word｜Result: 不會
+	163.	quorum｜Topic: 商務會議｜Difficulty: C｜Type: Word｜Result: 不會
+	164.	counterpart｜Topic: 業務協調｜Difficulty: C｜Type: Word｜Result: 不會
+	165.	intern｜Topic: 人才招募｜Difficulty: A｜Type: Word｜Result: 會
+	166.	restructure｜Topic: 企業經營｜Difficulty: C｜Type: Word｜Result: 不會
+	167.	invoice number｜Topic: 財務會計｜Difficulty: B｜Type: Phrase｜Result: 不納入正式樣本
+	168.	overhead｜Topic: 財務會計｜Difficulty: B｜Type: Word｜Result: 不會
+	169.	outsource｜Topic: 企業經營｜Difficulty: B｜Type: Word｜Result: 會
+	170.	tolerance｜Topic: 製造與品管｜Difficulty: C｜Type: Word｜Result: 會
+	171.	memoir｜Topic: 文書作業｜Difficulty: B｜Type: Word｜Result: 不會
+	172.	applause｜Topic: 演講與宴會｜Difficulty: A｜Type: Word｜Result: 不會
+	173.	brokerage fee｜Topic: 金融與投資｜Difficulty: B｜Type: Phrase｜Result: 不納入正式樣本
+	174.	austerity｜Topic: 社會經濟｜Difficulty: C｜Type: Word｜Result: 不會
+	175.	receipt｜Topic: 零售購物｜Difficulty: A｜Type: Word｜Result: 會
+	176.	reimbursement｜Topic: 財務會計｜Difficulty: B｜Type: Word｜Result: 會
+	177.	vacancy rate｜Topic: 社會經濟｜Difficulty: B｜Type: Phrase｜Result: 不納入正式樣本
+	178.	detour｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+	179.	masterpiece｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+	180.	collateral｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 不會
+	181.	locker｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 不會
+	182.	notation｜Topic: 文書作業｜Difficulty: C｜Type: Word｜Result: 不會
+	183.	attendee｜Topic: 商務會議｜Difficulty: B｜Type: Word｜Result: 會
+	184.	coordinate｜Topic: 業務協調｜Difficulty: B｜Type: Word（重複）｜Result: 不納入正式樣本
+	185.	applicant｜Topic: 人才招募｜Difficulty: A｜Type: Word（重複）｜Result: 不納入正式樣本
+	186.	division｜Topic: 人事與組織｜Difficulty: B｜Type: Word｜Result: 不會
+	187.	publicity｜Topic: 傳播媒體｜Difficulty: B｜Type: Word｜Result: 不會
+	188.	balance｜Topic: 財務會計｜Difficulty: A｜Type: Word｜Result: 會
+	189.	corporation｜Topic: 企業經營｜Difficulty: B｜Type: Word｜Result: 會
+	190.	inspection｜Topic: 製造與品管｜Difficulty: B｜Type: Word｜Result: 會
+	191.	notice｜Topic: 公告訊息｜Difficulty: A｜Type: Word（重複）｜Result: 不納入正式樣本
+	192.	banquet｜Topic: 演講與宴會｜Difficulty: B｜Type: Word（重複）｜Result: 不納入正式樣本
+	193.	cargo｜Topic: 貿易與物流｜Difficulty: B｜Type: Word｜Result: 不會
+	194.	poverty｜Topic: 社會經濟｜Difficulty: B｜Type: Word｜Result: 不會
+	195.	coupon｜Topic: 零售購物｜Difficulty: A｜Type: Word｜Result: 會
+	196.	refund｜Topic: 零售購物｜Difficulty: A｜Type: Word（重複）｜Result: 不納入正式樣本
+	197.	suite｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 不會
+	198.	terminal｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 會
+	199.	exhibition｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+	200.	deposit｜Topic: 金融與投資｜Difficulty: A｜Type: Word｜Result: 會
+
+4. 階段判讀
+
+目前最穩的區域
+	•	金融與投資仍相對穩，第二個 100 題裡 mortgage / liquidity / securities / deposit 能守住。
+	•	企業經營也相對穩，franchise / benchmark / outsource / corporation 表現較好。
+	•	零售購物中較具體、交易型字彙也較穩，例如 bargain / receipt / coupon。
+
+目前最弱的區域
+	•	辦公室、文書作業、商務會議、業務協調四塊明顯偏弱，且是連續失分，不是零星失誤。
+	•	人事與組織仍弱，probation / tenure / division 都失分。
+	•	表演與展覽也持續弱，curator / orchestra / masterpiece / exhibition 全失。
+	•	社會經濟在第二個 100 題明顯轉弱，municipality / census / subsidy / austerity / poverty 幾乎全失。
+
+是否出現新的高弱區
+有。第二個 100 題新浮出的高弱區較明確是：
+	1.	辦公行政鏈：cabinet / pantry / cubicle / typist / transcript / duplicate / notation
+	2.	會議程序鏈：seminar / convene / adjourn / quorum
+	3.	社會經濟抽象字：municipality / census / subsidy / austerity / poverty
+	4.	展演文化字：curator / orchestra / masterpiece / exhibition
+	5.	日常生活字：grocery / suburb / syllabus / locker
+
+與上一個 100 題 checkpoint 相比，有沒有明顯結構變化
+有，變化很明顯：
+	•	第一個 checkpoint 相對穩的 社會經濟，到第二個 checkpoint 在較抽象、制度型字彙上明顯失守。
+	•	之前已弱的 旅遊與交通、表演與展覽，第二輪沒有改善，反而被再次驗證。
+	•	第二輪開始補到先前幾乎沒測的 topic，結果顯示：
+	•	公益慈善 目前暫時不弱，但樣本仍太少。
+	•	環境保育、醫療與健康、傳播媒體 是混合型，中間偏弱。
+	•	日常生活 一補樣本就出現明顯弱象。
+
+本階段統計：
+	•	原始出題：100
+	•	正式有效樣本：89
+	•	不納入正式樣本：11
+	•	會：26
+	•	不會：63
+
+目前進程：188 / 725–870

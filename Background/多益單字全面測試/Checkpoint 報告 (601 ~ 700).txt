@@ -1,0 +1,150 @@
+1.	Topic 完成程度
+目前階段：Word
+目標基準：每個 topic 25 / 30
+辦公室：21 / 25–30
+文書作業：29 / 25–30 (✅ 達標)
+商務會議：19 / 25–30
+業務協調：15 / 25–30
+人才招募：16 / 25–30
+人事與組織：37 / 25–30 (✅ 達標)
+行銷與宣傳：19 / 25–30
+財務會計：26 / 25–30 (✅ 達標)
+企業經營：28 / 25–30 (✅ 達標)
+製造與品管：22 / 25–30
+公告訊息：19 / 25–30
+演講與宴會：20 / 25–30
+貿易與物流：23 / 25–30
+社會經濟：22 / 25–30
+零售購物：27 / 25–30 (✅ 達標)
+銷售服務：18 / 25–30
+餐飲與住宿：28 / 25–30 (✅ 達標)
+旅遊與交通：32 / 25–30 (✅ 達標)
+表演與展覽：20 / 25–30
+金融與投資：20 / 25–30
+房屋與修繕：28 / 25–30 (✅ 達標)
+生活休閒：20 / 25–30
+公益慈善：18 / 25–30
+傳播媒體：25 / 25–30 (✅ 達標)
+科技與研發：31 / 25–30 (✅ 達標)
+醫療與健康：31 / 25–30 (✅ 達標)
+環境保育：26 / 25–30 (✅ 達標)
+溝通表達：28 / 25–30 (✅ 達標)
+日常生活：19 / 25–30
+1.	難度完成程度
+Level A：已測 158 題
+Level B：已測 362 題
+Level C：已測 168 題
+分布判讀
+• Level A：本輪大幅增加日常生活與基礎休閒字彙，但失分率極高，反映出基礎實體名詞的網底仍有破洞。
+• Level B：中階詞彙持續作為主力，一旦脫離 IT 或車流、物流等具體領域，失守狀況嚴重。
+• Level C：高階抽象字詞（如 anecdote, interpretation, terminology）依然是重災區，幾乎全數落入盲區。
+1.	該 100 題完整清單
+2.	envelope｜Topic: 文書作業｜Difficulty: A｜Type: Word｜Result: 會
+3.	unanimous｜Topic: 商務會議｜Difficulty: C｜Type: Word｜Result: 會
+4.	streamline｜Topic: 企業經營｜Difficulty: B｜Type: Word｜Result: 不會
+5.	headcount｜Topic: 人事與組織｜Difficulty: B｜Type: Word｜Result: 不會
+6.	niche｜Topic: 行銷與宣傳｜Difficulty: B｜Type: Word｜Result: 不會
+7.	blueprint｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+8.	directive｜Topic: 公告訊息｜Difficulty: C｜Type: Word｜Result: 不會
+9.	anecdote｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+10.	wholesale｜Topic: 零售購物｜Difficulty: B｜Type: Word｜Result: 不會
+11.	rebate｜Topic: 銷售服務｜Difficulty: C｜Type: Word｜Result: 不會
+12.	rehearsal｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+13.	yield｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 會
+14.	tenant｜Topic: 房屋與修繕｜Difficulty: B｜Type: Word｜Result: 不會
+15.	recreation｜Topic: 生活休閒｜Difficulty: A｜Type: Word｜Result: 不會
+16.	philanthropy｜Topic: 公益慈善｜Difficulty: C｜Type: Word｜Result: 不會
+17.	broadcast｜Topic: 傳播媒體｜Difficulty: B｜Type: Word｜Result: 不會
+18.	chore｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 不會
+19.	synergy｜Topic: 企業經營｜Difficulty: C｜Type: Word｜Result: 不會
+20.	placement｜Topic: 人才招募｜Difficulty: B｜Type: Word｜Result: 會
+21.	wellness｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+22.	protocol｜Topic: 辦公室｜Difficulty: C｜Type: Word｜Result: 不會
+23.	catering｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 不會
+24.	transit｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+25.	metric｜Topic: 企業經營｜Difficulty: B｜Type: Word｜Result: 不會 (判定：解釋為矩陣 matrix 不符商管「指標」之意)
+26.	clearance｜Topic: 貿易與物流｜Difficulty: B｜Type: Word｜Result: 不會
+27.	accommodate｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 不會
+28.	mileage｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 會
+29.	theatrical｜Topic: 表演與展覽｜Difficulty: C｜Type: Word｜Result: 不會
+30.	leverage｜Topic: 金融與投資｜Difficulty: B｜Type: Word｜Result: 不會
+31.	property｜Topic: 房屋與修繕｜Difficulty: A｜Type: Word｜Result: 不會
+32.	amusement｜Topic: 生活休閒｜Difficulty: B｜Type: Word｜Result: 不會
+33.	coverage｜Topic: 傳播媒體｜Difficulty: B｜Type: Word｜Result: 不會
+34.	algorithm｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+35.	clinical｜Topic: 醫療與健康｜Difficulty: C｜Type: Word｜Result: 不會
+36.	ecosystem｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+37.	articulate｜Topic: 溝通表達｜Difficulty: B｜Type: Word｜Result: 不會
+38.	utensil｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 不會
+39.	shredder｜Topic: 辦公室｜Difficulty: B｜Type: Word｜Result: 不會
+40.	terminology｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+41.	panel｜Topic: 商務會議｜Difficulty: A｜Type: Word｜Result: 會
+42.	parameter｜Topic: 科技與研發｜Difficulty: C｜Type: Word｜Result: 會
+43.	mandate｜Topic: 公告訊息｜Difficulty: C｜Type: Word｜Result: 不會
+44.	logistics｜Topic: 貿易與物流｜Difficulty: B｜Type: Word｜Result: 會
+45.	barcode｜Topic: 零售購物｜Difficulty: A｜Type: Word｜Result: 會
+46.	grievance｜Topic: 人事與組織｜Difficulty: C｜Type: Word｜Result: 不會
+47.	appetizer｜Topic: 餐飲與住宿｜Difficulty: A｜Type: Word｜Result: 會
+48.	passenger｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 會
+49.	curtain｜Topic: 房屋與修繕｜Difficulty: A｜Type: Word｜Result: 不會
+50.	appraisal｜Topic: 人事與組織｜Difficulty: C｜Type: Word｜Result: 不會
+51.	utility｜Topic: 房屋與修繕｜Difficulty: B｜Type: Word｜Result: 會
+52.	tournament｜Topic: 生活休閒｜Difficulty: B｜Type: Word｜Result: 不會
+53.	journalism｜Topic: 傳播媒體｜Difficulty: C｜Type: Word｜Result: 不會
+54.	troubleshoot｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 會
+55.	prescription｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+56.	emission｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+57.	interpretation｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+58.	blanket｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 不會
+59.	clipboard｜Topic: 辦公室｜Difficulty: B｜Type: Word｜Result: 會
+60.	layout｜Topic: 文書作業｜Difficulty: B｜Type: Word｜Result: 不會
+61.	minutes｜Topic: 商務會議｜Difficulty: B｜Type: Word｜Result: 不會
+62.	workflow｜Topic: 辦公室｜Difficulty: B｜Type: Word｜Result: 會
+63.	orientation｜Topic: 人事與組織｜Difficulty: B｜Type: Word｜Result: 不會
+64.	newsletter｜Topic: 公告訊息｜Difficulty: A｜Type: Word｜Result: 會
+65.	module｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+66.	quota｜Topic: 業務協調｜Difficulty: B｜Type: Word｜Result: 不會
+67.	refreshment｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 不會
+68.	pallet｜Topic: 貿易與物流｜Difficulty: C｜Type: Word｜Result: 不會
+69.	storefront｜Topic: 零售購物｜Difficulty: B｜Type: Word｜Result: 不會
+70.	premium｜Topic: 銷售服務｜Difficulty: B｜Type: Word｜Result: 會
+71.	congestion｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+72.	repertoire｜Topic: 表演與展覽｜Difficulty: C｜Type: Word｜Result: 不會
+73.	bearish｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 不會
+74.	scaffolding｜Topic: 房屋與修繕｜Difficulty: C｜Type: Word｜Result: 不會
+75.	workout｜Topic: 生活休閒｜Difficulty: A｜Type: Word｜Result: 不會
+76.	editorial｜Topic: 傳播媒體｜Difficulty: B｜Type: Word｜Result: 不會
+77.	deploy｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 不會
+78.	pharmacy｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+79.	habitat｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+80.	razor｜Topic: 日常生活｜Difficulty: B｜Type: Word｜Result: 不會
+81.	directory｜Topic: 文書作業｜Difficulty: B｜Type: Word｜Result: 不會
+82.	resolution｜Topic: 商務會議｜Difficulty: C｜Type: Word｜Result: 不會
+83.	mentor｜Topic: 人事與組織｜Difficulty: A｜Type: Word｜Result: 不會
+84.	tuition｜Topic: 社會經濟｜Difficulty: B｜Type: Word｜Result: 不會
+85.	etiquette｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+86.	pedestrian｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+87.	embargo｜Topic: 貿易與物流｜Difficulty: C｜Type: Word｜Result: 不會
+88.	fare｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 不會
+89.	fabric｜Topic: 製造與品管｜Difficulty: B｜Type: Word｜Result: 不會
+90.	authentic｜Topic: 銷售服務｜Difficulty: C｜Type: Word｜Result: 不會
+91.	lottery｜Topic: 生活休閒｜Difficulty: B｜Type: Word｜Result: 不會
+92.	charity｜Topic: 公益慈善｜Difficulty: A｜Type: Word｜Result: 不會
+93.	reporter｜Topic: 傳播媒體｜Difficulty: A｜Type: Word｜Result: 會
+94.	smartphone｜Topic: 科技與研發｜Difficulty: A｜Type: Word｜Result: 會
+95.	surgery｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+96.	ecology｜Topic: 環境保育｜Difficulty: B｜Type: Word｜Result: 不會
+97.	vocabulary｜Topic: 溝通表達｜Difficulty: A｜Type: Word｜Result: 會
+98.	oven｜Topic: 日常生活｜Difficulty: A｜Type: Word｜Result: 不會
+99.	monitor｜Topic: 辦公室｜Difficulty: A｜Type: Word｜Result: 會
+100.	margin｜Topic: 財務會計｜Difficulty: B｜Type: Word｜Result: 會
+101.	summary｜Topic: 文書作業｜Difficulty: A｜Type: Word｜Result: 會
+102.	階段判讀
+目前最穩的區域
+對於數據紀錄與軟硬體系統相關的基礎字彙（如 mileage, passenger, troubleshoot, parameter）具備極高的直覺與穩定度；基礎金融會計（如 yield, margin）也維持優勢。
+目前最弱的區域
+生活瑣事與家用物品（如 chore, utensil, blanket, razor, oven, curtain）的失分率異常高；溝通與抽象概念字彙（如 anecdote, interpretation, terminology, etiquette）全數淪陷。
+是否出現新的高弱區
+是。從對 metric 一詞的作答中，可以觀察到強烈的領域直覺覆寫了常見語義：將 metric 以數理邏輯誤判為矩陣（matrix），而非商務管理常用的「績效指標」，顯示出在缺乏上下文本的情境中，面對多義或形似字時，容易受自身強勢背景影響而產生跨領域偏誤。
+與上一個 100 題 checkpoint 相比，有沒有明顯結構變化
+有。隨著大量 Topic 跨過達標線，本輪的測驗重心顯著往日常休閒、非核心商務與高階表達傾斜。這直接導致整體答錯率飆升，高達近八成的單字被列為「不會」，凸顯了在硬核邏輯與設備系統外，生活化及軟性溝通詞彙的防禦力非常薄弱。

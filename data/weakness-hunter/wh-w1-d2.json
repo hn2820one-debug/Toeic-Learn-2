@@ -1,0 +1,145 @@
+{
+  "lesson_id": "wh-w1-d2",
+  "module_id": "weakness-hunter",
+  "week": 1,
+  "day": 2,
+  "sequence": 2,
+  "title": "Mandative Subjunctive 限時練習",
+  "type": "concept+quiz",
+  "lesson_type": "grammar",
+  "target_component": "grammar",
+  "quiz_type": "standard",
+  "time_limit_seconds": 20,
+  "focus_tags": ["mandative-subjunctive", "speed"],
+  "weakness_tags": ["mandative-trigger-verb", "base-verb-after-that"],
+  "concept": {
+    "debug_rule": "先圈觸發詞，再用 V 原形；20 秒內不要被主詞單複數拖走。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "verb",
+        "title": "20 秒流程",
+        "html": "觸發詞 → that → 主詞 → <span class=\"blank-word verb\">V 原形</span> → 排除 -s / -ed / -ing"
+      },
+      {
+        "type": "warning",
+        "tone": "warn",
+        "title": "限時錯誤來源",
+        "html": "時間一緊會用 SVA 直覺選三單；這節只練把 Mandative 優先權放在 SVA 前面。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "wh-w1-d2-q1",
+      "type": "main",
+      "scene": "Banking / Audit",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-verb",
+      "stem": "The auditors suggested that the bank {BLANK} its internal approval process.",
+      "options": [
+        { "label": "A", "text": "review", "pos": "verb", "is_correct": true },
+        { "label": "B", "text": "reviews", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "reviewed", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "reviewing", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "suggested that + bank + ______",
+      "solution_steps": [
+        { "step": 1, "text": "suggested that 是觸發結構。" },
+        { "step": 2, "text": "that 子句動詞用原形 review。" }
+      ],
+      "wrong_thought_steps": [
+        "看到 bank 單數就選 reviews。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "suggest that + S + V 原形。"
+      }
+    },
+    {
+      "q_id": "wh-w1-d2-q2",
+      "type": "main",
+      "scene": "Manufacturing / Safety",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "base-verb-after-that",
+      "stem": "The safety committee demanded that all employees {BLANK} protective gloves in the assembly area.",
+      "options": [
+        { "label": "A", "text": "wearing", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "wore", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "wear", "pos": "verb", "is_correct": true },
+        { "label": "D", "text": "wears", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "demanded that + S + ______",
+      "solution_steps": [
+        { "step": 1, "text": "demanded that 代表要求。" },
+        { "step": 2, "text": "要求類 that 子句用原形 wear。" }
+      ],
+      "wrong_thought_steps": [
+        "把 demanded 的過去式帶到 that 子句，選 wore。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "demand that + S + V 原形。"
+      }
+    },
+    {
+      "q_id": "wh-w1-d2-q3",
+      "type": "main",
+      "scene": "Technology / Release",
+      "eye_distance": "far",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-verb",
+      "stem": "The project lead proposed that the software team {BLANK} the update after the security review.",
+      "options": [
+        { "label": "A", "text": "releases", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "release", "pos": "verb", "is_correct": true },
+        { "label": "C", "text": "released", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "has released", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "proposed that + team + ______",
+      "solution_steps": [
+        { "step": 1, "text": "proposed that 屬於建議/提議類。" },
+        { "step": 2, "text": "that 子句動詞用 release 原形。" }
+      ],
+      "wrong_thought_steps": [
+        "看到 team 可能被當單數，誤選 releases。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "propose that + S + V 原形。"
+      }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "wh-w1-d2-monitor-1",
+      "type": "monitor",
+      "scene": "[監控] number of SVA",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "number-of-sva",
+      "stem": "The number of pending invoices {BLANK} increased since the new billing system was introduced.",
+      "options": [
+        { "label": "A", "text": "have", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "has", "pos": "verb", "is_correct": true },
+        { "label": "C", "text": "were", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "are", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "The number of + 複數名詞",
+      "solution_steps": [
+        { "step": 1, "text": "主詞核心是 number，不是 invoices。" },
+        { "step": 2, "text": "number 是單數，所以用 has。" }
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "The number of + 複數名詞，動詞跟 number。"
+      }
+    }
+  ]
+}

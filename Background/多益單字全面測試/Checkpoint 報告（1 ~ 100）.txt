@@ -1,0 +1,172 @@
+Checkpoint 報告（1 ~ 100）
+
+1. Topic 完成程度
+
+目前階段：Word
+目標基準：每個 topic 25 / 30
+	•	辦公室：3 / 25–30
+	•	文書作業：5 / 25–30
+	•	商務會議：3 / 25–30
+	•	業務協調：2 / 25–30
+	•	人才招募：5 / 25–30
+	•	人事與組織：4 / 25–30
+	•	行銷與宣傳：4 / 25–30
+	•	財務會計：7 / 25–30（含 1 題重複）
+	•	企業經營：5 / 25–30
+	•	製造與品管：3 / 25–30
+	•	公告訊息：4 / 25–30
+	•	演講與宴會：5 / 25–30
+	•	貿易與物流：5 / 25–30
+	•	社會經濟：5 / 25–30
+	•	零售購物：5 / 25–30
+	•	銷售服務：5 / 25–30
+	•	餐飲與住宿：5 / 25–30
+	•	旅遊與交通：6 / 25–30
+	•	表演與展覽：4 / 25–30
+	•	金融與投資：5 / 25–30
+	•	房屋與修繕：4 / 25–30
+	•	生活休閒：0 / 25–30
+	•	公益慈善：0 / 25–30
+	•	傳播媒體：1 / 25–30
+	•	科技與研發：2 / 25–30
+	•	醫療與健康：1 / 25–30
+	•	環境保育：0 / 25–30
+	•	溝通表達：1 / 25–30
+	•	日常生活：0 / 25–30
+
+2. 難度完成程度
+	•	Level A：已測 30 題
+	•	Level B：已測 54 題
+	•	Level C：已測 16 題
+
+分布判讀：
+	•	Level B 明顯偏多
+	•	Level C 明顯不足
+	•	Level A 目前尚可，但後續仍需補更多 A / C 來拉平
+
+3. 該 100 題完整清單
+	1.	office｜Topic: 辦公室｜Difficulty: A｜Type: Word｜Result: 會
+	2.	invoice｜Topic: 財務會計｜Difficulty: A｜Type: Word｜Result: 會
+	3.	agenda｜Topic: 商務會議｜Difficulty: A｜Type: Word｜Result: 會
+	4.	coordinate｜Topic: 業務協調｜Difficulty: B｜Type: Word｜Result: 會
+	5.	applicant｜Topic: 人才招募｜Difficulty: A｜Type: Word｜Result: 會
+	6.	personnel｜Topic: 人事與組織｜Difficulty: B｜Type: Word｜Result: 會
+	7.	campaign｜Topic: 行銷與宣傳｜Difficulty: B｜Type: Word｜Result: 不會
+	8.	budget｜Topic: 財務會計｜Difficulty: A｜Type: Word｜Result: 會
+	9.	strategy｜Topic: 企業經營｜Difficulty: B｜Type: Word｜Result: 會
+	10.	defect｜Topic: 製造與品管｜Difficulty: B｜Type: Word｜Result: 會
+	11.	bulletin｜Topic: 公告訊息｜Difficulty: B｜Type: Word｜Result: 不會
+	12.	banquet｜Topic: 演講與宴會｜Difficulty: B｜Type: Word｜Result: 會
+	13.	shipment｜Topic: 貿易與物流｜Difficulty: A｜Type: Word｜Result: 會
+	14.	inflation｜Topic: 社會經濟｜Difficulty: B｜Type: Word｜Result: 會
+	15.	merchandise｜Topic: 零售購物｜Difficulty: B｜Type: Word｜Result: 會
+	16.	warranty｜Topic: 銷售服務｜Difficulty: B｜Type: Word｜Result: 會
+	17.	reservation｜Topic: 餐飲與住宿｜Difficulty: A｜Type: Word｜Result: 會
+	18.	commute｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+	19.	exhibit｜Topic: 表演與展覽｜Difficulty: A｜Type: Word｜Result: 不會
+	20.	asset｜Topic: 金融與投資｜Difficulty: B｜Type: Word｜Result: 會
+	21.	deadline｜Topic: 文書作業｜Difficulty: A｜Type: Word｜Result: 會
+	22.	audit｜Topic: 財務會計｜Difficulty: B｜Type: Word｜Result: 會
+	23.	negotiate｜Topic: 業務協調｜Difficulty: B｜Type: Word｜Result: 會
+	24.	vacancy｜Topic: 人才招募｜Difficulty: B｜Type: Word｜Result: 不會
+	25.	hierarchy｜Topic: 人事與組織｜Difficulty: C｜Type: Word｜Result: 不會
+	26.	endorse｜Topic: 行銷與宣傳｜Difficulty: C｜Type: Word｜Result: 不會
+	27.	revenue｜Topic: 財務會計｜Difficulty: B｜Type: Word｜Result: 會
+	28.	merger｜Topic: 企業經營｜Difficulty: C｜Type: Word｜Result: 會
+	29.	prototype｜Topic: 科技與研發｜Difficulty: B｜Type: Word｜Result: 會
+	30.	sanitation｜Topic: 醫療與健康｜Difficulty: B｜Type: Word｜Result: 不會
+	31.	ceremony｜Topic: 演講與宴會｜Difficulty: A｜Type: Word｜Result: 不會
+	32.	customs｜Topic: 貿易與物流｜Difficulty: B｜Type: Word｜Result: 不會
+	33.	recession｜Topic: 社會經濟｜Difficulty: B｜Type: Word｜Result: 會
+	34.	refund｜Topic: 零售購物｜Difficulty: A｜Type: Word｜Result: 會
+	35.	courteous｜Topic: 銷售服務｜Difficulty: A｜Type: Word｜Result: 不會
+	36.	cuisine｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 不會
+	37.	itinerary｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+	38.	admission｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 會
+	39.	portfolio｜Topic: 金融與投資｜Difficulty: B｜Type: Word｜Result: 會
+	40.	renovate｜Topic: 房屋與修繕｜Difficulty: B｜Type: Word｜Result: 不會
+	41.	memo｜Topic: 文書作業｜Difficulty: A｜Type: Word｜Result: 會
+	42.	compile｜Topic: 文書作業｜Difficulty: B｜Type: Word｜Result: 不會
+	43.	delegate｜Topic: 商務會議｜Difficulty: B｜Type: Word｜Result: 不會
+	44.	recruit｜Topic: 人才招募｜Difficulty: B｜Type: Word｜Result: 不會
+	45.	payroll｜Topic: 人事與組織｜Difficulty: B｜Type: Word｜Result: 不會
+	46.	brochure｜Topic: 行銷與宣傳｜Difficulty: A｜Type: Word｜Result: 會
+	47.	ledger｜Topic: 財務會計｜Difficulty: B｜Type: Word｜Result: 不會
+	48.	subsidiary｜Topic: 企業經營｜Difficulty: C｜Type: Word｜Result: 會
+	49.	assembly｜Topic: 製造與品管｜Difficulty: B｜Type: Word｜Result: 會
+	50.	notice｜Topic: 公告訊息｜Difficulty: A｜Type: Word｜Result: 會
+	51.	keynote｜Topic: 演講與宴會｜Difficulty: B｜Type: Word｜Result: 會
+	52.	tariff｜Topic: 貿易與物流｜Difficulty: C｜Type: Word｜Result: 不會
+	53.	inequality｜Topic: 社會經濟｜Difficulty: C｜Type: Word｜Result: 不會
+	54.	cashier｜Topic: 零售購物｜Difficulty: A｜Type: Word｜Result: 不會
+	55.	installment｜Topic: 銷售服務｜Difficulty: B｜Type: Word｜Result: 會
+	56.	hospitality｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 不會
+	57.	shuttle｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+	58.	venue｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+	59.	dividend｜Topic: 金融與投資｜Difficulty: B｜Type: Word｜Result: 會
+	60.	plumber｜Topic: 房屋與修繕｜Difficulty: A｜Type: Word｜Result: 不會
+	61.	workstation｜Topic: 辦公室｜Difficulty: B｜Type: Word｜Result: 不會
+	62.	archive｜Topic: 文書作業｜Difficulty: B｜Type: Word｜Result: 會
+	63.	consensus｜Topic: 溝通表達｜Difficulty: C｜Type: Word｜Result: 不會
+	64.	interviewer｜Topic: 人才招募｜Difficulty: B｜Type: Word｜Result: 會
+	65.	subordinate｜Topic: 人事與組織｜Difficulty: C｜Type: Word｜Result: 不會
+	66.	publicity｜Topic: 傳播媒體｜Difficulty: B｜Type: Word｜Result: 不會
+	67.	expenditure｜Topic: 財務會計｜Difficulty: B｜Type: Word｜Result: 不會
+	68.	acquisition｜Topic: 企業經營｜Difficulty: C｜Type: Word｜Result: 不會
+	69.	specification｜Topic: 製造與品管｜Difficulty: C｜Type: Word｜Result: 會
+	70.	disclaimer｜Topic: 公告訊息｜Difficulty: C｜Type: Word｜Result: 不會
+	71.	reception｜Topic: 演講與宴會｜Difficulty: B｜Type: Word｜Result: 會
+	72.	warehouse｜Topic: 貿易與物流｜Difficulty: A｜Type: Word｜Result: 會
+	73.	unemployment｜Topic: 社會經濟｜Difficulty: B｜Type: Word｜Result: 會
+	74.	browse｜Topic: 零售購物｜Difficulty: A｜Type: Word｜Result: 不會
+	75.	complaint｜Topic: 銷售服務｜Difficulty: A｜Type: Word｜Result: 會
+	76.	buffet｜Topic: 餐飲與住宿｜Difficulty: A｜Type: Word｜Result: 會
+	77.	layover｜Topic: 旅遊與交通｜Difficulty: B｜Type: Word｜Result: 不會
+	78.	souvenir｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 會
+	79.	equity｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 會
+	80.	contractor｜Topic: 房屋與修繕｜Difficulty: B｜Type: Word｜Result: 會
+	81.	stationery｜Topic: 辦公室｜Difficulty: A｜Type: Word｜Result: 不會
+	82.	proofread｜Topic: 文書作業｜Difficulty: B｜Type: Word｜Result: 不會
+	83.	briefing｜Topic: 商務會議｜Difficulty: B｜Type: Word｜Result: 會
+	84.	nominee｜Topic: 人才招募｜Difficulty: C｜Type: Word｜Result: 不會
+	85.	compliance｜Topic: 企業經營｜Difficulty: C｜Type: Word｜Result: 不會
+	86.	advertisement｜Topic: 行銷與宣傳｜Difficulty: A｜Type: Word｜Result: 會
+	87.	invoice｜Topic: 財務會計｜Difficulty: A｜Type: Word｜Result: 會（與 #2 重複）
+	88.	entrepreneur｜Topic: 企業經營｜Difficulty: B｜Type: Word｜Result: 會
+	89.	calibration｜Topic: 科技與研發｜Difficulty: C｜Type: Word｜Result: 會
+	90.	announcement｜Topic: 公告訊息｜Difficulty: A｜Type: Word｜Result: 會
+	91.	toast｜Topic: 演講與宴會｜Difficulty: A｜Type: Word｜Result: 不會
+	92.	freight｜Topic: 貿易與物流｜Difficulty: B｜Type: Word｜Result: 不會
+	93.	welfare｜Topic: 社會經濟｜Difficulty: B｜Type: Word｜Result: 不會
+	94.	retailer｜Topic: 零售購物｜Difficulty: A｜Type: Word｜Result: 會
+	95.	dissatisfied｜Topic: 銷售服務｜Difficulty: B｜Type: Word｜Result: 會
+	96.	hostel｜Topic: 餐飲與住宿｜Difficulty: B｜Type: Word｜Result: 會
+	97.	platform｜Topic: 旅遊與交通｜Difficulty: A｜Type: Word｜Result: 會
+	98.	gallery｜Topic: 表演與展覽｜Difficulty: B｜Type: Word｜Result: 不會
+	99.	bond｜Topic: 金融與投資｜Difficulty: C｜Type: Word｜Result: 會
+	100.	appliance｜Topic: 房屋與修繕｜Difficulty: A｜Type: Word｜Result: 不會
+
+4. 階段判讀
+	•	目前最穩的區域
+財務會計中的基礎字、社會經濟中的常見概念字、金融與投資的中階核心字，表現相對穩。
+另外，貿易與物流中較具體的實物型詞彙，如 shipment、warehouse，也較穩。
+	•	目前最弱的區域
+人事與組織、旅遊與交通、表演與展覽、房屋與修繕，失分較集中。
+另外，文書作業與公告訊息一旦進入較偏正式書面或作業流程字，也開始出現弱點。
+	•	是否出現新的高弱區
+有。
+目前新浮出的高弱區是：
+	1.	人事與組織：hierarchy / payroll / subordinate
+	2.	旅遊與交通：commute / itinerary / shuttle / layover
+	3.	表演與展覽：exhibit / venue / gallery
+	4.	房屋與修繕：renovate / plumber / appliance
+	•	與上一個 100 題 checkpoint 相比，有沒有明顯結構變化
+這是第一個 100 題 checkpoint，無前一輪可比較。
+
+⸻
+
+本階段統計：
+	•	已出題：100
+	•	有效唯一樣本：99
+	•	會：56
+	•	不會：44

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/quiz.css">
+</head>
+<body>
+  <div id="top-strip" class="top-strip">載入中...</div>
+  <main class="app-shell">
+    <header class="page-head">
+      <h1 id="quiz-title" class="page-title">測驗</h1>
+      <p class="page-subtitle">答題期間不顯示對錯，請先完成全部題目。</p>
+    </header>
+
+    <section class="quiz-head">
+      <div class="progress-wrap">
+        <strong id="q-progress">Q 1 / 1</strong>
+        <div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+      </div>
+      <div id="q-dots" class="q-dots"></div>
+      <div class="timer-row">
+        <span>剩餘時間</span>
+        <span id="timer-number" class="timer-number">-</span>
+      </div>
+      <div class="timer-line"><div id="timer-left" class="timer-left"></div></div>
+    </section>
+
+    <section class="quiz-card">
+      <div id="start-overlay" class="overlay">
+        <button id="start-btn" class="button primary">開始作答</button>
+      </div>
+
+      <div id="quiz-scene" class="quiz-meta"></div>
+      <p id="quiz-stem" class="quiz-stem"></p>
+      <div id="option-grid" class="option-grid"></div>
+      <p id="hint-text" class="hint-text"></p>
+    </section>
+
+    <section class="quiz-actions">
+      <div>
+        <button id="prev-btn" class="button secondary" disabled>Prev</button>
+        <button id="next-btn" class="button secondary" disabled>Next</button>
+      </div>
+      <button id="submit-btn" class="button primary" disabled>Submit</button>
+    </section>
+  </main>
+
+  <script src="./js/storage.js"></script>
+  <script src="./js/scorer.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/quiz-engine.js"></script>
+  <script>
+    window.AppCore.registerSW();
+    window.QuizEngine.initQuiz();
+  </script>
+</body>
+</html>

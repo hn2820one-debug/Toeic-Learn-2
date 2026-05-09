@@ -1,0 +1,115 @@
+{
+  "lesson_id": "pos-d3",
+  "module_id": "pos-booster",
+  "day": 3,
+  "title": "名詞片語與修飾位置",
+  "type": "concept+quiz",
+  "quiz_type": "standard",
+  "time_limit_seconds": 20,
+  "concept": {
+    "debug_rule": "先抓核心名詞，再看修飾詞。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "noun",
+        "title": "名詞片語",
+        "html": "限定詞 + 形容詞 + <span class=\"blank-word noun\">名詞</span>"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "pos-d3-q1",
+      "type": "main",
+      "scene": "Semiconductor / QA",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "noun-head",
+      "stem": "Engineers submitted a detailed {BLANK} of the defect trend.",
+      "options": [
+        { "label": "A", "text": "analyze", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "analysis", "pos": "noun", "is_correct": true },
+        { "label": "C", "text": "analytical", "pos": "adj", "is_correct": false },
+        { "label": "D", "text": "analyzing", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "a detailed + ______",
+      "solution_steps": [
+        { "step": 1, "text": "detailed 後面接名詞。" },
+        { "step": 2, "text": "analysis 為名詞。" }
+      ],
+      "wrong_thought_steps": ["看到 submitted 誤選動詞。"],
+      "rule_box": { "type": "ok", "text": "形容詞後接名詞作核心。" }
+    },
+    {
+      "q_id": "pos-d3-q2",
+      "type": "main",
+      "scene": "Hospital / Scheduling",
+      "eye_distance": "middle",
+      "target_pos": "adj",
+      "weakness_tag": "adj-before-noun",
+      "stem": "The team proposed a more {BLANK} shift allocation plan.",
+      "options": [
+        { "label": "A", "text": "efficient", "pos": "adj", "is_correct": true },
+        { "label": "B", "text": "efficiently", "pos": "adv", "is_correct": false },
+        { "label": "C", "text": "efficiency", "pos": "noun", "is_correct": false },
+        { "label": "D", "text": "efficients", "pos": "noun", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "修飾 plan",
+      "solution_steps": [
+        { "step": 1, "text": "空格修飾後方名詞 plan。" },
+        { "step": 2, "text": "需形容詞 efficient。" }
+      ],
+      "wrong_thought_steps": ["看到 proposed 誤以為要副詞。"],
+      "rule_box": { "type": "ok", "text": "名詞前修飾語通常用形容詞。" }
+    },
+    {
+      "q_id": "pos-d3-q3",
+      "type": "main",
+      "scene": "Retail / Inventory",
+      "eye_distance": "far",
+      "target_pos": "adv",
+      "weakness_tag": "adv-modifier",
+      "stem": "To prevent shortages, the warehouse now checks stock levels {BLANK}.",
+      "options": [
+        { "label": "A", "text": "regular", "pos": "adj", "is_correct": false },
+        { "label": "B", "text": "regulation", "pos": "noun", "is_correct": false },
+        { "label": "C", "text": "regularly", "pos": "adv", "is_correct": true },
+        { "label": "D", "text": "regularize", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "修飾 checks",
+      "solution_steps": [
+        { "step": 1, "text": "空格修飾 checks 這個動作。" },
+        { "step": 2, "text": "選 regularly。" }
+      ],
+      "wrong_thought_steps": ["看到 levels 誤判為修飾名詞。"],
+      "rule_box": { "type": "ok", "text": "修飾動詞時選副詞。" }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "pos-d3-monitor-1",
+      "type": "monitor",
+      "weakness_tag": "number-of-sva",
+      "scene": "[監控] SVA — number of",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "stem": "A number of complaints {BLANK} received during last weekend's promotion.",
+      "options": [
+        { "label": "A", "text": "was", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "were", "pos": "verb", "is_correct": true },
+        { "label": "C", "text": "is", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "has", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "B",
+      "hint": "A number of + 複數名詞",
+      "solution_steps": [
+        { "step": 1, "text": "A number of 視為複數。" },
+        { "step": 2, "text": "用 were。" }
+      ],
+      "rule_box": { "type": "warn", "text": "A number of + 複數名詞，動詞用複數。" }
+    }
+  ]
+}

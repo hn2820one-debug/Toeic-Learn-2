@@ -1,0 +1,149 @@
+{
+  "lesson_id": "wh-w1-d3",
+  "module_id": "weakness-hunter",
+  "week": 1,
+  "day": 3,
+  "sequence": 3,
+  "title": "Mandative 形容詞觸發器",
+  "type": "concept+quiz",
+  "lesson_type": "grammar",
+  "target_component": "grammar",
+  "quiz_type": "slow",
+  "time_limit_seconds": 25,
+  "focus_tags": ["mandative-subjunctive", "trigger-adjectives"],
+  "weakness_tags": ["mandative-adjective", "be-base-after-that"],
+  "concept": {
+    "debug_rule": "It is essential / mandatory / vital / necessary that + S + V 原形。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "verb",
+        "title": "形容詞觸發公式",
+        "html": "It is essential / mandatory / vital / necessary that + S + <span class=\"blank-word verb\">V 原形 / be</span>"
+      },
+      {
+        "type": "warning",
+        "tone": "warn",
+        "title": "be 原形陷阱",
+        "html": "that 後如果答案是 be 動詞，正式考點常要求 <span class=\"blank-word verb\">be</span>，不是 is / are / was。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "wh-w1-d3-q1",
+      "type": "main",
+      "scene": "Aviation / Safety",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-adjective",
+      "stem": "It is essential that all safety reports {BLANK} submitted before the aircraft is released.",
+      "options": [
+        { "label": "A", "text": "are", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "were", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "be", "pos": "verb", "is_correct": true },
+        { "label": "D", "text": "being", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "C",
+      "hint": "It is essential that + S + ______",
+      "solution_steps": [
+        { "step": 1, "text": "essential that 是形容詞觸發器。" },
+        { "step": 2, "text": "that 子句中 be 動詞用原形 be。" },
+        { "step": 3, "text": "be submitted 是正確被動形式。" }
+      ],
+      "wrong_thought_steps": [
+        "看到 reports 複數就選 are。",
+        "忘記 essential that 會要求 be 原形。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "It is essential that + S + be / V 原形。"
+      }
+    },
+    {
+      "q_id": "wh-w1-d3-q2",
+      "type": "main",
+      "scene": "Healthcare / Compliance",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "be-base-after-that",
+      "stem": "It is mandatory that each clinic {BLANK} a copy of the updated privacy notice at the front desk.",
+      "options": [
+        { "label": "A", "text": "display", "pos": "verb", "is_correct": true },
+        { "label": "B", "text": "displays", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "displayed", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "displaying", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "mandatory that + each clinic + ______",
+      "solution_steps": [
+        { "step": 1, "text": "mandatory that 是強制/要求類形容詞。" },
+        { "step": 2, "text": "each clinic 不觸發 displays，因為 mandative 優先。" },
+        { "step": 3, "text": "display 是原形，選 A。" }
+      ],
+      "wrong_thought_steps": [
+        "被 each clinic 帶去選三單 displays。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "It is mandatory that + S + V 原形。"
+      }
+    },
+    {
+      "q_id": "wh-w1-d3-q3",
+      "type": "main",
+      "scene": "Logistics / Delivery",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-adjective",
+      "stem": "It is vital that the delivery schedule {BLANK} revised before the holiday rush begins.",
+      "options": [
+        { "label": "A", "text": "is", "pos": "verb", "is_correct": false },
+        { "label": "B", "text": "was", "pos": "verb", "is_correct": false },
+        { "label": "C", "text": "has been", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "be", "pos": "verb", "is_correct": true }
+      ],
+      "answer": "D",
+      "hint": "vital that + schedule + ______ revised",
+      "solution_steps": [
+        { "step": 1, "text": "vital that 觸發原形。" },
+        { "step": 2, "text": "被動需要 be revised，不是 is revised。" },
+        { "step": 3, "text": "選 D。" }
+      ],
+      "wrong_thought_steps": [
+        "看到 schedule 單數就選 is。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "vital/essential/mandatory/necessary that 後面用原形。"
+      }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "wh-w1-d3-monitor-1",
+      "type": "monitor",
+      "scene": "[監控] phrase / subject to",
+      "eye_distance": "far",
+      "target_pos": "adj",
+      "weakness_tag": "notice-phrase-subject-to",
+      "stem": "All refunds are {BLANK} to approval by the accounting department.",
+      "options": [
+        { "label": "A", "text": "subject", "pos": "adj", "is_correct": true },
+        { "label": "B", "text": "subjection", "pos": "noun", "is_correct": false },
+        { "label": "C", "text": "subjecting", "pos": "verb", "is_correct": false },
+        { "label": "D", "text": "subjects", "pos": "verb", "is_correct": false }
+      ],
+      "answer": "A",
+      "hint": "be subject to = 受...約束",
+      "solution_steps": [
+        { "step": 1, "text": "be subject to 是公告/政策高頻語塊。" },
+        { "step": 2, "text": "subject 在此作形容詞，選 A。" }
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "be subject to 常見於條款、退款、政策通知。"
+      }
+    }
+  ]
+}

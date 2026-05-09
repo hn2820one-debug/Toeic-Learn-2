@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/report.css">
+</head>
+<body>
+  <div id="top-strip" class="top-strip">載入中...</div>
+  <main class="app-shell">
+    <header class="page-head">
+      <h1 class="page-title">進度總覽</h1>
+      <p class="page-subtitle">以實測 570（L315/R255）為基準，追蹤 750 目標、6 週主線、弱點與作答記錄。</p>
+    </header>
+
+    <section class="section">
+      <div id="score-box" class="card"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">Component Dashboard</h2>
+      <div id="component-box" class="component-dashboard"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">模組進度</h2>
+      <div id="module-box" class="card"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">弱點追蹤</h2>
+      <div id="weak-box" class="card"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">歷史作答</h2>
+      <div id="history-box" class="card"></div>
+    </section>
+
+    <section class="section">
+      <button class="button secondary" onclick="location.href='./index.html'">回首頁</button>
+    </section>
+  </main>
+
+  <script src="./js/storage.js"></script>
+  <script src="./js/app.js"></script>
+  <script>
+    function pct(n) {
+      return `${(n * 100).toFixed(0)}%`;
+    }
+
+    async function init() {
+      window.AppCore.registerSW();
+      const progress = window.StorageAPI.loadProgress();
+      const index = await window.AppCore.loadIndex();
+      window.AppCore.renderTopStrip(progress, index, null);
+
+      const s = progress.student;
+      document.getElementById('score-box').innerHTML = `
+        <div class="score-grid">
+          <div><span>Baseline</span><strong>${s.baseline_score.total}</strong><small>L${s.baseline_score.listening} / R${s.baseline_score.reading}</small></div>
+          <div><span>Target</span><strong>${s.target_score}</strong><small>L${s.target_split.listening} / R${s.target_split.reading}</small></div>
+          <div><span>Current Week</span><strong>${s.current_week}</strong><small>${s.sessions_per_week} 節 / 週</small></div>
+          <div><span>Done</span><strong>${s.total_lessons_done}</strong><small>unique lessons</small></div>
+        </div>
+      `;
+
+      const main = progress.modules['weakness-hunter'] || {};
+      const component = main.component_mastery || {};
+      document.getElementById('component-box').innerHTML = ['grammar', 'phrase', 'listening', 'reading'].map((key) => `
+        <div class="component-card">
+          <div class="label">${window.AppCore.COMPONENT_LABELS[key]}</div>
+          <div class="value">${component[key] ? `${component[key].toFixed(1)} / 10` : '待建立'}</div>
+          <div class="hint">${index.component_targets[key].baseline} → target ${index.component_targets[key].target}</div>
+        </div>
+      `).join('');
+
+      const moduleRows = Object.entries(progress.modules || {}).map(([moduleId, mod]) => {
+        const results = Object.entries(mod.day_results || {});
+        const details = results.length
+          ? results.map(([lessonId, r]) => `<div>${lessonId} - ${pct(r.accuracy)} / mastery ${r.mastery}</div>`).join('')
+          : '<div>尚未完成課程</div>';
+        return `
+          <article class="module-row">
+            <strong>${moduleId}</strong>
+            <p>狀態：${mod.status}｜完成：${mod.days_done}｜平均掌握度：${(mod.mastery_avg || 0).toFixed(1)}</p>
+            ${details}
+          </article>
+        `;
+      }).join('');
+      document.getElementById('module-box').innerHTML = moduleRows;
+
+      const weak = progress.weaknesses || [];
+      document.getElementById('weak-box').innerHTML = weak.length
+        ? `<ul class="compact-list">${weak.map((w) => `<li>${w.tag} | ${w.status} | ${(w.occurrences || []).length} 次</li>`).join('')}</ul>`
+        : '<p style="margin:0">尚未建立弱點清單。</p>';
+
+      const history = progress.session_history || [];
+      document.getElementById('history-box').innerHTML = history.length
+        ? `<ul class="compact-list">${history.slice().reverse().map((h) => `<li>${h.date} W${h.week || '-'} ${h.lesson_id} | ${h.target_component || 'grammar'} | acc ${pct(h.accuracy)} | mastery ${h.mastery}</li>`).join('')}</ul>`
+        : '<p style="margin:0">尚無作答記錄。</p>';
+    }
+
+    init();
+  </script>
+</body>
+</html>

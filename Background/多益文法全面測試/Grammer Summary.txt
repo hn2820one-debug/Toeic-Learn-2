@@ -1,0 +1,68 @@
+## 🔄 基於原始資料的重大修正（Grammar Re-Analysis）
+
+---
+
+### 📊 新數據驗證
+
+- **原始作答總題數**：290 題
+- **整體正確率**：**46.9%**（136/290）
+- **與實戰一致性**：這個正確率與 R:255 的實際分數**高度吻合**（原先的 715–775 預估確實高估，現在有數據支撐這個偏誤）
+
+---
+
+### ⚠ 存檔版「誤判」清單（必須推翻）
+
+| 模組 | 原本標示 | **實際數據** | 修正後等級 |
+|---|---|---|---|
+| **Mandative Subjunctive** | Fair（後期已修復）| **13 處失守，幾乎 100% 錯** | 🔴 **Critical** |
+| **Subject-Verb Agreement** | Medium-High | **10 處失守** | 🔴 **Weak** |
+| **Comparison（倍數）** | Weak | **5/5 倍數題全錯** | 🔴 **Critical** |
+| **Participles** | Weak | 確認（8 處）| 🔴 維持 Weak |
+| **Nouns（不可數）** | Weak | **8 處全失守**（information/advice/equipment/knowledge/handling）| 🔴 Critical |
+| **Causative Verbs** | 未列出 | **4/5 錯（have/make + V 原形）**| 🔴 **新增 High** |
+
+---
+
+### 🎯 新浮現的三大「隱形殺手」
+
+**殺手 1｜Mandative Subjunctive（虛擬語氣命令式）— 最致命**
+
+這類題型在 Part 5/6 出現頻率極高（約 5–8% 的 Part 5 題量），您幾乎全錯：
+
+- Q105 / Q111 / Q124 / Q144 / Q151 / Q163 / Q171 / Q181 / Q191 / Q201 / Q206 / Q211 / Q217
+- 統一 Pattern：`recommend / suggest / demand / require / essential / mandatory / imperative / vital + that + S + V原形（或 be）`
+- 您的錯誤傾向：用「過去式」或「三單現」代替原形 V（如 Q105 選 reviewed, Q144 選 keeps, Q217 選 follows）
+- **這一個模組單獨可能拖掉 Part 5 約 5–7 題、Part 6 約 1–2 題**
+
+**殺手 2｜倍數比較 twice/half/three times as X as**
+
+- Q78 ❌ as large twice / Q274 ❌ as twice efficient as / Q278 ❌ as half large as / Q282 ❌ as twice efficiently as / Q287 ❌ as three times large as
+- **5 題 0 正確**。正確結構永遠是 `倍數詞 + as + adj/adv + as`
+- 這是一個「只要記一個公式就能 100% 解決」的題型，CP 值最高
+
+**殺手 3｜Gerunds 觸發動詞 + 介系詞 + V-ing（確認大規模斷層）**
+
+- 18 處失守，遠超存檔版估計
+- 您的錯誤傾向：看到「to」就想 to V，而忽略「look forward TO / object TO / dedicated TO / be used TO」後面要接 V-ing
+- 觸發動詞錯誤集中在：consider / suggest / postpone / delay / avoid / mind / forbid / afford + V-ing
+
+---
+
+### 🔬 錯誤類型分布圖（Top 10）
+
+| 排名 | 模組 | 錯題數 | 占比 |
+|---|---|---:|---:|
+| 1 | Gerunds / V-ing | 18 | 11.7% |
+| 2 | Mandative Subjunctive | 13 | 8.4% |
+| 3 | Subject-Verb Agreement | 10 | 6.5% |
+| 4 | Conditionals + Modal Perfects | 9 | 5.8% |
+| 5 | Perfect / Perfect Continuous 時態 | 9 | 5.8% |
+| 6 | Participles (-ed/-ing) | 8 | 5.2% |
+| 7 | 不可數名詞 | 8 | 5.2% |
+| 8 | SVC（連綴動詞 + adj）| 7 | 4.5% |
+| 9 | Noun Clauses | 6 | 3.9% |
+| 10 | Conjunctions (despite/given/although) | 6 | 3.9% |
+
+**前 10 大錯誤模組合計約 95 題錯誤，占總錯題 62%。** 意味著只要精準打擊這 10 個模組，就能讓 Part 5/6 正確率從 47% 提升到 70%+。
+
+---

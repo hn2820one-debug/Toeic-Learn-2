@@ -1,0 +1,347 @@
+{
+  "student": {
+    "name": "Joseph",
+    "baseline_score": {
+      "total": 570,
+      "listening": 315,
+      "reading": 255
+    },
+    "target_score": 750,
+    "target_split": {
+      "listening": 380,
+      "reading": 370
+    },
+    "current_module": "weakness-hunter",
+    "current_week": 1,
+    "current_day": 1,
+    "sessions_per_week": 15
+  },
+  "score_milestones": [
+    {
+      "label": "Stage 1 checkpoint",
+      "week": 6,
+      "target_total": 640,
+      "target_listening": 340,
+      "target_reading": 300
+    },
+    {
+      "label": "Stage 2 checkpoint",
+      "week": 13,
+      "target_total": 690,
+      "target_listening": 360,
+      "target_reading": 330
+    },
+    {
+      "label": "Target",
+      "week": 26,
+      "target_total": 750,
+      "target_listening": 380,
+      "target_reading": 370
+    }
+  ],
+  "component_targets": {
+    "grammar": {
+      "label": "Grammar Mastery",
+      "baseline": "文法標靶測試 46.9%",
+      "target": 85
+    },
+    "phrase": {
+      "label": "Phrase Mastery",
+      "baseline": "88/411 mastered",
+      "target": 70
+    },
+    "listening": {
+      "label": "Listening Drill",
+      "baseline": "L315",
+      "target": 380
+    },
+    "reading": {
+      "label": "Reading Speed",
+      "baseline": "R255",
+      "target": 370
+    }
+  },
+  "modules": [
+    {
+      "module_id": "weakness-hunter",
+      "title": "570 to 750 弱點獵殺主線",
+      "description": "以實測 570（L315/R255）為基準，先打掉 Part 5/6 高 CP 文法與高頻語塊缺口。",
+      "total_weeks": 6,
+      "sessions_per_week": 15,
+      "target_accuracy": 85,
+      "primary_components": ["grammar", "phrase", "listening", "reading"]
+    },
+    {
+      "module_id": "pos-booster",
+      "title": "Week 3 詞性打底模組 Part of Speech Booster",
+      "description": "Week 3 插入的詞性反射模組，支援名詞/動詞/形容詞/副詞快速辨識。",
+      "total_days": 7,
+      "target_accuracy": 85,
+      "days": ["pos-d1", "pos-d2", "pos-d3", "pos-d4", "pos-d5", "pos-d6", "pos-d7"]
+    }
+  ],
+  "weekly_plan": [
+    {
+      "week": 1,
+      "title": "Mandative Subjunctive 急救週",
+      "session_count": 15,
+      "breakdown": {
+        "grammar": 8,
+        "phrase": 3,
+        "listening": 2,
+        "review_test": 2
+      },
+      "focus_tags": ["mandative-subjunctive", "marketing-phrase", "social-economy-phrase", "part2-distractor"],
+      "milestone": "Mandative 題型由 0% 拉到 80%+"
+    },
+    {
+      "week": 2,
+      "title": "倍數比較與正式語塊",
+      "session_count": 15,
+      "breakdown": {
+        "grammar": 8,
+        "phrase": 3,
+        "listening": 2,
+        "review_test": 2
+      },
+      "focus_tags": ["multiplier-comparison", "finance-phrase", "notice-phrase", "part2-distractor"],
+      "milestone": "twice/half/three times as...as 題型 90%+"
+    },
+    {
+      "week": 3,
+      "title": "PoS Booster + Gerunds 起步",
+      "session_count": 15,
+      "breakdown": {
+        "grammar": 9,
+        "phrase": 2,
+        "listening": 2,
+        "review_test": 2
+      },
+      "focus_tags": ["part-of-speech", "false-friends", "gerunds-trigger-verbs"],
+      "milestone": "詞性子項 85%+，Gerunds 觸發動詞建立清單"
+    },
+    {
+      "week": 4,
+      "title": "Gerunds + 介系詞陷阱",
+      "session_count": 15,
+      "breakdown": {
+        "grammar": 8,
+        "phrase": 3,
+        "listening": 2,
+        "review_test": 2
+      },
+      "focus_tags": ["gerunds-preposition-to", "object-to", "dedicated-to", "preposition-phrase"],
+      "milestone": "to/for/of/at + V-ing 介系詞陷阱穩定辨識"
+    },
+    {
+      "week": 5,
+      "title": "複雜 SVA Part 1",
+      "session_count": 15,
+      "breakdown": {
+        "grammar": 8,
+        "phrase": 3,
+        "listening": 2,
+        "review_test": 2
+      },
+      "focus_tags": ["sva", "either-neither", "long-subject", "office-phrase"],
+      "milestone": "複雜主詞動詞一致題 75%+"
+    },
+    {
+      "week": 6,
+      "title": "複雜 SVA Part 2 + 不可數名詞",
+      "session_count": 15,
+      "breakdown": {
+        "grammar": 8,
+        "phrase": 3,
+        "listening": 2,
+        "review_test": 2
+      },
+      "focus_tags": ["number-of-sva", "uncountable-nouns", "active-passive-monitor", "sales-service-phrase"],
+      "milestone": "number of / a number of / equipment-information-advice 封存"
+    }
+  ],
+  "lessons": [
+    {
+      "lesson_id": "wh-w1-d1",
+      "module_id": "weakness-hunter",
+      "week": 1,
+      "day": 1,
+      "sequence": 1,
+      "lesson_type": "grammar",
+      "target_component": "grammar",
+      "title": "Mandative Subjunctive 觸發動詞",
+      "quiz_type": "slow",
+      "time_limit_seconds": 25,
+      "focus_tags": ["mandative-subjunctive", "trigger-verbs"],
+      "weakness_tags": ["mandative-trigger-verb", "base-verb-after-that"],
+      "file": "./weakness-hunter/wh-w1-d1.json"
+    },
+    {
+      "lesson_id": "wh-w1-d2",
+      "module_id": "weakness-hunter",
+      "week": 1,
+      "day": 2,
+      "sequence": 2,
+      "lesson_type": "grammar",
+      "target_component": "grammar",
+      "title": "Mandative Subjunctive 限時練習",
+      "quiz_type": "standard",
+      "time_limit_seconds": 20,
+      "focus_tags": ["mandative-subjunctive", "speed"],
+      "weakness_tags": ["mandative-trigger-verb", "base-verb-after-that"],
+      "file": "./weakness-hunter/wh-w1-d2.json"
+    },
+    {
+      "lesson_id": "wh-w1-d3",
+      "module_id": "weakness-hunter",
+      "week": 1,
+      "day": 3,
+      "sequence": 3,
+      "lesson_type": "grammar",
+      "target_component": "grammar",
+      "title": "Mandative 形容詞觸發器",
+      "quiz_type": "slow",
+      "time_limit_seconds": 25,
+      "focus_tags": ["mandative-subjunctive", "trigger-adjectives"],
+      "weakness_tags": ["mandative-adjective", "be-base-after-that"],
+      "file": "./weakness-hunter/wh-w1-d3.json"
+    },
+    {
+      "lesson_id": "pos-d1",
+      "module_id": "pos-booster",
+      "week": 3,
+      "day": 1,
+      "sequence": 31,
+      "lesson_type": "grammar",
+      "target_component": "grammar",
+      "title": "詞性辨識 Part 1 — 名詞 vs 動詞",
+      "quiz_type": "slow",
+      "time_limit_seconds": 25,
+      "focus_tags": ["part-of-speech", "noun-verb"],
+      "weakness_tags": ["det-noun", "adj-noun", "prep-noun"],
+      "file": "./pos-booster/pos-d1.json"
+    },
+    {
+      "lesson_id": "pos-d2",
+      "module_id": "pos-booster",
+      "week": 3,
+      "day": 2,
+      "sequence": 32,
+      "lesson_type": "grammar",
+      "target_component": "grammar",
+      "title": "詞性辨識 Part 2 — 形容詞 vs 副詞",
+      "quiz_type": "slow",
+      "time_limit_seconds": 25,
+      "focus_tags": ["part-of-speech", "adj-adv"],
+      "weakness_tags": ["linking-verb", "adv-verb", "adj-after-seem"],
+      "file": "./pos-booster/pos-d2.json"
+    },
+    {
+      "lesson_id": "pos-d3",
+      "module_id": "pos-booster",
+      "week": 3,
+      "day": 3,
+      "sequence": 33,
+      "lesson_type": "grammar",
+      "target_component": "grammar",
+      "title": "詞性辨識 Part 3 — 名詞片語與修飾位置",
+      "quiz_type": "standard",
+      "time_limit_seconds": 20,
+      "focus_tags": ["part-of-speech", "noun-phrase"],
+      "weakness_tags": ["noun-head", "adj-before-noun", "adv-modifier"],
+      "file": "./pos-booster/pos-d3.json"
+    },
+    {
+      "lesson_id": "pos-d4",
+      "module_id": "pos-booster",
+      "week": 3,
+      "day": 4,
+      "sequence": 34,
+      "lesson_type": "grammar",
+      "target_component": "grammar",
+      "title": "詞性辨識 Part 4 — 混合判斷強化",
+      "quiz_type": "standard",
+      "time_limit_seconds": 20,
+      "focus_tags": ["part-of-speech", "mixed"],
+      "weakness_tags": ["det-noun", "adv-verb", "linking-verb"],
+      "file": "./pos-booster/pos-d4.json"
+    },
+    {
+      "lesson_id": "pos-d5",
+      "module_id": "pos-booster",
+      "week": 3,
+      "day": 5,
+      "sequence": 35,
+      "lesson_type": "phrase",
+      "target_component": "phrase",
+      "title": "詞性衍生片語強化",
+      "quiz_type": "standard",
+      "time_limit_seconds": 20,
+      "focus_tags": ["part-of-speech", "collocation", "word-family"],
+      "weakness_tags": ["collocation-noun-verb", "word-family-choice", "mandative-trigger-verb"],
+      "file": "./pos-booster/pos-d5.json"
+    },
+    {
+      "lesson_id": "pos-d6",
+      "module_id": "pos-booster",
+      "week": 3,
+      "day": 6,
+      "sequence": 36,
+      "lesson_type": "review",
+      "target_component": "grammar",
+      "title": "PoS Booster 錯題整合複習",
+      "quiz_type": "standard",
+      "time_limit_seconds": 20,
+      "focus_tags": ["part-of-speech", "false-friends", "review"],
+      "weakness_tags": ["word-family-choice", "false-friends", "adv-verb", "linking-verb"],
+      "file": "./pos-booster/pos-d6.json"
+    },
+    {
+      "lesson_id": "pos-d7",
+      "module_id": "pos-booster",
+      "week": 3,
+      "day": 7,
+      "sequence": 37,
+      "lesson_type": "test",
+      "target_component": "grammar",
+      "title": "PoS Booster 週測",
+      "quiz_type": "weekly",
+      "time_limit_seconds": 15,
+      "focus_tags": ["part-of-speech", "weekly-test", "mandative-monitor", "multiplier-monitor"],
+      "weakness_tags": ["part-of-speech-test", "false-friends", "mandative-trigger-verb", "multiplier-comparison"],
+      "file": "./pos-booster/pos-d7.json"
+    }
+  ],
+  "planned_lessons": [
+    {
+      "week": 1,
+      "range": "Day 4-15",
+      "summary": "Mandative 觸發形容詞、陷阱排除、行銷/社會經濟/公益 phrase、Part 2 聽寫、週測"
+    },
+    {
+      "week": 2,
+      "range": "Day 1-15",
+      "summary": "倍數比較 8 節、財務/公告 phrase、Part 2 聽力、週測"
+    },
+    {
+      "week": 3,
+      "range": "Day 5-15",
+      "summary": "PoS Booster Day 5-7 已建；Day 8-15 接 Gerunds 觸發動詞、phrase/listening/review/test"
+    },
+    {
+      "week": 4,
+      "range": "Day 1-15",
+      "summary": "Gerunds + to/for/of/at 介系詞陷阱"
+    },
+    {
+      "week": 5,
+      "range": "Day 1-15",
+      "summary": "複雜 SVA Part 1"
+    },
+    {
+      "week": 6,
+      "range": "Day 1-15",
+      "summary": "number of / 不可數名詞 / active-passive 監控"
+    }
+  ]
+}
