@@ -671,6 +671,19 @@ body {
   color: #fff;
 }
 
+/* Not yet built — dashed outline, muted */
+.map-dot.dot-locked {
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  border-style: dashed;
+  color: #cbd5e1;
+  cursor: default;
+  pointer-events: none;
+}
+.map-dot.dot-locked:hover { transform: none; box-shadow: none; }
+/* Restore pointer-events for tooltip on locked */
+.map-dot.dot-locked[data-tip] { pointer-events: auto; cursor: default; }
+
 .map-dot .dot-day  { font-size: 13px; font-weight: 700; line-height: 1; }
 .map-dot .dot-type { font-size: 10px; line-height: 1; opacity: 0.85; }
 

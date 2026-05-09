@@ -85,12 +85,7 @@
       "week": 1,
       "title": "Mandative Subjunctive 急救週",
       "session_count": 15,
-      "breakdown": {
-        "grammar": 8,
-        "phrase": 3,
-        "listening": 2,
-        "review_test": 2
-      },
+      "breakdown": { "grammar": 8, "phrase": 3, "listening": 2, "review_test": 2 },
       "focus_tags": ["mandative-subjunctive", "marketing-phrase", "social-economy-phrase", "part2-distractor"],
       "milestone": "Mandative 題型由 0% 拉到 80%+"
     },
@@ -98,12 +93,7 @@
       "week": 2,
       "title": "倍數比較與正式語塊",
       "session_count": 15,
-      "breakdown": {
-        "grammar": 8,
-        "phrase": 3,
-        "listening": 2,
-        "review_test": 2
-      },
+      "breakdown": { "grammar": 8, "phrase": 3, "listening": 2, "review_test": 2 },
       "focus_tags": ["multiplier-comparison", "finance-phrase", "notice-phrase", "part2-distractor"],
       "milestone": "twice/half/three times as...as 題型 90%+"
     },
@@ -111,12 +101,7 @@
       "week": 3,
       "title": "PoS Booster + Gerunds 起步",
       "session_count": 15,
-      "breakdown": {
-        "grammar": 9,
-        "phrase": 2,
-        "listening": 2,
-        "review_test": 2
-      },
+      "breakdown": { "grammar": 9, "phrase": 2, "listening": 2, "review_test": 2 },
       "focus_tags": ["part-of-speech", "false-friends", "gerunds-trigger-verbs"],
       "milestone": "詞性子項 85%+，Gerunds 觸發動詞建立清單"
     },
@@ -124,12 +109,7 @@
       "week": 4,
       "title": "Gerunds + 介系詞陷阱",
       "session_count": 15,
-      "breakdown": {
-        "grammar": 8,
-        "phrase": 3,
-        "listening": 2,
-        "review_test": 2
-      },
+      "breakdown": { "grammar": 8, "phrase": 3, "listening": 2, "review_test": 2 },
       "focus_tags": ["gerunds-preposition-to", "object-to", "dedicated-to", "preposition-phrase"],
       "milestone": "to/for/of/at + V-ing 介系詞陷阱穩定辨識"
     },
@@ -137,12 +117,7 @@
       "week": 5,
       "title": "複雜 SVA Part 1",
       "session_count": 15,
-      "breakdown": {
-        "grammar": 8,
-        "phrase": 3,
-        "listening": 2,
-        "review_test": 2
-      },
+      "breakdown": { "grammar": 8, "phrase": 3, "listening": 2, "review_test": 2 },
       "focus_tags": ["sva", "either-neither", "long-subject", "office-phrase"],
       "milestone": "複雜主詞動詞一致題 75%+"
     },
@@ -150,12 +125,7 @@
       "week": 6,
       "title": "複雜 SVA Part 2 + 不可數名詞",
       "session_count": 15,
-      "breakdown": {
-        "grammar": 8,
-        "phrase": 3,
-        "listening": 2,
-        "review_test": 2
-      },
+      "breakdown": { "grammar": 8, "phrase": 3, "listening": 2, "review_test": 2 },
       "focus_tags": ["number-of-sva", "uncountable-nouns", "active-passive-monitor", "sales-service-phrase"],
       "milestone": "number of / a number of / equipment-information-advice 封存"
     }
@@ -164,14 +134,10 @@
     {
       "lesson_id": "wh-w1-d1",
       "module_id": "weakness-hunter",
-      "week": 1,
-      "day": 1,
-      "sequence": 1,
-      "lesson_type": "grammar",
-      "target_component": "grammar",
+      "week": 1, "day": 1, "sequence": 1,
+      "lesson_type": "grammar", "target_component": "grammar",
       "title": "Mandative Subjunctive 觸發動詞",
-      "quiz_type": "slow",
-      "time_limit_seconds": 25,
+      "quiz_type": "slow", "time_limit_seconds": 25,
       "focus_tags": ["mandative-subjunctive", "trigger-verbs"],
       "weakness_tags": ["mandative-trigger-verb", "base-verb-after-that"],
       "file": "./weakness-hunter/wh-w1-d1.json"
@@ -179,14 +145,10 @@
     {
       "lesson_id": "wh-w1-d2",
       "module_id": "weakness-hunter",
-      "week": 1,
-      "day": 2,
-      "sequence": 2,
-      "lesson_type": "grammar",
-      "target_component": "grammar",
+      "week": 1, "day": 2, "sequence": 2,
+      "lesson_type": "grammar", "target_component": "grammar",
       "title": "Mandative Subjunctive 限時練習",
-      "quiz_type": "standard",
-      "time_limit_seconds": 20,
+      "quiz_type": "standard", "time_limit_seconds": 20,
       "focus_tags": ["mandative-subjunctive", "speed"],
       "weakness_tags": ["mandative-trigger-verb", "base-verb-after-that"],
       "file": "./weakness-hunter/wh-w1-d2.json"
@@ -194,29 +156,237 @@
     {
       "lesson_id": "wh-w1-d3",
       "module_id": "weakness-hunter",
-      "week": 1,
-      "day": 3,
-      "sequence": 3,
-      "lesson_type": "grammar",
-      "target_component": "grammar",
+      "week": 1, "day": 3, "sequence": 3,
+      "lesson_type": "grammar", "target_component": "grammar",
       "title": "Mandative 形容詞觸發器",
-      "quiz_type": "slow",
-      "time_limit_seconds": 25,
+      "quiz_type": "slow", "time_limit_seconds": 25,
       "focus_tags": ["mandative-subjunctive", "trigger-adjectives"],
       "weakness_tags": ["mandative-adjective", "be-base-after-that"],
       "file": "./weakness-hunter/wh-w1-d3.json"
     },
     {
+      "lesson_id": "wh-w1-d4",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 4, "sequence": 4,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "Mandative 陷阱排除",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d5",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 5, "sequence": 5,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "Mandative 同義觸發詞擴展",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d6",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 6, "sequence": 6,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "Mandative 速度強化",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d7",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 7, "sequence": 7,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "Mandative 複合題型",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d8",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 8, "sequence": 8,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "Mandative 綜合挑戰",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d9",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 9, "sequence": 9,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "行銷語塊 Part 1",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d10",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 10, "sequence": 10,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "社會經濟語塊",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d11",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 11, "sequence": 11,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "公益語塊",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d12",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 12, "sequence": 12,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 聽寫練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d13",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 13, "sequence": 13,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 Distractor 辨識",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d14",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 14, "sequence": 14,
+      "lesson_type": "review", "target_component": "grammar",
+      "title": "Week 1 錯題複習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w1-d15",
+      "module_id": "weakness-hunter",
+      "week": 1, "day": 15, "sequence": 15,
+      "lesson_type": "test", "target_component": "grammar",
+      "title": "Week 1 週測",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d1",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 1, "sequence": 16,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "倍數比較 twice/half 基礎",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d2",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 2, "sequence": 17,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "倍數比較 限時練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d3",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 3, "sequence": 18,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "as...as 倍數句型",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d4",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 4, "sequence": 19,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "倍數比較 混合判斷",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d5",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 5, "sequence": 20,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "倍數比較 速度強化",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d6",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 6, "sequence": 21,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "倍數比較 陷阱排除",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d7",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 7, "sequence": 22,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "倍數比較 綜合應用",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d8",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 8, "sequence": 23,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "倍數比較 綜合挑戰",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d9",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 9, "sequence": 24,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "財務語塊 Part 1",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d10",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 10, "sequence": 25,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "公告/通知語塊",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d11",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 11, "sequence": 26,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "正式書信語塊",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d12",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 12, "sequence": 27,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 聽力練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d13",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 13, "sequence": 28,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 速度挑戰",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d14",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 14, "sequence": 29,
+      "lesson_type": "review", "target_component": "grammar",
+      "title": "Week 2 錯題複習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w2-d15",
+      "module_id": "weakness-hunter",
+      "week": 2, "day": 15, "sequence": 30,
+      "lesson_type": "test", "target_component": "grammar",
+      "title": "Week 2 週測",
+      "file": null
+    },
+    {
       "lesson_id": "pos-d1",
       "module_id": "pos-booster",
-      "week": 3,
-      "day": 1,
-      "sequence": 31,
-      "lesson_type": "grammar",
-      "target_component": "grammar",
+      "week": 3, "day": 1, "sequence": 31,
+      "lesson_type": "grammar", "target_component": "grammar",
       "title": "詞性辨識 Part 1 — 名詞 vs 動詞",
-      "quiz_type": "slow",
-      "time_limit_seconds": 25,
+      "quiz_type": "slow", "time_limit_seconds": 25,
       "focus_tags": ["part-of-speech", "noun-verb"],
       "weakness_tags": ["det-noun", "adj-noun", "prep-noun"],
       "file": "./pos-booster/pos-d1.json"
@@ -224,14 +394,10 @@
     {
       "lesson_id": "pos-d2",
       "module_id": "pos-booster",
-      "week": 3,
-      "day": 2,
-      "sequence": 32,
-      "lesson_type": "grammar",
-      "target_component": "grammar",
+      "week": 3, "day": 2, "sequence": 32,
+      "lesson_type": "grammar", "target_component": "grammar",
       "title": "詞性辨識 Part 2 — 形容詞 vs 副詞",
-      "quiz_type": "slow",
-      "time_limit_seconds": 25,
+      "quiz_type": "slow", "time_limit_seconds": 25,
       "focus_tags": ["part-of-speech", "adj-adv"],
       "weakness_tags": ["linking-verb", "adv-verb", "adj-after-seem"],
       "file": "./pos-booster/pos-d2.json"
@@ -239,14 +405,10 @@
     {
       "lesson_id": "pos-d3",
       "module_id": "pos-booster",
-      "week": 3,
-      "day": 3,
-      "sequence": 33,
-      "lesson_type": "grammar",
-      "target_component": "grammar",
+      "week": 3, "day": 3, "sequence": 33,
+      "lesson_type": "grammar", "target_component": "grammar",
       "title": "詞性辨識 Part 3 — 名詞片語與修飾位置",
-      "quiz_type": "standard",
-      "time_limit_seconds": 20,
+      "quiz_type": "standard", "time_limit_seconds": 20,
       "focus_tags": ["part-of-speech", "noun-phrase"],
       "weakness_tags": ["noun-head", "adj-before-noun", "adv-modifier"],
       "file": "./pos-booster/pos-d3.json"
@@ -254,14 +416,10 @@
     {
       "lesson_id": "pos-d4",
       "module_id": "pos-booster",
-      "week": 3,
-      "day": 4,
-      "sequence": 34,
-      "lesson_type": "grammar",
-      "target_component": "grammar",
+      "week": 3, "day": 4, "sequence": 34,
+      "lesson_type": "grammar", "target_component": "grammar",
       "title": "詞性辨識 Part 4 — 混合判斷強化",
-      "quiz_type": "standard",
-      "time_limit_seconds": 20,
+      "quiz_type": "standard", "time_limit_seconds": 20,
       "focus_tags": ["part-of-speech", "mixed"],
       "weakness_tags": ["det-noun", "adv-verb", "linking-verb"],
       "file": "./pos-booster/pos-d4.json"
@@ -269,14 +427,10 @@
     {
       "lesson_id": "pos-d5",
       "module_id": "pos-booster",
-      "week": 3,
-      "day": 5,
-      "sequence": 35,
-      "lesson_type": "phrase",
-      "target_component": "phrase",
+      "week": 3, "day": 5, "sequence": 35,
+      "lesson_type": "phrase", "target_component": "phrase",
       "title": "詞性衍生片語強化",
-      "quiz_type": "standard",
-      "time_limit_seconds": 20,
+      "quiz_type": "standard", "time_limit_seconds": 20,
       "focus_tags": ["part-of-speech", "collocation", "word-family"],
       "weakness_tags": ["collocation-noun-verb", "word-family-choice", "mandative-trigger-verb"],
       "file": "./pos-booster/pos-d5.json"
@@ -284,14 +438,10 @@
     {
       "lesson_id": "pos-d6",
       "module_id": "pos-booster",
-      "week": 3,
-      "day": 6,
-      "sequence": 36,
-      "lesson_type": "review",
-      "target_component": "grammar",
+      "week": 3, "day": 6, "sequence": 36,
+      "lesson_type": "review", "target_component": "grammar",
       "title": "PoS Booster 錯題整合複習",
-      "quiz_type": "standard",
-      "time_limit_seconds": 20,
+      "quiz_type": "standard", "time_limit_seconds": 20,
       "focus_tags": ["part-of-speech", "false-friends", "review"],
       "weakness_tags": ["word-family-choice", "false-friends", "adv-verb", "linking-verb"],
       "file": "./pos-booster/pos-d6.json"
@@ -299,17 +449,437 @@
     {
       "lesson_id": "pos-d7",
       "module_id": "pos-booster",
-      "week": 3,
-      "day": 7,
-      "sequence": 37,
-      "lesson_type": "test",
-      "target_component": "grammar",
+      "week": 3, "day": 7, "sequence": 37,
+      "lesson_type": "test", "target_component": "grammar",
       "title": "PoS Booster 週測",
-      "quiz_type": "weekly",
-      "time_limit_seconds": 15,
+      "quiz_type": "weekly", "time_limit_seconds": 15,
       "focus_tags": ["part-of-speech", "weekly-test", "mandative-monitor", "multiplier-monitor"],
       "weakness_tags": ["part-of-speech-test", "false-friends", "mandative-trigger-verb", "multiplier-comparison"],
       "file": "./pos-booster/pos-d7.json"
+    },
+    {
+      "lesson_id": "wh-w3-d8",
+      "module_id": "weakness-hunter",
+      "week": 3, "day": 8, "sequence": 38,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "Gerunds 觸發動詞 Part 1",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w3-d9",
+      "module_id": "weakness-hunter",
+      "week": 3, "day": 9, "sequence": 39,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "Gerunds 觸發動詞 Part 2",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w3-d10",
+      "module_id": "weakness-hunter",
+      "week": 3, "day": 10, "sequence": 40,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "Gerunds vs Infinitive 判斷",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w3-d11",
+      "module_id": "weakness-hunter",
+      "week": 3, "day": 11, "sequence": 41,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "Gerunds 常見片語",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w3-d12",
+      "module_id": "weakness-hunter",
+      "week": 3, "day": 12, "sequence": 42,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 聽力強化",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w3-d13",
+      "module_id": "weakness-hunter",
+      "week": 3, "day": 13, "sequence": 43,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 速度練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w3-d14",
+      "module_id": "weakness-hunter",
+      "week": 3, "day": 14, "sequence": 44,
+      "lesson_type": "review", "target_component": "grammar",
+      "title": "Week 3 錯題複習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w3-d15",
+      "module_id": "weakness-hunter",
+      "week": 3, "day": 15, "sequence": 45,
+      "lesson_type": "test", "target_component": "grammar",
+      "title": "Week 3 週測",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d1",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 1, "sequence": 46,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "to/for/of/at + V-ing 基礎",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d2",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 2, "sequence": 47,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "介系詞陷阱 Part 1",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d3",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 3, "sequence": 48,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "dedicated to / object to",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d4",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 4, "sequence": 49,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "介系詞陷阱 速度練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d5",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 5, "sequence": 50,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "介系詞片語 混合判斷",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d6",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 6, "sequence": 51,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "Gerunds 介系詞 綜合",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d7",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 7, "sequence": 52,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "介系詞陷阱 強化練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d8",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 8, "sequence": 53,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "介系詞 綜合挑戰",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d9",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 9, "sequence": 54,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "介系詞語塊 Part 1",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d10",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 10, "sequence": 55,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "辦公室常用介系詞語塊",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d11",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 11, "sequence": 56,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "商務介系詞語塊",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d12",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 12, "sequence": 57,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 聽力練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d13",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 13, "sequence": 58,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 速度挑戰",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d14",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 14, "sequence": 59,
+      "lesson_type": "review", "target_component": "grammar",
+      "title": "Week 4 錯題複習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w4-d15",
+      "module_id": "weakness-hunter",
+      "week": 4, "day": 15, "sequence": 60,
+      "lesson_type": "test", "target_component": "grammar",
+      "title": "Week 4 週測",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d1",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 1, "sequence": 61,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "SVA 主詞辨識 Part 1",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d2",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 2, "sequence": 62,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "SVA either/neither 判斷",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d3",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 3, "sequence": 63,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "SVA 長主詞判斷",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d4",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 4, "sequence": 64,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "SVA 速度練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d5",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 5, "sequence": 65,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "SVA 混合強化",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d6",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 6, "sequence": 66,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "SVA 陷阱排除",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d7",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 7, "sequence": 67,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "SVA 複雜句型",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d8",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 8, "sequence": 68,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "SVA 綜合挑戰",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d9",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 9, "sequence": 69,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "辦公室語塊 Part 1",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d10",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 10, "sequence": 70,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "會議/報告語塊",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d11",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 11, "sequence": 71,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "時間副詞語塊",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d12",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 12, "sequence": 72,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 聽力練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d13",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 13, "sequence": 73,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 速度挑戰",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d14",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 14, "sequence": 74,
+      "lesson_type": "review", "target_component": "grammar",
+      "title": "Week 5 錯題複習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w5-d15",
+      "module_id": "weakness-hunter",
+      "week": 5, "day": 15, "sequence": 75,
+      "lesson_type": "test", "target_component": "grammar",
+      "title": "Week 5 週測",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d1",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 1, "sequence": 76,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "number of / a number of 辨析",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d2",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 2, "sequence": 77,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "不可數名詞 Part 1",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d3",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 3, "sequence": 78,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "equipment/information/advice",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d4",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 4, "sequence": 79,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "SVA + 不可數名詞 混合",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d5",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 5, "sequence": 80,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "active/passive 監控練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d6",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 6, "sequence": 81,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "SVA Part 2 速度練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d7",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 7, "sequence": 82,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "複雜句型 綜合強化",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d8",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 8, "sequence": 83,
+      "lesson_type": "grammar", "target_component": "grammar",
+      "title": "全面綜合挑戰",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d9",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 9, "sequence": 84,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "銷售服務語塊 Part 1",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d10",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 10, "sequence": 85,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "客服/投訴語塊",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d11",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 11, "sequence": 86,
+      "lesson_type": "phrase", "target_component": "phrase",
+      "title": "商業簡報語塊",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d12",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 12, "sequence": 87,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 聽力練習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d13",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 13, "sequence": 88,
+      "lesson_type": "listening", "target_component": "listening",
+      "title": "Part 2 速度挑戰",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d14",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 14, "sequence": 89,
+      "lesson_type": "review", "target_component": "grammar",
+      "title": "Week 6 錯題複習",
+      "file": null
+    },
+    {
+      "lesson_id": "wh-w6-d15",
+      "module_id": "weakness-hunter",
+      "week": 6, "day": 15, "sequence": 90,
+      "lesson_type": "test", "target_component": "grammar",
+      "title": "Stage 1 終期測驗",
+      "file": null
     }
   ],
   "planned_lessons": [
