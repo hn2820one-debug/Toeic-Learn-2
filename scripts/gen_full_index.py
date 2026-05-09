@@ -1,5 +1,5 @@
 # gen_full_index.py
-# Generates data/index.json with all 202 Stage-1 lessons from xlsx source files
+# Generates data/index.json with all 807 lessons (800 main + 7 PoS Booster)
 import json, zipfile, xml.etree.ElementTree as ET, re, sys, os
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -26,7 +26,14 @@ def parse_sheet(fpath, sheet):
 
 CAT = {
     'Grammar': 'grammar', 'Phrase': 'phrase', 'Listening': 'listening',
-    'Review': 'review', 'Test': 'test', 'Reading': 'reading'
+    'Review': 'review', 'Test': 'test', 'Reading': 'reading', 'Flex': 'review'
+}
+
+STAGE_MODULE = {
+    'Stage 1':     'weakness-hunter',
+    'Stage 2':     'stage2',
+    'Stage 3':     'stage3',
+    'Buffer 彈性週': 'buffer',
 }
 
 EMOJI_RE = re.compile(
@@ -48,7 +55,7 @@ FILES = {
 m_rows = parse_sheet(f'{BDIR}/TOEIC_570_to_750_V2_REVISED.xlsx', 'sheet2')
 p_rows = parse_sheet(f'{BDIR}/TOEIC_PoS_Booster_7_14Days.xlsx', 'sheet2')
 
-stage1 = m_rows[1:196]   # 195 lessons (skip header at index 0)
+all800 = m_rows[1:]      # 800 lessons (skip header at index 0)
 pos7   = p_rows[2:9]     # 7 lessons  (skip 2 header rows)
 
 def mkl(lid, mid, wk, day, seq, cat_raw, topic, sub, act):
@@ -59,7 +66,7 @@ def mkl(lid, mid, wk, day, seq, cat_raw, topic, sub, act):
     has_concept = '觀念' in (act or '')
     tl = 25 if has_concept else 20
     qt = ('slow'    if has_concept else
-          'weekly'  if any(x in title for x in ['週測', '模考', '期末']) else
+          'weekly'  if any(x in title for x in ['週測', '模考', '期末', 'Mock']) else
           'standard')
     return {
         'lesson_id':          lid,
@@ -78,53 +85,51 @@ def mkl(lid, mid, wk, day, seq, cat_raw, topic, sub, act):
 
 lessons = []
 seq = 1
+pos_inserted = False   # insert PoS Booster after W2
 
-# ── W1 + W2 (Stage1 rows 0-29) ─────────────────────────────────────────────
-for row in stage1[:30]:
+for row in all800:
     try:
-        wk, day = int(float(row[1])), int(float(row[3]))
+        wk  = int(float(row[1]))
+        day = int(float(row[3]))
     except Exception:
         continue
+    stage = str(row[2] or '')
     cat   = row[4] if len(row) > 4 else ''
     topic = row[5] if len(row) > 5 else ''
     sub   = row[6] if len(row) > 6 else ''
     act   = row[7] if len(row) > 7 else ''
-    lid   = f'wh-w{wk}-d{day}' if wk == 1 and day <= 3 else f'w{wk}-d{day}'
-    lessons.append(mkl(lid, 'weakness-hunter', wk, day, seq, cat, topic, sub, act))
+    mid   = STAGE_MODULE.get(stage, 'weakness-hunter')
+
+    # Insert PoS Booster between W2 and W3 (once)
+    if not pos_inserted and wk == 3 and mid == 'weakness-hunter':
+        for i, prow in enumerate(pos7):
+            pday  = i + 1
+            pcat  = prow[2] if len(prow) > 2 else 'Grammar'
+            ptop  = prow[3] if len(prow) > 3 else ''
+            psub  = prow[4] if len(prow) > 4 else ''
+            pact  = prow[6] if len(prow) > 6 else ''
+            plid  = f'pos-d{pday}'
+            lessons.append(mkl(plid, 'pos-booster', 3, pday, seq, pcat, ptop, psub, pact))
+            seq += 1
+        pos_inserted = True
+
+    # Special IDs for Stage-1 W1 D1-3 (have actual data files)
+    if mid == 'weakness-hunter' and wk == 1 and day <= 3:
+        lid = f'wh-w{wk}-d{day}'
+    else:
+        lid = f'w{wk}-d{day}'
+
+    lessons.append(mkl(lid, mid, wk, day, seq, cat, topic, sub, act))
     seq += 1
 
-# ── PoS Booster (7 days, between W2 and W3) ────────────────────────────────
-for i, row in enumerate(pos7):
-    day   = i + 1
-    cat   = row[2] if len(row) > 2 else 'Grammar'
-    topic = row[3] if len(row) > 3 else ''
-    sub   = row[4] if len(row) > 4 else ''
-    act   = row[6] if len(row) > 6 else ''
-    lid   = f'pos-d{day}'
-    lessons.append(mkl(lid, 'pos-booster', 3, day, seq, cat, topic, sub, act))
-    seq += 1
-
-# ── W3 ~ W13 (Stage1 rows 30-194) ──────────────────────────────────────────
-for row in stage1[30:]:
-    try:
-        wk, day = int(float(row[1])), int(float(row[3]))
-    except Exception:
-        continue
-    cat   = row[4] if len(row) > 4 else ''
-    topic = row[5] if len(row) > 5 else ''
-    sub   = row[6] if len(row) > 6 else ''
-    act   = row[7] if len(row) > 7 else ''
-    lid   = f'w{wk}-d{day}'
-    lessons.append(mkl(lid, 'weakness-hunter', wk, day, seq, cat, topic, sub, act))
-    seq += 1
-
+# ── Week titles (extracted from xlsx first-topic per week) ──────────────────
 WEEK_TITLES = {
     1:  'Mandative Subjunctive 急救週',
     2:  '倍數比較 Multiplier Comparisons',
     3:  'Gerunds 動名詞 Part 1 — 觸發動詞',
     4:  'Gerunds 動名詞 Part 2 — 介系詞陷阱',
-    5:  'SVA 複雜型 Part 1 — each / either / neither',
-    6:  'SVA 複雜型 Part 2 — 不可數名詞',
+    5:  'Subject-Verb Agreement 複雜型 Part 1',
+    6:  'Subject-Verb Agreement 複雜型 Part 2',
     7:  'SVC / SVOO / SVOC + Causative Verbs',
     8:  'Noun Clauses 名詞子句',
     9:  'Perfect Timeline Part 1 — 現在 & 過去完成',
@@ -132,6 +137,46 @@ WEEK_TITLES = {
     11: 'Participles + 不可數名詞',
     12: 'Modal Perfects + Mixed Conditionals',
     13: 'Stage 1 總複習 & 診斷模考',
+    14: 'Part 7 單篇閱讀 速度訓練',
+    15: 'Part 7 單篇閱讀 精準度',
+    16: 'Part 7 雙篇閱讀 基礎',
+    17: 'Part 7 雙篇閱讀 進階',
+    18: 'Part 7 三篇閱讀 基礎',
+    19: 'Part 7 三篇閱讀 進階',
+    20: 'Part 5 進階 — Mandative 實戰化',
+    21: 'Part 5 進階 — 倒裝與強調句',
+    22: 'Part 6 段落填空 — 時態邏輯',
+    23: 'Part 6 段落填空 — 連接詞',
+    24: 'Part 3 對話理解 — 職場對話',
+    25: 'Part 3 對話理解 — 進階',
+    26: 'Part 4 獨白 — 廣播通告',
+    27: 'Part 4 獨白 — 演講報告',
+    28: 'Mock 1 — Listening',
+    29: 'Mock 1 深度分析',
+    30: 'Mock 2 — Listening',
+    31: 'Mock 3',
+    32: 'Mock 3 錯題獵殺 + Part 5 進階',
+    33: 'Mock 4',
+    34: 'Mock 4 獵殺 + Listening 強化',
+    35: 'Mock 5',
+    36: 'Mock 5 獵殺 + 綜合複習',
+    37: 'Mock 6',
+    38: 'Mock 6 獵殺 + 跨題型反射',
+    39: 'Mock 7',
+    40: 'Mock 7 獵殺 + Part 5 難題庫',
+    41: 'Mock 8',
+    42: 'Mock 8 獵殺 + Phrase 深記',
+    43: 'Mock 9',
+    44: 'Mock 9 獵殺 + False Friends',
+    45: 'Mock 10',
+    46: 'Mock 10 獵殺 + 難題挑戰',
+    47: 'Mock 11',
+    48: 'Mock 11 獵殺 + 弱點清掃',
+    49: 'Mock 12',
+    50: 'Mock 12 獵殺 + 穩定輸出',
+    51: 'Mock 13',
+    52: 'Final Mock 14',
+    53: 'Buffer 彈性補課週',
 }
 
 MILESTONES = {
@@ -143,7 +188,19 @@ MILESTONES = {
     10: 'Perfect 時態 ≥ 75%，預估 +10–15 分',
     12: 'Conditionals ≥ 80%，預估 +10 分',
     13: '首次模考 570 → 610–640',
+    21: 'Stage 2 中期：目標 690',
+    30: 'Stage 2 結訓',
+    52: '最終衝刺：目標 750',
 }
+
+STAGE_OF_WEEK = {}
+for row in all800:
+    try:
+        wk = int(float(row[1]))
+    except Exception:
+        continue
+    if wk not in STAGE_OF_WEEK:
+        STAGE_OF_WEEK[wk] = str(row[2] or '')
 
 index_data = {
     "student": {
@@ -161,7 +218,9 @@ index_data = {
          "target_listening": 340, "target_reading": 300},
         {"label": "Stage 2 中期",  "week": 21, "target_total": 690,
          "target_listening": 360, "target_reading": 330},
-        {"label": "Target",        "week": 26, "target_total": 750,
+        {"label": "Stage 2 結訓",  "week": 30, "target_total": 710,
+         "target_listening": 370, "target_reading": 340},
+        {"label": "Target 750",    "week": 52, "target_total": 750,
          "target_listening": 380, "target_reading": 370}
     ],
     "component_targets": {
@@ -181,22 +240,50 @@ index_data = {
             "primary_components": ["grammar", "phrase", "listening", "reading"]
         },
         {
-            "module_id":       "pos-booster",
-            "title":           "詞性打底 Part of Speech Booster",
-            "description":     "插入 W2 結束後的 7 天精簡模組，讓詞性辨識成為秒辨反射，解鎖 Part 5 最高頻題型。",
-            "total_days":      7,
-            "target_accuracy": 85,
+            "module_id":         "pos-booster",
+            "title":             "詞性打底 Part of Speech Booster",
+            "description":       "插入 W2 結束後的 7 天精簡模組，讓詞性辨識成為秒辨反射，解鎖 Part 5 最高頻題型。",
+            "total_days":        7,
+            "target_accuracy":   85,
             "insert_after_week": 2
+        },
+        {
+            "module_id":          "stage2",
+            "title":              "Stage 2 速度與準確度 (W14–W30)",
+            "description":        "閱讀速度 + 聽力篇章強化，Part 5/6/7 限時訓練 + Part 3/4 全覆蓋，目標 710 分。",
+            "total_weeks":        17,
+            "sessions_per_week":  15,
+            "target_accuracy":    82,
+            "primary_components": ["reading", "listening", "grammar", "phrase"]
+        },
+        {
+            "module_id":          "stage3",
+            "title":              "Stage 3 實戰衝刺 (W31–W52)",
+            "description":        "12 次全真模考循環 + 弱點獵殺，衝刺 750 目標分數。",
+            "total_weeks":        22,
+            "sessions_per_week":  15,
+            "target_accuracy":    85,
+            "primary_components": ["reading", "listening", "grammar", "phrase"]
+        },
+        {
+            "module_id":          "buffer",
+            "title":              "Buffer 彈性補課週 (W53)",
+            "description":        "彈性補課、心理建設與考前最終調整，20 節預留。",
+            "total_weeks":        1,
+            "sessions_per_week":  20,
+            "target_accuracy":    80,
+            "primary_components": ["grammar", "listening"]
         }
     ],
     "weekly_plan": [
         {
             "week":          w,
-            "title":         WEEK_TITLES[w],
-            "session_count": 15,
-            "milestone":     MILESTONES.get(w, '')
+            "title":         WEEK_TITLES.get(w, f'Week {w}'),
+            "session_count": 15 if w < 53 else 20,
+            "milestone":     MILESTONES.get(w, ''),
+            "stage":         STAGE_OF_WEEK.get(w, '')
         }
-        for w in range(1, 14)
+        for w in range(1, 54)
     ],
     "lessons": lessons
 }
@@ -207,13 +294,15 @@ with open(out, 'w', encoding='utf-8') as f:
 
 print(f'Written {out}')
 print(f'  Total lessons : {len(lessons)}  (last seq={seq - 1})')
-wh = [l for l in lessons if l['module_id'] == 'weakness-hunter']
-ps = [l for l in lessons if l['module_id'] == 'pos-booster']
-print(f'  weakness-hunter: {len(wh)} lessons  (W1-W13, 195 total)')
-print(f'  pos-booster    : {len(ps)} lessons  (seq {ps[0]["sequence"]}-{ps[-1]["sequence"]})')
+by_mod = {}
+for l in lessons:
+    by_mod.setdefault(l['module_id'], []).append(l)
+for mid, ls in by_mod.items():
+    print(f'  {mid:<20}: {len(ls):3d} lessons  (seq {ls[0]["sequence"]}-{ls[-1]["sequence"]})')
 print()
 print('Sample lessons:')
-for l in [lessons[0], lessons[14], lessons[30], lessons[31], lessons[37], lessons[-1]]:
+samples = [lessons[0], lessons[14], lessons[30], lessons[37], lessons[202], lessons[457], lessons[-1]]
+for l in samples:
     print(f'  [{l["sequence"]:3d}] {l["lesson_id"]:<15}  {l["title"][:55]}')
     if l['description']:
         print(f'         desc: {l["description"][:60]}')
