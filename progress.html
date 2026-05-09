@@ -6,6 +6,7 @@
   <title>Progress</title>
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/report.css">
+  <link rel="stylesheet" href="./css/progress.css">
 </head>
 <body>
   <div id="top-strip" class="top-strip">載入中...</div>
@@ -20,8 +21,23 @@
     </section>
 
     <section class="section">
+      <h2 class="page-subtitle">最近一次學習摘要</h2>
+      <div id="recent-box" class="card"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">課程地圖</h2>
+      <div id="lesson-map-box" class="card"></div>
+    </section>
+
+    <section class="section">
       <h2 class="page-subtitle">能力儀表板</h2>
       <div id="component-box" class="component-dashboard"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="page-subtitle">學習熱圖</h2>
+      <div id="heatmap-box" class="card"></div>
     </section>
 
     <section class="section">
@@ -40,15 +56,348 @@
     </section>
 
     <section class="section">
-      <button class="button secondary" onclick="location.href='./index.html'">回首頁</button>
+      <h2 class="page-subtitle">學習紀錄</h2>
+      <div class="card">
+        <div class="log-controls">
+          <div class="log-control">
+            <label for="log-date">日期</label>
+            <input id="log-date" type="date">
+          </div>
+          <div class="log-control">
+            <label for="log-lesson">課程</label>
+            <select id="log-lesson"></select>
+          </div>
+          <div class="log-control">
+            <label for="log-weakness">弱點標籤</label>
+            <select id="log-weakness"></select>
+          </div>
+          <button id="export-json-btn" class="button secondary" type="button">匯出學習紀錄 JSON</button>
+          <button id="export-csv-btn" class="button secondary" type="button">匯出答題 CSV</button>
+        </div>
+        <div id="learning-log-box"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <button class="button secondary" type="button" onclick="location.href='./index.html'">回首頁</button>
     </section>
   </main>
 
   <script src="./js/storage.js"></script>
+  <script src="./js/learning-log.js"></script>
   <script src="./js/app.js"></script>
   <script>
     function pct(n) {
       return `${(n * 100).toFixed(0)}%`;
+    }
+
+    function htmlEscape(value) {
+      return String(value ?? '').replace(/[&<>"']/g, (char) => ({
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+      }[char]));
+    }
+
+    function todayValue() {
+      const d = new Date();
+      const mm = `${d.getMonth() + 1}`.padStart(2, '0');
+      const dd = `${d.getDate()}`.padStart(2, '0');
+      return `${d.getFullYear()}-${mm}-${dd}`;
+    }
+
+    function secondsLabel(ms) {
+      if (ms === null || ms === undefined || ms === '') return '尚無';
+      return Number.isFinite(Number(ms)) ? `${(Number(ms) / 1000).toFixed(1)}s` : '尚無';
+    }
+
+    function timeLabel(iso) {
+      const d = new Date(iso);
+      if (Number.isNaN(d.getTime())) return '';
+      return d.toLocaleTimeString('zh-TW', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    }
+
+    async function renderRecentBox(progress) {
+      const latestLocalAttempt = (progress.attempts || []).slice().sort((a, b) => String(b.ended_at_iso || '').localeCompare(String(a.ended_at_iso || '')))[0];
+      const summary = window.LearningLog?.getRecentSummary ? await window.LearningLog.getRecentSummary() : null;
+      const latestAttempt = summary?.latest_attempt || latestLocalAttempt;
+      const latestWeakness = summary?.latest_weakness_tag || latestAttempt?.wrong_tags?.[0] || '尚無';
+      const streak = computeStreak(progress);
+      document.getElementById('recent-box').innerHTML = `
+        <div class="summary-grid">
+          <div class="summary-tile"><span>今日做了</span><strong>${summary?.question_count || 0} 題</strong></div>
+          <div class="summary-tile"><span>平均耗時</span><strong>${secondsLabel(summary?.avg_elapsed_ms)}</strong></div>
+          <div class="summary-tile"><span>連續天數</span><strong>${streak} 天</strong></div>
+          <div class="summary-tile"><span>最新弱點</span><strong>${htmlEscape(latestWeakness)}</strong></div>
+          <div class="summary-tile"><span>最近 attempt</span><strong>${htmlEscape(latestAttempt?.lesson_id || '尚無')}</strong></div>
+        </div>
+      `;
+    }
+
+    async function populateLogFilters(index, progress) {
+      const dateInput = document.getElementById('log-date');
+      const lessonSelect = document.getElementById('log-lesson');
+      const weaknessSelect = document.getElementById('log-weakness');
+      dateInput.value = todayValue();
+      lessonSelect.innerHTML = '<option value="">全部課程</option>' + index.lessons.map((lesson) => (
+        `<option value="${htmlEscape(lesson.lesson_id)}">${htmlEscape(lesson.lesson_id)}｜${htmlEscape(lesson.title)}</option>`
+      )).join('');
+
+      const weaknessTags = new Set();
+      (progress.weaknesses || []).forEach((weakness) => weaknessTags.add(weakness.tag));
+      (progress.attempts || []).forEach((attempt) => (attempt.wrong_tags || []).forEach((tag) => weaknessTags.add(tag)));
+      if (window.LearningLog?.getEvents) {
+        const events = await window.LearningLog.getEvents();
+        events.forEach((event) => {
+          if (event.weakness_tag) weaknessTags.add(event.weakness_tag);
+        });
+      }
+      weaknessSelect.innerHTML = '<option value="">全部弱點</option>' + [...weaknessTags].sort().map((tag) => (
+        `<option value="${htmlEscape(tag)}">${htmlEscape(tag)}</option>`
+      )).join('');
+
+      [dateInput, lessonSelect, weaknessSelect].forEach((control) => {
+        control.addEventListener('change', renderLearningLog);
+      });
+
+      const canExport = Boolean(window.LearningLog?.downloadEventsJSON);
+      document.getElementById('export-json-btn').disabled = !canExport;
+      document.getElementById('export-csv-btn').disabled = !canExport;
+      document.getElementById('export-json-btn').addEventListener('click', () => window.LearningLog.downloadEventsJSON());
+      document.getElementById('export-csv-btn').addEventListener('click', () => window.LearningLog.downloadAnswersCSV());
+    }
+
+    async function renderLearningLog() {
+      const box = document.getElementById('learning-log-box');
+      if (!window.LearningLog?.getEvents) {
+        box.innerHTML = '<p class="muted-note">此瀏覽器沒有 IndexedDB，仍可使用既有進度摘要。</p>';
+        return;
+      }
+
+      const filters = {};
+      const date = document.getElementById('log-date').value;
+      const lessonId = document.getElementById('log-lesson').value;
+      const weaknessTag = document.getElementById('log-weakness').value;
+      if (date) filters.date = date;
+      if (lessonId) filters.lesson_id = lessonId;
+      if (weaknessTag) filters.weakness_tag = weaknessTag;
+
+      const events = await window.LearningLog.getEvents(filters);
+      const visible = events.slice(-80).reverse();
+      if (!visible.length) {
+        box.innerHTML = '<p class="muted-note">目前篩選條件下沒有學習事件。開始作答後會看到 quiz_start、question_view、answer_select、timeout、submit 等紀錄。</p>';
+        return;
+      }
+
+      box.innerHTML = `
+        <table class="log-table">
+          <thead>
+            <tr>
+              <th>時間</th>
+              <th>事件</th>
+              <th>課程 / 題號</th>
+              <th>中文紀錄</th>
+              <th>耗時</th>
+              <th>弱點</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${visible.map((event) => `
+              <tr>
+                <td>${timeLabel(event.timestamp_iso)}</td>
+                <td><span class="log-event-type">${htmlEscape(event.event_type)}</span></td>
+                <td>${htmlEscape(event.lesson_id || '-')}<br>${htmlEscape(event.q_id || '')}</td>
+                <td>${htmlEscape(event.zh_message)}</td>
+                <td>${secondsLabel(event.elapsed_ms)}</td>
+                <td>${htmlEscape(event.weakness_tag || '-')}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      `;
+    }
+
+    function computeStreak(progress) {
+      const dates = new Set(
+        (progress.session_history || []).map(h => h.date).filter(Boolean)
+      );
+      const today = new Date();
+      let streak = 0;
+      for (let i = 0; i <= 365; i++) {
+        const d = new Date(today);
+        d.setDate(d.getDate() - i);
+        const ds = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        if (dates.has(ds)) {
+          streak++;
+        } else if (i === 0) {
+          // Today not yet studied — don't break, check from yesterday
+        } else {
+          break;
+        }
+      }
+      return streak;
+    }
+
+    function getLessonStatus(lessonId, moduleId, progress, currentLessonId) {
+      if (lessonId === currentLessonId) return 'current';
+      const result = progress.modules[moduleId]?.day_results?.[lessonId];
+      if (!result) return 'pending';
+      if (result.mastery >= 7) return 'mastered';
+      if (result.mastery >= 4) return 'needs-work';
+      return 'needs-review';
+    }
+
+    function moveTip(e, tipEl) {
+      const margin = 12;
+      const tx = Math.min(e.clientX + margin, window.innerWidth - tipEl.offsetWidth - margin);
+      const ty = Math.max(e.clientY - tipEl.offsetHeight - margin, margin);
+      tipEl.style.left = `${tx}px`;
+      tipEl.style.top = `${ty}px`;
+    }
+
+    function renderLessonMap(progress, index) {
+      const box = document.getElementById('lesson-map-box');
+
+      const allCompleted = new Set();
+      Object.values(progress.modules || {}).forEach(mod => {
+        Object.keys(mod.day_results || {}).forEach(id => allCompleted.add(id));
+      });
+      const sorted = [...index.lessons].sort((a, b) => (a.sequence || 0) - (b.sequence || 0));
+      const currentLessonId = sorted.find(l => !allCompleted.has(l.lesson_id))?.lesson_id || null;
+
+      const moduleOrder = [];
+      const byModule = {};
+      index.lessons.forEach(lesson => {
+        if (!byModule[lesson.module_id]) {
+          moduleOrder.push(lesson.module_id);
+          byModule[lesson.module_id] = {};
+        }
+        const week = lesson.week || 1;
+        if (!byModule[lesson.module_id][week]) byModule[lesson.module_id][week] = [];
+        byModule[lesson.module_id][week].push(lesson);
+      });
+
+      const moduleInfoMap = {};
+      (index.modules || []).forEach(m => { moduleInfoMap[m.module_id] = m; });
+
+      const swimlanesHtml = moduleOrder.map(moduleId => {
+        const moduleInfo = moduleInfoMap[moduleId] || { title: moduleId };
+        const weeksHtml = Object.entries(byModule[moduleId])
+          .sort(([a], [b]) => Number(a) - Number(b))
+          .map(([week, lessons]) => {
+            const dotsHtml = [...lessons]
+              .sort((a, b) => (a.day || 0) - (b.day || 0))
+              .map(lesson => {
+                const status = getLessonStatus(lesson.lesson_id, moduleId, progress, currentLessonId);
+                const result = progress.modules[moduleId]?.day_results?.[lesson.lesson_id];
+                let lastDate = null;
+                try {
+                  if (result?.last_practiced_at_iso) {
+                    lastDate = new Date(result.last_practiced_at_iso).toLocaleDateString('zh-TW');
+                  }
+                } catch (e) { /* ignore */ }
+                const tipObj = {
+                  t: lesson.title || lesson.lesson_id,
+                  a: result ? `${(result.accuracy * 100).toFixed(0)}%` : null,
+                  m: result ? `${result.mastery}/10` : null,
+                  d: lastDate
+                };
+                return `<div class="lesson-dot status-${status}" data-tip="${htmlEscape(JSON.stringify(tipObj))}"></div>`;
+              }).join('');
+            return `<div class="week-group"><div class="week-label">W${week}</div><div class="dots-row">${dotsHtml}</div></div>`;
+          }).join('');
+        return `
+          <div class="swimlane">
+            <div class="swimlane-header">${htmlEscape(moduleInfo.title)}</div>
+            <div class="swimlane-weeks">${weeksHtml}</div>
+          </div>`;
+      }).join('');
+
+      const legendHtml = `
+        <div class="dot-legend">
+          <span class="legend-item"><span class="legend-dot status-pending"></span>未開始</span>
+          <span class="legend-item"><span class="legend-dot status-current"></span>下一課</span>
+          <span class="legend-item"><span class="legend-dot status-needs-review"></span>需重練 (掌握&lt;4)</span>
+          <span class="legend-item"><span class="legend-dot status-needs-work"></span>需加強 (4–7)</span>
+          <span class="legend-item"><span class="legend-dot status-mastered"></span>已掌握 (≥7)</span>
+        </div>`;
+
+      box.innerHTML = swimlanesHtml + legendHtml;
+
+      let tipEl = document.getElementById('dot-tooltip');
+      if (!tipEl) {
+        tipEl = document.createElement('div');
+        tipEl.id = 'dot-tooltip';
+        tipEl.className = 'dot-tooltip';
+        tipEl.hidden = true;
+        document.body.appendChild(tipEl);
+      }
+
+      box.querySelectorAll('.lesson-dot').forEach(dot => {
+        dot.addEventListener('mouseenter', e => {
+          try {
+            const d = JSON.parse(dot.dataset.tip);
+            let html = `<strong>${htmlEscape(d.t)}</strong>`;
+            if (d.a) html += `<br>正確率 ${htmlEscape(d.a)}`;
+            if (d.m) html += `<br>掌握度 ${htmlEscape(d.m)}`;
+            if (d.d) html += `<br>最後練習 ${htmlEscape(d.d)}`;
+            tipEl.innerHTML = html;
+            tipEl.hidden = false;
+            moveTip(e, tipEl);
+          } catch (_e) { /* ignore */ }
+        });
+        dot.addEventListener('mousemove', e => moveTip(e, tipEl));
+        dot.addEventListener('mouseleave', () => { tipEl.hidden = true; });
+      });
+    }
+
+    function renderHeatmap(progress) {
+      const box = document.getElementById('heatmap-box');
+
+      const countByDate = {};
+      (progress.session_history || []).forEach(h => {
+        if (h.date) countByDate[h.date] = (countByDate[h.date] || 0) + 1;
+      });
+
+      const WEEKS = 16;
+      const today = new Date();
+      const days = [];
+      for (let i = WEEKS * 7 - 1; i >= 0; i--) {
+        const d = new Date(today);
+        d.setDate(d.getDate() - i);
+        const mo = String(d.getMonth() + 1).padStart(2, '0');
+        const da = String(d.getDate()).padStart(2, '0');
+        const ds = `${d.getFullYear()}-${mo}-${da}`;
+        days.push({ ds, count: countByDate[ds] || 0, label: `${mo}/${da}` });
+      }
+
+      const firstDow = new Date(days[0].ds).getDay();
+      const padCount = firstDow === 0 ? 6 : firstDow - 1;
+      const cells = [...Array(padCount).fill(null), ...days];
+
+      const cellsHtml = cells.map(c => {
+        if (!c) return '<div class="heat-cell heat-empty"></div>';
+        const lvl = c.count === 0 ? 0 : c.count === 1 ? 1 : c.count <= 3 ? 2 : 3;
+        return `<div class="heat-cell heat-${lvl}" title="${c.label}: ${c.count} 次練習"></div>`;
+      }).join('');
+
+      box.innerHTML = `
+        <div class="heatmap-scroll">
+          <div class="heatmap-side">
+            <span>一</span><span></span><span>三</span><span></span><span>五</span><span></span><span>日</span>
+          </div>
+          <div class="heatmap-grid">${cellsHtml}</div>
+        </div>
+        <div class="heatmap-legend">
+          <span class="heat-legend-label">少</span>
+          <div class="heat-cell heat-0"></div>
+          <div class="heat-cell heat-1"></div>
+          <div class="heat-cell heat-2"></div>
+          <div class="heat-cell heat-3"></div>
+          <span class="heat-legend-label">多</span>
+        </div>`;
     }
 
     async function init() {
@@ -67,8 +416,13 @@
         </div>
       `;
 
+      await renderRecentBox(progress);
+      renderLessonMap(progress, index);
+
       const main = progress.modules['weakness-hunter'] || {};
       const component = main.component_mastery || {};
+      renderHeatmap(progress);
+
       document.getElementById('component-box').innerHTML = ['grammar', 'phrase', 'listening', 'reading'].map((key) => `
         <div class="component-card">
           <div class="label">${window.AppCore.COMPONENT_LABELS[key]}</div>
@@ -99,8 +453,11 @@
 
       const history = progress.session_history || [];
       document.getElementById('history-box').innerHTML = history.length
-        ? `<ul class="compact-list">${history.slice().reverse().map((h) => `<li>${h.date} W${h.week || '-'} ${h.lesson_id} | ${h.target_component || 'grammar'} | acc ${pct(h.accuracy)} | mastery ${h.mastery}</li>`).join('')}</ul>`
+        ? `<ul class="compact-list">${history.slice().reverse().map((h) => `<li>${h.date} W${h.week || '-'} ${h.lesson_id} | ${h.target_component || 'grammar'} | acc ${pct(h.accuracy)} | mastery ${h.mastery}${h.attempt_id ? ` | attempt ${h.attempt_id.slice(0, 12)}` : ''}</li>`).join('')}</ul>`
         : '<p style="margin:0">尚無作答記錄。</p>';
+
+      await populateLogFilters(index, progress);
+      await renderLearningLog();
     }
 
     init();

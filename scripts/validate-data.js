@@ -4,6 +4,8 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const indexPath = path.join(root, "data", "index.json");
 const swPath = path.join(root, "sw.js");
+const storagePath = path.join(root, "js", "storage.js");
+const learningLogPath = path.join(root, "js", "learning-log.js");
 const validComponents = new Set(["grammar", "phrase", "listening", "reading"]);
 const validLessonTypes = new Set(["grammar", "phrase", "listening", "review", "test"]);
 const validPos = new Set(["noun", "verb", "adj", "adv"]);
@@ -72,6 +74,27 @@ function validateDistribution(questions, lessonId) {
 
 const index = readJSON(indexPath);
 const sw = fs.readFileSync(swPath, "utf8");
+const storage = fs.readFileSync(storagePath, "utf8");
+
+if (!fs.existsSync(learningLogPath)) {
+  errors.push("missing js/learning-log.js");
+} else {
+  const learningLog = fs.readFileSync(learningLogPath, "utf8");
+  if (!learningLog.includes('DB_NAME = "toeic_learning_db"')) {
+    errors.push("learning-log.js: DB_NAME must be toeic_learning_db");
+  }
+  if (!learningLog.includes('EVENT_STORE = "events"') || !learningLog.includes('ATTEMPT_STORE = "attempts"')) {
+    errors.push("learning-log.js: expected events and attempts stores");
+  }
+}
+
+if (!storage.includes("const VERSION = 3")) {
+  errors.push("storage.js: expected localStorage schema VERSION = 3");
+}
+
+["./js/learning-log.js", "./css/progress.css"].forEach((asset) => {
+  if (!sw.includes(asset)) errors.push(`service worker cache missing ${asset}`);
+});
 
 index.lessons.forEach((row) => {
   const lessonId = row.lesson_id || "(missing lesson_id)";

@@ -11,8 +11,7 @@
   <div id="top-strip" class="top-strip">載入中...</div>
   <main class="app-shell">
     <header class="page-head">
-      <h1 class="page-title">TOEIC 實測 570（L315/R255）→ 目標 750</h1>
-      <p class="page-subtitle">15 節/週弱點獵殺系統：先修 Reading 255 的文法與語塊斷層，再推聽力篇章化。</p>
+      <h1 class="page-title">TOEIC 570 → 750</h1>
     </header>
 
     <section class="section">
@@ -24,40 +23,128 @@
     </section>
 
     <section class="section">
-      <h2 class="page-subtitle">6 週主線</h2>
-      <div id="weekly-plan" class="weekly-plan"></div>
+      <div id="recent-learning-card" class="card"></div>
     </section>
 
     <section class="section">
-      <h2 class="page-subtitle">本週可練課程</h2>
-      <div id="lesson-list" class="grid-2"></div>
-    </section>
-
-    <section class="section">
-      <h2 class="page-subtitle">待建課程</h2>
-      <div id="planned-list" class="card"></div>
-    </section>
-
-    <section class="section">
-      <h2 class="page-subtitle">弱點監控</h2>
-      <div id="weak-list" class="card"></div>
+      <div id="week-tabs" class="week-tabs"></div>
+      <div id="week-panel" class="card week-panel-card"></div>
     </section>
 
     <section class="section">
       <div class="page-actions">
-        <button class="button secondary" onclick="location.href='./progress.html'">進度總覽</button>
+        <button class="button secondary" type="button" onclick="location.href='./progress.html'">進度總覽</button>
       </div>
     </section>
   </main>
 
   <script src="./js/storage.js"></script>
+  <script src="./js/learning-log.js"></script>
   <script src="./js/app.js"></script>
   <script>
+    function htmlEscape(value) {
+      return String(value ?? '').replace(/[&<>"']/g, (c) => (
+        { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+      ));
+    }
+
     function findResult(progress, lessonId) {
       for (const mod of Object.values(progress.modules || {})) {
         if (mod.day_results && mod.day_results[lessonId]) return mod.day_results[lessonId];
       }
       return null;
+    }
+
+    function getAllCompletedIds(progress) {
+      const ids = new Set();
+      Object.values(progress.modules || {}).forEach(m =>
+        Object.keys(m.day_results || {}).forEach(id => ids.add(id)));
+      return ids;
+    }
+
+    function computeStreak(progress) {
+      const dates = new Set(
+        (progress.session_history || []).map(h => h.date).filter(Boolean)
+      );
+      const today = new Date();
+      let streak = 0;
+      for (let i = 0; i <= 365; i++) {
+        const d = new Date(today);
+        d.setDate(d.getDate() - i);
+        const ds = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        if (dates.has(ds)) {
+          streak++;
+        } else if (i === 0) {
+          // today not studied yet — don't break
+        } else {
+          break;
+        }
+      }
+      return streak;
+    }
+
+    function renderWeekTabs(index, progress) {
+      const weeks = [...new Set(index.lessons.map(l => l.week))].sort((a, b) => a - b);
+      const completedIds = getAllCompletedIds(progress);
+      const nextLesson = [...index.lessons].sort((a, b) => a.sequence - b.sequence)
+        .find(l => !completedIds.has(l.lesson_id));
+      let activeWeek = nextLesson?.week ?? weeks[0];
+
+      const tabsEl = document.getElementById('week-tabs');
+      tabsEl.innerHTML = weeks.map(w =>
+        `<button type="button" class="week-tab${w === activeWeek ? ' active' : ''}" data-week="${w}">W${w}</button>`
+      ).join('');
+
+      tabsEl.querySelectorAll('.week-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          activeWeek = Number(btn.dataset.week);
+          tabsEl.querySelectorAll('.week-tab').forEach(t =>
+            t.classList.toggle('active', Number(t.dataset.week) === activeWeek));
+          renderWeekPanel(activeWeek, index, progress);
+        });
+      });
+
+      renderWeekPanel(activeWeek, index, progress);
+    }
+
+    function renderWeekPanel(week, index, progress) {
+      const completedIds = getAllCompletedIds(progress);
+      const lessons = index.lessons.filter(l => l.week === week).sort((a, b) => a.day - b.day);
+      const weekInfo = (index.weekly_plan || []).find(w => w.week === week);
+      const panelEl = document.getElementById('week-panel');
+
+      if (!lessons.length) {
+        panelEl.innerHTML = '<p class="muted-note">本週課程建設中，敬請期待。</p>';
+        return;
+      }
+
+      const doneCount = lessons.filter(l => completedIds.has(l.lesson_id)).length;
+      const rowsHtml = lessons.map(lesson => {
+        const result = findResult(progress, lesson.lesson_id);
+        const done = completedIds.has(lesson.lesson_id);
+        const dotClass = !done ? 'pending' : (result?.mastery >= 7 ? 'mastered' : 'done');
+        const meta = done && result
+          ? `${lesson.lesson_type} · 正確率 ${(result.accuracy * 100).toFixed(0)}% · 掌握度 ${result.mastery}/10`
+          : `${lesson.lesson_type} · 未開始`;
+        return `
+          <div class="lesson-row">
+            <span class="lesson-row-dot dot-${dotClass}"></span>
+            <div class="lesson-row-info">
+              <div class="lesson-row-title">${htmlEscape(lesson.title)}</div>
+              <div class="lesson-row-meta">${htmlEscape(meta)}</div>
+            </div>
+            <a href="./lesson.html?lesson=${lesson.lesson_id}"
+               class="button ${done ? 'secondary' : 'primary'} small">${done ? '重溫' : '開始'}</a>
+          </div>`;
+      }).join('');
+
+      panelEl.innerHTML = `
+        <div class="week-panel-header">
+          <strong>Week ${week}</strong>
+          ${weekInfo ? `<span>${htmlEscape(weekInfo.title)}</span>` : ''}
+          <span class="week-progress">${doneCount} / ${lessons.length} 完成</span>
+        </div>
+        <div class="lesson-rows">${rowsHtml}</div>`;
     }
 
     async function init() {
@@ -67,75 +154,50 @@
       window.AppCore.renderTopStrip(progress, index, null);
 
       const s = progress.student;
-      const baseline = s.baseline_score;
-      const target = s.target_split;
-      const done = window.AppCore.completedLessonCount(progress);
-      const mainModule = index.modules.find((m) => m.module_id === 'weakness-hunter') || index.modules[0];
-      const nextLesson = index.lessons.find((lesson) => !findResult(progress, lesson.lesson_id)) || index.lessons[0];
-
       document.getElementById('student-card').innerHTML = `
-        <div class="score-hero">
+        <div class="score-grid-2">
           <div>
-            <strong>${s.name}</strong>
-            <p>主線：${mainModule.title}</p>
+            <span>起點</span>
+            <strong>${s.baseline_score.total}</strong>
+            <small>L${s.baseline_score.listening} / R${s.baseline_score.reading}</small>
           </div>
-          <div class="score-grid">
-            <div><span>Baseline</span><strong>${baseline.total}</strong><small>L${baseline.listening} / R${baseline.reading}</small></div>
-            <div><span>Target</span><strong>${s.target_score}</strong><small>L${target.listening} / R${target.reading}</small></div>
-            <div><span>節奏</span><strong>${s.sessions_per_week}</strong><small>節 / 週</small></div>
-            <div><span>完成</span><strong>${done}</strong><small>已建課程</small></div>
+          <div>
+            <span>目標</span>
+            <strong>${s.target_score}</strong>
+            <small>L${s.target_split.listening} / R${s.target_split.reading}</small>
           </div>
-        </div>
-      `;
+        </div>`;
 
+      const completedIds = getAllCompletedIds(progress);
+      const nextLesson = [...index.lessons].sort((a, b) => a.sequence - b.sequence)
+        .find(l => !completedIds.has(l.lesson_id)) || index.lessons[0];
       document.getElementById('today-card').innerHTML = `
         <div>
           <div class="plan-kicker">Next Session</div>
-          <h2>${nextLesson.title}</h2>
-          <p>Week ${nextLesson.week} / Day ${nextLesson.day} · ${window.AppCore.COMPONENT_LABELS[nextLesson.target_component] || nextLesson.target_component} · 每題 ${nextLesson.time_limit_seconds}s</p>
+          <h2>${htmlEscape(nextLesson.title)}</h2>
+          <p>Week ${nextLesson.week} / Day ${nextLesson.day} · ${htmlEscape(window.AppCore.COMPONENT_LABELS[nextLesson.target_component] || nextLesson.target_component)} · 每題 ${nextLesson.time_limit_seconds}s</p>
         </div>
-        <button class="button primary" onclick="location.href='./lesson.html?lesson=${nextLesson.lesson_id}'">開始今日課</button>
-      `;
+        <button class="button primary" type="button" onclick="location.href='./lesson.html?lesson=${nextLesson.lesson_id}'">開始今日課</button>`;
 
-      document.getElementById('weekly-plan').innerHTML = index.weekly_plan.map((week) => `
-        <article class="plan-card">
-          <div class="plan-kicker">Week ${week.week} · ${week.session_count} 節</div>
-          <h3>${week.title}</h3>
-          <p>${week.milestone}</p>
-          <div class="tag-row">${week.focus_tags.slice(0, 4).map((tag) => `<span>${tag}</span>`).join('')}</div>
-        </article>
-      `).join('');
+      const latestAttempt = (progress.attempts || []).slice()
+        .sort((a, b) => String(b.ended_at_iso || '').localeCompare(String(a.ended_at_iso || '')))[0];
+      let summary = null;
+      if (window.LearningLog?.getRecentSummary) {
+        summary = await window.LearningLog.getRecentSummary();
+      }
+      const latestWeakness = summary?.latest_weakness_tag
+        || latestAttempt?.wrong_tags?.[0]
+        || (progress.weaknesses || [])[0]?.tag
+        || '尚無';
+      const streak = computeStreak(progress);
+      document.getElementById('recent-learning-card').innerHTML = `
+        <div class="score-grid-3">
+          <div><span>今日作答</span><strong>${summary?.question_count || 0}</strong><small>題</small></div>
+          <div><span>連續天數</span><strong>${streak}</strong><small>天</small></div>
+          <div><span>最新弱點</span><strong class="stat-label-sm">${htmlEscape(latestWeakness)}</strong><small>錯題/timeout</small></div>
+        </div>`;
 
-      const visibleLessons = index.lessons.filter((lesson) => lesson.week <= 3);
-      const list = document.getElementById('lesson-list');
-      list.innerHTML = visibleLessons.map((lesson) => {
-        const doneResult = findResult(progress, lesson.lesson_id);
-        const component = window.AppCore.COMPONENT_LABELS[lesson.target_component] || lesson.target_component;
-        const status = doneResult ? '已完成' : '未完成';
-        const buttonText = doneResult ? '重溫本節' : '開始';
-        return `
-          <article class="card lesson-card">
-            <div class="lesson-topline">
-              <span class="plan-kicker">W${lesson.week} / D${lesson.day} · ${lesson.lesson_type}</span>
-              <span class="status-pill ${doneResult ? 'done' : 'todo'}">${status}</span>
-            </div>
-            <h3>${lesson.title}</h3>
-            <p>${component} · 每題 ${lesson.time_limit_seconds}s${doneResult ? ` · 掌握度 ${doneResult.mastery}/10` : ''}</p>
-            <button class="button ${doneResult ? 'secondary' : 'primary'}" onclick="location.href='./lesson.html?lesson=${lesson.lesson_id}'">${buttonText}</button>
-          </article>
-        `;
-      }).join('');
-
-      document.getElementById('planned-list').innerHTML = `
-        <ul class="compact-list">
-          ${index.planned_lessons.map((item) => `<li>Week ${item.week} ${item.range}：${item.summary}</li>`).join('')}
-        </ul>
-      `;
-
-      const weak = progress.weaknesses || [];
-      document.getElementById('weak-list').innerHTML = weak.length
-        ? `<ul class="compact-list">${weak.map((w) => `<li>${w.tag} - ${w.status}（${(w.occurrences || []).length} 次）</li>`).join('')}</ul>`
-        : '<p style="margin:0">目前沒有弱點紀錄。錯題或 timeout 會自動升級到這裡。</p>';
+      renderWeekTabs(index, progress);
     }
 
     init();

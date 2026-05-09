@@ -1,0 +1,319 @@
+{
+  "_comment": "TOEIC Learning App — 當前學習進度快照",
+  "_generated": "2026-05-10",
+  "_based_on": "Stage 1 Week 1 + Week 2 Day 1–5 + PoS Booster Day 1–4 實際作答記錄",
+
+  "student": {
+    "name": "Joseph",
+    "target_score": 750,
+    "baseline_score": 570,
+    "baseline_listening": 315,
+    "baseline_reading": 255,
+    "industry": "半導體 FSE",
+    "locations": ["桃園", "新竹", "彰化"],
+    "certification": "CSSGB",
+    "total_lessons_planned": 800,
+    "total_lessons_done": 24,
+    "current_stage": 1,
+    "current_module": "pos-booster",
+    "current_day": 4,
+    "lessons_remaining": 776
+  },
+
+  "modules": {
+
+    "week1": {
+      "title": "Mandative Subjunctive 虛擬語氣命令式",
+      "status": "completed",
+      "planned_days": 15,
+      "actual_days": 7,
+      "days_saved": 8,
+      "mastery_final": 9.5,
+      "avg_accuracy": 0.89,
+      "avg_time_per_q": 7.2,
+      "completed_date": "2026-04-25",
+      "sealed_skills": [
+        "主動骨架：觸發詞 + that + S + V原形",
+        "Be 動詞骨架：that + S + be",
+        "被動骨架：that + S + be + p.p.",
+        "過去式呼應陷阱（7/7 封存）",
+        "三單現 -s 陷阱（5/5 封存）",
+        "進行式陷阱（4/4 封存）"
+      ],
+      "day_results": {
+        "w1-d1": { "title": "觸發動詞 7 個 + 觀念 + 12 題", "questions": 12, "correct": 12, "accuracy": 1.00, "mastery": 10 },
+        "w1-d2": { "title": "觸發動詞限時 25 題", "questions": 25, "correct": 21, "accuracy": 0.84, "mastery": 8 },
+        "w1-d3": { "title": "觸發形容詞 12 題", "questions": 12, "correct": 10, "accuracy": 0.83, "mastery": 8 },
+        "w1-d4": { "title": "整合測試 25 題", "questions": 25, "correct": 20, "accuracy": 0.80, "mastery": 8 },
+        "w1-d5": { "title": "公式整合慢速精解 10 題", "questions": 10, "correct": 10, "accuracy": 1.00, "mastery": 10 },
+        "w1-d6": { "title": "Mandative 專攻 25 題", "questions": 25, "correct": 23, "accuracy": 0.92, "mastery": 9 },
+        "w1-d7": { "title": "陷阱辨識 20 題", "questions": 20, "correct": 18, "accuracy": 0.90, "mastery": 9 }
+      }
+    },
+
+    "week2": {
+      "title": "倍數比較 Multiplier Comparisons",
+      "status": "paused",
+      "_note": "Week 2 Day 1–5 完成後，因詞性反射不穩定拖累倍數比較準確度，插入 PoS Booster 模組。Week 2 Day 6–7 + 週測待 PoS Booster 完成後繼續。",
+      "planned_days": 7,
+      "actual_days_done": 5,
+      "avg_accuracy_so_far": 0.636,
+      "day_results": {
+        "w2-d1": {
+          "title": "倍數比較 Part 1 公式建立",
+          "type": "concept+quiz",
+          "questions_main": 16, "questions_monitor": 4,
+          "correct_main": 10, "correct_monitor": 3,
+          "accuracy_main": 0.625, "accuracy_monitor": 0.75,
+          "mastery": 5.5,
+          "avg_time": 7.5,
+          "timeout_count": 2,
+          "errors": ["Q1 TIMEOUT", "Q2 as faster as（比較級混入原級）", "Q6 N times the 句型", "Q9 two times more", "Q12 the number of → 複數動詞", "Q13 TIMEOUT", "Q18 half of 結構"]
+        },
+        "w2-d2": {
+          "title": "倍數比較 Part 1 公式強化（補課節）",
+          "type": "concept+quiz",
+          "questions_main": 10, "questions_monitor": 0,
+          "correct_main": 6, "correct_monitor": 0,
+          "accuracy_main": 0.60, "accuracy_monitor": null,
+          "mastery": 5,
+          "avg_time": 13,
+          "timeout_count": 1,
+          "errors": ["Q1 TIMEOUT（as many as 超時）", "Q4 the number of → were（複數）", "Q5 N times the size of 未掌握", "Q9 the number of → remain（單數遺漏）"],
+          "new_blindspots": ["N times the + 名詞句型（33% 命中率）", "the number of 持續第 6 次失守"]
+        },
+        "w2-d3": {
+          "title": "倍數比較 Day 3 決定插入 PoS Booster",
+          "_note": "此節因 PoS 反射不穩定嚴重拖累倍數比較，決定暫停 Week 2 插入詞性打底模組",
+          "status": "interrupted"
+        },
+        "w2-d4": {
+          "title": "週測模擬（插入前最後一節）",
+          "questions_main": 16, "questions_monitor": 4,
+          "correct_main": 10, "correct_monitor": 3,
+          "accuracy_main": 0.625, "accuracy_monitor": 0.75,
+          "mastery": 5.5,
+          "avg_time": 7.5
+        },
+        "w2-d5": {
+          "title": "倍數比較補課 + 三盲區精解",
+          "questions_main": 10, "questions_monitor": 0,
+          "correct_main": 6, "correct_monitor": 0,
+          "accuracy_main": 0.60, "accuracy_monitor": null,
+          "mastery": 5,
+          "avg_time": 13
+        }
+      },
+      "pending_days": ["w2-d6", "w2-d7（週測）"],
+      "resume_after": "pos-booster"
+    },
+
+    "pos-booster": {
+      "title": "詞性打底模組 Part of Speech Booster（7天精簡版）",
+      "status": "in-progress",
+      "planned_days": 7,
+      "actual_days_done": 4,
+      "insertion_reason": "Week 2 倍數比較的陷阱選項（as faster as / N times the）根源是詞性反射不穩，影響作答速度與準確度",
+      "day_results": {
+        "pos-d1": {
+          "title": "名詞 vs 動詞辨識",
+          "type": "concept+quiz",
+          "time_limit": 25,
+          "questions": 6,
+          "correct": 4,
+          "accuracy": 0.67,
+          "mastery": 6,
+          "avg_time": 13,
+          "errors": [
+            "Q2：to + analysis（名詞）→ 應填 analyze（動詞）— 語意先行，忽略 to 位置信號",
+            "Q3：a formal + authorize（動詞）→ 應填 authorization（名詞）— 冠詞+形容詞後忽略名詞位"
+          ],
+          "error_pattern": "語意先行，位置忽略",
+          "sealed": [],
+          "new_rule": "看到空格先找位置信號（to / a / the / will），語意最後才確認"
+        },
+        "pos-d2": {
+          "title": "形容詞 vs 副詞辨識",
+          "type": "concept+quiz",
+          "time_limit": 25,
+          "questions": 6,
+          "correct": 5,
+          "accuracy": 0.83,
+          "mastery": 8,
+          "avg_time": 8.7,
+          "errors": [
+            "Q3：remained + functionally（副詞）→ 應填 functional（形容詞）— 連綴動詞後接副詞錯誤"
+          ],
+          "error_pattern": "連綴動詞後接副詞而非形容詞",
+          "sealed": ["副詞修飾動詞反射", "副詞修飾形容詞反射", "-ly 例外清單（timely/friendly）", "False Friend：economic vs economical"],
+          "speed_improvement": "13s → 8.7s/題"
+        },
+        "pos-d3": {
+          "title": "四詞性混合 + 近/中/遠距題眼",
+          "type": "concept+quiz",
+          "time_limit": 25,
+          "questions": 6,
+          "correct": 3,
+          "accuracy": 0.50,
+          "mastery": 5,
+          "avg_time": 13.5,
+          "breakdown": {
+            "近距題眼 Q1–Q2": "2/2 = 100%",
+            "中距題眼 Q3–Q4": "1/2 = 50%",
+            "遠距題眼 Q5–Q6": "0/2 = 0%"
+          },
+          "errors": [
+            "Q4：evaluated 已是謂語，空格選了動詞 comprehended → 應填副詞 comprehensively — 謂語唯一性未觸發",
+            "Q5：appeared + responsively（副詞）→ 應填 responsive（形容詞）— 連綴動詞 appear 未識別",
+            "Q6：句首 + 逗號 → 選了動詞 Flexed → 應填副詞 Flexibly — 句首副詞結構未識別"
+          ],
+          "error_pattern": "遠距題眼掃描步驟3未執行",
+          "new_rules": [
+            "規則1：句子已有謂語 → 直接刪所有動詞選項",
+            "規則2：appear/seem/remain 等連綴動詞 → 後面填形容詞",
+            "規則3：句首 + 逗號 + 完整句 → 填副詞"
+          ]
+        },
+        "pos-d4": {
+          "title": "中距 + 遠距題眼專攻",
+          "type": "concept+quiz",
+          "time_limit": 25,
+          "questions": 6,
+          "correct": 4,
+          "accuracy": 0.67,
+          "mastery": 7,
+          "avg_time": 9.2,
+          "breakdown": {
+            "中距 Q1–Q2": "1/2 = 50%（Q1 超時）",
+            "連綴動詞 Q3–Q4": "2/2 = 100%（封存）",
+            "句首結構 Q5–Q6": "1/2 = 50%（Q6 無逗號未識別）"
+          },
+          "errors": [
+            "Q1 TIMEOUT：謂語唯一性步驟未及時觸發，卡在四選項之間",
+            "Q6：句首無逗號直接接名詞 → 應填形容詞 Strategic，選了副詞 Strategically — 過度類化句首=副詞"
+          ],
+          "sealed": ["連綴動詞後接形容詞反射（appeared/remained 全對）", "句首 + 逗號 = 副詞（Q5 2秒秒殺）"],
+          "pending_rules": [
+            "句首三種結構：逗號→副詞 / 直接接名詞→形容詞 / 直接接動詞→名詞主詞",
+            "謂語唯一性：見到動詞選項先問有無謂語"
+          ],
+          "speed_improvement": "13.5s → 9.2s/題"
+        }
+      },
+      "next_day": "pos-d5",
+      "pos_d5_plan": "謄語唯一性強化 + 句首三種結構綜合 + False Friends 專攻"
+    }
+
+  },
+
+  "weaknesses": [
+    {
+      "tag": "number-of-sva",
+      "label": "the number of（單數動詞）vs a number of（複數動詞）",
+      "status": "monitoring",
+      "priority": "high",
+      "occurrences": 6,
+      "occurrence_log": ["w1-d6", "w1-d7", "w2-d1-q12", "w2-d1-q16", "w2-d2-q4", "w2-d2-q9"],
+      "rule": "The number of + 複數名詞 → 單數動詞（主詞是 number）；A number of + 複數名詞 → 複數動詞（= some）",
+      "formal_attack_week": "Week 5–6 SVA 模組"
+    },
+    {
+      "tag": "active-passive",
+      "label": "主詞後有受詞時誤選被動語態",
+      "status": "monitoring",
+      "priority": "medium",
+      "occurrences": 2,
+      "occurrence_log": ["w1-d6-q24", "w1-d7-q19"],
+      "rule": "主詞 + 動詞 + 受詞 → 主詞是執行者 → 主動原形，不是被動",
+      "formal_attack_week": "Week 7 SVC/SVOC 模組"
+    },
+    {
+      "tag": "multiplier-n-times-the",
+      "label": "N times the + 名詞句型（空格後接名詞片語）",
+      "status": "monitoring",
+      "priority": "high",
+      "occurrences": 3,
+      "occurrence_log": ["w2-d1-q6", "w2-d2-q5", "w2-d4-q6"],
+      "rule": "空格後接名詞片語（the capacity / the size）→ 用 N times the，不用 as...as",
+      "formal_attack_week": "Week 2 恢復後 Day 6"
+    },
+    {
+      "tag": "sentence-initial-structure",
+      "label": "句首三種結構詞性判斷",
+      "status": "monitoring",
+      "priority": "medium",
+      "occurrences": 2,
+      "occurrence_log": ["pos-d3-q6", "pos-d4-q6"],
+      "rule": "句首+逗號+完整句→副詞；句首+名詞（無逗號）→形容詞；句首+動詞（無逗號）→名詞主詞",
+      "formal_attack_week": "PoS Booster Day 5"
+    },
+    {
+      "tag": "linking-verb-adj",
+      "label": "連綴動詞後接形容詞（非副詞）",
+      "status": "sealed",
+      "sealed_date": "pos-d4",
+      "occurrences": 2,
+      "occurrence_log": ["pos-d2-q3（remained）", "pos-d3-q5（appeared）"],
+      "rule": "appear/seem/remain/stay/become/prove + 空格 → 形容詞補語，不是副詞"
+    }
+  ],
+
+  "pos_colour_system": {
+    "_note": "此系統從 PoS Booster 開始在所有節次中使用",
+    "noun":  { "text": "#0A6640", "bg": "#D6F0E0", "border": "#0A6640" },
+    "verb":  { "text": "#0C447C", "bg": "#D6E8FA", "border": "#0C447C" },
+    "adj":   { "text": "#6B2D8B", "bg": "#EDE0F7", "border": "#6B2D8B" },
+    "adv":   { "text": "#8B4000", "bg": "#F5E6D0", "border": "#8B4000" },
+    "error": { "text": "#A32D2D", "bg": "#FCEBEB", "border": "#A32D2D" }
+  },
+
+  "quiz_design_rules": {
+    "answer_distribution": "每個選項出現次數不超過總題數 40%，不能連續 3 題相同答案，不能出現 A/B/A/B 交替",
+    "feedback_timing": "作答期間不顯示正確/錯誤，Submit 後才顯示",
+    "question_type_labels": "題目不顯示詞性標籤（如『形容詞題』），只顯示場景和題號",
+    "industry_context": "測試節使用非熟悉行業（酒店/銀行/航空/醫院/零售），教學節可用 FSE/半導體",
+    "monitor_questions": "監控題正確率獨立計算，不計入主題掌握度",
+    "start_button": "計時器需要按開始按鈕才啟動，頁面載入不自動開始",
+    "timer_on_timeout": "超時後選項 disabled，0.7 秒後自動跳下題",
+    "concept_before_quiz": "教學內容必須在題目之前，不能跳過",
+    "full_review": "診斷報告必須包含全部題目詳解（包括答對的題目）"
+  },
+
+  "upcoming_plan": {
+    "immediate_next": "pos-d5：謄語唯一性強化 + 句首三種結構 + False Friends 專攻",
+    "pos_booster_remaining": ["pos-d5", "pos-d6（片語）", "pos-d7（週測）"],
+    "after_pos_booster": "恢復 Week 2：w2-d6（倍數比較強化）→ w2-d7（週測）",
+    "then": "Week 3：Gerunds Part 1（觸發動詞 + 介系詞陷阱）",
+    "stage1_sequence": [
+      "Week 1：Mandative Subjunctive ✅ 封存",
+      "Week 2：倍數比較（暫停中，PoS 後恢復）",
+      "PoS Booster：詞性打底（進行中，Day 4/7）",
+      "Week 3–4：Gerunds",
+      "Week 5–6：複雜 SVA（含 number of 正式攻堅）",
+      "Week 7：SVC/SVOC/Causative",
+      "Week 8：Noun Clauses",
+      "Week 9–10：Perfect Timeline",
+      "Week 11：Participles + 不可數名詞",
+      "Week 12：Modal Perfects + 混合條件句",
+      "Week 13：Stage 1 總診斷模考"
+    ]
+  },
+
+  "session_history": [
+    { "lesson_id": "w1-d1", "accuracy": 1.00, "mastery": 10, "questions": 12 },
+    { "lesson_id": "w1-d2", "accuracy": 0.84, "mastery": 8,  "questions": 25 },
+    { "lesson_id": "w1-d3", "accuracy": 0.83, "mastery": 8,  "questions": 12 },
+    { "lesson_id": "w1-d4", "accuracy": 0.80, "mastery": 8,  "questions": 25 },
+    { "lesson_id": "w1-d5", "accuracy": 1.00, "mastery": 10, "questions": 10 },
+    { "lesson_id": "w1-d6", "accuracy": 0.92, "mastery": 9,  "questions": 25 },
+    { "lesson_id": "w1-d7", "accuracy": 0.90, "mastery": 9,  "questions": 20 },
+    { "lesson_id": "w2-d1", "accuracy": 0.625,"mastery": 5.5,"questions": 20 },
+    { "lesson_id": "w2-d2", "accuracy": 0.60, "mastery": 5,  "questions": 10 },
+    { "lesson_id": "w2-d4", "accuracy": 0.625,"mastery": 5.5,"questions": 20 },
+    { "lesson_id": "w2-d5", "accuracy": 0.60, "mastery": 5,  "questions": 10 },
+    { "lesson_id": "pos-d1","accuracy": 0.67, "mastery": 6,  "questions": 6,  "avg_time": 13   },
+    { "lesson_id": "pos-d2","accuracy": 0.83, "mastery": 8,  "questions": 6,  "avg_time": 8.7  },
+    { "lesson_id": "pos-d3","accuracy": 0.50, "mastery": 5,  "questions": 6,  "avg_time": 13.5 },
+    { "lesson_id": "pos-d4","accuracy": 0.67, "mastery": 7,  "questions": 6,  "avg_time": 9.2  }
+  ]
+}

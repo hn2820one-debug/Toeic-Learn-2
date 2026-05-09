@@ -392,6 +392,162 @@ body {
 .formula-box.error { background: var(--pos-error-bg); border-color: var(--pos-error-border); color: #791F1F; }
 .formula-box.neutral { background: #f2f5f7; border-color: #64748b; color: #263241; }
 
+.muted-note {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+/* Score grid variants */
+.score-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.score-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.score-grid-2 div,
+.score-grid-3 div {
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  padding: 10px;
+  background: #f8faf9;
+}
+
+.score-grid-2 span,
+.score-grid-2 small,
+.score-grid-3 span,
+.score-grid-3 small {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.score-grid-2 strong,
+.score-grid-3 strong {
+  display: block;
+  margin: 4px 0;
+  font-size: 22px;
+}
+
+/* Small button variant */
+.button.small {
+  padding: 6px 12px;
+  min-height: 32px;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+/* Week tabs */
+.week-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.week-tab {
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 700;
+  background: #f3f5f7;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.12s;
+}
+
+.week-tab.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.week-panel-card {
+  margin-top: 10px;
+}
+
+/* Week panel content */
+.week-panel-header {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.week-progress {
+  margin-left: auto;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* Lesson rows */
+.lesson-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.lesson-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.lesson-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.lesson-row-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot-pending  { background: #cbd5e1; }
+.dot-done     { background: #f59e0b; }
+.dot-mastered { background: #22c55e; }
+
+.lesson-row-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.lesson-row-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lesson-row-meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* Weakness label in recent stats */
+.stat-label-sm {
+  font-size: 15px;
+}
+
 @media (max-width: 720px) {
   .grid-2 {
     grid-template-columns: 1fr;

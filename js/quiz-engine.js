@@ -1,6 +1,90 @@
 (function () {
   let state = null;
 
+  function createLocalId(prefix) {
+    const random = Math.random().toString(36).slice(2, 10);
+    return `${prefix}_${Date.now()}_${random}`;
+  }
+
+  function makeId(prefix) {
+    return window.LearningLog?.createId ? window.LearningLog.createId(prefix) : createLocalId(prefix);
+  }
+
+  function localDateFromISO(iso) {
+    const d = iso ? new Date(iso) : new Date();
+    const mm = `${d.getMonth() + 1}`.padStart(2, "0");
+    const dd = `${d.getDate()}`.padStart(2, "0");
+    return `${d.getFullYear()}-${mm}-${dd}`;
+  }
+
+  function secondsText(ms) {
+    return (Number(ms || 0) / 1000).toFixed(1);
+  }
+
+  function normalizeLocalEvent(event) {
+    const timestamp = event.timestamp_iso || new Date().toISOString();
+    return {
+      event_id: event.event_id || makeId("evt"),
+      timestamp_iso: timestamp,
+      date: event.date || localDateFromISO(timestamp),
+      timeout: false,
+      metadata: {},
+      ...event
+    };
+  }
+
+  function recordLearningEvent(event) {
+    if (!state) return Promise.resolve(null);
+
+    const rawEvent = {
+      session_id: state.sessionId,
+      attempt_id: state.attemptId,
+      lesson_id: state.lesson.lesson_id,
+      target_component: state.lesson.target_component,
+      ...event
+    };
+    const prepared = window.LearningLog?.normalizeEvent
+      ? window.LearningLog.normalizeEvent(rawEvent)
+      : normalizeLocalEvent(rawEvent);
+
+    state.timelineEvents.push(prepared);
+
+    const writePromise = window.LearningLog?.writeEvent
+      ? window.LearningLog.writeEvent(prepared)
+      : Promise.resolve(prepared);
+    const safePromise = writePromise.catch((err) => {
+      console.warn("學習事件寫入失敗，作答流程會繼續。", err);
+      return prepared;
+    });
+    state.pendingWrites.push(safePromise);
+    return safePromise;
+  }
+
+  async function flushLearningWrites(extraPromises) {
+    if (!state) return;
+    const writes = [...state.pendingWrites, ...(extraPromises || [])];
+    state.pendingWrites = [];
+    await Promise.allSettled(writes);
+  }
+
+  function logQuestionViewIfNeeded() {
+    if (!state || !state.started) return;
+    const i = state.currentIndex;
+    if (state.questionViewed[i]) return;
+
+    state.questionViewed[i] = true;
+    state.questionViewedAtIso[i] = new Date().toISOString();
+    const q = currentQ();
+    recordLearningEvent({
+      event_type: "question_view",
+      q_id: q.q_id,
+      elapsed_ms: 0,
+      remaining_ms: state.remaining[i] * 1000,
+      weakness_tag: q.weakness_tag,
+      zh_message: `你開始查看 ${state.lesson.lesson_id} / Q${i + 1}（${q.q_id}）。`
+    });
+  }
+
   function questionCount() {
     return state.questions.length;
   }
@@ -108,6 +192,7 @@
     renderTimer();
     renderHead();
     renderStatus();
+    logQuestionViewIfNeeded();
   }
 
   function stopTick() {
@@ -126,8 +211,24 @@
 
   function timeoutCurrent() {
     const i = state.currentIndex;
+    if (state.answers[i] || state.timeouts[i]) return;
+    const q = state.questions[i];
     state.timeouts[i] = true;
     state.elapsed[i] = state.limit;
+    recordLearningEvent({
+      event_type: "question_timeout",
+      q_id: q.q_id,
+      selected_answer: "TIMEOUT",
+      correct_answer: q.answer,
+      is_correct: false,
+      elapsed_ms: state.limit * 1000,
+      remaining_ms: 0,
+      timeout: true,
+      weakness_tag: q.weakness_tag,
+      locked: true,
+      metadata: { question_index: i + 1 },
+      zh_message: `你在 ${state.lesson.lesson_id} / Q${i + 1} 逾時，系統記錄為 TIMEOUT。`
+    });
     stopTick();
     renderQuestion();
 
@@ -176,10 +277,27 @@
     const i = state.currentIndex;
     if (state.timeouts[i]) return;
     if (state.answers[i]) return;
+    const q = state.questions[i];
 
     state.answers[i] = label;
     state.elapsed[i] = state.limit - state.remaining[i];
     if (state.elapsed[i] <= 0) state.elapsed[i] = 1;
+    const elapsedMs = state.elapsed[i] * 1000;
+    const remainingMs = Math.max(0, (state.limit - state.elapsed[i]) * 1000);
+    recordLearningEvent({
+      event_type: "answer_select",
+      q_id: q.q_id,
+      selected_answer: label,
+      correct_answer: q.answer,
+      is_correct: label === q.answer,
+      elapsed_ms: elapsedMs,
+      remaining_ms: remainingMs,
+      timeout: false,
+      weakness_tag: q.weakness_tag,
+      locked: true,
+      metadata: { question_index: i + 1 },
+      zh_message: `你在 ${state.lesson.lesson_id} / Q${i + 1} 選擇 ${label}，用時 ${secondsText(elapsedMs)} 秒。`
+    });
 
     stopTick();
     renderQuestion();
@@ -209,8 +327,12 @@
     }).join(", ");
   }
 
-  function submitQuiz() {
+  async function submitQuiz() {
     if (!allFinished()) return;
+    stopTick();
+    const submitButton = document.getElementById("submit-btn");
+    submitButton.disabled = true;
+    submitButton.textContent = "儲存紀錄中...";
 
     const results = state.questions.map((q, i) => {
       const selected = state.answers[i];
@@ -246,8 +368,61 @@
       reading: null
     };
     componentScores[state.lesson.target_component || "grammar"] = mastery;
+    const endedAtMs = Date.now();
+    const endedAtIso = new Date(endedAtMs).toISOString();
+    const totalElapsedMs = state.startedAtMs ? endedAtMs - state.startedAtMs : null;
+    const questionElapsedMs = state.elapsed.map((seconds) => Number(seconds || state.limit) * 1000);
+    const wrongTags = [...new Set(results.filter((r) => !r.correct && r.weakness_tag).map((r) => r.weakness_tag))];
+    const attemptSummary = {
+      attempt_id: state.attemptId,
+      session_id: state.sessionId,
+      lesson_id: state.lesson.lesson_id,
+      module_id: state.lesson.module_id,
+      week: state.lesson.week,
+      day: state.lesson.day,
+      lesson_type: state.lesson.lesson_type,
+      target_component: state.lesson.target_component,
+      title: state.lesson.title,
+      started_at_iso: state.startedAtIso,
+      ended_at_iso: endedAtIso,
+      total_elapsed_ms: totalElapsedMs,
+      avg_time_ms: avgTime * 1000,
+      accuracy,
+      mastery,
+      question_elapsed_ms: questionElapsedMs,
+      question_results: results.map((r, i) => ({
+        q_id: r.q_id,
+        type: r.type,
+        selected_answer: r.timeout ? "TIMEOUT" : r.selected,
+        correct_answer: r.answer,
+        is_correct: r.correct,
+        elapsed_ms: questionElapsedMs[i],
+        timeout: r.timeout,
+        weakness_tag: r.weakness_tag,
+        target_component: state.lesson.target_component
+      })),
+      wrong_tags: wrongTags,
+      timeout_count: results.filter((r) => r.timeout).length,
+      zh_summary: `你完成 ${state.lesson.lesson_id}，主題題正確率 ${Math.round(accuracy * 100)}%，平均作答 ${avgTime.toFixed(1)} 秒。`
+    };
+
+    recordLearningEvent({
+      event_type: "quiz_submit",
+      elapsed_ms: totalElapsedMs,
+      remaining_ms: 0,
+      metadata: {
+        question_count: results.length,
+        accuracy,
+        avg_time_ms: avgTime * 1000,
+        mastery,
+        wrong_tags: wrongTags
+      },
+      zh_message: attemptSummary.zh_summary
+    });
 
     window.AppCore.saveReportPayload({
+      attempt_id: state.attemptId,
+      session_id: state.sessionId,
       lesson_id: state.lesson.lesson_id,
       module_id: state.lesson.module_id,
       week: state.lesson.week,
@@ -265,11 +440,19 @@
       avgTime,
       mastery,
       component_scores: componentScores,
+      started_at_iso: state.startedAtIso,
+      ended_at_iso: endedAtIso,
+      total_elapsed_ms: totalElapsedMs,
+      question_elapsed_ms: questionElapsedMs,
+      wrong_tags: wrongTags,
+      timeline_events: [...state.timelineEvents],
+      attempt_summary: attemptSummary,
       answers: state.questions.map((_, i) => state.timeouts[i] ? "TIMEOUT" : state.answers[i]),
       elapsed: state.elapsed
     });
 
     window.StorageAPI.updateLessonResult({
+      attempt_id: state.attemptId,
       lesson_id: state.lesson.lesson_id,
       module_id: state.lesson.module_id,
       week: state.lesson.week,
@@ -280,6 +463,7 @@
       mastery,
       avg_time: avgTime,
       component_scores: componentScores,
+      attempt_summary: attemptSummary,
       answers: state.questions.map((_, i) => state.timeouts[i] ? "TIMEOUT" : state.answers[i]),
       elapsed: state.elapsed
     });
@@ -295,12 +479,28 @@
       }
     });
 
+    const attemptWrite = window.LearningLog?.writeAttempt
+      ? window.LearningLog.writeAttempt(attemptSummary).catch((err) => {
+          console.warn("attempt summary 寫入 IndexedDB 失敗，localStorage 摘要已保留。", err);
+          return attemptSummary;
+        })
+      : Promise.resolve(attemptSummary);
+    await flushLearningWrites([attemptWrite]);
+
     window.location.href = `./report.html?lesson=${state.lesson.lesson_id}`;
   }
 
   function startQuiz() {
     state.started = true;
-    document.getElementById("start-overlay").style.display = "none";
+    state.startedAtMs = Date.now();
+    state.startedAtIso = new Date(state.startedAtMs).toISOString();
+    recordLearningEvent({
+      event_type: "quiz_start",
+      elapsed_ms: 0,
+      remaining_ms: state.limit * questionCount() * 1000,
+      metadata: { question_count: questionCount(), time_limit_seconds: state.limit },
+      zh_message: `你開始作答 ${state.lesson.lesson_id}，共 ${questionCount()} 題，每題 ${state.limit} 秒。`
+    });
     renderQuestion();
     maybeStartTimer();
   }
@@ -327,20 +527,27 @@
       limit,
       currentIndex: 0,
       started: false,
+      startedAtMs: null,
+      startedAtIso: null,
+      sessionId: makeId("ses"),
+      attemptId: makeId("att"),
       answers: new Array(questions.length).fill(null),
       timeouts: new Array(questions.length).fill(false),
       elapsed: new Array(questions.length).fill(0),
       remaining: new Array(questions.length).fill(limit),
+      questionViewed: new Array(questions.length).fill(false),
+      questionViewedAtIso: new Array(questions.length).fill(null),
+      timelineEvents: [],
+      pendingWrites: [],
       tickId: null
     };
 
     document.getElementById("quiz-title").textContent = lesson.title;
-    document.getElementById("start-btn").addEventListener("click", startQuiz);
     document.getElementById("prev-btn").addEventListener("click", () => nav(-1));
     document.getElementById("next-btn").addEventListener("click", () => nav(1));
     document.getElementById("submit-btn").addEventListener("click", submitQuiz);
 
-    renderQuestion();
+    startQuiz();
   }
 
   window.addEventListener("beforeunload", () => {

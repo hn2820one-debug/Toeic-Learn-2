@@ -30,6 +30,11 @@
     </section>
 
     <section class="section">
+      <h2 class="page-subtitle">本次時間軸</h2>
+      <div id="attempt-timeline" class="timeline-box"></div>
+    </section>
+
+    <section class="section">
       <div id="good-box" class="good-box"></div>
     </section>
 
@@ -40,17 +45,20 @@
     </section>
 
     <section class="section">
-      <h2 class="page-subtitle">全題彩色詳解</h2>
-      <div id="all-questions"></div>
+      <details class="all-questions-details">
+        <summary class="page-subtitle">全題彩色詳解</summary>
+        <div id="all-questions"></div>
+      </details>
     </section>
 
-    <section class="section" style="display:flex;gap:8px;justify-content:flex-end">
-      <button id="redo-btn" class="button secondary">再做一次</button>
-      <button id="next-btn" class="button primary">下一節</button>
+    <section class="section report-actions">
+      <button id="redo-btn" class="button secondary" type="button">再做一次</button>
+      <button id="next-btn" class="button primary" type="button">下一節</button>
     </section>
   </main>
 
   <script src="./js/storage.js"></script>
+  <script src="./js/learning-log.js"></script>
   <script src="./js/scorer.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/report.js"></script>

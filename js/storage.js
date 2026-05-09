@@ -1,6 +1,6 @@
 (function () {
   const KEY = "toeic_progress";
-  const VERSION = 2;
+  const VERSION = 3;
 
   const DEFAULT_STUDENT = {
     name: "Joseph",
@@ -52,7 +52,8 @@
         "pos-booster": createModuleProgress("planned")
       },
       weaknesses: [],
-      session_history: []
+      session_history: [],
+      attempts: []
     };
   }
 
@@ -93,9 +94,66 @@
     });
 
     progress.weaknesses = Array.isArray(progress.weaknesses) ? progress.weaknesses : [];
-    progress.session_history = Array.isArray(progress.session_history) ? progress.session_history : [];
+    progress.session_history = Array.isArray(progress.session_history)
+      ? progress.session_history.map((entry) => ({
+          attempt_id: null,
+          started_at_iso: null,
+          ended_at_iso: null,
+          total_elapsed_ms: null,
+          question_elapsed_ms: Array.isArray(entry.elapsed) ? entry.elapsed.map((seconds) => Number(seconds || 0) * 1000) : [],
+          wrong_tags: [],
+          ...entry
+        }))
+      : [];
+    progress.attempts = Array.isArray(progress.attempts) ? progress.attempts.map(normalizeAttemptSummary) : [];
     progress.student.total_lessons_done = completedLessonCount(progress);
     return progress;
+  }
+
+  function normalizeAttemptSummary(summary) {
+    const raw = summary && typeof summary === "object" ? summary : {};
+    const questionResults = Array.isArray(raw.question_results) ? raw.question_results : [];
+    const wrongTags = Array.isArray(raw.wrong_tags)
+      ? raw.wrong_tags
+      : [...new Set(questionResults.filter((r) => !r.is_correct && r.weakness_tag).map((r) => r.weakness_tag))];
+
+    return {
+      schema_version: 1,
+      attempt_id: raw.attempt_id || null,
+      session_id: raw.session_id || null,
+      lesson_id: raw.lesson_id || null,
+      module_id: raw.module_id || null,
+      week: raw.week ?? null,
+      day: raw.day ?? null,
+      lesson_type: raw.lesson_type || null,
+      target_component: raw.target_component || null,
+      title: raw.title || null,
+      started_at_iso: raw.started_at_iso || null,
+      ended_at_iso: raw.ended_at_iso || null,
+      total_elapsed_ms: Number.isFinite(Number(raw.total_elapsed_ms)) ? Number(raw.total_elapsed_ms) : null,
+      avg_time_ms: Number.isFinite(Number(raw.avg_time_ms)) ? Number(raw.avg_time_ms) : null,
+      accuracy: Number.isFinite(Number(raw.accuracy)) ? Number(raw.accuracy) : null,
+      mastery: Number.isFinite(Number(raw.mastery)) ? Number(raw.mastery) : null,
+      question_elapsed_ms: Array.isArray(raw.question_elapsed_ms) ? raw.question_elapsed_ms : [],
+      question_results: questionResults,
+      wrong_tags: wrongTags,
+      timeout_count: Number.isFinite(Number(raw.timeout_count)) ? Number(raw.timeout_count) : 0,
+      zh_summary: raw.zh_summary || "已完成一次練習紀錄。"
+    };
+  }
+
+  function saveAttemptSummary(summary) {
+    if (!summary) return loadProgress();
+    const p = loadProgress();
+    const normalized = normalizeAttemptSummary(summary);
+    const existingIndex = p.attempts.findIndex((attempt) => attempt.attempt_id && attempt.attempt_id === normalized.attempt_id);
+    if (existingIndex >= 0) {
+      p.attempts[existingIndex] = normalized;
+    } else {
+      p.attempts.push(normalized);
+    }
+    saveProgress(p);
+    return p;
   }
 
   function loadProgress() {
@@ -132,6 +190,7 @@
 
   function updateLessonResult(result) {
     const p = loadProgress();
+    const attemptSummary = result.attempt_summary ? normalizeAttemptSummary(result.attempt_summary) : null;
     if (!p.modules[result.module_id]) {
       p.modules[result.module_id] = createModuleProgress("in-progress");
     }
@@ -145,7 +204,9 @@
       target_component: result.target_component,
       accuracy: result.accuracy,
       mastery: result.mastery,
-      avg_time: result.avg_time
+      avg_time: result.avg_time,
+      latest_attempt_id: attemptSummary?.attempt_id || result.attempt_id || null,
+      last_practiced_at_iso: attemptSummary?.ended_at_iso || null
     };
 
     const values = Object.values(moduleProgress.day_results);
@@ -160,18 +221,33 @@
     p.student.total_lessons_done = completedLessonCount(p);
 
     p.session_history.push({
+      attempt_id: attemptSummary?.attempt_id || result.attempt_id || null,
       lesson_id: result.lesson_id,
       week: result.week,
       day: result.day,
       lesson_type: result.lesson_type,
       target_component: result.target_component,
       date: today(),
+      started_at_iso: attemptSummary?.started_at_iso || null,
+      ended_at_iso: attemptSummary?.ended_at_iso || null,
+      total_elapsed_ms: attemptSummary?.total_elapsed_ms || null,
+      question_elapsed_ms: attemptSummary?.question_elapsed_ms || (Array.isArray(result.elapsed) ? result.elapsed.map((seconds) => Number(seconds || 0) * 1000) : []),
+      wrong_tags: attemptSummary?.wrong_tags || [],
       answers: result.answers,
       elapsed: result.elapsed,
       accuracy: result.accuracy,
       mastery: result.mastery,
       component_scores: result.component_scores || {}
     });
+
+    if (attemptSummary) {
+      const existingIndex = p.attempts.findIndex((attempt) => attempt.attempt_id && attempt.attempt_id === attemptSummary.attempt_id);
+      if (existingIndex >= 0) {
+        p.attempts[existingIndex] = attemptSummary;
+      } else {
+        p.attempts.push(attemptSummary);
+      }
+    }
 
     saveProgress(p);
     return p;
@@ -212,6 +288,7 @@
     loadProgress,
     saveProgress,
     updateLessonResult,
+    saveAttemptSummary,
     touchWeakness,
     completedLessonCount
   };

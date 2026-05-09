@@ -63,6 +63,66 @@
     });
   }
 
+  function timeText(iso) {
+    if (!iso) return "";
+    const d = new Date(iso);
+    if (Number.isNaN(d.getTime())) return "";
+    return d.toLocaleTimeString("zh-TW", {
+      hour12: false,
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit"
+    });
+  }
+
+  function secondsText(ms) {
+    if (!Number.isFinite(Number(ms))) return "";
+    return `${(Number(ms) / 1000).toFixed(1)} 秒`;
+  }
+
+  async function loadTimelineEvents(payload) {
+    if (window.LearningLog?.getEventsByAttempt && payload.attempt_id) {
+      const events = await window.LearningLog.getEventsByAttempt(payload.attempt_id);
+      if (events.length) return events;
+    }
+    return Array.isArray(payload.timeline_events) ? payload.timeline_events : [];
+  }
+
+  async function renderAttemptTimeline(payload) {
+    const wrap = document.getElementById("attempt-timeline");
+    if (!wrap) return;
+
+    const events = await loadTimelineEvents(payload);
+    const submitEvent = events.find((event) => event.event_type === "quiz_submit");
+
+    if (!events.length && !payload.results?.length) {
+      wrap.innerHTML = "<p class=\"muted-note\">本次沒有可顯示的時間軸資料。</p>";
+      return;
+    }
+
+    const rows = (payload.results || []).map((result, index) => {
+      const qEvents = events.filter((event) => event.q_id === result.q_id);
+      const viewEvent = qEvents.find((event) => event.event_type === "question_view");
+      const answerEvent = qEvents.find((event) => event.event_type === "answer_select" || event.event_type === "question_timeout");
+      const answerText = result.timeout
+        ? `逾時 ${secondsText(answerEvent?.elapsed_ms ?? result.elapsed * 1000)}`
+        : `選擇 ${result.selected || "-"} ${secondsText(answerEvent?.elapsed_ms ?? result.elapsed * 1000)}`;
+
+      return `
+        <div class="timeline-row">
+          <div class="timeline-q">Q${index + 1}</div>
+          <div class="timeline-flow">
+            <span>${viewEvent ? timeText(viewEvent.timestamp_iso) : ""} 看到題目</span>
+            <span>${answerEvent ? timeText(answerEvent.timestamp_iso) : ""} ${answerText}</span>
+            <span>${submitEvent ? timeText(submitEvent.timestamp_iso) : ""} 交卷</span>
+          </div>
+        </div>
+      `;
+    }).join("");
+
+    wrap.innerHTML = rows || "<p class=\"muted-note\">本次沒有題目時間軸。</p>";
+  }
+
   function renderGoodBox(payload) {
     const good = payload.results.filter((r) => r.correct && r.elapsed <= payload.limit / 2);
     const box = document.getElementById("good-box");
@@ -149,6 +209,20 @@
     const lesson = { day: payload.day, week: payload.week, module_id: payload.module_id };
     const progress = window.StorageAPI.loadProgress();
     window.AppCore.renderTopStrip(progress, index, lesson);
+    if (window.LearningLog?.writeEvent) {
+      const sessionId = window.LearningLog.createId ? window.LearningLog.createId("ses") : `ses_${Date.now()}`;
+      window.LearningLog.writeEvent({
+        event_type: "report_view",
+        session_id: sessionId,
+        attempt_id: payload.attempt_id || null,
+        lesson_id: payload.lesson_id,
+        target_component: payload.target_component,
+        zh_message: `你查看 ${payload.lesson_id} 的診斷報告。`,
+        metadata: { title: payload.title, mastery: payload.mastery }
+      }).catch((err) => {
+        console.warn("報告查看事件寫入失敗。", err);
+      });
+    }
 
     document.getElementById("report-title").textContent = `${payload.title} 診斷報告`;
     document.getElementById("result-line").textContent = `Week ${payload.week || "-"} / Day ${payload.day || "-"} · ${payload.lesson_type || "lesson"} · ${payload.format}`;
@@ -156,6 +230,7 @@
     const metrics = renderMetrics(payload);
     renderComponentDashboard(payload, progress);
     renderMap(payload);
+    await renderAttemptTimeline(payload);
     renderGoodBox(payload);
     renderAllQuestions(payload);
 
@@ -177,7 +252,21 @@
       });
     }
 
-    document.getElementById("redo-btn").addEventListener("click", () => {
+    document.getElementById("redo-btn").addEventListener("click", async () => {
+      if (window.LearningLog?.writeEvent) {
+        const sessionId = window.LearningLog.createId ? window.LearningLog.createId("ses") : `ses_${Date.now()}`;
+        await window.LearningLog.writeEvent({
+          event_type: "quiz_redo",
+          session_id: sessionId,
+          attempt_id: payload.attempt_id || null,
+          lesson_id: payload.lesson_id,
+          target_component: payload.target_component,
+          zh_message: `你從 ${payload.lesson_id} 報告頁按下重做。`,
+          metadata: { previous_attempt_id: payload.attempt_id || null }
+        }).catch((err) => {
+          console.warn("重做事件寫入失敗，仍會進入測驗。", err);
+        });
+      }
       window.location.href = `./quiz.html?lesson=${payload.lesson_id}`;
     });
   }

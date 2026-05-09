@@ -30,10 +30,6 @@
     </section>
 
     <section class="quiz-card">
-      <div id="start-overlay" class="overlay">
-        <button id="start-btn" class="button primary">開始作答</button>
-      </div>
-
       <div id="quiz-scene" class="quiz-meta"></div>
       <p id="quiz-stem" class="quiz-stem"></p>
       <div id="option-grid" class="option-grid"></div>
@@ -42,14 +38,15 @@
 
     <section class="quiz-actions">
       <div>
-        <button id="prev-btn" class="button secondary" disabled>上一題</button>
-        <button id="next-btn" class="button secondary" disabled>下一題</button>
+        <button id="prev-btn" class="button secondary" type="button" disabled>上一題</button>
+        <button id="next-btn" class="button secondary" type="button" disabled>下一題</button>
       </div>
-      <button id="submit-btn" class="button primary" disabled>尚未完成</button>
+      <button id="submit-btn" class="button primary" type="button" disabled>尚未完成</button>
     </section>
   </main>
 
   <script src="./js/storage.js"></script>
+  <script src="./js/learning-log.js"></script>
   <script src="./js/scorer.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/quiz-engine.js"></script>

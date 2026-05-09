@@ -1,4 +1,4 @@
-const CACHE_NAME = "toeic-app-v3";
+const CACHE_NAME = "toeic-app-v4";
 const STATIC_ASSETS = [
   "./",
   "./index.html",
@@ -11,7 +11,9 @@ const STATIC_ASSETS = [
   "./css/lesson.css",
   "./css/quiz.css",
   "./css/report.css",
+  "./css/progress.css",
   "./js/app.js",
+  "./js/learning-log.js",
   "./js/quiz-engine.js",
   "./js/scorer.js",
   "./js/report.js",

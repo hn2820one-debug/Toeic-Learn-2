@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>進度注入工具</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 520px; margin: 40px auto; padding: 0 20px; }
+    h2  { margin-bottom: 8px; }
+    p   { color: #555; font-size: 14px; }
+    #status { margin-top: 16px; padding: 12px 14px; border-radius: 8px;
+              background: #f3f5f7; font-size: 14px; }
+    button { margin-top: 16px; padding: 10px 20px; background: #1fa578; color: #fff;
+             border: none; border-radius: 8px; font-size: 15px; cursor: pointer; }
+    button:hover { background: #187a5c; }
+  </style>
+</head>
+<body>
+<h2>進度注入工具</h2>
+<p>將 Joseph 的真實學習記錄（截至 2026-05-10）寫入 localStorage，讓 App 顯示正確的學習狀態。</p>
+<p><strong>注意：</strong>此操作會覆蓋現有的 toeic_progress。</p>
+<button type="button" onclick="injectProgress()">注入進度</button>
+<div id="status">尚未注入。</div>
+<script>
+function injectProgress() {
+  const whMasteries = [10, 8, 8, 8, 10, 9, 9, 5.5, 5, 5.5, 5];
+  const whAvg = whMasteries.reduce((s, v) => s + v, 0) / whMasteries.length;
+  const posGrammarMasteries = [6, 8, 5, 7];
+  const posGrammarAvg = posGrammarMasteries.reduce((s, v) => s + v, 0) / posGrammarMasteries.length;
+
+  const progress = {
+    schema_version: 3,
+    student: {
+      name: "Joseph",
+      baseline_score: { total: 570, listening: 315, reading: 255 },
+      target_score: 750,
+      target_split: { listening: 380, reading: 370 },
+      current_module: "pos-booster",
+      current_week: 3,
+      current_day: 5,
+      total_lessons_done: 15,
+      sessions_per_week: 15
+    },
+    modules: {
+      "weakness-hunter": {
+        status: "in-progress",
+        days_done: 11,
+        mastery_avg: whAvg,
+        day_results: {
+          // Week 1 — app lesson files exist for d1-d3; d4-d7 stored with natural IDs
+          "wh-w1-d1": { week:1, day:1, lesson_type:"grammar", target_component:"grammar", accuracy:1.00, mastery:10,  avg_time:7   },
+          "wh-w1-d2": { week:1, day:2, lesson_type:"grammar", target_component:"grammar", accuracy:0.84, mastery:8,   avg_time:7   },
+          "wh-w1-d3": { week:1, day:3, lesson_type:"grammar", target_component:"grammar", accuracy:0.83, mastery:8,   avg_time:7   },
+          "w1-d4":    { week:1, day:4, lesson_type:"grammar", target_component:"grammar", accuracy:0.80, mastery:8,   avg_time:7   },
+          "w1-d5":    { week:1, day:5, lesson_type:"grammar", target_component:"grammar", accuracy:1.00, mastery:10,  avg_time:7   },
+          "w1-d6":    { week:1, day:6, lesson_type:"grammar", target_component:"grammar", accuracy:0.92, mastery:9,   avg_time:7   },
+          "w1-d7":    { week:1, day:7, lesson_type:"grammar", target_component:"grammar", accuracy:0.90, mastery:9,   avg_time:7   },
+          // Week 2 — paused after d5; d3 was interrupted so omitted
+          "w2-d1":    { week:2, day:1, lesson_type:"grammar", target_component:"grammar", accuracy:0.625, mastery:5.5, avg_time:7.5 },
+          "w2-d2":    { week:2, day:2, lesson_type:"grammar", target_component:"grammar", accuracy:0.60,  mastery:5,   avg_time:13  },
+          "w2-d4":    { week:2, day:4, lesson_type:"grammar", target_component:"grammar", accuracy:0.625, mastery:5.5, avg_time:7.5 },
+          "w2-d5":    { week:2, day:5, lesson_type:"grammar", target_component:"grammar", accuracy:0.60,  mastery:5,   avg_time:13  }
+        },
+        component_mastery: { grammar: whAvg, phrase: 0, listening: 0, reading: 0 }
+      },
+      "pos-booster": {
+        status: "in-progress",
+        days_done: 4,
+        mastery_avg: posGrammarAvg,
+        day_results: {
+          "pos-d1": { week:3, day:1, lesson_type:"grammar", target_component:"grammar", accuracy:0.67, mastery:6, avg_time:13   },
+          "pos-d2": { week:3, day:2, lesson_type:"grammar", target_component:"grammar", accuracy:0.83, mastery:8, avg_time:8.7  },
+          "pos-d3": { week:3, day:3, lesson_type:"grammar", target_component:"grammar", accuracy:0.50, mastery:5, avg_time:13.5 },
+          "pos-d4": { week:3, day:4, lesson_type:"grammar", target_component:"grammar", accuracy:0.67, mastery:7, avg_time:9.2  }
+        },
+        component_mastery: { grammar: posGrammarAvg, phrase: 0, listening: 0, reading: 0 }
+      }
+    },
+    weaknesses: [
+      {
+        tag: "number-of-sva",
+        label: "the number of（單數動詞）vs a number of（複數動詞）",
+        status: "escalated",
+        occurrences: [
+          { date:"2026-04-24", lesson_id:"w1-d6",  q_id:null,  timeout:false, selected:null },
+          { date:"2026-04-25", lesson_id:"w1-d7",  q_id:null,  timeout:false, selected:null },
+          { date:"2026-04-26", lesson_id:"w2-d1",  q_id:"q12", timeout:false, selected:null },
+          { date:"2026-04-26", lesson_id:"w2-d1",  q_id:"q16", timeout:false, selected:null },
+          { date:"2026-04-27", lesson_id:"w2-d2",  q_id:"q4",  timeout:false, selected:null },
+          { date:"2026-04-27", lesson_id:"w2-d2",  q_id:"q9",  timeout:false, selected:null }
+        ]
+      },
+      {
+        tag: "active-passive",
+        label: "主詞後有受詞時誤選被動語態",
+        status: "escalated",
+        occurrences: [
+          { date:"2026-04-24", lesson_id:"w1-d6", q_id:"q24", timeout:false, selected:null },
+          { date:"2026-04-25", lesson_id:"w1-d7", q_id:"q19", timeout:false, selected:null }
+        ]
+      },
+      {
+        tag: "multiplier-n-times-the",
+        label: "N times the + 名詞句型（空格後接名詞片語）",
+        status: "escalated",
+        occurrences: [
+          { date:"2026-04-26", lesson_id:"w2-d1", q_id:"q6",  timeout:false, selected:null },
+          { date:"2026-04-27", lesson_id:"w2-d2", q_id:"q5",  timeout:false, selected:null },
+          { date:"2026-04-28", lesson_id:"w2-d4", q_id:"q6",  timeout:false, selected:null }
+        ]
+      },
+      {
+        tag: "sentence-initial-structure",
+        label: "句首三種結構詞性判斷",
+        status: "escalated",
+        occurrences: [
+          { date:"2026-05-07", lesson_id:"pos-d3", q_id:"q6", timeout:false, selected:null },
+          { date:"2026-05-10", lesson_id:"pos-d4", q_id:"q6", timeout:false, selected:null }
+        ]
+      },
+      {
+        tag: "linking-verb-adj",
+        label: "連綴動詞後接形容詞（非副詞）",
+        status: "sealed",
+        occurrences: [
+          { date:"2026-05-04", lesson_id:"pos-d2", q_id:"q3", timeout:false, selected:null },
+          { date:"2026-05-07", lesson_id:"pos-d3", q_id:"q5", timeout:false, selected:null }
+        ]
+      }
+    ],
+    session_history: [
+      // Week 1 (2026-04-19 → 2026-04-25)
+      { lesson_id:"wh-w1-d1", week:1, day:1, lesson_type:"grammar", target_component:"grammar", date:"2026-04-19", accuracy:1.00, mastery:10,  question_elapsed_ms:[], wrong_tags:[] },
+      { lesson_id:"wh-w1-d2", week:1, day:2, lesson_type:"grammar", target_component:"grammar", date:"2026-04-20", accuracy:0.84, mastery:8,   question_elapsed_ms:[], wrong_tags:[] },
+      { lesson_id:"wh-w1-d3", week:1, day:3, lesson_type:"grammar", target_component:"grammar", date:"2026-04-21", accuracy:0.83, mastery:8,   question_elapsed_ms:[], wrong_tags:[] },
+      { lesson_id:"w1-d4",    week:1, day:4, lesson_type:"grammar", target_component:"grammar", date:"2026-04-22", accuracy:0.80, mastery:8,   question_elapsed_ms:[], wrong_tags:[] },
+      { lesson_id:"w1-d5",    week:1, day:5, lesson_type:"grammar", target_component:"grammar", date:"2026-04-23", accuracy:1.00, mastery:10,  question_elapsed_ms:[], wrong_tags:[] },
+      { lesson_id:"w1-d6",    week:1, day:6, lesson_type:"grammar", target_component:"grammar", date:"2026-04-24", accuracy:0.92, mastery:9,   question_elapsed_ms:[], wrong_tags:["number-of-sva","active-passive"] },
+      { lesson_id:"w1-d7",    week:1, day:7, lesson_type:"grammar", target_component:"grammar", date:"2026-04-25", accuracy:0.90, mastery:9,   question_elapsed_ms:[], wrong_tags:["number-of-sva","active-passive"] },
+      // Week 2 (2026-04-26 → 2026-04-29)
+      { lesson_id:"w2-d1", week:2, day:1, lesson_type:"grammar", target_component:"grammar", date:"2026-04-26", accuracy:0.625, mastery:5.5, question_elapsed_ms:[], wrong_tags:["number-of-sva","multiplier-n-times-the"] },
+      { lesson_id:"w2-d2", week:2, day:2, lesson_type:"grammar", target_component:"grammar", date:"2026-04-27", accuracy:0.60,  mastery:5,   question_elapsed_ms:[], wrong_tags:["number-of-sva","multiplier-n-times-the"] },
+      { lesson_id:"w2-d4", week:2, day:4, lesson_type:"grammar", target_component:"grammar", date:"2026-04-28", accuracy:0.625, mastery:5.5, question_elapsed_ms:[], wrong_tags:["multiplier-n-times-the"] },
+      { lesson_id:"w2-d5", week:2, day:5, lesson_type:"grammar", target_component:"grammar", date:"2026-04-29", accuracy:0.60,  mastery:5,   question_elapsed_ms:[], wrong_tags:[] },
+      // PoS Booster (2026-05-03 → 2026-05-10)
+      { lesson_id:"pos-d1", week:3, day:1, lesson_type:"grammar", target_component:"grammar", date:"2026-05-03", accuracy:0.67, mastery:6, question_elapsed_ms:[], wrong_tags:[] },
+      { lesson_id:"pos-d2", week:3, day:2, lesson_type:"grammar", target_component:"grammar", date:"2026-05-04", accuracy:0.83, mastery:8, question_elapsed_ms:[], wrong_tags:["linking-verb-adj"] },
+      { lesson_id:"pos-d3", week:3, day:3, lesson_type:"grammar", target_component:"grammar", date:"2026-05-07", accuracy:0.50, mastery:5, question_elapsed_ms:[], wrong_tags:["sentence-initial-structure","linking-verb-adj"] },
+      { lesson_id:"pos-d4", week:3, day:4, lesson_type:"grammar", target_component:"grammar", date:"2026-05-10", accuracy:0.67, mastery:7, question_elapsed_ms:[], wrong_tags:["sentence-initial-structure"] }
+    ],
+    attempts: []
+  };
+
+  try {
+    localStorage.setItem("toeic_progress", JSON.stringify(progress));
+    const totalLessons = Object.values(progress.modules)
+      .reduce((s, m) => s + Object.keys(m.day_results).length, 0);
+    document.getElementById("status").style.background = "#e8f7f0";
+    document.getElementById("status").textContent =
+      "✅ 注入成功！共 " + totalLessons + " 節課記錄（Week 1: 7節 / Week 2: 4節 / PoS Booster: 4節）。請關閉此頁並開啟 index.html。";
+  } catch (err) {
+    document.getElementById("status").style.background = "#fdecec";
+    document.getElementById("status").textContent = "❌ 注入失敗：" + err.message;
+  }
+}
+</script>
+</body>
+</html>
