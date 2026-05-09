@@ -20,6 +20,32 @@ Open:
 http://127.0.0.1:8787/
 ```
 
+## 強制關閉 Server 並重新啟動
+
+**方法一：在同一個 PowerShell 視窗**
+1. 按 `Ctrl + C` 停止目前的 server
+2. 再次輸入以下指令重新啟動：
+   ```powershell
+   python -m http.server 8787 --bind 127.0.0.1
+   ```
+
+**方法二：如果找不到原本的視窗（強制終止）**
+1. 開啟新的 PowerShell 視窗
+2. 輸入以下指令強制關閉佔用 8787 port 的程式：
+   ```powershell
+   netstat -ano | findstr :8787
+   ```
+3. 找到最右邊欄位的 PID 數字（例如 `12345`），然後輸入：
+   ```powershell
+   taskkill /PID 12345 /F
+   ```
+4. 重新啟動 server：
+   ```powershell
+   python -m http.server 8787 --bind 127.0.0.1
+   ```
+
+**重新開啟後，請在瀏覽器按 `Ctrl + Shift + R` 強制刷新頁面（清除緩存）。**
+
 ## Validate Lesson Data
 
 ```powershell
