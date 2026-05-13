@@ -1,25 +1,45 @@
 {
   "lesson_id": "pos-d1",
   "module_id": "pos-booster",
+  "week": 3,
   "day": 1,
-  "title": "名詞 vs 動詞辨識",
+  "lesson_type": "grammar",
+  "target_component": "grammar",
+  "title": "名詞辨識 Part 1 — 語尾規則",
   "type": "concept+quiz",
   "quiz_type": "slow",
   "time_limit_seconds": 25,
+  "focus_tags": [
+    "part-of-speech",
+    "noun",
+    "suffix"
+  ],
+  "weakness_tags": [
+    "det-noun",
+    "prep-noun",
+    "noun-suffix",
+    "number-of-sva"
+  ],
   "concept": {
-    "debug_rule": "先看位置，再看語意。",
+    "debug_rule": "看到 the / a / this / our / any 或介系詞後空格，先判斷名詞位，再用 -tion / -ment / -ance 等語尾確認。",
     "cards": [
       {
         "type": "formula",
         "tone": "noun",
-        "title": "限定詞規則",
-        "html": "a / an / the / this / our / any / some + <span class=\"blank-word noun\">名詞</span>"
+        "title": "名詞語尾",
+        "html": "-tion / -ment / -ance / -ence / -ity / -ness / -ship / -hood -> <span class=\"blank-word noun\">名詞</span>"
+      },
+      {
+        "type": "formula",
+        "tone": "noun",
+        "title": "位置法",
+        "html": "限定詞 + <span class=\"blank-word noun\">名詞</span>；介系詞 + <span class=\"blank-word noun\">名詞</span>"
       },
       {
         "type": "warning",
         "tone": "warn",
         "title": "常見錯誤",
-        "html": "看到語意通順就選動詞，忽略了 any 這種近距題眼。"
+        "html": "看到熟悉動詞就先選，忽略空格其實係名詞位置。"
       }
     ]
   },
@@ -27,87 +47,439 @@
     {
       "q_id": "pos-d1-q1",
       "type": "main",
-      "scene": "Aviation / Contracts",
+      "scene": "Aviation / Maintenance",
       "eye_distance": "near",
       "target_pos": "noun",
       "weakness_tag": "det-noun",
-      "stem": "Paragraph 3 states that any {BLANK} of the maintenance window must be communicated in writing.",
+      "stem": "Any {BLANK} of the maintenance window must be communicated in writing.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "modify", "pos": "verb", "is_correct": false },
-        { "label": "B", "text": "modifies", "pos": "verb", "is_correct": false },
-        { "label": "C", "text": "modification", "pos": "noun", "is_correct": true },
-        { "label": "D", "text": "modifying", "pos": "verb", "is_correct": false }
+        {
+          "label": "A",
+          "text": "modify",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "modifies",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "modification",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "modifiable",
+          "pos": "adj",
+          "is_correct": false
+        }
       ],
       "answer": "C",
-      "hint": "位置信號：any + ______",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "Any",
+        "signal_pos": "determiner",
+        "description": "any + 空格 + of，限定詞後需要名詞。"
+      },
+      "hint": "any + 空格 + of，限定詞後需要名詞。",
       "solution_steps": [
-        { "step": 1, "text": "先判斷題型：同詞根不同詞性。" },
-        { "step": 2, "text": "any 後面要接名詞。", "highlight_word": "any", "highlight_pos": "noun" },
-        { "step": 3, "text": "-ation 為名詞語尾，選 C。", "highlight_word": "modification", "highlight_pos": "noun" }
+        {
+          "step": 1,
+          "text": "先看空格位置：any + 空格 + of，限定詞後需要名詞。",
+          "highlight_word": "Any",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：modification 是名詞，符合空格需要。",
+          "highlight_word": "modification",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "modification",
+          "highlight_pos": "noun"
+        }
       ],
+      "error_trap": "看到 modify 語意通順就選動詞，跳過 any 的名詞位信號。",
       "wrong_thought_steps": [
-        "語意先行，選了 modify。",
-        "忽略了限定詞 any。"
+        "看到 modify 語意通順就選動詞，跳過 any 的名詞位信號。",
+        "跳過題眼，直接用語意或熟悉度作答。"
       ],
       "rule_box": {
         "type": "ok",
-        "text": "限定詞後面接名詞，-tion/-ation 常見名詞語尾。"
+        "text": "限定詞 any / the / a / our 後面接名詞；-ation 是常見名詞語尾。"
       }
     },
     {
       "q_id": "pos-d1-q2",
       "type": "main",
-      "scene": "Retail / Procurement",
+      "scene": "Hotel / Staffing",
       "eye_distance": "near",
       "target_pos": "noun",
-      "weakness_tag": "adj-noun",
-      "stem": "The manager requested an immediate {BLANK} to the supplier list.",
+      "weakness_tag": "noun-suffix",
+      "stem": "The hotel has introduced a new training {BLANK} for seasonal employees.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "update", "pos": "noun", "is_correct": true },
-        { "label": "B", "text": "updated", "pos": "verb", "is_correct": false },
-        { "label": "C", "text": "updating", "pos": "verb", "is_correct": false },
-        { "label": "D", "text": "updatable", "pos": "adj", "is_correct": false }
+        {
+          "label": "A",
+          "text": "requirement",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "require",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "required",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "requiring",
+          "pos": "verb",
+          "is_correct": false
+        }
       ],
       "answer": "A",
-      "hint": "an immediate + ______",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "training",
+        "signal_pos": "noun modifier",
+        "description": "a new training + 空格，整個片語需要名詞核心。"
+      },
+      "hint": "a new training + 空格，整個片語需要名詞核心。",
       "solution_steps": [
-        { "step": 1, "text": "immediate 是形容詞，後面接名詞。", "highlight_word": "immediate", "highlight_pos": "noun" },
-        { "step": 2, "text": "update 在此作名詞最自然。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：a new training + 空格，整個片語需要名詞核心。",
+          "highlight_word": "training",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：requirement 是名詞，符合空格需要。",
+          "highlight_word": "requirement",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "requirement",
+          "highlight_pos": "noun"
+        }
       ],
+      "error_trap": "見到 training 以為後面要動作，忽略 a new 已經開出名詞片語。",
       "wrong_thought_steps": [
-        "把 updated 當成形容詞誤判。"
+        "見到 training 以為後面要動作，忽略 a new 已經開出名詞片語。",
+        "跳過題眼，直接用語意或熟悉度作答。"
       ],
       "rule_box": {
         "type": "ok",
-        "text": "形容詞 + 名詞 是基本名詞片語。"
+        "text": "-ment 是名詞語尾；a/an/the 後的名詞片語要有名詞核心。"
       }
     },
     {
       "q_id": "pos-d1-q3",
       "type": "main",
-      "scene": "Hospital / Operations",
-      "eye_distance": "middle",
+      "scene": "Manufacturing / Quality",
+      "eye_distance": "near",
       "target_pos": "noun",
       "weakness_tag": "prep-noun",
-      "stem": "The report emphasized the need for better {BLANK} among night-shift teams.",
+      "stem": "The technician completed the {BLANK} of all measurement devices before noon.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "communicate", "pos": "verb", "is_correct": false },
-        { "label": "B", "text": "communication", "pos": "noun", "is_correct": true },
-        { "label": "C", "text": "communicative", "pos": "adj", "is_correct": false },
-        { "label": "D", "text": "communicating", "pos": "verb", "is_correct": false }
+        {
+          "label": "A",
+          "text": "calibrate",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "calibrated",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "calibrating",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "calibration",
+          "pos": "noun",
+          "is_correct": true
+        }
       ],
-      "answer": "B",
-      "hint": "for + ______",
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "the",
+        "signal_pos": "determiner",
+        "description": "the + 空格 + of，空格是名詞核心。"
+      },
+      "hint": "the + 空格 + of，空格是名詞核心。",
       "solution_steps": [
-        { "step": 1, "text": "介系詞 for 後面通常接名詞或動名詞。", "highlight_word": "for", "highlight_pos": "noun" },
-        { "step": 2, "text": "better 修飾名詞，communication 最適合。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：the + 空格 + of，空格是名詞核心。",
+          "highlight_word": "the",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：calibration 是名詞，符合空格需要。",
+          "highlight_word": "calibration",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "calibration",
+          "highlight_pos": "noun"
+        }
       ],
+      "error_trap": "把 completed 後面想成動作延續，誤選 calibrate。",
       "wrong_thought_steps": [
-        "看到 among teams 誤以為要動作，選了動詞。"
+        "把 completed 後面想成動作延續，誤選 calibrate。",
+        "跳過題眼，直接用語意或熟悉度作答。"
       ],
       "rule_box": {
         "type": "ok",
-        "text": "for + 名詞片語 常見結構。"
+        "text": "the ___ of 結構中空格通常是名詞；-tion 是名詞語尾。"
+      }
+    },
+    {
+      "q_id": "pos-d1-q4",
+      "type": "main",
+      "scene": "Retail / Operations",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "noun-suffix",
+      "stem": "Several departments praised her {BLANK} during the store relocation.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "lead",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "leadership",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "leading",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "leaderly",
+          "pos": "adv",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "her",
+        "signal_pos": "possessive determiner",
+        "description": "所有格 her 後需要名詞或名詞片語。"
+      },
+      "hint": "所有格 her 後需要名詞或名詞片語。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：所有格 her 後需要名詞或名詞片語。",
+          "highlight_word": "her",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：leadership 是名詞，符合空格需要。",
+          "highlight_word": "leadership",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "leadership",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "看到 lead 表示帶領而誤選動詞，沒有處理所有格後的位置。",
+      "wrong_thought_steps": [
+        "看到 lead 表示帶領而誤選動詞，沒有處理所有格後的位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "所有格 my / your / his / her / our 後要接名詞；-ship 是名詞語尾。"
+      }
+    },
+    {
+      "q_id": "pos-d1-q5",
+      "type": "main",
+      "scene": "Banking / Audit",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "noun-suffix",
+      "stem": "The audit team requested additional {BLANK} before approving the transaction.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "documentation",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "document",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "documented",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "documenting",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "additional",
+        "signal_pos": "adjective",
+        "description": "additional 修飾後方名詞，空格需要名詞。"
+      },
+      "hint": "additional 修飾後方名詞，空格需要名詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：additional 修飾後方名詞，空格需要名詞。",
+          "highlight_word": "additional",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：documentation 是名詞，符合空格需要。",
+          "highlight_word": "documentation",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "documentation",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "只看 approve transaction 的動作語意，誤以為空格也要動詞。",
+      "wrong_thought_steps": [
+        "只看 approve transaction 的動作語意，誤以為空格也要動詞。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "形容詞 additional 後面接名詞；-ation 是名詞語尾。"
+      }
+    },
+    {
+      "q_id": "pos-d1-q6",
+      "type": "main",
+      "scene": "Healthcare / Procurement",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "prep-noun",
+      "stem": "Our {BLANK} of the vendor's proposal will be finished by Friday.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "assess",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "assessed",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "assessing",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "assessment",
+          "pos": "noun",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "Our",
+        "signal_pos": "possessive determiner",
+        "description": "Our + 空格 + of，空格是名詞核心。"
+      },
+      "hint": "Our + 空格 + of，空格是名詞核心。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：Our + 空格 + of，空格是名詞核心。",
+          "highlight_word": "Our",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：assessment 是名詞，符合空格需要。",
+          "highlight_word": "assessment",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "assessment",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "看到 will be finished 後忽略主詞位置，誤選動詞 assess。",
+      "wrong_thought_steps": [
+        "看到 will be finished 後忽略主詞位置，誤選動詞 assess。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "our / their / its 後的核心位置需要名詞；-ment 是名詞語尾。"
       }
     }
   ],
@@ -115,26 +487,147 @@
     {
       "q_id": "pos-d1-monitor-1",
       "type": "monitor",
-      "weakness_tag": "number-of-sva",
-      "scene": "[監控] SVA — number of",
+      "scene": "[監控] SVA — the number of",
       "eye_distance": "near",
       "target_pos": "verb",
-      "stem": "The number of maintenance requests {BLANK} dropped since the new system was installed.",
+      "weakness_tag": "number-of-sva",
+      "stem": "The number of service requests {BLANK} increased since the new portal was launched.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "have", "pos": "verb", "is_correct": false },
-        { "label": "B", "text": "has", "pos": "verb", "is_correct": true },
-        { "label": "C", "text": "were", "pos": "verb", "is_correct": false },
-        { "label": "D", "text": "are", "pos": "verb", "is_correct": false }
+        {
+          "label": "A",
+          "text": "have",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "has",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "were",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "are",
+          "pos": "verb",
+          "is_correct": false
+        }
       ],
       "answer": "B",
-      "hint": "The number of + 複數名詞",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "The number of",
+        "signal_pos": "subject head",
+        "description": "The number of + 複數名詞，主詞核心是 number，動詞用單數。"
+      },
+      "hint": "The number of + 複數名詞，主詞核心是 number，動詞用單數。",
       "solution_steps": [
-        { "step": 1, "text": "主詞核心是 number，單數。" },
-        { "step": 2, "text": "故動詞用 has。", "highlight_word": "number", "highlight_pos": "verb" }
+        {
+          "step": 1,
+          "text": "先看空格位置：The number of + 複數名詞，主詞核心是 number，動詞用單數。",
+          "highlight_word": "The number of",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：has 是動詞，符合空格需要。",
+          "highlight_word": "has",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "has",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
       ],
       "rule_box": {
         "type": "warn",
-        "text": "The number of + 複數名詞，動詞跟 number。"
+        "text": "The number of + plural noun -> singular verb."
+      }
+    },
+    {
+      "q_id": "pos-d1-monitor-2",
+      "type": "monitor",
+      "scene": "[監控] SVA — a number of",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "number-of-sva",
+      "stem": "A number of technicians {BLANK} completed the safety refresher course.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "has",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "is",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "have",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "was",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "A number of",
+        "signal_pos": "quantifier",
+        "description": "A number of + 複數名詞表示 many，動詞跟複數 technicians。"
+      },
+      "hint": "A number of + 複數名詞表示 many，動詞跟複數 technicians。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：A number of + 複數名詞表示 many，動詞跟複數 technicians。",
+          "highlight_word": "A number of",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：have 是動詞，符合空格需要。",
+          "highlight_word": "have",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "have",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "A number of + plural noun -> plural verb."
       }
     }
   ]

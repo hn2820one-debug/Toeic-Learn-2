@@ -1,0 +1,252 @@
+[
+  {
+    "item_id": "item_invoice",
+    "item_type": "diagnostic_vocab",
+    "base_word": "invoice",
+    "variants": [
+      "invoice"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_shipment",
+    "item_type": "diagnostic_vocab",
+    "base_word": "shipment",
+    "variants": [
+      "shipment"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_venue",
+    "item_type": "diagnostic_vocab",
+    "base_word": "venue",
+    "variants": [
+      "venue"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_refund",
+    "item_type": "diagnostic_vocab",
+    "base_word": "refund",
+    "variants": [
+      "refund"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_recruitment",
+    "item_type": "diagnostic_vocab",
+    "base_word": "recruitment",
+    "variants": [
+      "recruitment"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_maintenance",
+    "item_type": "diagnostic_vocab",
+    "base_word": "maintenance",
+    "variants": [
+      "maintenance"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_conference",
+    "item_type": "diagnostic_vocab",
+    "base_word": "conference",
+    "variants": [
+      "conference"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_reservation",
+    "item_type": "diagnostic_vocab",
+    "base_word": "reservation",
+    "variants": [
+      "reservation"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_deadline",
+    "item_type": "diagnostic_vocab",
+    "base_word": "deadline",
+    "variants": [
+      "deadline"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_warranty",
+    "item_type": "diagnostic_vocab",
+    "base_word": "warranty",
+    "variants": [
+      "warranty"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_budget",
+    "item_type": "diagnostic_vocab",
+    "base_word": "budget",
+    "variants": [
+      "budget"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_estimate",
+    "item_type": "diagnostic_vocab",
+    "base_word": "estimate",
+    "variants": [
+      "estimate"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_accurate_family",
+    "item_type": "word_family",
+    "base_word": "accurate",
+    "variants": [
+      "accuracy",
+      "accurate",
+      "accurately",
+      "inaccuracy"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_efficient_family",
+    "item_type": "word_family",
+    "base_word": "efficient",
+    "variants": [
+      "efficiency",
+      "efficient",
+      "efficiently",
+      "inefficiency"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_responsible_family",
+    "item_type": "word_family",
+    "base_word": "responsible",
+    "variants": [
+      "responsibility",
+      "responsible",
+      "responsibly",
+      "irresponsible"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_available_family",
+    "item_type": "word_family",
+    "base_word": "available",
+    "variants": [
+      "availability",
+      "available",
+      "unavailable",
+      "availably"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_successful_family",
+    "item_type": "word_family",
+    "base_word": "successful",
+    "variants": [
+      "success",
+      "successful",
+      "successfully",
+      "unsuccessful"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_reliable_family",
+    "item_type": "word_family",
+    "base_word": "reliable",
+    "variants": [
+      "reliability",
+      "reliable",
+      "reliably",
+      "unreliable"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_productive_family",
+    "item_type": "word_family",
+    "base_word": "productive",
+    "variants": [
+      "productivity",
+      "productive",
+      "productively",
+      "unproductive"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_competitive_family",
+    "item_type": "word_family",
+    "base_word": "competitive",
+    "variants": [
+      "competition",
+      "competitive",
+      "competitively",
+      "competitiveness"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_profitable_family",
+    "item_type": "word_family",
+    "base_word": "profitable",
+    "variants": [
+      "profitability",
+      "profitable",
+      "profitably",
+      "profit"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  },
+  {
+    "item_id": "item_secure_family",
+    "item_type": "word_family",
+    "base_word": "secure",
+    "variants": [
+      "security",
+      "secure",
+      "securely",
+      "insecure"
+    ],
+    "mastery_score": 0,
+    "mastery_level": "blind"
+  }
+]

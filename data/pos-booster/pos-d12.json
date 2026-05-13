@@ -1,0 +1,634 @@
+{
+  "lesson_id": "pos-d12",
+  "module_id": "pos-booster",
+  "week": 4,
+  "day": 12,
+  "lesson_type": "listening",
+  "target_component": "listening",
+  "title": "詞性整合 — Part 4 獨白場景",
+  "type": "concept+quiz",
+  "quiz_type": "standard",
+  "time_limit_seconds": 20,
+  "focus_tags": [
+    "listening",
+    "part4-script",
+    "word-form"
+  ],
+  "weakness_tags": [
+    "listening-word-form",
+    "noun-suffix",
+    "adj-before-noun",
+    "mandative-trigger-verb"
+  ],
+  "concept": {
+    "debug_rule": "Part 4 長句先讀選項詞性，聽腳本時對應空格位置；不要被相同詞根干擾。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "noun",
+        "title": "Part 4 常見名詞",
+        "html": "announcement / requirement / maintenance / confirmation"
+      },
+      {
+        "type": "formula",
+        "tone": "adj",
+        "title": "Part 4 常見形容詞",
+        "html": "technical / operational / financial / mandatory"
+      },
+      {
+        "type": "warning",
+        "tone": "warn",
+        "title": "目前形式",
+        "html": "以腳本文字模擬聽力整合，保持 App 離線可用。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "pos-d12-q1",
+      "type": "main",
+      "scene": "Part 4 Script / Workplace Policy",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"This new {BLANK} applies to all contractors working after 6 p.m.\"",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "require",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "requirement",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "required",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "requiring",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "This new",
+        "signal_pos": "determiner + adjective",
+        "description": "This new 後需要名詞。"
+      },
+      "hint": "This new 後需要名詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：This new 後需要名詞。",
+          "highlight_word": "This new",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：requirement 是名詞，符合空格需要。",
+          "highlight_word": "requirement",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "requirement",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "聽到 require 詞根就選動詞，忽略 This new。",
+      "wrong_thought_steps": [
+        "聽到 require 詞根就選動詞，忽略 This new。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "requirement 是名詞；require 是動詞。"
+      }
+    },
+    {
+      "q_id": "pos-d12-q2",
+      "type": "main",
+      "scene": "Part 4 Script / Purchasing",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"Department heads may {BLANK} purchases under five hundred dollars.\"",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "authorization",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "authorized",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "authority",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "authorize",
+          "pos": "verb",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "may",
+        "signal_pos": "modal",
+        "description": "may 後接動詞原形。"
+      },
+      "hint": "may 後接動詞原形。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：may 後接動詞原形。",
+          "highlight_word": "may",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：authorize 是動詞，符合空格需要。",
+          "highlight_word": "authorize",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "authorize",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "聽到 authorization 熟悉就選名詞，忽略 may。",
+      "wrong_thought_steps": [
+        "聽到 authorization 熟悉就選名詞，忽略 may。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "authorize purchases = 授權採購。"
+      }
+    },
+    {
+      "q_id": "pos-d12-q3",
+      "type": "main",
+      "scene": "Part 4 Script / Facility",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"Routine {BLANK} will be performed on the elevators this weekend.\"",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "maintenance",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "maintain",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "maintained",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "maintainably",
+          "pos": "adv",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "Routine",
+        "signal_pos": "adjective",
+        "description": "Routine 修飾後方名詞，空格需要名詞。"
+      },
+      "hint": "Routine 修飾後方名詞，空格需要名詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：Routine 修飾後方名詞，空格需要名詞。",
+          "highlight_word": "Routine",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：maintenance 是名詞，符合空格需要。",
+          "highlight_word": "maintenance",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "maintenance",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "聽到 maintain 詞根就選動詞，忽略 Routine。",
+      "wrong_thought_steps": [
+        "聽到 maintain 詞根就選動詞，忽略 Routine。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "routine maintenance = 例行維護。"
+      }
+    },
+    {
+      "q_id": "pos-d12-q4",
+      "type": "main",
+      "scene": "Part 4 Script / Support",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"For {BLANK} assistance, please contact the support desk on the second floor.\"",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "technology",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "technically",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "technical",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "technician",
+          "pos": "noun",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "assistance",
+        "signal_pos": "noun",
+        "description": "空格修飾 assistance，需要形容詞。"
+      },
+      "hint": "空格修飾 assistance，需要形容詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 assistance，需要形容詞。",
+          "highlight_word": "assistance",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：technical 是形容詞，符合空格需要。",
+          "highlight_word": "technical",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "technical",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "聽到 technology 熟悉就選名詞，但 assistance 前需要形容詞。",
+      "wrong_thought_steps": [
+        "聽到 technology 熟悉就選名詞，但 assistance 前需要形容詞。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "technical assistance = 技術協助。"
+      }
+    },
+    {
+      "q_id": "pos-d12-q5",
+      "type": "main",
+      "scene": "Part 4 Script / Subscription",
+      "eye_distance": "near",
+      "target_pos": "adv",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"All service contracts are renewed {BLANK} unless customers cancel in writing.\"",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "annual",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "annuity",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "annualize",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "annually",
+          "pos": "adv",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "renewed",
+        "signal_pos": "verb",
+        "description": "空格修飾 renewed 的頻率，需要副詞。"
+      },
+      "hint": "空格修飾 renewed 的頻率，需要副詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 renewed 的頻率，需要副詞。",
+          "highlight_word": "renewed",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：annually 是副詞，符合空格需要。",
+          "highlight_word": "annually",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "annually",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "看到 contracts 是名詞就選 annual，忽略空格修飾 renewed。",
+      "wrong_thought_steps": [
+        "看到 contracts 是名詞就選 annual，忽略空格修飾 renewed。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "renewed annually = 每年續約。"
+      }
+    },
+    {
+      "q_id": "pos-d12-q6",
+      "type": "main",
+      "scene": "Part 4 Script / Registration",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"You will receive a {BLANK} after completing online registration.\"",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "confirmation",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "confirm",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "confirmed",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "confirming",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "a",
+        "signal_pos": "article",
+        "description": "a 後需要名詞。"
+      },
+      "hint": "a 後需要名詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：a 後需要名詞。",
+          "highlight_word": "a",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：confirmation 是名詞，符合空格需要。",
+          "highlight_word": "confirmation",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "confirmation",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "聽到 confirm 詞根就選動詞，忽略 a。",
+      "wrong_thought_steps": [
+        "聽到 confirm 詞根就選動詞，忽略 a。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "receive a confirmation = 收到確認通知。"
+      }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "pos-d12-monitor-1",
+      "type": "monitor",
+      "scene": "[監控] Mandative Subjunctive",
+      "eye_distance": "far",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-verb",
+      "stem": "The manager recommended that the team {BLANK} the revised report by Friday.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "submits",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "submitted",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "submit",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "submitting",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "recommended that",
+        "signal_pos": "mandative trigger",
+        "description": "recommend that + S + V 原形，不能用三單或過去式。"
+      },
+      "hint": "recommend that + S + V 原形，不能用三單或過去式。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：recommend that + S + V 原形，不能用三單或過去式。",
+          "highlight_word": "recommended that",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：submit 是動詞，符合空格需要。",
+          "highlight_word": "submit",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "submit",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "Mandative trigger + that + S + base verb."
+      }
+    },
+    {
+      "q_id": "pos-d12-monitor-2",
+      "type": "monitor",
+      "scene": "[監控] Mandative Adjective",
+      "eye_distance": "far",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-adj",
+      "stem": "It is essential that all visitors {BLANK} identification badges inside the facility.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "wears",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "wear",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "wore",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "wearing",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "essential that",
+        "signal_pos": "mandative adjective",
+        "description": "essential that + S + V 原形，all visitors 不改變公式。"
+      },
+      "hint": "essential that + S + V 原形，all visitors 不改變公式。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：essential that + S + V 原形，all visitors 不改變公式。",
+          "highlight_word": "essential that",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：wear 是動詞，符合空格需要。",
+          "highlight_word": "wear",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "wear",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "essential / mandatory / necessary that + S + base verb."
+      }
+    }
+  ]
+}

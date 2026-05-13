@@ -1,0 +1,6682 @@
+[
+  {
+    "question_id": "v0_1_q_001",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"shipment\" most nearly mean?",
+    "options": {
+      "A": "discount",
+      "B": "venue",
+      "C": "policy",
+      "D": "goods sent for delivery"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"shipment\" 在 TOEIC 商務情境中通常指「goods sent for delivery」。",
+    "target_item_id": "item_shipment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 1,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_002",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warehouse",
+      "B": "warranty",
+      "C": "schedule",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_003",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "maintain",
+      "B": "register",
+      "C": "invoice",
+      "D": "estimate"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_004",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "on behalf of",
+      "B": "in spite of",
+      "C": "as opposed to",
+      "D": "in charge"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_005",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "current",
+      "B": "possible",
+      "C": "formal",
+      "D": "real or exact"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_006",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "shipped",
+      "B": "current",
+      "C": "approved",
+      "D": "venue"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_007",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "salary",
+      "B": "schedule",
+      "C": "discount",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_008",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "meet",
+      "B": "make",
+      "C": "do",
+      "D": "take"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_009",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"warranty\" most nearly mean?",
+    "options": {
+      "A": "agenda",
+      "B": "refund",
+      "C": "policy",
+      "D": "a written promise to repair or replace a product"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"warranty\" 在 TOEIC 商務情境中通常指「a written promise to repair or replace a product」。",
+    "target_item_id": "item_warranty",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_010",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warehouse",
+      "B": "warranty",
+      "C": "schedule",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_011",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "maintain",
+      "B": "register",
+      "C": "invoice",
+      "D": "estimate"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_012",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "on behalf of",
+      "B": "in spite of",
+      "C": "as opposed to",
+      "D": "in charge"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_013",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "current",
+      "B": "possible",
+      "C": "formal",
+      "D": "real or exact"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_014",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "shipped",
+      "B": "current",
+      "C": "approved",
+      "D": "venue"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_015",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "salary",
+      "B": "schedule",
+      "C": "discount",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_016",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "meet",
+      "B": "make",
+      "C": "do",
+      "D": "take"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_017",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"maintenance\" most nearly mean?",
+    "options": {
+      "A": "promotion",
+      "B": "venue",
+      "C": "refund",
+      "D": "work done to keep equipment in good condition"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"maintenance\" 在 TOEIC 商務情境中通常指「work done to keep equipment in good condition」。",
+    "target_item_id": "item_maintenance",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_018",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warehouse",
+      "B": "warranty",
+      "C": "schedule",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_019",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "maintain",
+      "B": "register",
+      "C": "invoice",
+      "D": "estimate"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_q_020",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "on behalf of",
+      "B": "in spite of",
+      "C": "as opposed to",
+      "D": "in charge"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_rv_021",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"warranty\".",
+    "options": {
+      "A": "agenda",
+      "B": "refund",
+      "C": "policy",
+      "D": "a written promise to repair or replace a product"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "複習題：warranty = a written promise to repair or replace a product。",
+    "target_item_id": "item_warranty",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_rv_022",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"budget\".",
+    "options": {
+      "A": "shipment",
+      "B": "conference",
+      "C": "a plan for spending money",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "複習題：budget = a plan for spending money。",
+    "target_item_id": "item_budget",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_rv_023",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"estimate\".",
+    "options": {
+      "A": "deadline",
+      "B": "an approximate calculation",
+      "C": "maintenance",
+      "D": "reservation"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "複習題：estimate = an approximate calculation。",
+    "target_item_id": "item_estimate",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_1_rv_024",
+    "lesson_id": "V0-1",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"invoice\".",
+    "options": {
+      "A": "a document requesting payment",
+      "B": "receipt",
+      "C": "agenda",
+      "D": "manual"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "複習題：invoice = a document requesting payment。",
+    "target_item_id": "item_invoice",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_001",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"venue\" most nearly mean?",
+    "options": {
+      "A": "survey",
+      "B": "invoice",
+      "C": "a place where an event is held",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"venue\" 在 TOEIC 商務情境中通常指「a place where an event is held」。",
+    "target_item_id": "item_venue",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 1,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_002",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warranty",
+      "B": "schedule",
+      "C": "refund",
+      "D": "warehouse"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_003",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "register",
+      "B": "invoice",
+      "C": "estimate",
+      "D": "maintain"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_004",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in spite of",
+      "B": "as opposed to",
+      "C": "in charge",
+      "D": "on behalf of"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_005",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "possible",
+      "B": "formal",
+      "C": "real or exact",
+      "D": "current"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_006",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "current",
+      "B": "approved",
+      "C": "venue",
+      "D": "shipped"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_007",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "schedule",
+      "B": "discount",
+      "C": "receipt",
+      "D": "salary"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_008",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "make",
+      "B": "do",
+      "C": "take",
+      "D": "meet"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_009",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"budget\" most nearly mean?",
+    "options": {
+      "A": "shipment",
+      "B": "conference",
+      "C": "a plan for spending money",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"budget\" 在 TOEIC 商務情境中通常指「a plan for spending money」。",
+    "target_item_id": "item_budget",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_010",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warranty",
+      "B": "schedule",
+      "C": "refund",
+      "D": "warehouse"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_011",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "register",
+      "B": "invoice",
+      "C": "estimate",
+      "D": "maintain"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_012",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in spite of",
+      "B": "as opposed to",
+      "C": "in charge",
+      "D": "on behalf of"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_013",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "possible",
+      "B": "formal",
+      "C": "real or exact",
+      "D": "current"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_014",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "current",
+      "B": "approved",
+      "C": "venue",
+      "D": "shipped"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_015",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "schedule",
+      "B": "discount",
+      "C": "receipt",
+      "D": "salary"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_016",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "make",
+      "B": "do",
+      "C": "take",
+      "D": "meet"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_017",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"conference\" most nearly mean?",
+    "options": {
+      "A": "schedule",
+      "B": "budget",
+      "C": "a formal meeting for discussion",
+      "D": "warranty"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"conference\" 在 TOEIC 商務情境中通常指「a formal meeting for discussion」。",
+    "target_item_id": "item_conference",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_018",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warranty",
+      "B": "schedule",
+      "C": "refund",
+      "D": "warehouse"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_019",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "register",
+      "B": "invoice",
+      "C": "estimate",
+      "D": "maintain"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_q_020",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in spite of",
+      "B": "as opposed to",
+      "C": "in charge",
+      "D": "on behalf of"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_rv_021",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"budget\".",
+    "options": {
+      "A": "shipment",
+      "B": "conference",
+      "C": "a plan for spending money",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "複習題：budget = a plan for spending money。",
+    "target_item_id": "item_budget",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_rv_022",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"estimate\".",
+    "options": {
+      "A": "deadline",
+      "B": "an approximate calculation",
+      "C": "maintenance",
+      "D": "reservation"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "複習題：estimate = an approximate calculation。",
+    "target_item_id": "item_estimate",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_rv_023",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"invoice\".",
+    "options": {
+      "A": "a document requesting payment",
+      "B": "receipt",
+      "C": "agenda",
+      "D": "manual"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "複習題：invoice = a document requesting payment。",
+    "target_item_id": "item_invoice",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_2_rv_024",
+    "lesson_id": "V0-2",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"shipment\".",
+    "options": {
+      "A": "discount",
+      "B": "venue",
+      "C": "policy",
+      "D": "goods sent for delivery"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "複習題：shipment = goods sent for delivery。",
+    "target_item_id": "item_shipment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_001",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"refund\" most nearly mean?",
+    "options": {
+      "A": "agenda",
+      "B": "money returned to a customer",
+      "C": "deadline",
+      "D": "shipment"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "\"refund\" 在 TOEIC 商務情境中通常指「money returned to a customer」。",
+    "target_item_id": "item_refund",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 1,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_002",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "schedule",
+      "B": "refund",
+      "C": "warehouse",
+      "D": "warranty"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_003",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "invoice",
+      "B": "estimate",
+      "C": "maintain",
+      "D": "register"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_004",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "as opposed to",
+      "B": "in charge",
+      "C": "on behalf of",
+      "D": "in spite of"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_005",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "formal",
+      "B": "real or exact",
+      "C": "current",
+      "D": "possible"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_006",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "approved",
+      "B": "venue",
+      "C": "shipped",
+      "D": "current"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_007",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "discount",
+      "B": "receipt",
+      "C": "salary",
+      "D": "schedule"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_008",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "do",
+      "B": "take",
+      "C": "meet",
+      "D": "make"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_009",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"estimate\" most nearly mean?",
+    "options": {
+      "A": "deadline",
+      "B": "an approximate calculation",
+      "C": "maintenance",
+      "D": "reservation"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "\"estimate\" 在 TOEIC 商務情境中通常指「an approximate calculation」。",
+    "target_item_id": "item_estimate",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_010",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "schedule",
+      "B": "refund",
+      "C": "warehouse",
+      "D": "warranty"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_011",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "invoice",
+      "B": "estimate",
+      "C": "maintain",
+      "D": "register"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_012",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "as opposed to",
+      "B": "in charge",
+      "C": "on behalf of",
+      "D": "in spite of"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_013",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "formal",
+      "B": "real or exact",
+      "C": "current",
+      "D": "possible"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_014",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "approved",
+      "B": "venue",
+      "C": "shipped",
+      "D": "current"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_015",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "discount",
+      "B": "receipt",
+      "C": "salary",
+      "D": "schedule"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_016",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "do",
+      "B": "take",
+      "C": "meet",
+      "D": "make"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_017",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"reservation\" most nearly mean?",
+    "options": {
+      "A": "memo",
+      "B": "an arrangement to keep a room or seat",
+      "C": "estimate",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "\"reservation\" 在 TOEIC 商務情境中通常指「an arrangement to keep a room or seat」。",
+    "target_item_id": "item_reservation",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_018",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "schedule",
+      "B": "refund",
+      "C": "warehouse",
+      "D": "warranty"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_019",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "invoice",
+      "B": "estimate",
+      "C": "maintain",
+      "D": "register"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_q_020",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "as opposed to",
+      "B": "in charge",
+      "C": "on behalf of",
+      "D": "in spite of"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_rv_021",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"estimate\".",
+    "options": {
+      "A": "deadline",
+      "B": "an approximate calculation",
+      "C": "maintenance",
+      "D": "reservation"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "複習題：estimate = an approximate calculation。",
+    "target_item_id": "item_estimate",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_rv_022",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"invoice\".",
+    "options": {
+      "A": "a document requesting payment",
+      "B": "receipt",
+      "C": "agenda",
+      "D": "manual"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "複習題：invoice = a document requesting payment。",
+    "target_item_id": "item_invoice",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_rv_023",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"shipment\".",
+    "options": {
+      "A": "discount",
+      "B": "venue",
+      "C": "policy",
+      "D": "goods sent for delivery"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "複習題：shipment = goods sent for delivery。",
+    "target_item_id": "item_shipment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_3_rv_024",
+    "lesson_id": "V0-3",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"venue\".",
+    "options": {
+      "A": "survey",
+      "B": "invoice",
+      "C": "a place where an event is held",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "複習題：venue = a place where an event is held。",
+    "target_item_id": "item_venue",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_001",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"recruitment\" most nearly mean?",
+    "options": {
+      "A": "the process of hiring workers",
+      "B": "renovation",
+      "C": "delivery",
+      "D": "invoice"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "\"recruitment\" 在 TOEIC 商務情境中通常指「the process of hiring workers」。",
+    "target_item_id": "item_recruitment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 1,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_002",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "refund",
+      "B": "warehouse",
+      "C": "warranty",
+      "D": "schedule"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_003",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "estimate",
+      "B": "maintain",
+      "C": "register",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_004",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in charge",
+      "B": "on behalf of",
+      "C": "in spite of",
+      "D": "as opposed to"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_005",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "real or exact",
+      "B": "current",
+      "C": "possible",
+      "D": "formal"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_006",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "venue",
+      "B": "shipped",
+      "C": "current",
+      "D": "approved"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_007",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "receipt",
+      "B": "salary",
+      "C": "schedule",
+      "D": "discount"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_008",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "take",
+      "B": "meet",
+      "C": "make",
+      "D": "do"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_009",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"invoice\" most nearly mean?",
+    "options": {
+      "A": "a document requesting payment",
+      "B": "receipt",
+      "C": "agenda",
+      "D": "manual"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "\"invoice\" 在 TOEIC 商務情境中通常指「a document requesting payment」。",
+    "target_item_id": "item_invoice",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_010",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "refund",
+      "B": "warehouse",
+      "C": "warranty",
+      "D": "schedule"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_011",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "estimate",
+      "B": "maintain",
+      "C": "register",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_012",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in charge",
+      "B": "on behalf of",
+      "C": "in spite of",
+      "D": "as opposed to"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_013",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "real or exact",
+      "B": "current",
+      "C": "possible",
+      "D": "formal"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_014",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "venue",
+      "B": "shipped",
+      "C": "current",
+      "D": "approved"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_015",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "receipt",
+      "B": "salary",
+      "C": "schedule",
+      "D": "discount"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_016",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "take",
+      "B": "meet",
+      "C": "make",
+      "D": "do"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_017",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"deadline\" most nearly mean?",
+    "options": {
+      "A": "the latest time something must be finished",
+      "B": "venue",
+      "C": "shipment",
+      "D": "discount"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "\"deadline\" 在 TOEIC 商務情境中通常指「the latest time something must be finished」。",
+    "target_item_id": "item_deadline",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_018",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "refund",
+      "B": "warehouse",
+      "C": "warranty",
+      "D": "schedule"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_019",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "estimate",
+      "B": "maintain",
+      "C": "register",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_q_020",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in charge",
+      "B": "on behalf of",
+      "C": "in spite of",
+      "D": "as opposed to"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_rv_021",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"invoice\".",
+    "options": {
+      "A": "a document requesting payment",
+      "B": "receipt",
+      "C": "agenda",
+      "D": "manual"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "複習題：invoice = a document requesting payment。",
+    "target_item_id": "item_invoice",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_rv_022",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"shipment\".",
+    "options": {
+      "A": "discount",
+      "B": "venue",
+      "C": "policy",
+      "D": "goods sent for delivery"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "複習題：shipment = goods sent for delivery。",
+    "target_item_id": "item_shipment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_rv_023",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"venue\".",
+    "options": {
+      "A": "survey",
+      "B": "invoice",
+      "C": "a place where an event is held",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "複習題：venue = a place where an event is held。",
+    "target_item_id": "item_venue",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_4_rv_024",
+    "lesson_id": "V0-4",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"refund\".",
+    "options": {
+      "A": "agenda",
+      "B": "money returned to a customer",
+      "C": "deadline",
+      "D": "shipment"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "複習題：refund = money returned to a customer。",
+    "target_item_id": "item_refund",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_001",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"maintenance\" most nearly mean?",
+    "options": {
+      "A": "promotion",
+      "B": "venue",
+      "C": "refund",
+      "D": "work done to keep equipment in good condition"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"maintenance\" 在 TOEIC 商務情境中通常指「work done to keep equipment in good condition」。",
+    "target_item_id": "item_maintenance",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 1,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_002",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warehouse",
+      "B": "warranty",
+      "C": "schedule",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_003",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "maintain",
+      "B": "register",
+      "C": "invoice",
+      "D": "estimate"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_004",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "on behalf of",
+      "B": "in spite of",
+      "C": "as opposed to",
+      "D": "in charge"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_005",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "current",
+      "B": "possible",
+      "C": "formal",
+      "D": "real or exact"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_006",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "shipped",
+      "B": "current",
+      "C": "approved",
+      "D": "venue"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_007",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "salary",
+      "B": "schedule",
+      "C": "discount",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_008",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "meet",
+      "B": "make",
+      "C": "do",
+      "D": "take"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_009",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"shipment\" most nearly mean?",
+    "options": {
+      "A": "discount",
+      "B": "venue",
+      "C": "policy",
+      "D": "goods sent for delivery"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"shipment\" 在 TOEIC 商務情境中通常指「goods sent for delivery」。",
+    "target_item_id": "item_shipment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_010",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warehouse",
+      "B": "warranty",
+      "C": "schedule",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_011",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "maintain",
+      "B": "register",
+      "C": "invoice",
+      "D": "estimate"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_012",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "on behalf of",
+      "B": "in spite of",
+      "C": "as opposed to",
+      "D": "in charge"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_013",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "current",
+      "B": "possible",
+      "C": "formal",
+      "D": "real or exact"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_014",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "shipped",
+      "B": "current",
+      "C": "approved",
+      "D": "venue"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_015",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "salary",
+      "B": "schedule",
+      "C": "discount",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_016",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "meet",
+      "B": "make",
+      "C": "do",
+      "D": "take"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_017",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"warranty\" most nearly mean?",
+    "options": {
+      "A": "agenda",
+      "B": "refund",
+      "C": "policy",
+      "D": "a written promise to repair or replace a product"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"warranty\" 在 TOEIC 商務情境中通常指「a written promise to repair or replace a product」。",
+    "target_item_id": "item_warranty",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_018",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warehouse",
+      "B": "warranty",
+      "C": "schedule",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_019",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "maintain",
+      "B": "register",
+      "C": "invoice",
+      "D": "estimate"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_q_020",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "on behalf of",
+      "B": "in spite of",
+      "C": "as opposed to",
+      "D": "in charge"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_rv_021",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"shipment\".",
+    "options": {
+      "A": "discount",
+      "B": "venue",
+      "C": "policy",
+      "D": "goods sent for delivery"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "複習題：shipment = goods sent for delivery。",
+    "target_item_id": "item_shipment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_rv_022",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"venue\".",
+    "options": {
+      "A": "survey",
+      "B": "invoice",
+      "C": "a place where an event is held",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "複習題：venue = a place where an event is held。",
+    "target_item_id": "item_venue",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_rv_023",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"refund\".",
+    "options": {
+      "A": "agenda",
+      "B": "money returned to a customer",
+      "C": "deadline",
+      "D": "shipment"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "複習題：refund = money returned to a customer。",
+    "target_item_id": "item_refund",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_5_rv_024",
+    "lesson_id": "V0-5",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"recruitment\".",
+    "options": {
+      "A": "the process of hiring workers",
+      "B": "renovation",
+      "C": "delivery",
+      "D": "invoice"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "複習題：recruitment = the process of hiring workers。",
+    "target_item_id": "item_recruitment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_001",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"conference\" most nearly mean?",
+    "options": {
+      "A": "schedule",
+      "B": "budget",
+      "C": "a formal meeting for discussion",
+      "D": "warranty"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"conference\" 在 TOEIC 商務情境中通常指「a formal meeting for discussion」。",
+    "target_item_id": "item_conference",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 1,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_002",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warranty",
+      "B": "schedule",
+      "C": "refund",
+      "D": "warehouse"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_003",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "register",
+      "B": "invoice",
+      "C": "estimate",
+      "D": "maintain"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_004",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in spite of",
+      "B": "as opposed to",
+      "C": "in charge",
+      "D": "on behalf of"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_005",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "possible",
+      "B": "formal",
+      "C": "real or exact",
+      "D": "current"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_006",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "current",
+      "B": "approved",
+      "C": "venue",
+      "D": "shipped"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_007",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "schedule",
+      "B": "discount",
+      "C": "receipt",
+      "D": "salary"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_008",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "make",
+      "B": "do",
+      "C": "take",
+      "D": "meet"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_009",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"venue\" most nearly mean?",
+    "options": {
+      "A": "survey",
+      "B": "invoice",
+      "C": "a place where an event is held",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"venue\" 在 TOEIC 商務情境中通常指「a place where an event is held」。",
+    "target_item_id": "item_venue",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_010",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warranty",
+      "B": "schedule",
+      "C": "refund",
+      "D": "warehouse"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_011",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "register",
+      "B": "invoice",
+      "C": "estimate",
+      "D": "maintain"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_012",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in spite of",
+      "B": "as opposed to",
+      "C": "in charge",
+      "D": "on behalf of"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_013",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "possible",
+      "B": "formal",
+      "C": "real or exact",
+      "D": "current"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_014",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "current",
+      "B": "approved",
+      "C": "venue",
+      "D": "shipped"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_015",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "schedule",
+      "B": "discount",
+      "C": "receipt",
+      "D": "salary"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_016",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "make",
+      "B": "do",
+      "C": "take",
+      "D": "meet"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_017",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"budget\" most nearly mean?",
+    "options": {
+      "A": "shipment",
+      "B": "conference",
+      "C": "a plan for spending money",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"budget\" 在 TOEIC 商務情境中通常指「a plan for spending money」。",
+    "target_item_id": "item_budget",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_018",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warranty",
+      "B": "schedule",
+      "C": "refund",
+      "D": "warehouse"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_019",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "register",
+      "B": "invoice",
+      "C": "estimate",
+      "D": "maintain"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_q_020",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in spite of",
+      "B": "as opposed to",
+      "C": "in charge",
+      "D": "on behalf of"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_rv_021",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"venue\".",
+    "options": {
+      "A": "survey",
+      "B": "invoice",
+      "C": "a place where an event is held",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "複習題：venue = a place where an event is held。",
+    "target_item_id": "item_venue",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_rv_022",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"refund\".",
+    "options": {
+      "A": "agenda",
+      "B": "money returned to a customer",
+      "C": "deadline",
+      "D": "shipment"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "複習題：refund = money returned to a customer。",
+    "target_item_id": "item_refund",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_rv_023",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"recruitment\".",
+    "options": {
+      "A": "the process of hiring workers",
+      "B": "renovation",
+      "C": "delivery",
+      "D": "invoice"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "複習題：recruitment = the process of hiring workers。",
+    "target_item_id": "item_recruitment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_6_rv_024",
+    "lesson_id": "V0-6",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"maintenance\".",
+    "options": {
+      "A": "promotion",
+      "B": "venue",
+      "C": "refund",
+      "D": "work done to keep equipment in good condition"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "複習題：maintenance = work done to keep equipment in good condition。",
+    "target_item_id": "item_maintenance",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_001",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"reservation\" most nearly mean?",
+    "options": {
+      "A": "memo",
+      "B": "an arrangement to keep a room or seat",
+      "C": "estimate",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "\"reservation\" 在 TOEIC 商務情境中通常指「an arrangement to keep a room or seat」。",
+    "target_item_id": "item_reservation",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 1,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_002",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "schedule",
+      "B": "refund",
+      "C": "warehouse",
+      "D": "warranty"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_003",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "invoice",
+      "B": "estimate",
+      "C": "maintain",
+      "D": "register"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_004",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "as opposed to",
+      "B": "in charge",
+      "C": "on behalf of",
+      "D": "in spite of"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_005",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "formal",
+      "B": "real or exact",
+      "C": "current",
+      "D": "possible"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_006",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "approved",
+      "B": "venue",
+      "C": "shipped",
+      "D": "current"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_007",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "discount",
+      "B": "receipt",
+      "C": "salary",
+      "D": "schedule"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_008",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "do",
+      "B": "take",
+      "C": "meet",
+      "D": "make"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_009",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"refund\" most nearly mean?",
+    "options": {
+      "A": "agenda",
+      "B": "money returned to a customer",
+      "C": "deadline",
+      "D": "shipment"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "\"refund\" 在 TOEIC 商務情境中通常指「money returned to a customer」。",
+    "target_item_id": "item_refund",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_010",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "schedule",
+      "B": "refund",
+      "C": "warehouse",
+      "D": "warranty"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_011",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "invoice",
+      "B": "estimate",
+      "C": "maintain",
+      "D": "register"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_012",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "as opposed to",
+      "B": "in charge",
+      "C": "on behalf of",
+      "D": "in spite of"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_013",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "formal",
+      "B": "real or exact",
+      "C": "current",
+      "D": "possible"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_014",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "approved",
+      "B": "venue",
+      "C": "shipped",
+      "D": "current"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_015",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "discount",
+      "B": "receipt",
+      "C": "salary",
+      "D": "schedule"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_016",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "do",
+      "B": "take",
+      "C": "meet",
+      "D": "make"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_017",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"estimate\" most nearly mean?",
+    "options": {
+      "A": "deadline",
+      "B": "an approximate calculation",
+      "C": "maintenance",
+      "D": "reservation"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "\"estimate\" 在 TOEIC 商務情境中通常指「an approximate calculation」。",
+    "target_item_id": "item_estimate",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_018",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "schedule",
+      "B": "refund",
+      "C": "warehouse",
+      "D": "warranty"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_019",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "invoice",
+      "B": "estimate",
+      "C": "maintain",
+      "D": "register"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_q_020",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "as opposed to",
+      "B": "in charge",
+      "C": "on behalf of",
+      "D": "in spite of"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_rv_021",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"refund\".",
+    "options": {
+      "A": "agenda",
+      "B": "money returned to a customer",
+      "C": "deadline",
+      "D": "shipment"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "複習題：refund = money returned to a customer。",
+    "target_item_id": "item_refund",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_rv_022",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"recruitment\".",
+    "options": {
+      "A": "the process of hiring workers",
+      "B": "renovation",
+      "C": "delivery",
+      "D": "invoice"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "複習題：recruitment = the process of hiring workers。",
+    "target_item_id": "item_recruitment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_rv_023",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"maintenance\".",
+    "options": {
+      "A": "promotion",
+      "B": "venue",
+      "C": "refund",
+      "D": "work done to keep equipment in good condition"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "複習題：maintenance = work done to keep equipment in good condition。",
+    "target_item_id": "item_maintenance",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_7_rv_024",
+    "lesson_id": "V0-7",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"conference\".",
+    "options": {
+      "A": "schedule",
+      "B": "budget",
+      "C": "a formal meeting for discussion",
+      "D": "warranty"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "複習題：conference = a formal meeting for discussion。",
+    "target_item_id": "item_conference",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_001",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"deadline\" most nearly mean?",
+    "options": {
+      "A": "the latest time something must be finished",
+      "B": "venue",
+      "C": "shipment",
+      "D": "discount"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "\"deadline\" 在 TOEIC 商務情境中通常指「the latest time something must be finished」。",
+    "target_item_id": "item_deadline",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 1,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_002",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "refund",
+      "B": "warehouse",
+      "C": "warranty",
+      "D": "schedule"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_003",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "estimate",
+      "B": "maintain",
+      "C": "register",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_004",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in charge",
+      "B": "on behalf of",
+      "C": "in spite of",
+      "D": "as opposed to"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_005",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "real or exact",
+      "B": "current",
+      "C": "possible",
+      "D": "formal"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_006",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "venue",
+      "B": "shipped",
+      "C": "current",
+      "D": "approved"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_007",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "receipt",
+      "B": "salary",
+      "C": "schedule",
+      "D": "discount"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_008",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "take",
+      "B": "meet",
+      "C": "make",
+      "D": "do"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_009",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"recruitment\" most nearly mean?",
+    "options": {
+      "A": "the process of hiring workers",
+      "B": "renovation",
+      "C": "delivery",
+      "D": "invoice"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "\"recruitment\" 在 TOEIC 商務情境中通常指「the process of hiring workers」。",
+    "target_item_id": "item_recruitment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_010",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "refund",
+      "B": "warehouse",
+      "C": "warranty",
+      "D": "schedule"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_011",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "estimate",
+      "B": "maintain",
+      "C": "register",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_012",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in charge",
+      "B": "on behalf of",
+      "C": "in spite of",
+      "D": "as opposed to"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_013",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "real or exact",
+      "B": "current",
+      "C": "possible",
+      "D": "formal"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_014",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "venue",
+      "B": "shipped",
+      "C": "current",
+      "D": "approved"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_015",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "receipt",
+      "B": "salary",
+      "C": "schedule",
+      "D": "discount"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_016",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "take",
+      "B": "meet",
+      "C": "make",
+      "D": "do"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_017",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"invoice\" most nearly mean?",
+    "options": {
+      "A": "a document requesting payment",
+      "B": "receipt",
+      "C": "agenda",
+      "D": "manual"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "\"invoice\" 在 TOEIC 商務情境中通常指「a document requesting payment」。",
+    "target_item_id": "item_invoice",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_018",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "refund",
+      "B": "warehouse",
+      "C": "warranty",
+      "D": "schedule"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_019",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "estimate",
+      "B": "maintain",
+      "C": "register",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_q_020",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in charge",
+      "B": "on behalf of",
+      "C": "in spite of",
+      "D": "as opposed to"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_rv_021",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"recruitment\".",
+    "options": {
+      "A": "the process of hiring workers",
+      "B": "renovation",
+      "C": "delivery",
+      "D": "invoice"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "複習題：recruitment = the process of hiring workers。",
+    "target_item_id": "item_recruitment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_rv_022",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"maintenance\".",
+    "options": {
+      "A": "promotion",
+      "B": "venue",
+      "C": "refund",
+      "D": "work done to keep equipment in good condition"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "複習題：maintenance = work done to keep equipment in good condition。",
+    "target_item_id": "item_maintenance",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_rv_023",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"conference\".",
+    "options": {
+      "A": "schedule",
+      "B": "budget",
+      "C": "a formal meeting for discussion",
+      "D": "warranty"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "複習題：conference = a formal meeting for discussion。",
+    "target_item_id": "item_conference",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_8_rv_024",
+    "lesson_id": "V0-8",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"reservation\".",
+    "options": {
+      "A": "memo",
+      "B": "an arrangement to keep a room or seat",
+      "C": "estimate",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "複習題：reservation = an arrangement to keep a room or seat。",
+    "target_item_id": "item_reservation",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_001",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"warranty\" most nearly mean?",
+    "options": {
+      "A": "agenda",
+      "B": "refund",
+      "C": "policy",
+      "D": "a written promise to repair or replace a product"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"warranty\" 在 TOEIC 商務情境中通常指「a written promise to repair or replace a product」。",
+    "target_item_id": "item_warranty",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 1,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_002",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warehouse",
+      "B": "warranty",
+      "C": "schedule",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_003",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "maintain",
+      "B": "register",
+      "C": "invoice",
+      "D": "estimate"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_004",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "on behalf of",
+      "B": "in spite of",
+      "C": "as opposed to",
+      "D": "in charge"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_005",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "current",
+      "B": "possible",
+      "C": "formal",
+      "D": "real or exact"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_006",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "shipped",
+      "B": "current",
+      "C": "approved",
+      "D": "venue"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_007",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "salary",
+      "B": "schedule",
+      "C": "discount",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_008",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "meet",
+      "B": "make",
+      "C": "do",
+      "D": "take"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_009",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"maintenance\" most nearly mean?",
+    "options": {
+      "A": "promotion",
+      "B": "venue",
+      "C": "refund",
+      "D": "work done to keep equipment in good condition"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"maintenance\" 在 TOEIC 商務情境中通常指「work done to keep equipment in good condition」。",
+    "target_item_id": "item_maintenance",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_010",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warehouse",
+      "B": "warranty",
+      "C": "schedule",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_011",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "maintain",
+      "B": "register",
+      "C": "invoice",
+      "D": "estimate"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_012",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "on behalf of",
+      "B": "in spite of",
+      "C": "as opposed to",
+      "D": "in charge"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_013",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "current",
+      "B": "possible",
+      "C": "formal",
+      "D": "real or exact"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_014",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "shipped",
+      "B": "current",
+      "C": "approved",
+      "D": "venue"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_015",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "salary",
+      "B": "schedule",
+      "C": "discount",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_016",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "meet",
+      "B": "make",
+      "C": "do",
+      "D": "take"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_017",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"shipment\" most nearly mean?",
+    "options": {
+      "A": "discount",
+      "B": "venue",
+      "C": "policy",
+      "D": "goods sent for delivery"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "\"shipment\" 在 TOEIC 商務情境中通常指「goods sent for delivery」。",
+    "target_item_id": "item_shipment",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_018",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warehouse",
+      "B": "warranty",
+      "C": "schedule",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_019",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "maintain",
+      "B": "register",
+      "C": "invoice",
+      "D": "estimate"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_q_020",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "on behalf of",
+      "B": "in spite of",
+      "C": "as opposed to",
+      "D": "in charge"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_rv_021",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"maintenance\".",
+    "options": {
+      "A": "promotion",
+      "B": "venue",
+      "C": "refund",
+      "D": "work done to keep equipment in good condition"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "複習題：maintenance = work done to keep equipment in good condition。",
+    "target_item_id": "item_maintenance",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_rv_022",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"conference\".",
+    "options": {
+      "A": "schedule",
+      "B": "budget",
+      "C": "a formal meeting for discussion",
+      "D": "warranty"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "複習題：conference = a formal meeting for discussion。",
+    "target_item_id": "item_conference",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_rv_023",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"reservation\".",
+    "options": {
+      "A": "memo",
+      "B": "an arrangement to keep a room or seat",
+      "C": "estimate",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "複習題：reservation = an arrangement to keep a room or seat。",
+    "target_item_id": "item_reservation",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_9_rv_024",
+    "lesson_id": "V0-9",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"deadline\".",
+    "options": {
+      "A": "the latest time something must be finished",
+      "B": "venue",
+      "C": "shipment",
+      "D": "discount"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "複習題：deadline = the latest time something must be finished。",
+    "target_item_id": "item_deadline",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_001",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"budget\" most nearly mean?",
+    "options": {
+      "A": "shipment",
+      "B": "conference",
+      "C": "a plan for spending money",
+      "D": "invoice"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"budget\" 在 TOEIC 商務情境中通常指「a plan for spending money」。",
+    "target_item_id": "item_budget",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 1,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_002",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warranty",
+      "B": "schedule",
+      "C": "refund",
+      "D": "warehouse"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_003",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "register",
+      "B": "invoice",
+      "C": "estimate",
+      "D": "maintain"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_004",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in spite of",
+      "B": "as opposed to",
+      "C": "in charge",
+      "D": "on behalf of"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_005",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "possible",
+      "B": "formal",
+      "C": "real or exact",
+      "D": "current"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_006",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "current",
+      "B": "approved",
+      "C": "venue",
+      "D": "shipped"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_007",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "schedule",
+      "B": "discount",
+      "C": "receipt",
+      "D": "salary"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_008",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "make",
+      "B": "do",
+      "C": "take",
+      "D": "meet"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_009",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"conference\" most nearly mean?",
+    "options": {
+      "A": "schedule",
+      "B": "budget",
+      "C": "a formal meeting for discussion",
+      "D": "warranty"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"conference\" 在 TOEIC 商務情境中通常指「a formal meeting for discussion」。",
+    "target_item_id": "item_conference",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_010",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warranty",
+      "B": "schedule",
+      "C": "refund",
+      "D": "warehouse"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_011",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "register",
+      "B": "invoice",
+      "C": "estimate",
+      "D": "maintain"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_012",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in spite of",
+      "B": "as opposed to",
+      "C": "in charge",
+      "D": "on behalf of"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_013",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "false_friend",
+    "skill": "false_friend",
+    "subskill": "false_friend",
+    "grammar_link_id": null,
+    "question_text": "In TOEIC English, \"actual\" usually means ______.",
+    "options": {
+      "A": "possible",
+      "B": "formal",
+      "C": "real or exact",
+      "D": "current"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"actual\" 容易受中文直覺誤導，正確意思是「real or exact」。",
+    "target_item_id": "item_actual",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "FALSE_FRIEND",
+    "tags": [
+      "false_friend",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_014",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "part5_sentence_completion",
+    "skill": "part5_sentence_completion",
+    "subskill": "part5_sentence_completion",
+    "grammar_link_id": null,
+    "question_text": "The report was ____ by the finance director.",
+    "options": {
+      "A": "current",
+      "B": "approved",
+      "C": "venue",
+      "D": "shipped"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"approved\"。",
+    "target_item_id": "item_approved",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 20,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_015",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "part6_context_choice",
+    "skill": "part6_context_choice",
+    "subskill": "part6_context_choice",
+    "grammar_link_id": null,
+    "question_text": "Memo: The training room will be closed on Friday. Please check the revised ______ before booking a seat.",
+    "options": {
+      "A": "schedule",
+      "B": "discount",
+      "C": "receipt",
+      "D": "salary"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "前文講 training room 關閉，後文 booking a seat，應檢查 revised schedule。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 45,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part6",
+      "context",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_016",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "speed_drill",
+    "skill": "speed_drill",
+    "subskill": "speed_drill",
+    "grammar_link_id": null,
+    "question_text": "The sales team failed to ____ the quarterly target.",
+    "options": {
+      "A": "make",
+      "B": "do",
+      "C": "take",
+      "D": "meet"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "限時反射題：此句最自然答案是 \"meet\"。",
+    "target_item_id": "item_meet",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 8,
+    "default_error_code": "TIME_PRESSURE",
+    "tags": [
+      "toeic_part5",
+      "speed",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_017",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "meaning_choice",
+    "skill": "meaning_choice",
+    "subskill": "meaning_choice",
+    "grammar_link_id": null,
+    "question_text": "In a TOEIC business context, what does \"venue\" most nearly mean?",
+    "options": {
+      "A": "survey",
+      "B": "invoice",
+      "C": "a place where an event is held",
+      "D": "refund"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "\"venue\" 在 TOEIC 商務情境中通常指「a place where an event is held」。",
+    "target_item_id": "item_venue",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 10,
+    "default_error_code": "VOCAB_UNKNOWN",
+    "tags": [
+      "toeic_part5",
+      "diagnostic",
+      "meaning"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_018",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "scene_vocabulary",
+    "skill": "scene_vocabulary",
+    "subskill": "scene_vocabulary",
+    "grammar_link_id": null,
+    "question_text": "The office manager updated the ______ for next week's staff meeting.",
+    "options": {
+      "A": "warranty",
+      "B": "schedule",
+      "C": "refund",
+      "D": "warehouse"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "會議時間表要用 schedule；其他選項不符合 staff meeting 情境。",
+    "target_item_id": "item_schedule",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_scene",
+      "office",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_019",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "collocation",
+    "skill": "collocation",
+    "subskill": "collocation",
+    "grammar_link_id": null,
+    "question_text": "All visitors must ____ at the reception desk.",
+    "options": {
+      "A": "register",
+      "B": "invoice",
+      "C": "estimate",
+      "D": "maintain"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "固定搭配是 \"register\"，句中語意需要這個動詞。",
+    "target_item_id": "item_register",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 15,
+    "default_error_code": "SCENE_VOCAB_GAP",
+    "tags": [
+      "toeic_part5",
+      "collocation",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_q_020",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "formal_phrase",
+    "skill": "formal_phrase",
+    "subskill": "formal_phrase",
+    "grammar_link_id": null,
+    "question_text": "I am writing ____ Ms. Chen from the accounting team.",
+    "options": {
+      "A": "in spite of",
+      "B": "as opposed to",
+      "C": "in charge",
+      "D": "on behalf of"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "正式商務句中應使用 \"on behalf of\"。",
+    "target_item_id": "item_on_behalf_of",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 3,
+    "estimated_time_seconds": 20,
+    "default_error_code": "FORMAL_PHRASE",
+    "tags": [
+      "formal_phrase",
+      "business_email",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_rv_021",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"conference\".",
+    "options": {
+      "A": "schedule",
+      "B": "budget",
+      "C": "a formal meeting for discussion",
+      "D": "warranty"
+    },
+    "correct_answer": "C",
+    "explanation_zh": "複習題：conference = a formal meeting for discussion。",
+    "target_item_id": "item_conference",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_rv_022",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"reservation\".",
+    "options": {
+      "A": "memo",
+      "B": "an arrangement to keep a room or seat",
+      "C": "estimate",
+      "D": "receipt"
+    },
+    "correct_answer": "B",
+    "explanation_zh": "複習題：reservation = an arrangement to keep a room or seat。",
+    "target_item_id": "item_reservation",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_rv_023",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"deadline\".",
+    "options": {
+      "A": "the latest time something must be finished",
+      "B": "venue",
+      "C": "shipment",
+      "D": "discount"
+    },
+    "correct_answer": "A",
+    "explanation_zh": "複習題：deadline = the latest time something must be finished。",
+    "target_item_id": "item_deadline",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  },
+  {
+    "question_id": "v0_10_rv_024",
+    "lesson_id": "V0-10",
+    "stage": "V0",
+    "type": "review_question",
+    "skill": "review_question",
+    "subskill": "review_question",
+    "grammar_link_id": null,
+    "question_text": "Quick review: choose the best TOEIC meaning for \"warranty\".",
+    "options": {
+      "A": "agenda",
+      "B": "refund",
+      "C": "policy",
+      "D": "a written promise to repair or replace a product"
+    },
+    "correct_answer": "D",
+    "explanation_zh": "複習題：warranty = a written promise to repair or replace a product。",
+    "target_item_id": "item_warranty",
+    "distractor_type": "toeic_realistic",
+    "difficulty": 2,
+    "estimated_time_seconds": 12,
+    "default_error_code": "VOCAB_WEAK_RECALL",
+    "tags": [
+      "review",
+      "diagnostic"
+    ]
+  }
+]

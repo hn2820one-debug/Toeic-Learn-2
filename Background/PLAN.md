@@ -9,14 +9,12 @@
 ## Implemented Scope
 - Recalibrated the app around the 570 baseline and 750 target.
 - Added a 6-week weakness-hunter roadmap with component targets for Grammar, Phrase, Listening, and Reading.
-- Built the missing 7-day Part of Speech Booster so Week 3 can be studied normally:
-  - Day 1: noun vs verb
-  - Day 2: adjective vs adverb
-  - Day 3: noun phrases and modifier position
-  - Day 4: mixed PoS judgment
-  - Day 5: word-family collocations
-  - Day 6: review and false friends
-  - Day 7: weekly test with Mandative and multiplier monitoring
+- Built the 14-day Part of Speech Booster so the Week 2 gap can be handled before Gerunds:
+  - Day 1-4: noun / verb / adjective / adverb suffix and position rules
+  - Day 5-8: mixed word-form positioning, False Friends, collocations, and intensive word-family drills
+  - Day 9-10: phrase-focused noun/verb and adjective/adverb collocations
+  - Day 11-12: text-script listening integration for word-form recognition
+  - Day 13-14: full review and final weekly test with Mandative and multiplier monitoring
 - Fixed core runtime issues:
   - Small quizzes no longer fail answer-distribution validation.
   - Answered questions lock immediately.

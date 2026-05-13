@@ -1,0 +1,1512 @@
+{
+  "lesson_id": "pos-d14",
+  "module_id": "pos-booster",
+  "week": 4,
+  "day": 14,
+  "lesson_type": "test",
+  "target_component": "grammar",
+  "title": "詞性打底最終週測",
+  "type": "quiz",
+  "quiz_type": "weekly",
+  "time_limit_seconds": 15,
+  "focus_tags": [
+    "weekly-test",
+    "part-of-speech",
+    "false-friends",
+    "mandative-monitor",
+    "multiplier-monitor"
+  ],
+  "weakness_tags": [
+    "part-of-speech-test",
+    "false-friends",
+    "mandative-trigger-verb",
+    "multiplier-comparison"
+  ],
+  "concept": {
+    "debug_rule": "正式限時：先位置，後語尾，再語意；監控題獨立計算，不混入詞性掌握度。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "noun",
+        "title": "測驗範圍",
+        "html": "詞性 × 10 + False Friends × 2 + Mandative × 4 + 倍數比較 × 4"
+      },
+      {
+        "type": "warning",
+        "tone": "warn",
+        "title": "測驗模式",
+        "html": "每題 15 秒，提示只保留通用解題方向。"
+      },
+      {
+        "type": "step",
+        "tone": "verb",
+        "title": "交卷後",
+        "html": "報告會分開顯示主題題正確率與監控題正確率。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "pos-d14-q1",
+      "type": "main",
+      "scene": "Final Test / Training",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "After the additional modules were added, the training program became quite {BLANK}.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "comprehension",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "comprehensively",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "comprehensive",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "comprehend",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "became",
+        "signal_pos": "linking verb",
+        "description": "became 後需要形容詞補語。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：became 後需要形容詞補語。",
+          "highlight_word": "became",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：comprehensive 是形容詞，符合空格需要。",
+          "highlight_word": "comprehensive",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "comprehensive",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "看到 quite 後選副詞 comprehensively，忽略 became。",
+      "wrong_thought_steps": [
+        "看到 quite 後選副詞 comprehensively，忽略 became。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "連綴動詞後用形容詞補語。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q2",
+      "type": "main",
+      "scene": "Final Test / Executive",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "The CEO gave her {BLANK} to proceed with the acquisition before the deadline.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "approval",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "approve",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "approved",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "approvingly",
+          "pos": "adv",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "her",
+        "signal_pos": "possessive determiner",
+        "description": "her 後需要名詞作 gave 的受詞。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：her 後需要名詞作 gave 的受詞。",
+          "highlight_word": "her",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：approval 是名詞，符合空格需要。",
+          "highlight_word": "approval",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "approval",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "看到 proceed with 以為要動詞 approve，忽略 her。",
+      "wrong_thought_steps": [
+        "看到 proceed with 以為要動詞 approve，忽略 her。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "give approval = 批准。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q3",
+      "type": "main",
+      "scene": "Final Test / Fund",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "adv-adj-degree",
+      "stem": "The fund's performance this year was considered highly {BLANK} by analysts.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "favor",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "favorably",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "favoring",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "favorable",
+          "pos": "adj",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "highly",
+        "signal_pos": "degree adverb",
+        "description": "highly 修飾形容詞 favorable。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：highly 修飾形容詞 favorable。",
+          "highlight_word": "highly",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：favorable 是形容詞，符合空格需要。",
+          "highlight_word": "favorable",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "favorable",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "見到 highly 就誤選 -ly 副詞 favorably。",
+      "wrong_thought_steps": [
+        "見到 highly 就誤選 -ly 副詞 favorably。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "highly favorable = 十分有利。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q4",
+      "type": "main",
+      "scene": "Final Test / Logistics",
+      "eye_distance": "near",
+      "target_pos": "adv",
+      "weakness_tag": "adv-verb",
+      "stem": "The logistics team responded {BLANK} to the customer's urgent delivery request.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "prompt",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "promptly",
+          "pos": "adv",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "promptness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "prompting",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "responded",
+        "signal_pos": "verb",
+        "description": "空格修飾 responded，需要副詞。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 responded，需要副詞。",
+          "highlight_word": "responded",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：promptly 是副詞，符合空格需要。",
+          "highlight_word": "promptly",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "promptly",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "只靠 prompt 語意，忘記修飾動詞要副詞。",
+      "wrong_thought_steps": [
+        "只靠 prompt 語意，忘記修飾動詞要副詞。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "respond promptly = 迅速回應。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q5",
+      "type": "main",
+      "scene": "Final Test / Energy",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "prep-noun",
+      "stem": "The company invested heavily in the {BLANK} of solar energy infrastructure.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "utilize",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "utilization",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "utilized",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "utilitarian",
+          "pos": "adj",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "in the",
+        "signal_pos": "preposition + determiner",
+        "description": "in the + 空格 + of，需要名詞。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：in the + 空格 + of，需要名詞。",
+          "highlight_word": "in the",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：utilization 是名詞，符合空格需要。",
+          "highlight_word": "utilization",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "utilization",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "看到 energy infrastructure 被使用而選動詞 utilize。",
+      "wrong_thought_steps": [
+        "看到 energy infrastructure 被使用而選動詞 utilize。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "the utilization of = ...的使用。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q6",
+      "type": "main",
+      "scene": "Final Test / Warehouse",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "noun-noun-compound",
+      "stem": "The new {BLANK} management system reduced stockout incidents by 40 percent.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "inventoried",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "inventive",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "invent",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "inventory",
+          "pos": "noun",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "management system",
+        "signal_pos": "compound noun",
+        "description": "inventory management system 是複合名詞。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：inventory management system 是複合名詞。",
+          "highlight_word": "management system",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：inventory 是名詞，符合空格需要。",
+          "highlight_word": "inventory",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "inventory",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "誤以為名詞前一定用形容詞，選 inventive。",
+      "wrong_thought_steps": [
+        "誤以為名詞前一定用形容詞，選 inventive。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "inventory management = 庫存管理。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q7",
+      "type": "main",
+      "scene": "Final Test / Strategy",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "collocation-noun-verb",
+      "stem": "After lengthy discussions, the team finally reached a {BLANK} on the marketing strategy.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "conclude",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "conclusive",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "conclusively",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "conclusion",
+          "pos": "noun",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "reached a",
+        "signal_pos": "collocation",
+        "description": "reach a conclusion 是固定搭配。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：reach a conclusion 是固定搭配。",
+          "highlight_word": "reached a",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：conclusion 是名詞，符合空格需要。",
+          "highlight_word": "conclusion",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "conclusion",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "看到 team finally 後選 conclude，忽略 reached a。",
+      "wrong_thought_steps": [
+        "看到 team finally 後選 conclude，忽略 reached a。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "reach a conclusion = 得出結論。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q8",
+      "type": "main",
+      "scene": "Final Test / Purchasing",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "economic-economical",
+      "stem": "The purchasing team proposed several {BLANK} measures to reduce operating costs.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "economy",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "economic",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "economical",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "economize",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "measures",
+        "signal_pos": "noun",
+        "description": "空格修飾 measures，需要形容詞；語意是節省成本。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 measures，需要形容詞；語意是節省成本。",
+          "highlight_word": "measures",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：economical 是形容詞，符合空格需要。",
+          "highlight_word": "economical",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "economical",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "兩者都可作形容詞，但語意不同。",
+      "wrong_thought_steps": [
+        "兩者都可作形容詞，但語意不同。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "economical = 節儉的；economic = 經濟的。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q9",
+      "type": "main",
+      "scene": "Final Test / Registration",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "A registration {BLANK} will be emailed after payment is completed.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "confirmation",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "confirm",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "confirmed",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "confirming",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "A registration",
+        "signal_pos": "determiner + noun modifier",
+        "description": "A registration 後需要名詞核心。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：A registration 後需要名詞核心。",
+          "highlight_word": "A registration",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：confirmation 是名詞，符合空格需要。",
+          "highlight_word": "confirmation",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "confirmation",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "看到 will be emailed 後誤以為空格要動詞。",
+      "wrong_thought_steps": [
+        "看到 will be emailed 後誤以為空格要動詞。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "registration confirmation = 報名確認。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q10",
+      "type": "main",
+      "scene": "Final Test / IT",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "The new dashboard can {BLANK} unusual spending patterns automatically.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "identification",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "identifiable",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "identify",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "identifiably",
+          "pos": "adv",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "can",
+        "signal_pos": "modal",
+        "description": "can 後需要動詞原形。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：can 後需要動詞原形。",
+          "highlight_word": "can",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：identify 是動詞，符合空格需要。",
+          "highlight_word": "identify",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "identify",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "被 identification 名詞吸引，忽略 can。",
+      "wrong_thought_steps": [
+        "被 identification 名詞吸引，忽略 can。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "can identify patterns = 可識別模式。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q11",
+      "type": "main",
+      "scene": "Final Test / HR",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "personal-personnel",
+      "stem": "Updated {BLANK} files must be stored in a secure database.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "personal",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "personnel",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "personally",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "personalize",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "files",
+        "signal_pos": "compound noun",
+        "description": "personnel files 是人事檔案。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：personnel files 是人事檔案。",
+          "highlight_word": "files",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：personnel 是名詞，符合空格需要。",
+          "highlight_word": "personnel",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "personnel",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "personal files 會變成私人檔案，語意不符。",
+      "wrong_thought_steps": [
+        "personal files 會變成私人檔案，語意不符。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "personnel = 人事/員工；personal = 個人的。"
+      }
+    },
+    {
+      "q_id": "pos-d14-q12",
+      "type": "main",
+      "scene": "Final Test / Quality",
+      "eye_distance": "near",
+      "target_pos": "adv",
+      "weakness_tag": "part-of-speech-test",
+      "stem": "The quality team inspected the returned products {BLANK}.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "thorough",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "thoroughness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "thoroughfare",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "thoroughly",
+          "pos": "adv",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "inspected",
+        "signal_pos": "verb",
+        "description": "空格修飾 inspected，需要副詞。"
+      },
+      "hint": "正式測驗：先看位置，再看語尾。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 inspected，需要副詞。",
+          "highlight_word": "inspected",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：thoroughly 是副詞，符合空格需要。",
+          "highlight_word": "thoroughly",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "thoroughly",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "看到 products 是名詞就選 thorough。",
+      "wrong_thought_steps": [
+        "看到 products 是名詞就選 thorough。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "inspect thoroughly = 徹底檢查。"
+      }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "pos-d14-monitor-1",
+      "type": "monitor",
+      "scene": "[監控] Mandative Subjunctive",
+      "eye_distance": "far",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-verb",
+      "stem": "The manager recommended that the team {BLANK} the revised report by Friday.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "submits",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "submit",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "submitted",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "submitting",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "recommended that",
+        "signal_pos": "mandative trigger",
+        "description": "recommend that + S + V 原形，不能用三單或過去式。"
+      },
+      "hint": "recommend that + S + V 原形，不能用三單或過去式。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：recommend that + S + V 原形，不能用三單或過去式。",
+          "highlight_word": "recommended that",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：submit 是動詞，符合空格需要。",
+          "highlight_word": "submit",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "submit",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "Mandative trigger + that + S + base verb."
+      }
+    },
+    {
+      "q_id": "pos-d14-monitor-2",
+      "type": "monitor",
+      "scene": "[監控] Multiplier Comparison",
+      "eye_distance": "middle",
+      "target_pos": "adv",
+      "weakness_tag": "multiplier-comparison",
+      "stem": "The new scanner processes invoices twice as {BLANK} as the previous model.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "quickly",
+          "pos": "adv",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "quick",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "quickness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "quicken",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "processes",
+        "signal_pos": "verb",
+        "description": "as ___ as 中空格修飾動詞 processes，要用副詞。"
+      },
+      "hint": "as ___ as 中空格修飾動詞 processes，要用副詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：as ___ as 中空格修飾動詞 processes，要用副詞。",
+          "highlight_word": "processes",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：quickly 是副詞，符合空格需要。",
+          "highlight_word": "quickly",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "quickly",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "倍數 + as + adj/adv + as；修飾動詞時用副詞。"
+      }
+    },
+    {
+      "q_id": "pos-d14-monitor-3",
+      "type": "monitor",
+      "scene": "[監控] Mandative Adjective",
+      "eye_distance": "far",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-adj",
+      "stem": "It is essential that all visitors {BLANK} identification badges inside the facility.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "wears",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "wore",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "wear",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "wearing",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "essential that",
+        "signal_pos": "mandative adjective",
+        "description": "essential that + S + V 原形，all visitors 不改變公式。"
+      },
+      "hint": "essential that + S + V 原形，all visitors 不改變公式。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：essential that + S + V 原形，all visitors 不改變公式。",
+          "highlight_word": "essential that",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：wear 是動詞，符合空格需要。",
+          "highlight_word": "wear",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "wear",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "essential / mandatory / necessary that + S + base verb."
+      }
+    },
+    {
+      "q_id": "pos-d14-monitor-4",
+      "type": "monitor",
+      "scene": "[監控] Multiplier Comparison",
+      "eye_distance": "middle",
+      "target_pos": "adj",
+      "weakness_tag": "multiplier-comparison",
+      "stem": "The renovated storage area is three times as {BLANK} as the old room.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "largely",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "largeness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "enlarge",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "large",
+          "pos": "adj",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "is",
+        "signal_pos": "linking verb",
+        "description": "as ___ as 補充 storage area 的狀態，be 動詞後用形容詞。"
+      },
+      "hint": "as ___ as 補充 storage area 的狀態，be 動詞後用形容詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：as ___ as 補充 storage area 的狀態，be 動詞後用形容詞。",
+          "highlight_word": "is",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：large 是形容詞，符合空格需要。",
+          "highlight_word": "large",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "large",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "倍數比較中，be 動詞後比較狀態或大小時用形容詞。"
+      }
+    },
+    {
+      "q_id": "pos-d14-monitor-5",
+      "type": "monitor",
+      "scene": "[監控] Mandative Subjunctive",
+      "eye_distance": "far",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-verb",
+      "stem": "The director insisted that all contractors {BLANK} safety certificates before site entry.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "present",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "presents",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "presented",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "presenting",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "insisted that",
+        "signal_pos": "mandative trigger",
+        "description": "insist that + S + V 原形。"
+      },
+      "hint": "insist that + S + V 原形。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：insist that + S + V 原形。",
+          "highlight_word": "insisted that",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：present 是動詞，符合空格需要。",
+          "highlight_word": "present",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "present",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "Mandative trigger + that + S + base verb."
+      }
+    },
+    {
+      "q_id": "pos-d14-monitor-6",
+      "type": "monitor",
+      "scene": "[監控] Multiplier Comparison",
+      "eye_distance": "middle",
+      "target_pos": "adj",
+      "weakness_tag": "multiplier-comparison",
+      "stem": "Sales this quarter were three times as {BLANK} as those in the same period last year.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "highly",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "high",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "height",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "heighten",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "were",
+        "signal_pos": "linking verb",
+        "description": "as ___ as 比較 sales 高低，be 動詞後用形容詞。"
+      },
+      "hint": "as ___ as 比較 sales 高低，be 動詞後用形容詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：as ___ as 比較 sales 高低，be 動詞後用形容詞。",
+          "highlight_word": "were",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：high 是形容詞，符合空格需要。",
+          "highlight_word": "high",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "high",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "three times as + adjective + as."
+      }
+    },
+    {
+      "q_id": "pos-d14-monitor-7",
+      "type": "monitor",
+      "scene": "[監控] Mandative Adjective",
+      "eye_distance": "far",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-adj",
+      "stem": "It is necessary that the finance team {BLANK} the figures before publication.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "verifies",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "verified",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "verify",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "verifying",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "necessary that",
+        "signal_pos": "mandative adjective",
+        "description": "necessary that + S + V 原形。"
+      },
+      "hint": "necessary that + S + V 原形。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：necessary that + S + V 原形。",
+          "highlight_word": "necessary that",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：verify 是動詞，符合空格需要。",
+          "highlight_word": "verify",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "verify",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "necessary that + S + base verb."
+      }
+    },
+    {
+      "q_id": "pos-d14-monitor-8",
+      "type": "monitor",
+      "scene": "[監控] Multiplier Comparison",
+      "eye_distance": "middle",
+      "target_pos": "adv",
+      "weakness_tag": "multiplier-comparison",
+      "stem": "The updated system responds twice as {BLANK} as the old platform.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "quickly",
+          "pos": "adv",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "quick",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "quickness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "quicken",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "responds",
+        "signal_pos": "verb",
+        "description": "空格修飾 responds，需要副詞。"
+      },
+      "hint": "空格修飾 responds，需要副詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 responds，需要副詞。",
+          "highlight_word": "responds",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：quickly 是副詞，符合空格需要。",
+          "highlight_word": "quickly",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "quickly",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "twice as + adverb + as when modifying a verb."
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 # gen_full_index.py
-# Generates data/index.json with all 807 lessons (800 main + 7 PoS Booster)
+# Generates data/index.json with all 814 lessons (800 main + 14 PoS Booster)
 import json, zipfile, xml.etree.ElementTree as ET, re, sys, os
 
 sys.stdout.reconfigure(encoding='utf-8')
@@ -48,15 +48,32 @@ FILES = {
     'wh-w1-d1': './weakness-hunter/wh-w1-d1.json',
     'wh-w1-d2': './weakness-hunter/wh-w1-d2.json',
     'wh-w1-d3': './weakness-hunter/wh-w1-d3.json',
-    **{f'pos-d{i}': f'./pos-booster/pos-d{i}.json' for i in range(1, 8)}
+    **{f'pos-d{i}': f'./pos-booster/pos-d{i}.json' for i in range(1, 15)}
+}
+
+POS_PLAN = {
+    1:  ('grammar',   'grammar',   'slow',      25),
+    2:  ('grammar',   'grammar',   'slow',      25),
+    3:  ('grammar',   'grammar',   'slow',      25),
+    4:  ('grammar',   'grammar',   'slow',      25),
+    5:  ('grammar',   'grammar',   'standard',  20),
+    6:  ('grammar',   'grammar',   'standard',  20),
+    7:  ('grammar',   'grammar',   'standard',  20),
+    8:  ('grammar',   'grammar',   'intensive', 15),
+    9:  ('phrase',    'phrase',    'standard',  20),
+    10: ('phrase',    'phrase',    'standard',  20),
+    11: ('listening', 'listening', 'standard',  20),
+    12: ('listening', 'listening', 'standard',  20),
+    13: ('review',    'grammar',   'standard',  20),
+    14: ('test',      'grammar',   'weekly',    15),
 }
 
 # Parse source spreadsheets
 m_rows = parse_sheet(f'{BDIR}/TOEIC_570_to_750_V2_REVISED.xlsx', 'sheet2')
-p_rows = parse_sheet(f'{BDIR}/TOEIC_PoS_Booster_7_14Days.xlsx', 'sheet2')
+p_rows = parse_sheet(f'{BDIR}/TOEIC_PoS_Booster_7_14Days.xlsx', 'sheet3')
 
 all800 = m_rows[1:]      # 800 lessons (skip header at index 0)
-pos7   = p_rows[2:9]     # 7 lessons  (skip 2 header rows)
+pos14  = p_rows[2:16]    # 14 lessons (skip 2 header rows)
 
 def mkl(lid, mid, wk, day, seq, cat_raw, topic, sub, act):
     lt  = CAT.get(cat_raw, 'grammar')
@@ -83,6 +100,23 @@ def mkl(lid, mid, wk, day, seq, cat_raw, topic, sub, act):
         'file':               FILES.get(lid)
     }
 
+def mkl_pos(lid, pday, seq, topic, sub):
+    lt, tc, qt, tl = POS_PLAN[pday]
+    return {
+        'lesson_id':          lid,
+        'module_id':          'pos-booster',
+        'week':               3 if pday <= 7 else 4,
+        'day':                pday,
+        'sequence':           seq,
+        'lesson_type':        lt,
+        'target_component':   tc,
+        'title':              clean(topic) or f'PoS Booster Day {pday}',
+        'description':        (sub or '').strip(),
+        'quiz_type':          qt,
+        'time_limit_seconds': tl,
+        'file':               FILES.get(lid)
+    }
+
 lessons = []
 seq = 1
 pos_inserted = False   # insert PoS Booster after W2
@@ -102,14 +136,12 @@ for row in all800:
 
     # Insert PoS Booster between W2 and W3 (once)
     if not pos_inserted and wk == 3 and mid == 'weakness-hunter':
-        for i, prow in enumerate(pos7):
+        for i, prow in enumerate(pos14):
             pday  = i + 1
-            pcat  = prow[2] if len(prow) > 2 else 'Grammar'
             ptop  = prow[3] if len(prow) > 3 else ''
             psub  = prow[4] if len(prow) > 4 else ''
-            pact  = prow[6] if len(prow) > 6 else ''
             plid  = f'pos-d{pday}'
-            lessons.append(mkl(plid, 'pos-booster', 3, pday, seq, pcat, ptop, psub, pact))
+            lessons.append(mkl_pos(plid, pday, seq, ptop, psub))
             seq += 1
         pos_inserted = True
 
@@ -242,10 +274,11 @@ index_data = {
         {
             "module_id":         "pos-booster",
             "title":             "詞性打底 Part of Speech Booster",
-            "description":       "插入 W2 結束後的 7 天精簡模組，讓詞性辨識成為秒辨反射，解鎖 Part 5 最高頻題型。",
-            "total_days":        7,
+            "description":       "14 天完整版，涵蓋名詞/動詞/形容詞/副詞語尾、位置法、False Friends、Collocations、Listening 整合與最終週測，讓詞性辨識成為秒辨反射。",
+            "total_days":        14,
             "target_accuracy":   85,
-            "insert_after_week": 2
+            "insert_after_week": 2,
+            "days":              [f"pos-d{i}" for i in range(1, 15)]
         },
         {
             "module_id":          "stage2",

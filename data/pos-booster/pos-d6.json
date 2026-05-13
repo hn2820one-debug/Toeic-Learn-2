@@ -3,29 +3,42 @@
   "module_id": "pos-booster",
   "week": 3,
   "day": 6,
-  "sequence": 36,
-  "title": "PoS Booster 錯題整合複習",
-  "type": "concept+quiz",
-  "lesson_type": "review",
+  "lesson_type": "grammar",
   "target_component": "grammar",
+  "title": "False Friends 專攻 — 15 組必考陷阱",
+  "type": "concept+quiz",
   "quiz_type": "standard",
   "time_limit_seconds": 20,
-  "focus_tags": ["part-of-speech", "false-friends", "review"],
-  "weakness_tags": ["word-family-choice", "false-friends", "adv-verb", "linking-verb"],
+  "focus_tags": [
+    "part-of-speech",
+    "false-friends",
+    "word-family"
+  ],
+  "weakness_tags": [
+    "false-friends",
+    "word-family-choice",
+    "mandative-trigger-verb"
+  ],
   "concept": {
-    "debug_rule": "Review 只做三件事：看位置、排詞性、確認同根字陷阱。",
+    "debug_rule": "False Friends 先記詞性和核心意思，再放回空格位置；唔好因為字形相似就當同一個字。",
     "cards": [
       {
+        "type": "comparison",
+        "tone": "error",
+        "title": "高頻 False Friends",
+        "html": "facilitate/facility；economic/economical；fiscal/physical；personnel/personal；advice/advise"
+      },
+      {
         "type": "formula",
-        "tone": "neutral",
-        "title": "三步複習流程",
-        "html": "1. 空格位置 2. 前後修飾關係 3. 同根詞四格：名詞 / 動詞 / 形容詞 / 副詞。"
+        "tone": "noun",
+        "title": "處理順序",
+        "html": "先定詞性 -> 再分意思 -> 最後代入搭配"
       },
       {
         "type": "warning",
         "tone": "warn",
-        "title": "False Friends",
-        "html": "facilitate ≠ facility；economic ≠ economical；notify ≠ notice；fiscal ≠ physical。"
+        "title": "常見錯誤",
+        "html": "同根或相似拼法唔代表同詞性，TOEIC 經常用呢點做陷阱。"
       }
     ]
   },
@@ -33,141 +46,1026 @@
     {
       "q_id": "pos-d6-q1",
       "type": "main",
-      "scene": "Facilities / Maintenance",
-      "eye_distance": "middle",
+      "scene": "Corporate / Facilities",
+      "eye_distance": "near",
       "target_pos": "noun",
-      "weakness_tag": "false-friends",
+      "weakness_tag": "facilitate-facility",
       "stem": "The new storage {BLANK} will be available to all departments next month.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "facilitate", "pos": "verb", "is_correct": false },
-        { "label": "B", "text": "facility", "pos": "noun", "is_correct": true },
-        { "label": "C", "text": "facilitated", "pos": "verb", "is_correct": false },
-        { "label": "D", "text": "facilitating", "pos": "verb", "is_correct": false }
+        {
+          "label": "A",
+          "text": "facilitate",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "facilitated",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "facilitating",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "facility",
+          "pos": "noun",
+          "is_correct": true
+        }
       ],
-      "answer": "B",
-      "hint": "new storage + ______ 作主詞核心",
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "storage",
+        "signal_pos": "noun modifier",
+        "description": "storage + 空格作主詞核心，需要名詞。"
+      },
+      "hint": "storage + 空格作主詞核心，需要名詞。",
       "solution_steps": [
-        { "step": 1, "text": "new storage 修飾後方名詞。" },
-        { "step": 2, "text": "facility 是名詞；facilitate 是動詞。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：storage + 空格作主詞核心，需要名詞。",
+          "highlight_word": "storage",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：facility 是名詞，符合空格需要。",
+          "highlight_word": "facility",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "facility",
+          "highlight_pos": "noun"
+        }
       ],
-      "wrong_thought_steps": ["看到熟悉的 facilitate 就直接選，沒有看位置。"],
-      "rule_box": { "type": "warn", "text": "facility = 設施；facilitate = 促進。" }
+      "error_trap": "facilitate / facility 字形相似，只靠熟悉度誤選動詞。",
+      "wrong_thought_steps": [
+        "facilitate / facility 字形相似，只靠熟悉度誤選動詞。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "facility 是設施；facilitate 是動詞。"
+      }
     },
     {
       "q_id": "pos-d6-q2",
       "type": "main",
-      "scene": "Finance / Planning",
+      "scene": "City Government / Report",
       "eye_distance": "near",
-      "target_pos": "adv",
-      "weakness_tag": "adv-verb",
-      "stem": "The finance team reviewed the quarterly figures {BLANK} before the presentation.",
+      "target_pos": "adj",
+      "weakness_tag": "economic-economical",
+      "stem": "The city issued an {BLANK} report on small-business hiring trends.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "careful", "pos": "adj", "is_correct": false },
-        { "label": "B", "text": "care", "pos": "noun", "is_correct": false },
-        { "label": "C", "text": "carefully", "pos": "adv", "is_correct": true },
-        { "label": "D", "text": "carefulness", "pos": "noun", "is_correct": false }
+        {
+          "label": "A",
+          "text": "economical",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "economic",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "economically",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "economy",
+          "pos": "noun",
+          "is_correct": false
+        }
       ],
-      "answer": "C",
-      "hint": "修飾 reviewed",
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "report",
+        "signal_pos": "noun",
+        "description": "空格後接 report，需要形容詞；語意是經濟相關。"
+      },
+      "hint": "空格後接 report，需要形容詞；語意是經濟相關。",
       "solution_steps": [
-        { "step": 1, "text": "空格修飾 reviewed 這個動作。" },
-        { "step": 2, "text": "修飾動詞用副詞 carefully。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：空格後接 report，需要形容詞；語意是經濟相關。",
+          "highlight_word": "report",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：economic 是形容詞，符合空格需要。",
+          "highlight_word": "economic",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "economic",
+          "highlight_pos": "adj"
+        }
       ],
-      "wrong_thought_steps": ["看到 figures 名詞，誤判成形容詞 careful。"],
-      "rule_box": { "type": "ok", "text": "修飾動詞時選副詞。" }
+      "error_trap": "見到 economical 也係形容詞就選，忽略意思係節儉而非經濟。",
+      "wrong_thought_steps": [
+        "見到 economical 也係形容詞就選，忽略意思係節儉而非經濟。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "economic = 經濟的；economical = 節儉的。"
+      }
     },
     {
       "q_id": "pos-d6-q3",
       "type": "main",
-      "scene": "Public Policy / Notice",
-      "eye_distance": "far",
-      "target_pos": "adj",
-      "weakness_tag": "false-friends",
-      "stem": "The city issued an {BLANK} report on small-business hiring trends.",
+      "scene": "Hotel / Shuttle",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "notify-notice",
+      "stem": "The hotel will {BLANK} guests of any changes to the shuttle schedule.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "economic", "pos": "adj", "is_correct": true },
-        { "label": "B", "text": "economically", "pos": "adv", "is_correct": false },
-        { "label": "C", "text": "economy", "pos": "noun", "is_correct": false },
-        { "label": "D", "text": "economize", "pos": "verb", "is_correct": false }
+        {
+          "label": "A",
+          "text": "notify",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "notification",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "notice",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "notifiable",
+          "pos": "adj",
+          "is_correct": false
+        }
       ],
       "answer": "A",
-      "hint": "修飾 report",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "will",
+        "signal_pos": "modal",
+        "description": "will 後需要動詞原形，guests 是受詞。"
+      },
+      "hint": "will 後需要動詞原形，guests 是受詞。",
       "solution_steps": [
-        { "step": 1, "text": "空格後面是名詞 report，需要形容詞。" },
-        { "step": 2, "text": "economic report = 經濟報告。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：will 後需要動詞原形，guests 是受詞。",
+          "highlight_word": "will",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：notify 是動詞，符合空格需要。",
+          "highlight_word": "notify",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "notify",
+          "highlight_pos": "verb"
+        }
       ],
-      "wrong_thought_steps": ["把 economy 當成可直接修飾 report 的名詞。"],
-      "rule_box": { "type": "warn", "text": "economic = 經濟的；economical = 節儉的。" }
+      "error_trap": "把 notice 當通知動作，但此處 will 後需要明確動詞 notify。",
+      "wrong_thought_steps": [
+        "把 notice 當通知動作，但此處 will 後需要明確動詞 notify。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "notify guests of changes = 通知客人變更。"
+      }
     },
     {
       "q_id": "pos-d6-q4",
       "type": "main",
-      "scene": "Customer Service / Notice",
-      "eye_distance": "middle",
-      "target_pos": "verb",
-      "weakness_tag": "word-family-choice",
-      "stem": "The hotel will {BLANK} guests of any changes to the shuttle schedule.",
+      "scene": "Finance / Policy",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "fiscal-physical",
+      "stem": "The board reviewed the company's {BLANK} policy before approving the expansion.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "notification", "pos": "noun", "is_correct": false },
-        { "label": "B", "text": "notice", "pos": "noun", "is_correct": false },
-        { "label": "C", "text": "notify", "pos": "verb", "is_correct": true },
-        { "label": "D", "text": "notifiable", "pos": "adj", "is_correct": false }
+        {
+          "label": "A",
+          "text": "physical",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "finance",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "fiscal",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "fiscally",
+          "pos": "adv",
+          "is_correct": false
+        }
       ],
       "answer": "C",
-      "hint": "will + ______",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "policy",
+        "signal_pos": "noun",
+        "description": "空格修飾 policy，需要形容詞；語意是財政政策。"
+      },
+      "hint": "空格修飾 policy，需要形容詞；語意是財政政策。",
       "solution_steps": [
-        { "step": 1, "text": "助動詞 will 後面接動詞原形。" },
-        { "step": 2, "text": "notify guests of changes 是正確搭配。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 policy，需要形容詞；語意是財政政策。",
+          "highlight_word": "policy",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：fiscal 是形容詞，符合空格需要。",
+          "highlight_word": "fiscal",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "fiscal",
+          "highlight_pos": "adj"
+        }
       ],
-      "wrong_thought_steps": ["notice 可作名詞/動詞，但 notify someone of something 才符合句型。"],
-      "rule_box": { "type": "ok", "text": "notify A of B = 通知 A 關於 B。" }
+      "error_trap": "fiscal / physical 音近形近，未看語意就選錯。",
+      "wrong_thought_steps": [
+        "fiscal / physical 音近形近，未看語意就選錯。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "fiscal = 財政的；physical = 身體或實體的。"
+      }
     },
     {
       "q_id": "pos-d6-q5",
       "type": "main",
-      "scene": "Operations / Process",
+      "scene": "Market Research / Data",
       "eye_distance": "near",
       "target_pos": "adj",
-      "weakness_tag": "linking-verb",
-      "stem": "The revised procedure became more {BLANK} after the team removed unnecessary steps.",
+      "weakness_tag": "demographic-democratic",
+      "stem": "The campaign was adjusted after the team reviewed {BLANK} data from online surveys.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "efficiency", "pos": "noun", "is_correct": false },
-        { "label": "B", "text": "efficient", "pos": "adj", "is_correct": true },
-        { "label": "C", "text": "efficiently", "pos": "adv", "is_correct": false },
-        { "label": "D", "text": "efficiencies", "pos": "noun", "is_correct": false }
+        {
+          "label": "A",
+          "text": "democratic",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "demography",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "demographic",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "demographically",
+          "pos": "adv",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "data",
+        "signal_pos": "noun",
+        "description": "空格修飾 data，需要形容詞；語意是人口統計。"
+      },
+      "hint": "空格修飾 data，需要形容詞；語意是人口統計。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 data，需要形容詞；語意是人口統計。",
+          "highlight_word": "data",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：demographic 是形容詞，符合空格需要。",
+          "highlight_word": "demographic",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "demographic",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "看到 demo- 開頭就混淆 demographic / democratic。",
+      "wrong_thought_steps": [
+        "看到 demo- 開頭就混淆 demographic / democratic。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "demographic data = 人口統計資料；democratic = 民主的。"
+      }
+    },
+    {
+      "q_id": "pos-d6-q6",
+      "type": "main",
+      "scene": "HR / Records",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "personal-personnel",
+      "stem": "The HR director asked for updated {BLANK} records before the audit.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "personnel",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "personal",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "personally",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "personalize",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "records",
+        "signal_pos": "compound noun",
+        "description": "personnel records 是人事紀錄；空格作名詞修飾名詞。"
+      },
+      "hint": "personnel records 是人事紀錄；空格作名詞修飾名詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：personnel records 是人事紀錄；空格作名詞修飾名詞。",
+          "highlight_word": "records",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：personnel 是名詞，符合空格需要。",
+          "highlight_word": "personnel",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "personnel",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "見到 records 前面可放形容詞，就誤選 personal，意思變成私人紀錄。",
+      "wrong_thought_steps": [
+        "見到 records 前面可放形容詞，就誤選 personal，意思變成私人紀錄。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "personnel = 人員/人事部門；personal = 個人的。"
+      }
+    },
+    {
+      "q_id": "pos-d6-q7",
+      "type": "main",
+      "scene": "Product / Compatibility",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "complement-compliment",
+      "stem": "The new feature will {BLANK} the existing customer-support tools.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "compliment",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "complementary",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "completely",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "complement",
+          "pos": "verb",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "will",
+        "signal_pos": "modal",
+        "description": "will 後接動詞；語意是補足現有工具。"
+      },
+      "hint": "will 後接動詞；語意是補足現有工具。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：will 後接動詞；語意是補足現有工具。",
+          "highlight_word": "will",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：complement 是動詞，符合空格需要。",
+          "highlight_word": "complement",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "complement",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "兩字發音相近，未分意思就選 compliment。",
+      "wrong_thought_steps": [
+        "兩字發音相近，未分意思就選 compliment。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "complement = 補足；compliment = 讚美。"
+      }
+    },
+    {
+      "q_id": "pos-d6-q8",
+      "type": "main",
+      "scene": "Operations / Delay",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "principal-principle",
+      "stem": "The {BLANK} reason for the shipment delay was a customs inspection.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "principle",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "principal",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "principally",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "principalship",
+          "pos": "noun",
+          "is_correct": false
+        }
       ],
       "answer": "B",
-      "hint": "became more + ______",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "reason",
+        "signal_pos": "noun",
+        "description": "空格修飾 reason，需要形容詞，意思是主要的。"
+      },
+      "hint": "空格修飾 reason，需要形容詞，意思是主要的。",
       "solution_steps": [
-        { "step": 1, "text": "became 是連綴動詞，後方接形容詞補語。" },
-        { "step": 2, "text": "more efficient 是正確結構。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 reason，需要形容詞，意思是主要的。",
+          "highlight_word": "reason",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：principal 是形容詞，符合空格需要。",
+          "highlight_word": "principal",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "principal",
+          "highlight_pos": "adj"
+        }
       ],
-      "wrong_thought_steps": ["看到 procedure 是名詞，誤選名詞 efficiency。"],
-      "rule_box": { "type": "ok", "text": "become/seem/remain 後面常接形容詞。" }
+      "error_trap": "拼字相似而選 principle，但 principle 不能修飾 reason。",
+      "wrong_thought_steps": [
+        "拼字相似而選 principle，但 principle 不能修飾 reason。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "principal = 主要的；principle = 原則。"
+      }
+    },
+    {
+      "q_id": "pos-d6-q9",
+      "type": "main",
+      "scene": "Retail / Pricing",
+      "eye_distance": "near",
+      "target_pos": "verb",
+      "weakness_tag": "affect-effect",
+      "stem": "The temporary discount is expected to {BLANK} sales during the holiday period.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "affect",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "effect",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "effective",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "effectively",
+          "pos": "adv",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "to",
+        "signal_pos": "infinitive marker",
+        "description": "to 後接動詞原形；sales 是受詞。"
+      },
+      "hint": "to 後接動詞原形；sales 是受詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：to 後接動詞原形；sales 是受詞。",
+          "highlight_word": "to",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：affect 是動詞，符合空格需要。",
+          "highlight_word": "affect",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "affect",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "affect / effect 音近，未看 to + V 位置就選錯。",
+      "wrong_thought_steps": [
+        "affect / effect 音近，未看 to + V 位置就選錯。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "affect = 影響（動詞）；effect = 效果（名詞）。"
+      }
+    },
+    {
+      "q_id": "pos-d6-q10",
+      "type": "main",
+      "scene": "Consulting / Guidance",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "advice-advise",
+      "stem": "The consultant gave practical {BLANK} on reducing operating costs.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "advise",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "advisable",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "advisedly",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "advice",
+          "pos": "noun",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "gave",
+        "signal_pos": "transitive verb",
+        "description": "gave 後需要受詞名詞；advice 是不可數名詞。"
+      },
+      "hint": "gave 後需要受詞名詞；advice 是不可數名詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：gave 後需要受詞名詞；advice 是不可數名詞。",
+          "highlight_word": "gave",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：advice 是名詞，符合空格需要。",
+          "highlight_word": "advice",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "advice",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "把 advice / advise 拼字差異忽略，選咗動詞 advise。",
+      "wrong_thought_steps": [
+        "把 advice / advise 拼字差異忽略，選咗動詞 advise。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "advice 是名詞；advise 是動詞。"
+      }
+    },
+    {
+      "q_id": "pos-d6-q11",
+      "type": "main",
+      "scene": "IT / Access Control",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "access-excess",
+      "stem": "Employees need secure {BLANK} to the archived customer database.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "excess",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "accessible",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "access",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "accessibly",
+          "pos": "adv",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "secure",
+        "signal_pos": "adjective",
+        "description": "secure 後需要名詞；語意是安全存取權。"
+      },
+      "hint": "secure 後需要名詞；語意是安全存取權。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：secure 後需要名詞；語意是安全存取權。",
+          "highlight_word": "secure",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：access 是名詞，符合空格需要。",
+          "highlight_word": "access",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "access",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "access / excess 音近，未看 to the database 搭配就選錯。",
+      "wrong_thought_steps": [
+        "access / excess 音近，未看 to the database 搭配就選錯。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "access = 進入/存取；excess = 過量。"
+      }
+    },
+    {
+      "q_id": "pos-d6-q12",
+      "type": "main",
+      "scene": "Strategy / Planning",
+      "eye_distance": "near",
+      "target_pos": "noun",
+      "weakness_tag": "extend-extent",
+      "stem": "To some {BLANK}, the delay was caused by late vendor responses.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "extend",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "extent",
+          "pos": "noun",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "extended",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "extensively",
+          "pos": "adv",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "To some",
+        "signal_pos": "fixed phrase",
+        "description": "to some extent 是固定名詞片語。"
+      },
+      "hint": "to some extent 是固定名詞片語。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：to some extent 是固定名詞片語。",
+          "highlight_word": "To some",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：extent 是名詞，符合空格需要。",
+          "highlight_word": "extent",
+          "highlight_pos": "noun"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "extent",
+          "highlight_pos": "noun"
+        }
+      ],
+      "error_trap": "看到 extend 熟悉就選動詞，忽略固定片語。",
+      "wrong_thought_steps": [
+        "看到 extend 熟悉就選動詞，忽略固定片語。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "to some extent = 在某程度上；extent 是名詞。"
+      }
     }
   ],
   "monitor_questions": [
     {
       "q_id": "pos-d6-monitor-1",
       "type": "monitor",
-      "scene": "[監控] multiplier",
-      "eye_distance": "middle",
-      "target_pos": "adv",
-      "weakness_tag": "multiplier-comparison",
-      "stem": "The new system processes invoices twice as {BLANK} as the old one.",
+      "scene": "[監控] Mandative Subjunctive",
+      "eye_distance": "far",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-verb",
+      "stem": "The manager recommended that the team {BLANK} the revised report by Friday.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "quick", "pos": "adj", "is_correct": false },
-        { "label": "B", "text": "quickly", "pos": "adv", "is_correct": true },
-        { "label": "C", "text": "quickness", "pos": "noun", "is_correct": false },
-        { "label": "D", "text": "quicken", "pos": "verb", "is_correct": false }
+        {
+          "label": "A",
+          "text": "submits",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "submitted",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "submit",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "submitting",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "recommended that",
+        "signal_pos": "mandative trigger",
+        "description": "recommend that + S + V 原形，不能用三單或過去式。"
+      },
+      "hint": "recommend that + S + V 原形，不能用三單或過去式。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：recommend that + S + V 原形，不能用三單或過去式。",
+          "highlight_word": "recommended that",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：submit 是動詞，符合空格需要。",
+          "highlight_word": "submit",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "submit",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "Mandative trigger + that + S + base verb."
+      }
+    },
+    {
+      "q_id": "pos-d6-monitor-2",
+      "type": "monitor",
+      "scene": "[監控] Mandative Adjective",
+      "eye_distance": "far",
+      "target_pos": "verb",
+      "weakness_tag": "mandative-trigger-adj",
+      "stem": "It is essential that all visitors {BLANK} identification badges inside the facility.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "wears",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "wear",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "wore",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "wearing",
+          "pos": "verb",
+          "is_correct": false
+        }
       ],
       "answer": "B",
-      "hint": "twice as + adv + as",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "essential that",
+        "signal_pos": "mandative adjective",
+        "description": "essential that + S + V 原形，all visitors 不改變公式。"
+      },
+      "hint": "essential that + S + V 原形，all visitors 不改變公式。",
       "solution_steps": [
-        { "step": 1, "text": "processes 是動詞，空格修飾動作。" },
-        { "step": 2, "text": "twice as quickly as 是正確倍數比較。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：essential that + S + V 原形，all visitors 不改變公式。",
+          "highlight_word": "essential that",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：wear 是動詞，符合空格需要。",
+          "highlight_word": "wear",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "wear",
+          "highlight_pos": "verb"
+        }
       ],
-      "rule_box": { "type": "warn", "text": "倍數 + as + adj/adv + as。" }
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "essential / mandatory / necessary that + S + base verb."
+      }
     }
   ]
 }

@@ -1,225 +1,153 @@
 {
-  "lesson_id": "pos-d2",
+  "lesson_id": "pos-d11",
   "module_id": "pos-booster",
-  "week": 3,
-  "day": 2,
-  "lesson_type": "grammar",
-  "target_component": "grammar",
-  "title": "動詞辨識 Part 1 — 語尾規則",
+  "week": 4,
+  "day": 11,
+  "lesson_type": "listening",
+  "target_component": "listening",
+  "title": "詞性辨音 — Part 3/4 同音異義整合",
   "type": "concept+quiz",
-  "quiz_type": "slow",
-  "time_limit_seconds": 25,
+  "quiz_type": "standard",
+  "time_limit_seconds": 20,
   "focus_tags": [
-    "part-of-speech",
-    "verb",
-    "suffix"
+    "listening",
+    "word-form",
+    "suffix-recognition"
   ],
   "weakness_tags": [
-    "verb-position",
+    "listening-word-form",
+    "noun-suffix",
     "verb-suffix",
     "active-passive"
   ],
   "concept": {
-    "debug_rule": "謂語位、助動詞後、to 後優先找動詞；-ize / -en / -ify / -ate 常見動詞語尾。",
+    "debug_rule": "先用選項語尾預判詞性；聽到 -tion / -ment 立即鎖名詞，聽到 -ify / -ize / -ate 立即鎖動詞。",
     "cards": [
       {
         "type": "formula",
-        "tone": "verb",
-        "title": "動詞語尾",
-        "html": "-ize / -en / -ify / -ate -> <span class=\"blank-word verb\">動詞</span>"
+        "tone": "noun",
+        "title": "聽前預判",
+        "html": "notification / operation / authorization -> 聽到 -tion 先想名詞。"
       },
       {
         "type": "formula",
         "tone": "verb",
-        "title": "動詞位置",
-        "html": "will / can / must / to + <span class=\"blank-word verb\">V 原形</span>"
+        "title": "動詞辨音",
+        "html": "notify / operate / authorize -> 題目若要動作，優先找動詞形。"
       },
       {
         "type": "warning",
         "tone": "warn",
-        "title": "常見錯誤",
-        "html": "authorize 係動詞；authority 先係名詞。長單字唔等於名詞。"
+        "title": "文字腳本模擬",
+        "html": "目前本地 app 未接音檔，先以 Part 3/4 腳本文字訓練詞性預判。"
       }
     ]
   },
   "questions": [
     {
-      "q_id": "pos-d2-q1",
+      "q_id": "pos-d11-q1",
       "type": "main",
-      "scene": "Retail / Billing",
+      "scene": "Part 3 Script / Delivery Notice",
       "eye_distance": "near",
-      "target_pos": "verb",
-      "weakness_tag": "modal-base-verb",
-      "stem": "The new software will {BLANK} invoices automatically at the end of each day.",
+      "target_pos": "noun",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"A shipping {BLANK} will be sent once the order leaves our warehouse.\"",
       "blank_index": 0,
       "options": [
         {
           "label": "A",
-          "text": "processing",
-          "pos": "noun",
+          "text": "notify",
+          "pos": "verb",
           "is_correct": false
         },
         {
           "label": "B",
-          "text": "process",
-          "pos": "verb",
+          "text": "notified",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "notification",
+          "pos": "noun",
           "is_correct": true
         },
         {
-          "label": "C",
-          "text": "procession",
-          "pos": "noun",
-          "is_correct": false
-        },
-        {
           "label": "D",
-          "text": "processed",
-          "pos": "adj",
-          "is_correct": false
-        }
-      ],
-      "answer": "B",
-      "eye_cue": {
-        "type": "position",
-        "signal_word": "will",
-        "signal_pos": "modal",
-        "description": "will 後面要接動詞原形。"
-      },
-      "hint": "will 後面要接動詞原形。",
-      "solution_steps": [
-        {
-          "step": 1,
-          "text": "先看空格位置：will 後面要接動詞原形。",
-          "highlight_word": "will",
-          "highlight_pos": "verb"
-        },
-        {
-          "step": 2,
-          "text": "再看選項詞性：process 是動詞，符合空格需要。",
-          "highlight_word": "process",
-          "highlight_pos": "verb"
-        },
-        {
-          "step": 3,
-          "text": "代入句子後語法完整，鎖定 B。",
-          "highlight_word": "process",
-          "highlight_pos": "verb"
-        }
-      ],
-      "error_trap": "見到 invoices 以為要名詞 process，忘記 will 後必須是動詞。",
-      "wrong_thought_steps": [
-        "見到 invoices 以為要名詞 process，忘記 will 後必須是動詞。",
-        "跳過題眼，直接用語意或熟悉度作答。"
-      ],
-      "rule_box": {
-        "type": "ok",
-        "text": "助動詞 will / can / must 後接 V 原形。"
-      }
-    },
-    {
-      "q_id": "pos-d2-q2",
-      "type": "main",
-      "scene": "Banking / Scheduling",
-      "eye_distance": "near",
-      "target_pos": "verb",
-      "weakness_tag": "verb-suffix",
-      "stem": "Branch managers must {BLANK} the holiday schedule before noon.",
-      "blank_index": 0,
-      "options": [
-        {
-          "label": "A",
-          "text": "final",
-          "pos": "adj",
-          "is_correct": false
-        },
-        {
-          "label": "B",
-          "text": "finalization",
-          "pos": "noun",
-          "is_correct": false
-        },
-        {
-          "label": "C",
-          "text": "finally",
+          "text": "notifiably",
           "pos": "adv",
           "is_correct": false
-        },
-        {
-          "label": "D",
-          "text": "finalize",
-          "pos": "verb",
-          "is_correct": true
         }
       ],
-      "answer": "D",
+      "answer": "C",
       "eye_cue": {
         "type": "position",
-        "signal_word": "must",
-        "signal_pos": "modal",
-        "description": "must 後需要動詞原形，且後面有受詞 schedule。"
+        "signal_word": "A shipping",
+        "signal_pos": "determiner + noun modifier",
+        "description": "A shipping 後需要名詞；聽到 -tion 鎖名詞。"
       },
-      "hint": "must 後需要動詞原形，且後面有受詞 schedule。",
+      "hint": "A shipping 後需要名詞；聽到 -tion 鎖名詞。",
       "solution_steps": [
         {
           "step": 1,
-          "text": "先看空格位置：must 後需要動詞原形，且後面有受詞 schedule。",
-          "highlight_word": "must",
-          "highlight_pos": "verb"
+          "text": "先看空格位置：A shipping 後需要名詞；聽到 -tion 鎖名詞。",
+          "highlight_word": "A shipping",
+          "highlight_pos": "noun"
         },
         {
           "step": 2,
-          "text": "再看選項詞性：finalize 是動詞，符合空格需要。",
-          "highlight_word": "finalize",
-          "highlight_pos": "verb"
+          "text": "再看選項詞性：notification 是名詞，符合空格需要。",
+          "highlight_word": "notification",
+          "highlight_pos": "noun"
         },
         {
           "step": 3,
-          "text": "代入句子後語法完整，鎖定 D。",
-          "highlight_word": "finalize",
-          "highlight_pos": "verb"
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "notification",
+          "highlight_pos": "noun"
         }
       ],
-      "error_trap": "看到 holiday schedule 只想修飾 schedule，誤選 final。",
+      "error_trap": "聽到 notify 詞根就選動詞，忽略 A shipping 後需要名詞。",
       "wrong_thought_steps": [
-        "看到 holiday schedule 只想修飾 schedule，誤選 final。",
+        "聽到 notify 詞根就選動詞，忽略 A shipping 後需要名詞。",
         "跳過題眼，直接用語意或熟悉度作答。"
       ],
       "rule_box": {
         "type": "ok",
-        "text": "-ize 是常見動詞語尾；must + V 原形。"
+        "text": "notification 是名詞；notify 是動詞。"
       }
     },
     {
-      "q_id": "pos-d2-q3",
+      "q_id": "pos-d11-q2",
       "type": "main",
-      "scene": "Hospital / Records",
+      "scene": "Part 4 Script / Equipment",
       "eye_distance": "near",
       "target_pos": "verb",
-      "weakness_tag": "verb-suffix",
-      "stem": "The clinic uses barcode labels to {BLANK} patient samples quickly.",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"The backup machine can {BLANK} for six hours without interruption.\"",
       "blank_index": 0,
       "options": [
         {
           "label": "A",
-          "text": "identify",
+          "text": "operate",
           "pos": "verb",
           "is_correct": true
         },
         {
           "label": "B",
-          "text": "identification",
+          "text": "operation",
           "pos": "noun",
           "is_correct": false
         },
         {
           "label": "C",
-          "text": "identifiable",
+          "text": "operational",
           "pos": "adj",
           "is_correct": false
         },
         {
           "label": "D",
-          "text": "identifiably",
+          "text": "operationally",
           "pos": "adv",
           "is_correct": false
         }
@@ -227,135 +155,135 @@
       "answer": "A",
       "eye_cue": {
         "type": "position",
-        "signal_word": "to",
-        "signal_pos": "infinitive marker",
-        "description": "to + 空格 + 受詞 patient samples，需要動詞原形。"
+        "signal_word": "can",
+        "signal_pos": "modal",
+        "description": "can 後接動詞原形；聽到 -ate 鎖動詞。"
       },
-      "hint": "to + 空格 + 受詞 patient samples，需要動詞原形。",
+      "hint": "can 後接動詞原形；聽到 -ate 鎖動詞。",
       "solution_steps": [
         {
           "step": 1,
-          "text": "先看空格位置：to + 空格 + 受詞 patient samples，需要動詞原形。",
-          "highlight_word": "to",
+          "text": "先看空格位置：can 後接動詞原形；聽到 -ate 鎖動詞。",
+          "highlight_word": "can",
           "highlight_pos": "verb"
         },
         {
           "step": 2,
-          "text": "再看選項詞性：identify 是動詞，符合空格需要。",
-          "highlight_word": "identify",
+          "text": "再看選項詞性：operate 是動詞，符合空格需要。",
+          "highlight_word": "operate",
           "highlight_pos": "verb"
         },
         {
           "step": 3,
           "text": "代入句子後語法完整，鎖定 A。",
-          "highlight_word": "identify",
+          "highlight_word": "operate",
           "highlight_pos": "verb"
         }
       ],
-      "error_trap": "看到 identification 常見名詞就選，忽略 to 後的動詞位。",
+      "error_trap": "聽到 operation 熟悉就選名詞，忽略 can。",
       "wrong_thought_steps": [
-        "看到 identification 常見名詞就選，忽略 to 後的動詞位。",
+        "聽到 operation 熟悉就選名詞，忽略 can。",
         "跳過題眼，直接用語意或熟悉度作答。"
       ],
       "rule_box": {
         "type": "ok",
-        "text": "不定詞 to 後接 V 原形；-ify 是動詞語尾。"
+        "text": "operate 是動詞；operation 是名詞。"
       }
     },
     {
-      "q_id": "pos-d2-q4",
+      "q_id": "pos-d11-q3",
       "type": "main",
-      "scene": "Aviation / Gate Operations",
+      "scene": "Part 3 Script / Budget",
       "eye_distance": "near",
-      "target_pos": "verb",
-      "weakness_tag": "verb-suffix",
-      "stem": "Gate agents will {BLANK} passengers when boarding begins.",
+      "target_pos": "adj",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"The {BLANK} report will be ready before the board meeting.\"",
       "blank_index": 0,
       "options": [
         {
           "label": "A",
-          "text": "notification",
+          "text": "finance",
           "pos": "noun",
           "is_correct": false
         },
         {
           "label": "B",
-          "text": "notice",
-          "pos": "noun",
+          "text": "financially",
+          "pos": "adv",
           "is_correct": false
         },
         {
           "label": "C",
-          "text": "notify",
-          "pos": "verb",
-          "is_correct": true
+          "text": "financing",
+          "pos": "noun",
+          "is_correct": false
         },
         {
           "label": "D",
-          "text": "notifiable",
+          "text": "financial",
           "pos": "adj",
-          "is_correct": false
+          "is_correct": true
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "eye_cue": {
         "type": "position",
-        "signal_word": "will",
-        "signal_pos": "modal",
-        "description": "will 後接動詞原形，且 passengers 是受詞。"
+        "signal_word": "report",
+        "signal_pos": "noun",
+        "description": "空格修飾 report，需要形容詞。"
       },
-      "hint": "will 後接動詞原形，且 passengers 是受詞。",
+      "hint": "空格修飾 report，需要形容詞。",
       "solution_steps": [
         {
           "step": 1,
-          "text": "先看空格位置：will 後接動詞原形，且 passengers 是受詞。",
-          "highlight_word": "will",
-          "highlight_pos": "verb"
+          "text": "先看空格位置：空格修飾 report，需要形容詞。",
+          "highlight_word": "report",
+          "highlight_pos": "adj"
         },
         {
           "step": 2,
-          "text": "再看選項詞性：notify 是動詞，符合空格需要。",
-          "highlight_word": "notify",
-          "highlight_pos": "verb"
+          "text": "再看選項詞性：financial 是形容詞，符合空格需要。",
+          "highlight_word": "financial",
+          "highlight_pos": "adj"
         },
         {
           "step": 3,
-          "text": "代入句子後語法完整，鎖定 C。",
-          "highlight_word": "notify",
-          "highlight_pos": "verb"
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "financial",
+          "highlight_pos": "adj"
         }
       ],
-      "error_trap": "把 notice 當成通知動作而誤選，沒有用 will + V 判斷。",
+      "error_trap": "聽到 finance 就選名詞，忽略 report 前是形容詞位。",
       "wrong_thought_steps": [
-        "把 notice 當成通知動作而誤選，沒有用 will + V 判斷。",
+        "聽到 finance 就選名詞，忽略 report 前是形容詞位。",
         "跳過題眼，直接用語意或熟悉度作答。"
       ],
       "rule_box": {
         "type": "ok",
-        "text": "notify 是動詞；notification 是名詞；notice 可作名詞但此處需要動詞。"
+        "text": "financial report = 財務報告；financially 是副詞。"
       }
     },
     {
-      "q_id": "pos-d2-q5",
+      "q_id": "pos-d11-q4",
       "type": "main",
-      "scene": "Manufacturing / Security",
+      "scene": "Part 4 Script / Security",
       "eye_distance": "near",
-      "target_pos": "verb",
-      "weakness_tag": "verb-suffix",
-      "stem": "Only senior engineers can {BLANK} access to the restricted testing area.",
+      "target_pos": "noun",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"Written {BLANK} is required before visitors enter the restricted area.\"",
       "blank_index": 0,
       "options": [
         {
           "label": "A",
-          "text": "authority",
-          "pos": "noun",
+          "text": "authorize",
+          "pos": "verb",
           "is_correct": false
         },
         {
           "label": "B",
           "text": "authorization",
           "pos": "noun",
-          "is_correct": false
+          "is_correct": true
         },
         {
           "label": "C",
@@ -365,126 +293,199 @@
         },
         {
           "label": "D",
-          "text": "authorize",
-          "pos": "verb",
-          "is_correct": true
+          "text": "authoritatively",
+          "pos": "adv",
+          "is_correct": false
         }
       ],
-      "answer": "D",
+      "answer": "B",
       "eye_cue": {
         "type": "position",
-        "signal_word": "can",
-        "signal_pos": "modal",
-        "description": "can 後接動詞原形，access 是受詞。"
+        "signal_word": "Written",
+        "signal_pos": "adjective",
+        "description": "Written 後需要名詞；-tion 是名詞語尾。"
       },
-      "hint": "can 後接動詞原形，access 是受詞。",
+      "hint": "Written 後需要名詞；-tion 是名詞語尾。",
       "solution_steps": [
         {
           "step": 1,
-          "text": "先看空格位置：can 後接動詞原形，access 是受詞。",
-          "highlight_word": "can",
-          "highlight_pos": "verb"
+          "text": "先看空格位置：Written 後需要名詞；-tion 是名詞語尾。",
+          "highlight_word": "Written",
+          "highlight_pos": "noun"
         },
         {
           "step": 2,
-          "text": "再看選項詞性：authorize 是動詞，符合空格需要。",
-          "highlight_word": "authorize",
-          "highlight_pos": "verb"
+          "text": "再看選項詞性：authorization 是名詞，符合空格需要。",
+          "highlight_word": "authorization",
+          "highlight_pos": "noun"
         },
         {
           "step": 3,
-          "text": "代入句子後語法完整，鎖定 D。",
-          "highlight_word": "authorize",
-          "highlight_pos": "verb"
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "authorization",
+          "highlight_pos": "noun"
         }
       ],
-      "error_trap": "看到 authority 熟悉就選名詞，忽略 can 後的動詞位。",
+      "error_trap": "聽到 authorize 詞根就選動詞，忽略 written 後要名詞。",
       "wrong_thought_steps": [
-        "看到 authority 熟悉就選名詞，忽略 can 後的動詞位。",
+        "聽到 authorize 詞根就選動詞，忽略 written 後要名詞。",
         "跳過題眼，直接用語意或熟悉度作答。"
       ],
       "rule_box": {
         "type": "ok",
-        "text": "authorize 是動詞；authority / authorization 是名詞。"
+        "text": "written authorization = 書面授權。"
       }
     },
     {
-      "q_id": "pos-d2-q6",
+      "q_id": "pos-d11-q5",
       "type": "main",
-      "scene": "Office / Compliance",
+      "scene": "Part 3 Script / Appointment",
       "eye_distance": "near",
-      "target_pos": "verb",
-      "weakness_tag": "verb-suffix",
-      "stem": "Please {BLANK} whether all employee records were transferred securely.",
+      "target_pos": "noun",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"A final {BLANK} will be emailed to you by this afternoon.\"",
       "blank_index": 0,
       "options": [
         {
           "label": "A",
-          "text": "verify",
-          "pos": "verb",
+          "text": "confirmation",
+          "pos": "noun",
           "is_correct": true
         },
         {
           "label": "B",
-          "text": "verification",
-          "pos": "noun",
+          "text": "confirm",
+          "pos": "verb",
           "is_correct": false
         },
         {
           "label": "C",
-          "text": "verifiable",
+          "text": "confirmed",
           "pos": "adj",
           "is_correct": false
         },
         {
           "label": "D",
-          "text": "verifiably",
-          "pos": "adv",
+          "text": "confirming",
+          "pos": "verb",
           "is_correct": false
         }
       ],
       "answer": "A",
       "eye_cue": {
         "type": "position",
-        "signal_word": "Please",
-        "signal_pos": "imperative marker",
-        "description": "祈使句 Please 後接動詞原形。"
+        "signal_word": "A final",
+        "signal_pos": "determiner + adjective",
+        "description": "A final 後需要名詞。"
       },
-      "hint": "祈使句 Please 後接動詞原形。",
+      "hint": "A final 後需要名詞。",
       "solution_steps": [
         {
           "step": 1,
-          "text": "先看空格位置：祈使句 Please 後接動詞原形。",
-          "highlight_word": "Please",
-          "highlight_pos": "verb"
+          "text": "先看空格位置：A final 後需要名詞。",
+          "highlight_word": "A final",
+          "highlight_pos": "noun"
         },
         {
           "step": 2,
-          "text": "再看選項詞性：verify 是動詞，符合空格需要。",
-          "highlight_word": "verify",
-          "highlight_pos": "verb"
+          "text": "再看選項詞性：confirmation 是名詞，符合空格需要。",
+          "highlight_word": "confirmation",
+          "highlight_pos": "noun"
         },
         {
           "step": 3,
           "text": "代入句子後語法完整，鎖定 A。",
-          "highlight_word": "verify",
-          "highlight_pos": "verb"
+          "highlight_word": "confirmation",
+          "highlight_pos": "noun"
         }
       ],
-      "error_trap": "被 verification 的名詞語尾吸引，忘記祈使句開頭要動詞。",
+      "error_trap": "只聽到 confirm 詞根，未判斷 A final 後的名詞位。",
       "wrong_thought_steps": [
-        "被 verification 的名詞語尾吸引，忘記祈使句開頭要動詞。",
+        "只聽到 confirm 詞根，未判斷 A final 後的名詞位。",
         "跳過題眼，直接用語意或熟悉度作答。"
       ],
       "rule_box": {
         "type": "ok",
-        "text": "Please + V 原形；-ify 是動詞語尾。"
+        "text": "confirmation 是名詞；confirm 是動詞。"
+      }
+    },
+    {
+      "q_id": "pos-d11-q6",
+      "type": "main",
+      "scene": "Part 4 Script / Warehouse",
+      "eye_distance": "near",
+      "target_pos": "adv",
+      "weakness_tag": "listening-word-form",
+      "stem": "Script: \"The loading area must be kept {BLANK} clean during business hours.\"",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "consistency",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "consistent",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "consist",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "consistently",
+          "pos": "adv",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "clean",
+        "signal_pos": "adjective",
+        "description": "空格修飾形容詞 clean，需要副詞。"
+      },
+      "hint": "空格修飾形容詞 clean，需要副詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾形容詞 clean，需要副詞。",
+          "highlight_word": "clean",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：consistently 是副詞，符合空格需要。",
+          "highlight_word": "consistently",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "consistently",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "聽到 consistent 語意接近就選形容詞，忽略修飾 clean。",
+      "wrong_thought_steps": [
+        "聽到 consistent 語意接近就選形容詞，忽略修飾 clean。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "副詞 consistently 修飾形容詞 clean。"
       }
     }
   ],
   "monitor_questions": [
     {
-      "q_id": "pos-d2-monitor-1",
+      "q_id": "pos-d11-monitor-1",
       "type": "monitor",
       "scene": "[監控] Active / Passive",
       "eye_distance": "middle",
@@ -557,7 +558,7 @@
       }
     },
     {
-      "q_id": "pos-d2-monitor-2",
+      "q_id": "pos-d11-monitor-2",
       "type": "monitor",
       "scene": "[監控] Active / Passive",
       "eye_distance": "middle",

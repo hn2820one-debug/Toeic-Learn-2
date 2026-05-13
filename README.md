@@ -6,7 +6,7 @@ Static TOEIC learning app calibrated to the latest real score baseline:
 - Target: TOEIC 750, Listening 380, Reading 370
 - Current runnable modules:
   - Week 1 weakness-hunter Mandative Subjunctive lessons
-  - Week 3 seven-day Part of Speech Booster
+  - 14-day Part of Speech Booster inserted after Week 2
 
 ## 最簡單的開啟方式（推薦）
 

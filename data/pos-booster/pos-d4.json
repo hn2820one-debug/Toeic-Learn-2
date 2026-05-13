@@ -1,19 +1,45 @@
 {
   "lesson_id": "pos-d4",
   "module_id": "pos-booster",
+  "week": 3,
   "day": 4,
-  "title": "混合判斷強化",
+  "lesson_type": "grammar",
+  "target_component": "grammar",
+  "title": "副詞辨識 Part 2 — 語尾規則 + 位置法",
   "type": "concept+quiz",
-  "quiz_type": "standard",
-  "time_limit_seconds": 20,
+  "quiz_type": "slow",
+  "time_limit_seconds": 25,
+  "focus_tags": [
+    "part-of-speech",
+    "adverb",
+    "ly-exceptions"
+  ],
+  "weakness_tags": [
+    "adv-verb",
+    "adv-adj",
+    "ly-adjective-exception",
+    "active-passive"
+  ],
   "concept": {
-    "debug_rule": "定位題眼後，三秒內先排除兩個錯誤詞性。",
+    "debug_rule": "副詞修飾動詞、形容詞、副詞或整句；但 friendly / lovely / timely / likely / lonely 是常見 -ly 形容詞例外。",
     "cards": [
       {
-        "type": "comparison",
-        "tone": "neutral",
-        "title": "快排流程",
-        "html": "1. 看前後 2 個字 2. 判定詞性 3. 再看語意"
+        "type": "formula",
+        "tone": "adv",
+        "title": "副詞位置",
+        "html": "動詞 + <span class=\"blank-word adv\">副詞</span>；副詞 + 形容詞；句首副詞 + 逗號"
+      },
+      {
+        "type": "exception",
+        "tone": "warn",
+        "title": "-ly 例外",
+        "html": "friendly / lovely / timely / likely / lonely 多數係 <span class=\"blank-word adj\">形容詞</span>。"
+      },
+      {
+        "type": "warning",
+        "tone": "warn",
+        "title": "常見錯誤",
+        "html": "見到 -ly 就直接選，但空格後如果接名詞，可能需要形容詞。"
       }
     ]
   },
@@ -21,95 +47,588 @@
     {
       "q_id": "pos-d4-q1",
       "type": "main",
-      "scene": "Banking / Audit",
+      "scene": "Finance / Review",
       "eye_distance": "near",
-      "target_pos": "noun",
-      "weakness_tag": "det-noun",
-      "stem": "The team prepared a full {BLANK} before the annual audit.",
+      "target_pos": "adv",
+      "weakness_tag": "adv-verb",
+      "stem": "The finance team reviewed the quarterly figures {BLANK} before the presentation.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "document", "pos": "noun", "is_correct": true },
-        { "label": "B", "text": "documentary", "pos": "adj", "is_correct": false },
-        { "label": "C", "text": "documented", "pos": "verb", "is_correct": false },
-        { "label": "D", "text": "documenting", "pos": "verb", "is_correct": false }
+        {
+          "label": "A",
+          "text": "carefully",
+          "pos": "adv",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "careful",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "care",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "carefulness",
+          "pos": "noun",
+          "is_correct": false
+        }
       ],
       "answer": "A",
-      "hint": "a full + ______",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "reviewed",
+        "signal_pos": "verb",
+        "description": "空格修飾動詞 reviewed，需要副詞。"
+      },
+      "hint": "空格修飾動詞 reviewed，需要副詞。",
       "solution_steps": [
-        { "step": 1, "text": "full 修飾名詞。" },
-        { "step": 2, "text": "選名詞 document。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾動詞 reviewed，需要副詞。",
+          "highlight_word": "reviewed",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：carefully 是副詞，符合空格需要。",
+          "highlight_word": "carefully",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "carefully",
+          "highlight_pos": "adv"
+        }
       ],
-      "wrong_thought_steps": ["選了 documentary 以為是名詞。"],
-      "rule_box": { "type": "ok", "text": "冠詞片語核心為名詞。" }
+      "error_trap": "見到 figures 是名詞就選 careful，忽略空格其實修飾 reviewed。",
+      "wrong_thought_steps": [
+        "見到 figures 是名詞就選 careful，忽略空格其實修飾 reviewed。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "副詞修飾動詞；carefully reviewed 是自然搭配。"
+      }
     },
     {
       "q_id": "pos-d4-q2",
       "type": "main",
-      "scene": "Hotel / Revenue",
-      "eye_distance": "middle",
+      "scene": "Retail / Sales",
+      "eye_distance": "near",
       "target_pos": "adv",
       "weakness_tag": "adv-verb",
-      "stem": "The assistant responded {BLANK} to the guest's urgent request.",
+      "stem": "Online sales increased {BLANK} after the promotional campaign.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "rapid", "pos": "adj", "is_correct": false },
-        { "label": "B", "text": "rapidity", "pos": "noun", "is_correct": false },
-        { "label": "C", "text": "rapidly", "pos": "adv", "is_correct": true },
-        { "label": "D", "text": "rapidness", "pos": "noun", "is_correct": false }
+        {
+          "label": "A",
+          "text": "significant",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "significance",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "significantly",
+          "pos": "adv",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "signify",
+          "pos": "verb",
+          "is_correct": false
+        }
       ],
       "answer": "C",
-      "hint": "修飾 responded",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "increased",
+        "signal_pos": "verb",
+        "description": "空格修飾動詞 increased，需要副詞。"
+      },
+      "hint": "空格修飾動詞 increased，需要副詞。",
       "solution_steps": [
-        { "step": 1, "text": "修飾動詞 responded。" },
-        { "step": 2, "text": "選 rapidly。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾動詞 increased，需要副詞。",
+          "highlight_word": "increased",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：significantly 是副詞，符合空格需要。",
+          "highlight_word": "significantly",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "significantly",
+          "highlight_pos": "adv"
+        }
       ],
-      "wrong_thought_steps": ["看到 urgent 以為整句在考形容詞。"],
-      "rule_box": { "type": "ok", "text": "動詞修飾語選副詞。" }
+      "error_trap": "看到 sales 是名詞就選 significant，但空格位置在動詞後。",
+      "wrong_thought_steps": [
+        "看到 sales 是名詞就選 significant，但空格位置在動詞後。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "increase significantly 是 TOEIC 常見搭配。"
+      }
     },
     {
       "q_id": "pos-d4-q3",
       "type": "main",
-      "scene": "Aviation / Training",
-      "eye_distance": "far",
-      "target_pos": "adj",
-      "weakness_tag": "linking-verb",
-      "stem": "After two workshops, the procedure seemed much more {BLANK} to new hires.",
+      "scene": "Hotel / Customer Service",
+      "eye_distance": "near",
+      "target_pos": "adv",
+      "weakness_tag": "adv-verb",
+      "stem": "The concierge responded {BLANK} to the guest's urgent request.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "clarity", "pos": "noun", "is_correct": false },
-        { "label": "B", "text": "clear", "pos": "adj", "is_correct": true },
-        { "label": "C", "text": "clearly", "pos": "adv", "is_correct": false },
-        { "label": "D", "text": "clarify", "pos": "verb", "is_correct": false }
+        {
+          "label": "A",
+          "text": "prompt",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "promptly",
+          "pos": "adv",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "promptness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "prompts",
+          "pos": "verb",
+          "is_correct": false
+        }
       ],
       "answer": "B",
-      "hint": "seemed 後面接補語",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "responded",
+        "signal_pos": "verb",
+        "description": "空格修飾 responded，需要副詞。"
+      },
+      "hint": "空格修飾 responded，需要副詞。",
       "solution_steps": [
-        { "step": 1, "text": "連綴動詞 seemed 後面接形容詞。" },
-        { "step": 2, "text": "選 clear。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 responded，需要副詞。",
+          "highlight_word": "responded",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：promptly 是副詞，符合空格需要。",
+          "highlight_word": "promptly",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "promptly",
+          "highlight_pos": "adv"
+        }
       ],
-      "wrong_thought_steps": ["選 clearly，忽略連綴動詞規則。"],
-      "rule_box": { "type": "warn", "text": "seem/appear/become 後多為形容詞。" }
+      "error_trap": "選 prompt 只靠意思，沒有處理修飾動詞的位置。",
+      "wrong_thought_steps": [
+        "選 prompt 只靠意思，沒有處理修飾動詞的位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "respond promptly = 迅速回應。"
+      }
+    },
+    {
+      "q_id": "pos-d4-q4",
+      "type": "main",
+      "scene": "Manufacturing / Equipment",
+      "eye_distance": "near",
+      "target_pos": "adv",
+      "weakness_tag": "adv-verb",
+      "stem": "The automated sorting device operates {BLANK} even during peak hours.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "efficient",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "efficiency",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "efficiencies",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "efficiently",
+          "pos": "adv",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "operates",
+        "signal_pos": "verb",
+        "description": "空格修飾 operates，需要副詞。"
+      },
+      "hint": "空格修飾 operates，需要副詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 operates，需要副詞。",
+          "highlight_word": "operates",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：efficiently 是副詞，符合空格需要。",
+          "highlight_word": "efficiently",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "efficiently",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "看到 device 是名詞，誤以為要用形容詞 efficient。",
+      "wrong_thought_steps": [
+        "看到 device 是名詞，誤以為要用形容詞 efficient。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "動詞 operate 後用副詞 efficiently 描述運作方式。"
+      }
+    },
+    {
+      "q_id": "pos-d4-q5",
+      "type": "main",
+      "scene": "Office / Communication",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "ly-adjective-exception",
+      "stem": "The receptionist gave visitors a {BLANK} reminder about the new entry policy.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "friend",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "befriend",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "friendly",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "friendliness",
+          "pos": "noun",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "reminder",
+        "signal_pos": "noun",
+        "description": "空格後接名詞 reminder，需要形容詞；friendly 雖然 -ly 結尾但係形容詞。"
+      },
+      "hint": "空格後接名詞 reminder，需要形容詞；friendly 雖然 -ly 結尾但係形容詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格後接名詞 reminder，需要形容詞；friendly 雖然 -ly 結尾但係形容詞。",
+          "highlight_word": "reminder",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：friendly 是形容詞，符合空格需要。",
+          "highlight_word": "friendly",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "friendly",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "見到 -ly 就誤判成副詞，忘記 friendly 是形容詞。",
+      "wrong_thought_steps": [
+        "見到 -ly 就誤判成副詞，忘記 friendly 是形容詞。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "friendly 是 -ly 形容詞例外，可以修飾名詞。"
+      }
+    },
+    {
+      "q_id": "pos-d4-q6",
+      "type": "main",
+      "scene": "Shipping / Forecast",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "ly-adjective-exception",
+      "stem": "It is {BLANK} that the shipment will arrive before the weekend.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "likelihood",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "like",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "likewise",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "likely",
+          "pos": "adj",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "It is",
+        "signal_pos": "linking structure",
+        "description": "It is + 形容詞 + that 子句；likely 是形容詞。"
+      },
+      "hint": "It is + 形容詞 + that 子句；likely 是形容詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：It is + 形容詞 + that 子句；likely 是形容詞。",
+          "highlight_word": "It is",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：likely 是形容詞，符合空格需要。",
+          "highlight_word": "likely",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "likely",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "把 likely 當副詞排除，沒有認出 It is likely that 句型。",
+      "wrong_thought_steps": [
+        "把 likely 當副詞排除，沒有認出 It is likely that 句型。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "It is likely that ... 是固定句型；likely 是 -ly 形容詞例外。"
+      }
     }
   ],
   "monitor_questions": [
     {
       "q_id": "pos-d4-monitor-1",
       "type": "monitor",
-      "weakness_tag": "active-passive",
-      "scene": "[監控] Voice choice",
+      "scene": "[監控] Active / Passive",
       "eye_distance": "middle",
       "target_pos": "verb",
-      "stem": "The clerk {BLANK} the invoice before filing it.",
+      "weakness_tag": "active-passive",
+      "stem": "The supervisor {BLANK} the final checklist before departure.",
+      "blank_index": 0,
       "options": [
-        { "label": "A", "text": "checked", "pos": "verb", "is_correct": true },
-        { "label": "B", "text": "was checked", "pos": "verb", "is_correct": false },
-        { "label": "C", "text": "is checked", "pos": "verb", "is_correct": false },
-        { "label": "D", "text": "has checking", "pos": "verb", "is_correct": false }
+        {
+          "label": "A",
+          "text": "was reviewed",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "is reviewed",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "reviewed",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "has been reviewed",
+          "pos": "verb",
+          "is_correct": false
+        }
       ],
-      "answer": "A",
-      "hint": "主詞 clerk 主動執行",
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "the final checklist",
+        "signal_pos": "object",
+        "description": "空格後有受詞 checklist，主詞 supervisor 執行動作，所以要主動語態。"
+      },
+      "hint": "空格後有受詞 checklist，主詞 supervisor 執行動作，所以要主動語態。",
       "solution_steps": [
-        { "step": 1, "text": "有受詞 invoice，主動句。" },
-        { "step": 2, "text": "故選 checked。" }
+        {
+          "step": 1,
+          "text": "先看空格位置：空格後有受詞 checklist，主詞 supervisor 執行動作，所以要主動語態。",
+          "highlight_word": "the final checklist",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：reviewed 是動詞，符合空格需要。",
+          "highlight_word": "reviewed",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "reviewed",
+          "highlight_pos": "verb"
+        }
       ],
-      "rule_box": { "type": "warn", "text": "先看是否有直接受詞，再決定主被動。" }
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "空格後直接接受詞時，優先檢查主動語態。"
+      }
+    },
+    {
+      "q_id": "pos-d4-monitor-2",
+      "type": "monitor",
+      "scene": "[監控] Active / Passive",
+      "eye_distance": "middle",
+      "target_pos": "verb",
+      "weakness_tag": "active-passive",
+      "stem": "The committee {BLANK} the proposal after a brief discussion.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "was approved",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "approved",
+          "pos": "verb",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "is approved",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "has been approved",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "the proposal",
+        "signal_pos": "object",
+        "description": "空格後有受詞 proposal，committee 是動作者，不能用被動。"
+      },
+      "hint": "空格後有受詞 proposal，committee 是動作者，不能用被動。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格後有受詞 proposal，committee 是動作者，不能用被動。",
+          "highlight_word": "the proposal",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：approved 是動詞，符合空格需要。",
+          "highlight_word": "approved",
+          "highlight_pos": "verb"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "approved",
+          "highlight_pos": "verb"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "主詞 + 動詞 + 受詞是主動結構。"
+      }
     }
   ]
 }

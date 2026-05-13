@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOEIC Vocabulary Tracker</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/tracker.css">
+</head>
+<body>
+  <div id="top-strip" class="top-strip">載入中...</div>
+  <main class="app-shell tracker-shell">
+    <header class="tracker-head">
+      <div class="tracker-head-row">
+        <div>
+          <h1 class="page-title">TOEIC Vocabulary Tracker</h1>
+          <p class="page-subtitle">Local-first vocabulary progress, error analysis, mastery, and export.</p>
+        </div>
+        <button class="button secondary" type="button" onclick="location.href='./index.html'">Back Home</button>
+      </div>
+      <nav id="tracker-tabs" class="tracker-tabs" aria-label="Tracker navigation"></nav>
+    </header>
+
+    <div id="tracker-notice" class="section" style="padding-bottom:0"></div>
+    <section id="tracker-view" class="tracker-view"></section>
+  </main>
+
+  <script src="./js/vocab-scoring.js"></script>
+  <script src="./js/vocab-db.js"></script>
+  <script src="./js/vocab-tracker.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js").catch(() => {});
+      });
+    }
+    window.VocabTracker.init();
+  </script>
+</body>
+</html>

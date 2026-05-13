@@ -1,0 +1,926 @@
+{
+  "lesson_id": "pos-d10",
+  "module_id": "pos-booster",
+  "week": 4,
+  "day": 10,
+  "lesson_type": "phrase",
+  "target_component": "phrase",
+  "title": "詞性衍生片語 Part 2 — 形容詞/副詞搭配",
+  "type": "concept+quiz",
+  "quiz_type": "standard",
+  "time_limit_seconds": 20,
+  "focus_tags": [
+    "collocation",
+    "adjective-adverb",
+    "phrase"
+  ],
+  "weakness_tags": [
+    "adv-adj-degree",
+    "adv-verb",
+    "adj-after-linking",
+    "multiplier-comparison"
+  ],
+  "concept": {
+    "debug_rule": "程度副詞 highly / extremely / fully / technically 通常修飾形容詞；方式副詞修飾動詞或分詞。",
+    "cards": [
+      {
+        "type": "formula",
+        "tone": "adv",
+        "title": "副詞 + 形容詞",
+        "html": "highly effective / financially stable / technically sound / fully compliant"
+      },
+      {
+        "type": "formula",
+        "tone": "adv",
+        "title": "副詞 + 分詞",
+        "html": "carefully reviewed / professionally prepared / significantly improved"
+      },
+      {
+        "type": "warning",
+        "tone": "warn",
+        "title": "常見錯誤",
+        "html": "highly 後面唔直接接名詞，要接形容詞。"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "q_id": "pos-d10-q1",
+      "type": "main",
+      "scene": "Project / Evaluation",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "adv-adj-degree",
+      "stem": "The new onboarding process proved highly {BLANK} for remote employees.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "effect",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "effectively",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "effective",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "effectuate",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "highly",
+        "signal_pos": "degree adverb",
+        "description": "highly 修飾形容詞，空格需要形容詞。"
+      },
+      "hint": "highly 修飾形容詞，空格需要形容詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：highly 修飾形容詞，空格需要形容詞。",
+          "highlight_word": "highly",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：effective 是形容詞，符合空格需要。",
+          "highlight_word": "effective",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "effective",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "見到 highly 就選 -ly 副詞 effectively，忽略 highly 後要形容詞。",
+      "wrong_thought_steps": [
+        "見到 highly 就選 -ly 副詞 effectively，忽略 highly 後要形容詞。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "highly effective 是固定搭配。"
+      }
+    },
+    {
+      "q_id": "pos-d10-q2",
+      "type": "main",
+      "scene": "Finance / Forecast",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "adv-adj-degree",
+      "stem": "The company remains financially {BLANK} despite slower sales.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "stable",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "stability",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "stably",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "stabilize",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "financially",
+        "signal_pos": "adverb",
+        "description": "financially 修飾形容詞 stable。"
+      },
+      "hint": "financially 修飾形容詞 stable。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：financially 修飾形容詞 stable。",
+          "highlight_word": "financially",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：stable 是形容詞，符合空格需要。",
+          "highlight_word": "stable",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "stable",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "選 stability 因為語意接近，但 remains 後需要形容詞補語。",
+      "wrong_thought_steps": [
+        "選 stability 因為語意接近，但 remains 後需要形容詞補語。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "financially stable = 財務穩健。"
+      }
+    },
+    {
+      "q_id": "pos-d10-q3",
+      "type": "main",
+      "scene": "Engineering / Design",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "adv-adj-degree",
+      "stem": "The revised design is technically {BLANK} and ready for production.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "soundly",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "soundness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "resound",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "sound",
+          "pos": "adj",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "technically",
+        "signal_pos": "adverb",
+        "description": "technically 修飾形容詞 sound。"
+      },
+      "hint": "technically 修飾形容詞 sound。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：technically 修飾形容詞 sound。",
+          "highlight_word": "technically",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：sound 是形容詞，符合空格需要。",
+          "highlight_word": "sound",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "sound",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "sound 可多詞性，呢度 be + adv + adjective。",
+      "wrong_thought_steps": [
+        "sound 可多詞性，呢度 be + adv + adjective。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "technically sound = 技術上可靠。"
+      }
+    },
+    {
+      "q_id": "pos-d10-q4",
+      "type": "main",
+      "scene": "Warehouse / Equipment",
+      "eye_distance": "near",
+      "target_pos": "adv",
+      "weakness_tag": "adv-adj-degree",
+      "stem": "The backup generator is {BLANK} ready for emergency use.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "operation",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "operationally",
+          "pos": "adv",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "operational",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "operate",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "ready",
+        "signal_pos": "adjective",
+        "description": "空格修飾形容詞 ready，需要副詞。"
+      },
+      "hint": "空格修飾形容詞 ready，需要副詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾形容詞 ready，需要副詞。",
+          "highlight_word": "ready",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：operationally 是副詞，符合空格需要。",
+          "highlight_word": "operationally",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "operationally",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "看到 generator 是名詞就選 operational，忽略空格修飾 ready。",
+      "wrong_thought_steps": [
+        "看到 generator 是名詞就選 operational，忽略空格修飾 ready。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "operationally ready = 運作上準備好。"
+      }
+    },
+    {
+      "q_id": "pos-d10-q5",
+      "type": "main",
+      "scene": "Legal / Supplier",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "adv-adj-degree",
+      "stem": "The supplier is fully {BLANK} with the updated safety regulations.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "compliant",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "compliance",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "comply",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "compliantly",
+          "pos": "adv",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "fully",
+        "signal_pos": "degree adverb",
+        "description": "fully 修飾形容詞 compliant。"
+      },
+      "hint": "fully 修飾形容詞 compliant。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：fully 修飾形容詞 compliant。",
+          "highlight_word": "fully",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：compliant 是形容詞，符合空格需要。",
+          "highlight_word": "compliant",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "compliant",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "看到 regulations 後選名詞 compliance，忽略 is fully + adjective。",
+      "wrong_thought_steps": [
+        "看到 regulations 後選名詞 compliance，忽略 is fully + adjective。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "fully compliant with = 完全符合。"
+      }
+    },
+    {
+      "q_id": "pos-d10-q6",
+      "type": "main",
+      "scene": "Quality / Checklist",
+      "eye_distance": "near",
+      "target_pos": "adv",
+      "weakness_tag": "adv-verb",
+      "stem": "The safety checklist was {BLANK} reviewed before the inspection.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "careful",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "carefulness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "carefully",
+          "pos": "adv",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "care",
+          "pos": "noun",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "reviewed",
+        "signal_pos": "participle",
+        "description": "空格修飾 reviewed，需要副詞。"
+      },
+      "hint": "空格修飾 reviewed，需要副詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 reviewed，需要副詞。",
+          "highlight_word": "reviewed",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：carefully 是副詞，符合空格需要。",
+          "highlight_word": "carefully",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "carefully",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "看到 was 就選形容詞 careful，忽略 reviewed 是被修飾動作。",
+      "wrong_thought_steps": [
+        "看到 was 就選形容詞 careful，忽略 reviewed 是被修飾動作。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "carefully reviewed = 仔細審查。"
+      }
+    },
+    {
+      "q_id": "pos-d10-q7",
+      "type": "main",
+      "scene": "Product / Materials",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "adv-adj-degree",
+      "stem": "The new packaging material is extremely {BLANK} under high temperatures.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "durability",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "durably",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "endure",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "durable",
+          "pos": "adj",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "extremely",
+        "signal_pos": "degree adverb",
+        "description": "extremely 修飾形容詞 durable。"
+      },
+      "hint": "extremely 修飾形容詞 durable。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：extremely 修飾形容詞 durable。",
+          "highlight_word": "extremely",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：durable 是形容詞，符合空格需要。",
+          "highlight_word": "durable",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "durable",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "選 durability 因為 material 語意接近，但 is extremely 後要形容詞。",
+      "wrong_thought_steps": [
+        "選 durability 因為 material 語意接近，但 is extremely 後要形容詞。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "extremely + adjective。"
+      }
+    },
+    {
+      "q_id": "pos-d10-q8",
+      "type": "main",
+      "scene": "Process / Upgrade",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "adv-adj-degree",
+      "stem": "The revised approval process is significantly {BLANK} than the old one.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "fast",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "faster",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "C",
+          "text": "fastness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "fasten",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "B",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "significantly",
+        "signal_pos": "degree adverb",
+        "description": "significantly 修飾比較級形容詞 faster。"
+      },
+      "hint": "significantly 修飾比較級形容詞 faster。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：significantly 修飾比較級形容詞 faster。",
+          "highlight_word": "significantly",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：faster 是形容詞，符合空格需要。",
+          "highlight_word": "faster",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 B。",
+          "highlight_word": "faster",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "見到 significantly 後忘記後面要比較級形容詞。",
+      "wrong_thought_steps": [
+        "見到 significantly 後忘記後面要比較級形容詞。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "significantly faster than = 明顯更快。"
+      }
+    },
+    {
+      "q_id": "pos-d10-q9",
+      "type": "main",
+      "scene": "Startup / Product",
+      "eye_distance": "near",
+      "target_pos": "adj",
+      "weakness_tag": "adv-adj-degree",
+      "stem": "The prototype is commercially {BLANK}, according to the investor review.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "viability",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "viably",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "viable",
+          "pos": "adj",
+          "is_correct": true
+        },
+        {
+          "label": "D",
+          "text": "vitalize",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "C",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "commercially",
+        "signal_pos": "adverb",
+        "description": "commercially 修飾形容詞 viable。"
+      },
+      "hint": "commercially 修飾形容詞 viable。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：commercially 修飾形容詞 viable。",
+          "highlight_word": "commercially",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：viable 是形容詞，符合空格需要。",
+          "highlight_word": "viable",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 C。",
+          "highlight_word": "viable",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "選 viability 因為語意接近，但 be + adverb + adjective。",
+      "wrong_thought_steps": [
+        "選 viability 因為語意接近，但 be + adverb + adjective。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "commercially viable = 商業上可行。"
+      }
+    },
+    {
+      "q_id": "pos-d10-q10",
+      "type": "main",
+      "scene": "Reporting / Documentation",
+      "eye_distance": "near",
+      "target_pos": "adv",
+      "weakness_tag": "adv-verb",
+      "stem": "The final report was {BLANK} prepared by the compliance team.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "profession",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "professional",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "professionalism",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "professionally",
+          "pos": "adv",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "prepared",
+        "signal_pos": "participle",
+        "description": "空格修飾 prepared，需要副詞。"
+      },
+      "hint": "空格修飾 prepared，需要副詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：空格修飾 prepared，需要副詞。",
+          "highlight_word": "prepared",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：professionally 是副詞，符合空格需要。",
+          "highlight_word": "professionally",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "professionally",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "看到 report 是名詞就選 professional，忽略空格修飾 prepared。",
+      "wrong_thought_steps": [
+        "看到 report 是名詞就選 professional，忽略空格修飾 prepared。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "ok",
+        "text": "professionally prepared = 專業地準備。"
+      }
+    }
+  ],
+  "monitor_questions": [
+    {
+      "q_id": "pos-d10-monitor-1",
+      "type": "monitor",
+      "scene": "[監控] Multiplier Comparison",
+      "eye_distance": "middle",
+      "target_pos": "adv",
+      "weakness_tag": "multiplier-comparison",
+      "stem": "The new scanner processes invoices twice as {BLANK} as the previous model.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "quickly",
+          "pos": "adv",
+          "is_correct": true
+        },
+        {
+          "label": "B",
+          "text": "quick",
+          "pos": "adj",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "quickness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "quicken",
+          "pos": "verb",
+          "is_correct": false
+        }
+      ],
+      "answer": "A",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "processes",
+        "signal_pos": "verb",
+        "description": "as ___ as 中空格修飾動詞 processes，要用副詞。"
+      },
+      "hint": "as ___ as 中空格修飾動詞 processes，要用副詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：as ___ as 中空格修飾動詞 processes，要用副詞。",
+          "highlight_word": "processes",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：quickly 是副詞，符合空格需要。",
+          "highlight_word": "quickly",
+          "highlight_pos": "adv"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 A。",
+          "highlight_word": "quickly",
+          "highlight_pos": "adv"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "倍數 + as + adj/adv + as；修飾動詞時用副詞。"
+      }
+    },
+    {
+      "q_id": "pos-d10-monitor-2",
+      "type": "monitor",
+      "scene": "[監控] Multiplier Comparison",
+      "eye_distance": "middle",
+      "target_pos": "adj",
+      "weakness_tag": "multiplier-comparison",
+      "stem": "The renovated storage area is three times as {BLANK} as the old room.",
+      "blank_index": 0,
+      "options": [
+        {
+          "label": "A",
+          "text": "largely",
+          "pos": "adv",
+          "is_correct": false
+        },
+        {
+          "label": "B",
+          "text": "largeness",
+          "pos": "noun",
+          "is_correct": false
+        },
+        {
+          "label": "C",
+          "text": "enlarge",
+          "pos": "verb",
+          "is_correct": false
+        },
+        {
+          "label": "D",
+          "text": "large",
+          "pos": "adj",
+          "is_correct": true
+        }
+      ],
+      "answer": "D",
+      "eye_cue": {
+        "type": "position",
+        "signal_word": "is",
+        "signal_pos": "linking verb",
+        "description": "as ___ as 補充 storage area 的狀態，be 動詞後用形容詞。"
+      },
+      "hint": "as ___ as 補充 storage area 的狀態，be 動詞後用形容詞。",
+      "solution_steps": [
+        {
+          "step": 1,
+          "text": "先看空格位置：as ___ as 補充 storage area 的狀態，be 動詞後用形容詞。",
+          "highlight_word": "is",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 2,
+          "text": "再看選項詞性：large 是形容詞，符合空格需要。",
+          "highlight_word": "large",
+          "highlight_pos": "adj"
+        },
+        {
+          "step": 3,
+          "text": "代入句子後語法完整，鎖定 D。",
+          "highlight_word": "large",
+          "highlight_pos": "adj"
+        }
+      ],
+      "error_trap": "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+      "wrong_thought_steps": [
+        "只看熟悉單字或中文意思，沒有先判斷空格位置。",
+        "跳過題眼，直接用語意或熟悉度作答。"
+      ],
+      "rule_box": {
+        "type": "warn",
+        "text": "倍數比較中，be 動詞後比較狀態或大小時用形容詞。"
+      }
+    }
+  ]
+}
